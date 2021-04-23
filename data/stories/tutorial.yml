@@ -1,0 +1,18 @@
+stories:
+  - story: Farewells
+    steps:
+      - intent: farewell
+        user: Bye
+        entities: []
+      - action: utter_rtXHuuF1G
+    metadata:
+      group: Tutorial
+  - story: Greetings
+    steps:
+      - intent: Greet
+        user: Hello
+        entities: []
+      - action: utter_YOQIOPKc5
+    metadata:
+      group: Tutorial
+rules: []

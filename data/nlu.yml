@@ -1,0 +1,28 @@
+version: "2.0"
+nlu:
+- intent: Greet
+  metadata:
+    language: en
+  examples:
+  - text: |
+      Good morning
+  - text: |
+      Hello
+    metadata:
+      canonical: true
+  - text: |
+      Hey
+  - text: |
+      Hi
+  - text: |
+      Howdy
+- intent: farewell
+  metadata:
+    language: en
+  examples:
+  - text: |
+      Bye
+    metadata:
+      canonical: true
+  - text: |
+      see you
