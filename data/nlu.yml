@@ -16,6 +16,38 @@ nlu:
       Hi
   - text: |
       Howdy
+- intent: add_user
+  metadata:
+    language: en
+  examples:
+  - text: |
+      How do I add a user?
+    metadata:
+      canonical: true
+- intent: affirm
+  metadata:
+    language: en
+  examples:
+  - text: |
+      yes
+    metadata:
+      canonical: true
+- intent: change_pass
+  metadata:
+    language: en
+  examples:
+  - text: |
+      How do I change my password?
+    metadata:
+      canonical: true
+- intent: deny
+  metadata:
+    language: en
+  examples:
+  - text: |
+      No
+    metadata:
+      canonical: true
 - intent: farewell
   metadata:
     language: en
@@ -26,3 +58,25 @@ nlu:
       canonical: true
   - text: |
       see you
+- intent: feel_bad
+  metadata:
+    language: en
+  examples:
+  - text: |
+      I feel bad
+    metadata:
+      canonical: true
+  - text: |
+      I feel terrible
+  - text: |
+      bad day
+  - text: |
+      not great
+- intent: feel_good
+  metadata:
+    language: en
+  examples:
+  - text: |
+      I feel great
+    metadata:
+      canonical: true

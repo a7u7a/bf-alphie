@@ -1,4 +1,22 @@
 stories:
+  - story: Add a user
+    steps:
+      - intent: add_user
+        user: How do I add a user?
+        entities: []
+      - action: utter_fGPKyHELdn
+      - checkpoint: link-to-Feedback/9f03c53c-34dd-4010-84e1-23ae71701ecb
+    metadata:
+      group: Tutorial
+  - story: Change password
+    steps:
+      - intent: change_pass
+        user: How do I change my password?
+        entities: []
+      - action: utter_0QXHpFEpO
+      - checkpoint: link-to-Feedback/9f03c53c-34dd-4010-84e1-23ae71701ecb
+    metadata:
+      group: Tutorial
   - story: Farewells
     steps:
       - intent: farewell
@@ -7,12 +25,56 @@ stories:
       - action: utter_rtXHuuF1G
     metadata:
       group: Tutorial
+  - story: Feedback
+    steps:
+      - checkpoint: link-to-Feedback/9f03c53c-34dd-4010-84e1-23ae71701ecb
+      - action: utter_J6V6ADHaH
+      - checkpoint: Feedback__branches
+    metadata:
+      group: Tutorial
+  - story: Feedback__New Branch 1
+    steps:
+      - checkpoint: Feedback__branches
+      - intent: affirm
+        user: 'yes'
+        entities: []
+      - action: utter_XZKIxjwmn
+    metadata:
+      group: Tutorial
+  - story: Feedback__New Branch 2
+    steps:
+      - checkpoint: Feedback__branches
+      - intent: deny
+        user: 'No'
+        entities: []
+      - action: utter_TxjWMXU5l
+    metadata:
+      group: Tutorial
   - story: Greetings
     steps:
       - intent: Greet
         user: Hello
         entities: []
-      - action: utter_YOQIOPKc5
+      - action: utter_IOIVs9dl0
+      - checkpoint: Greetings__branches
+    metadata:
+      group: Tutorial
+  - story: Greetings__New Branch 1
+    steps:
+      - checkpoint: Greetings__branches
+      - intent: feel_good
+        user: I feel great
+        entities: []
+      - action: utter_VykZCdob8
+    metadata:
+      group: Tutorial
+  - story: Greetings__New Branch 2
+    steps:
+      - checkpoint: Greetings__branches
+      - intent: feel_bad
+        user: I feel bad
+        entities: []
+      - action: utter_kqYxT_e3B
     metadata:
       group: Tutorial
 rules: []

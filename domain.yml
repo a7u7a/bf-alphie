@@ -3,23 +3,68 @@ actions:
   - action_botfront_disambiguation_followup
   - action_botfront_fallback
   - action_botfront_mapping
-  - utter_YOQIOPKc5
+  - utter_0QXHpFEpO
+  - utter_IOIVs9dl0
+  - utter_J6V6ADHaH
+  - utter_TxjWMXU5l
+  - utter_VykZCdob8
+  - utter_XZKIxjwmn
   - utter_bye
+  - utter_fGPKyHELdn
   - utter_get_started
   - utter_hi
+  - utter_kqYxT_e3B
   - utter_rtXHuuF1G
 entities: []
 forms: {}
 intents:
   - Greet
+  - add_user
+  - affirm
+  - change_pass
   - chitchat.bye
   - chitchat.greet
+  - deny
   - farewell
+  - feel_bad
+  - feel_good
   - get_started
 responses:
-  utter_YOQIOPKc5:
+  utter_0QXHpFEpO:
     - language: en
-      text: Hello there
+      text: Go to your account section and click on the security tab
+  utter_IOIVs9dl0:
+    - language: en
+      quick_replies:
+        - payload: /feel_good
+          title: Feel great
+          type: postback
+        - payload: /feel_bad
+          title: Feel sad
+          type: postback
+      text: Hi! How are you doing today?
+  utter_J6V6ADHaH:
+    - language: en
+      text: Are you happy with my answer?
+  utter_TxjWMXU5l:
+    - language: en
+      text: Sorry to hear that
+  utter_VykZCdob8:
+    - language: en
+      text: Thats good to hear
+  utter_XZKIxjwmn:
+    - language: en
+      text: Great
+  utter_fGPKyHELdn:
+    - language: en
+      text: Go to your account and click the users tab
+  utter_get_started:
+    - language: en
+      metadata: null
+      text: Hello!
+  utter_kqYxT_e3B:
+    - language: en
+      text: Sorry to hear that
   utter_rtXHuuF1G:
     - language: en
       text: See you soon
