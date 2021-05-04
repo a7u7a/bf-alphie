@@ -80,3 +80,13 @@ nlu:
       I feel great
     metadata:
       canonical: true
+- intent: start_form
+  metadata:
+    language: en
+  examples:
+  - text: |
+      start form
+    metadata:
+      canonical: true
+  - text: |
+      start_form

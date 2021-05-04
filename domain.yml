@@ -4,19 +4,104 @@ actions:
   - action_botfront_fallback
   - action_botfront_mapping
   - utter_0QXHpFEpO
+  - utter_C9jg6_pGrb
   - utter_IOIVs9dl0
   - utter_J6V6ADHaH
   - utter_TxjWMXU5l
   - utter_VykZCdob8
   - utter_XZKIxjwmn
+  - utter_ask_company_size
+  - utter_ask_first_name
+  - utter_ask_work_email
   - utter_bye
   - utter_fGPKyHELdn
   - utter_get_started
   - utter_hi
+  - utter_invalid_first_name
+  - utter_invalid_work_email
   - utter_kqYxT_e3B
   - utter_rtXHuuF1G
+  - utter_valid_first_name
+  - utter_valid_work_email
 entities: []
-forms: {}
+forms:
+  leadgen_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-first_name
+          source: '1'
+          target: first_name
+          type: condition
+        - condition: null
+          id: efirst_name-work_email
+          source: first_name
+          target: work_email
+          type: condition
+        - condition: null
+          id: ework_email-company_size
+          source: work_email
+          target: company_size
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: first_name
+          position:
+            x: 120
+            'y': 360
+          slotName: first_name
+          type: slot
+        - id: work_email
+          position:
+            x: 120
+            'y': 500
+          slotName: work_email
+          type: slot
+        - id: company_size
+          position:
+            x: 140
+            'y': 720
+          slotName: company_size
+          type: slot
+    groupName: forms
+    name: leadgen_form
+    slots:
+      - filling:
+          - intent: null
+            not_intent: null
+            type: from_text
+        name: first_name
+        utter_on_new_valid_slot: true
+        validation:
+          comparatum: 2
+          operator: longer
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: work_email
+        utter_on_new_valid_slot: true
+        validation:
+          comparatum: null
+          operator: email
+      - filling:
+          - entity:
+              - company_size
+            group: null
+            intent:
+              - inform
+            not_intent: null
+            role: null
+            type: from_entity
+        name: company_size
+        utter_on_new_valid_slot: false
+    updatedAt: 1620101977170
 intents:
   - Greet
   - add_user
@@ -29,10 +114,19 @@ intents:
   - feel_bad
   - feel_good
   - get_started
+  - start_form
 responses:
   utter_0QXHpFEpO:
     - language: en
       text: Go to your account section and click on the security tab
+  utter_C9jg6_pGrb:
+    - language: en
+      text: |-
+        {first_name}
+
+        {work_email}
+
+        {company_size}
   utter_IOIVs9dl0:
     - language: en
       quick_replies:
@@ -55,22 +149,71 @@ responses:
   utter_XZKIxjwmn:
     - language: en
       text: Great
+  utter_ask_company_size:
+    - buttons:
+        - payload: '/inform{"company_size":"1"}'
+          title: Just me
+          type: postback
+        - payload: '/inform{"company_size":"2-10"}'
+          title: 2-10
+          type: postback
+        - payload: '/inform{"company_size":"11-100"}'
+          title: 11-100
+          type: postback
+        - payload: '/inform{"company_size":"101-1000"}'
+          title: 101-1000
+          type: postback
+        - payload: '/inform{"company_size":"1000+"}'
+          title: 1000+
+          type: postback
+      language: en
+      text: How many are you in your company?
+  utter_ask_first_name:
+    - language: en
+      metadata: null
+      text: What is your first name?
+  utter_ask_work_email:
+    - language: en
+      metadata: null
+      text: What is your **work** email address?
   utter_fGPKyHELdn:
     - language: en
       text: Go to your account and click the users tab
   utter_get_started:
     - language: en
       text: Hello!
+  utter_invalid_first_name:
+    - language: en
+      metadata: null
+      text: I was expecting a longer first name...
+  utter_invalid_work_email:
+    - language: en
+      metadata: null
+      text: I was expecting a valid email address?
   utter_kqYxT_e3B:
     - language: en
       text: Sorry to hear that
   utter_rtXHuuF1G:
     - language: en
       text: See you soon
+  utter_valid_first_name:
+    - language: en
+      metadata: null
+      text: 'Nice to meet you {first_name}'
+  utter_valid_work_email:
+    - language: en
+      metadata: null
+      text: '{work_email}, got it!'
 session_config: {}
 slots:
+  company_size:
+    type: unfeaturized
   disambiguation_message:
     type: unfeaturized
   fallback_language:
     initial_value: en
+    type: unfeaturized
+  first_name:
+    type: unfeaturized
+  work_email:
     type: unfeaturized
