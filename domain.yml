@@ -4,26 +4,30 @@ actions:
   - action_botfront_fallback
   - action_botfront_mapping
   - utter_0QXHpFEpO
+  - utter_4RY9i-lPs
+  - utter_6mC8blbwa
   - utter_C9jg6_pGrb
+  - utter_IJpvtXoiV
   - utter_IOIVs9dl0
   - utter_J6V6ADHaH
+  - utter_OpCqOoQMd
   - utter_TxjWMXU5l
   - utter_VykZCdob8
   - utter_XZKIxjwmn
   - utter_ask_company_size
   - utter_ask_first_name
   - utter_ask_work_email
-  - utter_bye
   - utter_fGPKyHELdn
   - utter_get_started
-  - utter_hi
   - utter_invalid_first_name
   - utter_invalid_work_email
   - utter_kqYxT_e3B
-  - utter_l3n0WPpWD
   - utter_rtXHuuF1G
   - utter_valid_first_name
   - utter_valid_work_email
+  - utter_vpFkP83EG
+  - utter_vwuf_0YK4
+  - utter_w7UXyfnQ7
 entities: []
 forms:
   leadgen_form:
@@ -70,7 +74,7 @@ forms:
             'y': 720
           slotName: company_size
           type: slot
-    groupName: forms
+    groupName: Test Forms
     name: leadgen_form
     slots:
       - filling:
@@ -104,23 +108,42 @@ forms:
         utter_on_new_valid_slot: false
     updatedAt: 1620137853244
 intents:
-  - Greet
-  - add_user
-  - affirm
-  - carousel
-  - change_pass
-  - chitchat.bye
-  - chitchat.greet
-  - deny
-  - farewell
-  - feel_bad
-  - feel_good
-  - get_started
-  - start_form
+  - get_me_out
+  - jokes
+  - questions
+  - quiz
+  - robanter
+  - scary_story
 responses:
   utter_0QXHpFEpO:
     - language: en
       text: Go to your account section and click on the security tab
+  utter_4RY9i-lPs:
+    - language: en
+      text: >-
+        To get our creative juices going here's one I prepared earlier. It's
+        both stupid AND SCARY...
+  utter_6mC8blbwa:
+    - language: en
+      quick_replies:
+        - payload: /scarry_story
+          title: Let's make a stupidly scary story together
+          type: postback
+        - payload: /jokes
+          title: 'Jokes Alphie, tell me terrible terrible jokes'
+          type: postback
+        - payload: /questions
+          title: I want to ask you questions until I break your code
+          type: postback
+        - payload: /quiz
+          title: Let's play an Impossible quiz please Alphie
+          type: postback
+        - payload: /capabilities
+          title: Get me out of here!
+          type: postback
+      text: >-
+        So you're feeling daft? The question is... What flavour of daft are you
+        feeling?
   utter_C9jg6_pGrb:
     - language: en
       text: |-
@@ -129,8 +152,30 @@ responses:
         {work_email}
 
         {company_size}
+  utter_IJpvtXoiV:
+    - language: en
+      quick_replies:
+        - payload: /scary_story
+          title: Let's make up a stupidly scary story together
+          type: postback
+        - payload: /jokes
+          title: 'Jokes Alphie, tell me terrible, terrible jokes'
+          type: postback
+        - payload: /questions
+          title: I want to ask you questions until I break your code
+          type: postback
+        - payload: /quiz
+          title: Let's play an Impossible quiz please Alphie
+          type: postback
+        - payload: /get_me_out
+          title: Get me out of here!
+          type: postback
+      text: >-
+        So you're feeling daft? question is... What flavour of daft are you
+        feeling?
   utter_IOIVs9dl0:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /feel_good
           title: Feel great
@@ -142,6 +187,9 @@ responses:
   utter_J6V6ADHaH:
     - language: en
       text: Are you happy with my answer?
+  utter_OpCqOoQMd:
+    - language: en
+      text: goes to capabilities
   utter_TxjWMXU5l:
     - language: en
       text: Sorry to hear that
@@ -195,41 +243,6 @@ responses:
   utter_kqYxT_e3B:
     - language: en
       text: Sorry to hear that
-  utter_l3n0WPpWD:
-    - elements:
-        - buttons:
-            - payload: '/inform{"tank_amount":"1"}'
-              title: one
-              type: postback
-            - payload: '/intent{"tank_amount":"2"}'
-              title: two
-              type: postback
-            - payload: '/inform{"tank_amount":"3"}'
-              title: three
-              type: postback
-          image_url: >-
-            https://64.media.tumblr.com/4c9444d01c302f18cf952e39c44a8ea1/tumblr_ohhgwa2z8t1sliee9o1_1280.jpg
-          subtitle: Lovely stainless
-          title: Tanks
-        - buttons: []
-          image_url: >-
-            https://64.media.tumblr.com/0c97f2280bda713d6e585994f9bfae49/tumblr_n4k4roRaFn1qb8xvxo1_1280.jpg
-          subtitle: On the desert
-          title: Run
-        - buttons: []
-          image_url: >-
-            https://64.media.tumblr.com/2738e0731348470c9fec09d428308b61/tumblr_n07vnvkZJJ1sib7nzo1_640.jpg
-          subtitle: ''
-          title: Cold camping
-        - buttons: []
-          image_url: ''
-          subtitle: ''
-          title: ''
-        - buttons: []
-          image_url: ''
-          subtitle: ''
-          title: ''
-      language: en
   utter_rtXHuuF1G:
     - language: en
       text: See you soon
@@ -241,6 +254,18 @@ responses:
     - language: en
       metadata: null
       text: '{work_email}, got it!'
+  utter_vpFkP83EG:
+    - language: en
+      text: |-
+        I'm a bot of my word - this quiz is impossible...
+
+        BUT if you answer a question correctly, you will win a PRIZE
+  utter_vwuf_0YK4:
+    - language: en
+      text: I'm programmed with 'AlphaMcHeimilichDoppleGangerManouvere' code...
+  utter_w7UXyfnQ7:
+    - language: en
+      text: Randomized joke
 session_config: {}
 slots:
   company_size:

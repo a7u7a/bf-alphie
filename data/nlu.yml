@@ -88,6 +88,54 @@ nlu:
       I feel great
     metadata:
       canonical: true
+- intent: get_me_out
+  metadata:
+    language: en
+  examples:
+  - text: |
+      get me out
+    metadata:
+      canonical: true
+- intent: jokes
+  metadata:
+    language: en
+  examples:
+  - text: |
+      jokes
+    metadata:
+      canonical: true
+- intent: questions
+  metadata:
+    language: en
+  examples:
+  - text: |
+      questions
+    metadata:
+      canonical: true
+- intent: quiz
+  metadata:
+    language: en
+  examples:
+  - text: |
+      quiz
+    metadata:
+      canonical: true
+- intent: robanter
+  metadata:
+    language: en
+  examples:
+  - text: |
+      robanter
+    metadata:
+      canonical: true
+- intent: scary_story
+  metadata:
+    language: en
+  examples:
+  - text: |
+      scary story
+    metadata:
+      canonical: true
 - intent: start_form
   metadata:
     language: en

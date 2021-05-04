@@ -1,0 +1,63 @@
+stories:
+  - story: Robanter
+    steps:
+      - intent: robanter
+        user: robanter
+        entities: []
+      - action: utter_IJpvtXoiV
+      - checkpoint: Robanter__branches
+    metadata:
+      group: Alphie0
+  - story: Robanter__Get me out
+    steps:
+      - checkpoint: Robanter__branches
+      - intent: get_me_out
+        user: get me out
+        entities: []
+      - action: utter_OpCqOoQMd
+    metadata:
+      group: Alphie0
+  - story: Robanter__Jokes
+    steps:
+      - checkpoint: Robanter__branches
+      - intent: jokes
+        user: jokes
+        entities: []
+      - action: utter_w7UXyfnQ7
+    metadata:
+      group: Alphie0
+  - story: Robanter__Questions
+    steps:
+      - checkpoint: Robanter__branches
+      - intent: questions
+        user: questions
+        entities: []
+      - action: utter_vwuf_0YK4
+    metadata:
+      group: Alphie0
+  - story: Robanter__Quiz
+    steps:
+      - checkpoint: Robanter__branches
+      - intent: quiz
+        user: quiz
+        entities: []
+      - action: utter_vpFkP83EG
+    metadata:
+      group: Alphie0
+  - story: Robanter__Scary Story
+    steps:
+      - checkpoint: Robanter__branches
+      - intent: scary_story
+        user: scary story
+        entities: []
+      - action: utter_4RY9i-lPs
+    metadata:
+      group: Alphie0
+rules:
+  - rule: Robanter
+    condition: []
+    steps:
+      - action: utter_6mC8blbwa
+    wait_for_user_input: false
+    metadata:
+      group: Alphie0
