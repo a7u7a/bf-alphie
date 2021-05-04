@@ -32,6 +32,14 @@ nlu:
       yes
     metadata:
       canonical: true
+- intent: carousel
+  metadata:
+    language: en
+  examples:
+  - text: |
+      show carousel
+    metadata:
+      canonical: true
 - intent: change_pass
   metadata:
     language: en

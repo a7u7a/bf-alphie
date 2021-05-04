@@ -8,6 +8,14 @@ stories:
       - checkpoint: link-to-Feedback/92a1524b-14b7-4120-9d49-7590b1967be6
     metadata:
       group: Tutorial
+  - story: Carousel
+    steps:
+      - intent: carousel
+        user: show carousel
+        entities: []
+      - action: utter_l3n0WPpWD
+    metadata:
+      group: Tutorial
   - story: Change password
     steps:
       - intent: change_pass

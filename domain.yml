@@ -20,6 +20,7 @@ actions:
   - utter_invalid_first_name
   - utter_invalid_work_email
   - utter_kqYxT_e3B
+  - utter_l3n0WPpWD
   - utter_rtXHuuF1G
   - utter_valid_first_name
   - utter_valid_work_email
@@ -101,11 +102,12 @@ forms:
             type: from_entity
         name: company_size
         utter_on_new_valid_slot: false
-    updatedAt: 1620101977170
+    updatedAt: 1620137853244
 intents:
   - Greet
   - add_user
   - affirm
+  - carousel
   - change_pass
   - chitchat.bye
   - chitchat.greet
@@ -193,6 +195,33 @@ responses:
   utter_kqYxT_e3B:
     - language: en
       text: Sorry to hear that
+  utter_l3n0WPpWD:
+    - elements:
+        - buttons:
+            - payload: '/inform{"tank_amount":"1"}'
+              title: one
+              type: postback
+            - payload: '/intent{"tank_amount":"2"}'
+              title: two
+              type: postback
+            - payload: '/inform{"tank_amount":"3"}'
+              title: three
+              type: postback
+          image_url: >-
+            https://64.media.tumblr.com/4c9444d01c302f18cf952e39c44a8ea1/tumblr_ohhgwa2z8t1sliee9o1_1280.jpg
+          subtitle: Lovely stainless
+          title: Tanks
+        - buttons: []
+          image_url: >-
+            https://64.media.tumblr.com/0c97f2280bda713d6e585994f9bfae49/tumblr_n4k4roRaFn1qb8xvxo1_1280.jpg
+          subtitle: On the desert
+          title: Run
+        - buttons: []
+          image_url: >-
+            https://64.media.tumblr.com/2738e0731348470c9fec09d428308b61/tumblr_n07vnvkZJJ1sib7nzo1_640.jpg
+          subtitle: ''
+          title: Cold camping
+      language: en
   utter_rtXHuuF1G:
     - language: en
       text: See you soon
