@@ -1,0 +1,126 @@
+stories:
+  - story: Jokes
+    steps:
+      - checkpoint: link-to-Jokes/f0d62625-6a4e-498d-9290-9f71bf3571ff
+      - action: utter_jxuPnwBo1
+      - action: utter_YOeJj2BMz
+      - checkpoint: Jokes__branches
+    metadata:
+      group: Robanter
+  - story: Jokes__no
+    steps:
+      - checkpoint: Jokes__branches
+      - intent: deny
+        user: 'no'
+        entities: []
+      - checkpoint: link-to-Robanter Outro/d7538ae3-40a9-4ef7-a0a6-e580ff14a21d
+    metadata:
+      group: Robanter
+  - story: Jokes__yes
+    steps:
+      - checkpoint: Jokes__branches
+      - intent: affirm
+        user: 'yes'
+        entities: []
+      - checkpoint: link-to-Jokes/f0d62625-6a4e-498d-9290-9f71bf3571ff
+    metadata:
+      group: Robanter
+  - story: Robanter Intro
+    steps:
+      - intent: robanter
+        user: robanter
+        entities: []
+      - action: utter_IJpvtXoiV
+      - checkpoint: Robanter_Intro__branches
+    metadata:
+      group: Robanter
+  - story: Robanter Intro__Get me out
+    steps:
+      - checkpoint: Robanter_Intro__branches
+      - intent: get_me_out
+        user: get me out
+        entities: []
+      - action: utter_OpCqOoQMd
+    metadata:
+      group: Robanter
+  - story: Robanter Intro__Jokes
+    steps:
+      - checkpoint: Robanter_Intro__branches
+      - intent: jokes
+        user: jokes
+        entities: []
+      - checkpoint: link-to-Jokes/f0d62625-6a4e-498d-9290-9f71bf3571ff
+    metadata:
+      group: Robanter
+  - story: Robanter Intro__Questions
+    steps:
+      - checkpoint: Robanter_Intro__branches
+      - intent: questions
+        user: questions
+        entities: []
+      - checkpoint: link-to-Robanter Questions/b35c17ef-81e2-4897-b21e-b9bb10afbc19
+    metadata:
+      group: Robanter
+  - story: Robanter Intro__Quiz
+    steps:
+      - checkpoint: Robanter_Intro__branches
+      - intent: quiz
+        user: quiz
+        entities: []
+    metadata:
+      group: Robanter
+  - story: Robanter Intro__Scary Story
+    steps:
+      - checkpoint: Robanter_Intro__branches
+      - intent: scary_story
+        user: scary story
+        entities: []
+      - checkpoint: link-to-Robanter Scary story/f8d8e72a-607e-4031-a13b-8d424841c53f
+    metadata:
+      group: Robanter
+  - story: Robanter Outro
+    steps:
+      - checkpoint: link-to-Robanter Outro/d7538ae3-40a9-4ef7-a0a6-e580ff14a21d
+      - action: utter_lDQEUBEvu
+    metadata:
+      group: Robanter
+  - story: Robanter Questions
+    steps:
+      - checkpoint: link-to-Robanter Questions/b35c17ef-81e2-4897-b21e-b9bb10afbc19
+      - action: utter_jdJlF9LKO
+    metadata:
+      group: Robanter
+  - story: Robanter Quiz
+    steps: []
+    metadata:
+      group: Robanter
+  - story: Robanter Scary story
+    steps:
+      - checkpoint: link-to-Robanter Scary story/f8d8e72a-607e-4031-a13b-8d424841c53f
+      - action: utter_5niwuYZjx
+      - action: utter_a43HJ0vO9
+      - intent: love_it
+        user: love it!
+        entities: []
+      - action: utter_9O7Vh-7i3
+      - checkpoint: Robanter_Scary_story__branches
+    metadata:
+      group: Robanter
+  - story: Robanter Scary story__No
+    steps:
+      - checkpoint: Robanter_Scary_story__branches
+      - intent: deny
+        user: 'No'
+        entities: []
+      - checkpoint: link-to-Robanter Outro/d7538ae3-40a9-4ef7-a0a6-e580ff14a21d
+    metadata:
+      group: Robanter
+  - story: Robanter Scary story__Yes
+    steps:
+      - checkpoint: Robanter_Scary_story__branches
+      - intent: affirm
+        user: 'yes'
+        entities: []
+    metadata:
+      group: Robanter
+rules: []

@@ -17,6 +17,11 @@ stories:
       - checkpoint: link-to-Feedback/92a1524b-14b7-4120-9d49-7590b1967be6
     metadata:
       group: Test Stories
+  - story: End
+    steps:
+      - action: utter_Jd8a2nn54
+    metadata:
+      group: Test Stories
   - story: Farewells
     steps:
       - intent: farewell
@@ -66,6 +71,7 @@ stories:
         user: I feel great
         entities: []
       - action: utter_VykZCdob8
+      - checkpoint: link-to-Jokes/f0d62625-6a4e-498d-9290-9f71bf3571ff
     metadata:
       group: Test Stories
   - story: Greetings__New Branch 2
@@ -75,6 +81,7 @@ stories:
         user: I feel bad
         entities: []
       - action: utter_kqYxT_e3B
+      - checkpoint: link-to-Jokes/f0d62625-6a4e-498d-9290-9f71bf3571ff
     metadata:
       group: Test Stories
 rules: []
