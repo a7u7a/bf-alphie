@@ -5,6 +5,7 @@ actions:
   - action_botfront_mapping
   - utter_0QXHpFEpO
   - utter_4RY9i-lPs
+  - utter_63ceMAv0H
   - utter_6mC8blbwa
   - utter_C9jg6_pGrb
   - utter_IJpvtXoiV
@@ -123,6 +124,66 @@ responses:
       text: >-
         To get our creative juices going here's one I prepared earlier. It's
         both stupid AND SCARY...
+  utter_63ceMAv0H:
+    - elements:
+        - buttons:
+            - payload: /love_it
+              title: Love it!
+              type: postback
+          image_url: ''
+          subtitle: >-
+            There was a little child who really loved dolls. They had a big
+            collection of them in their bedroom. One day, while they were
+            browsing  in a shop, they spotted a really beautiful doll. It would 
+            make a perfect addition to their collection. They only hoped they 
+            had  enough money to buy it.
+          title: ''
+        - buttons:
+            - payload: /love_it
+              title: Love it!
+              type: postback
+          image_url: ''
+          subtitle: >-
+            “How much is that doll?”, the child  asked the old woman behind the
+            counter. “This doll is not for sale”, replied the woman. “But it’s
+            so beautiful”, said the child. “I really want it.” The old woman
+            became irritated. “I told you, it’s not for sale”, she said. “Why
+            not?”, persisted the the child. “Because this doll is cursed!”
+            “Well... That’s OK. I don’t mind.” “I’m not going to sell it to
+            you... But if you really must have it, go  ahead and take it. It’s
+            yours. But if something bad happens, don’t blame  me.” “Ah! Yes,
+            thank you!” said the child, smiling as they grabbed the doll and
+            walked out of the shop."
+          title: ''
+        - buttons:
+            - payload: /love_it
+              title: Love it!
+              type: postback
+          image_url: ''
+          subtitle: >-
+            The little child was so delighted to get the doll for free that
+            they  ran all the way home, carrying it in their arms. When they got
+            home to their block of flats they went into the hall way. It was
+            deserted and the lightbulbs were flickering. The child stood  there
+            waiting for the lift to arrive. The doors opened and the child
+            stepped inside, clutching their new doll tightly.The doors closed,
+            but the elevator did not move.The little child got scared and began
+            trembling with fear. “OMG”, they thought to themselves “Is this the
+            curse of the doll?”
+          title: ''
+        - buttons:
+            - payload: /love_it
+              title: Love it!
+              type: postback
+          image_url: ''
+          subtitle: >-
+            Suddenly, they felt the doll move in their arms. Ever so slowly, its
+            head turned to face the child. The little child wanted to scream but
+            they couldn’t make a sound. The doll’s eyelids fluttered and opened.
+            It stared at the child with it’s lifeless glass eyes and in a
+            demonic voice the doll said, "Press the button to go up, idiot."
+          title: ''
+      language: en
   utter_6mC8blbwa:
     - language: en
       quick_replies:
