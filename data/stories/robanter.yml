@@ -27,6 +27,7 @@ stories:
       group: Robanter
   - story: Robanter Intro
     steps:
+      - checkpoint: link-to-Robanter Intro/44ae983b-2b21-4511-8dc4-4cf85c7d05b7
       - intent: robanter
         user: robanter
         entities: []
@@ -58,6 +59,7 @@ stories:
       - intent: questions
         user: questions
         entities: []
+      - action: utter_0WEUsUT0_
       - checkpoint: link-to-Robanter Questions/b35c17ef-81e2-4897-b21e-b9bb10afbc19
     metadata:
       group: Robanter
@@ -87,11 +89,26 @@ stories:
   - story: Robanter Questions
     steps:
       - checkpoint: link-to-Robanter Questions/b35c17ef-81e2-4897-b21e-b9bb10afbc19
-      - action: utter_jdJlF9LKO
+      - action: utter_D9L-b1ruY
+      - action: utter_LPTuq5ZtEM
+      - checkpoint: Robanter_Questions__branches
     metadata:
       group: Robanter
-  - story: Robanter Quiz
-    steps: []
+  - story: Robanter Questions__Back
+    steps:
+      - checkpoint: Robanter_Questions__branches
+      - intent: deny
+        user: 'no'
+        entities: []
+      - checkpoint: link-to-Robanter Intro/44ae983b-2b21-4511-8dc4-4cf85c7d05b7
+    metadata:
+      group: Robanter
+  - story: Robanter Questions__Freetext
+    steps:
+      - checkpoint: Robanter_Questions__branches
+      - intent: Greet
+        user: hi
+        entities: []
     metadata:
       group: Robanter
   - story: Robanter Scary story

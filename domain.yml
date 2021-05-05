@@ -3,130 +3,39 @@ actions:
   - action_botfront_disambiguation_followup
   - action_botfront_fallback
   - action_botfront_mapping
-  - utter_0QXHpFEpO
+  - utter_0WEUsUT0_
   - utter_5niwuYZjx
   - utter_9O7Vh-7i3
   - utter_9UvD743sy
-  - utter_C9jg6_pGrb
+  - utter_D9L-b1ruY
   - utter_IJpvtXoiV
-  - utter_IOIVs9dl0
-  - utter_J6V6ADHaH
-  - utter_Jd8a2nn54
+  - utter_LPTuq5ZtEM
   - utter_OpCqOoQMd
-  - utter_TxjWMXU5l
-  - utter_VykZCdob8
-  - utter_XZKIxjwmn
+  - utter_Tk9cSdfhGZ
   - utter_YOeJj2BMz
   - utter_a43HJ0vO9
   - utter_ask_company_size
   - utter_ask_first_name
   - utter_ask_work_email
   - utter_bye
-  - utter_fGPKyHELdn
   - utter_get_started
   - utter_hi
   - utter_invalid_first_name
   - utter_invalid_work_email
-  - utter_jdJlF9LKO
   - utter_jxuPnwBo1
-  - utter_kqYxT_e3B
   - utter_lDQEUBEvu
-  - utter_rtXHuuF1G
   - utter_valid_first_name
   - utter_valid_work_email
-  - utter_vpFkP83EG
   - utter_w7UXyfnQ7
   - utter_y76OxJmGq
 entities: []
-forms:
-  leadgen_form:
-    collect_in_botfront: null
-    description: null
-    graph_elements:
-      edges:
-        - condition: null
-          id: e1-first_name
-          source: '1'
-          target: first_name
-          type: condition
-        - condition: null
-          id: efirst_name-work_email
-          source: first_name
-          target: work_email
-          type: condition
-        - condition: null
-          id: ework_email-company_size
-          source: work_email
-          target: company_size
-          type: condition
-      nodes:
-        - id: '1'
-          position:
-            x: 200
-            'y': 200
-          type: start
-        - id: first_name
-          position:
-            x: 120
-            'y': 360
-          slotName: first_name
-          type: slot
-        - id: work_email
-          position:
-            x: 120
-            'y': 500
-          slotName: work_email
-          type: slot
-        - id: company_size
-          position:
-            x: 140
-            'y': 720
-          slotName: company_size
-          type: slot
-    groupName: Test Forms
-    name: leadgen_form
-    slots:
-      - filling:
-          - intent: null
-            not_intent: null
-            type: from_text
-        name: first_name
-        utter_on_new_valid_slot: true
-        validation:
-          comparatum: 2
-          operator: longer
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: work_email
-        utter_on_new_valid_slot: true
-        validation:
-          comparatum: null
-          operator: email
-      - filling:
-          - entity:
-              - company_size
-            group: null
-            intent:
-              - inform
-            not_intent: null
-            role: null
-            type: from_entity
-        name: company_size
-        utter_on_new_valid_slot: false
-    updatedAt: 1620137853244
+forms: {}
 intents:
   - Greet
-  - add_user
   - affirm
-  - change_pass
   - chitchat.bye
   - chitchat.greet
   - deny
-  - farewell
-  - feel_bad
-  - feel_good
   - get_me_out
   - get_started
   - jokes
@@ -135,11 +44,10 @@ intents:
   - quiz
   - robanter
   - scary_story
-  - start_form
 responses:
-  utter_0QXHpFEpO:
+  utter_0WEUsUT0_:
     - language: en
-      text: Go to your account section and click on the security tab
+      text: I'm programmed with 'AlphaMcHeimilichDoppleGangerManouvere' code...
   utter_5niwuYZjx:
     - language: en
       metadata:
@@ -167,14 +75,11 @@ responses:
   utter_9UvD743sy:
     - language: en
       text: ok yes then
-  utter_C9jg6_pGrb:
+  utter_D9L-b1ruY:
     - language: en
-      text: |-
-        {first_name}
-
-        {work_email}
-
-        {company_size}
+      text: >-
+        Enter your question punk or press 'back' if you want a different flavour
+        of daftness
   utter_IJpvtXoiV:
     - language: en
       metadata:
@@ -203,35 +108,34 @@ responses:
       text: >-
         So you're feeling daft? question is... What flavour of daft are you
         feeling?
-  utter_IOIVs9dl0:
+  utter_LPTuq5ZtEM:
     - language: en
-      metadata: null
       quick_replies:
-        - payload: /feel_good
-          title: Feel great
+        - payload: /deny
+          title: Back
           type: postback
-        - payload: /feel_bad
-          title: Feel sad
-          type: postback
-      text: Hi! How are you doing today?
-  utter_J6V6ADHaH:
-    - language: en
-      text: Are you happy with my answer?
-  utter_Jd8a2nn54:
-    - language: en
-      text: Bye! hope to see you soon
+      text: >-
+        Enter your question punk or press 'back' if you want a different flavour
+        of daftness
   utter_OpCqOoQMd:
     - language: en
       text: goes to capabilities
-  utter_TxjWMXU5l:
+  utter_Tk9cSdfhGZ:
     - language: en
-      text: Sorry to hear that
-  utter_VykZCdob8:
-    - language: en
-      text: Thats good to hear
-  utter_XZKIxjwmn:
-    - language: en
-      text: Great
+      quick_replies:
+        - payload: /affirm
+          title: 'Yes'
+          type: postback
+        - payload: /functional
+          title: 'No time for chat, give me cold, hard facts:'
+          type: postback
+        - payload: /outro
+          title: 'I can''t be BOThered with you right now, shhhh!'
+          type: postback
+        - payload: /robanter
+          title: Robanter
+          type: postback
+      text: 'I''m Alphie, fancy a chat?'
   utter_YOeJj2BMz:
     - language: en
       quick_replies:
@@ -336,12 +240,10 @@ responses:
     - language: en
       metadata: null
       text: What is your **work** email address?
-  utter_fGPKyHELdn:
-    - language: en
-      text: Go to your account and click the users tab
   utter_get_started:
     - language: en
-      text: Hello!
+      metadata: null
+      text: Hello... is it me you're looking for?
   utter_invalid_first_name:
     - language: en
       metadata: null
@@ -350,14 +252,6 @@ responses:
     - language: en
       metadata: null
       text: I was expecting a valid email address?
-  utter_jdJlF9LKO:
-    - language: en
-      text: >-
-        I'm programmed with 'AlphaMcHeimilichDoppleGangerManouvere' code...
-
-
-        Enter your question punk or press 'back' if you want a different flavour
-        of daftness
   utter_jxuPnwBo1:
     - language: en
       metadata:
@@ -413,11 +307,9 @@ responses:
         pageEventCallbacks: null
         userInput: disable
       text: randomized joke 6
-  utter_kqYxT_e3B:
-    - language: en
-      text: Sorry to hear that
   utter_lDQEUBEvu:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /robanter
           title: Back
@@ -431,9 +323,6 @@ responses:
       text: >-
         Press 'Back' to go to the beginning of this section or 'Menu' for full
         chat options... I'll let you work out what 'Quit' does ;-)
-  utter_rtXHuuF1G:
-    - language: en
-      text: See you soon
   utter_valid_first_name:
     - language: en
       metadata: null
@@ -442,10 +331,6 @@ responses:
     - language: en
       metadata: null
       text: '{work_email}, got it!'
-  utter_vpFkP83EG:
-    - language: en
-      metadata: null
-      text: I'm a bot of my word - this quiz is impossible...
   utter_w7UXyfnQ7:
     - language: en
       metadata: null

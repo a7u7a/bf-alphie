@@ -16,6 +16,8 @@ nlu:
       Hi
   - text: |
       Howdy
+  - text: |
+      hi
 - intent: add_user
   metadata:
     language: en
@@ -134,6 +136,8 @@ nlu:
   metadata:
     language: en
   examples:
+  - text: |
+      Robanter
   - text: |
       robanter
     metadata:
