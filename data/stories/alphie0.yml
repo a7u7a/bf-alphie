@@ -1,0 +1,89 @@
+stories:
+  - story: Jokes
+    steps:
+      - checkpoint: link-to-Jokes/7a531747-b605-411c-9359-71f61bfb7019
+      - intent: jokes
+        user: jokes
+        entities: []
+      - action: utter_8omTlobK_
+      - action: utter_KwpIV-KY0
+      - checkpoint: Jokes__branches
+    metadata:
+      group: Alphie0
+  - story: Jokes__no
+    steps:
+      - checkpoint: Jokes__branches
+      - intent: deny
+        user: 'no'
+        entities: []
+    metadata:
+      group: Alphie0
+  - story: Jokes__yes
+    steps:
+      - checkpoint: Jokes__branches
+      - intent: affirm
+        user: 'yes'
+        entities: []
+      - checkpoint: link-to-Jokes/7a531747-b605-411c-9359-71f61bfb7019
+    metadata:
+      group: Alphie0
+  - story: Robanter
+    steps:
+      - intent: robanter
+        user: robanter
+        entities: []
+      - action: utter_IJpvtXoiV
+      - checkpoint: Robanter__branches
+    metadata:
+      group: Alphie0
+  - story: Robanter__Get me out
+    steps:
+      - checkpoint: Robanter__branches
+      - intent: get_me_out
+        user: get me out
+        entities: []
+      - action: utter_OpCqOoQMd
+    metadata:
+      group: Alphie0
+  - story: Robanter__Jokes
+    steps:
+      - checkpoint: Robanter__branches
+      - intent: jokes
+        user: jokes
+        entities: []
+      - action: utter_w7UXyfnQ7
+    metadata:
+      group: Alphie0
+  - story: Robanter__Questions
+    steps:
+      - checkpoint: Robanter__branches
+      - intent: questions
+        user: questions
+        entities: []
+      - action: utter_vwuf_0YK4
+    metadata:
+      group: Alphie0
+  - story: Robanter__Quiz
+    steps:
+      - checkpoint: Robanter__branches
+      - intent: quiz
+        user: quiz
+        entities: []
+      - action: utter_vpFkP83EG
+    metadata:
+      group: Alphie0
+  - story: Robanter__Scary Story
+    steps:
+      - checkpoint: Robanter__branches
+      - intent: scary_story
+        user: scary story
+        entities: []
+      - action: utter_4RY9i-lPs
+      - action: utter_63ceMAv0H
+      - intent: love_it
+        user: love it!
+        entities: []
+      - action: utter_JVSkUoIPF
+    metadata:
+      group: Alphie0
+rules: []

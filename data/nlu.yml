@@ -16,8 +16,6 @@ nlu:
       Hi
   - text: |
       Howdy
-  - text: |
-      hi
 - intent: add_user
   metadata:
     language: en
@@ -137,8 +135,6 @@ nlu:
     language: en
   examples:
   - text: |
-      Robanter
-  - text: |
       robanter
     metadata:
       canonical: true
@@ -153,6 +149,10 @@ nlu:
 - intent: start_form
   metadata:
     language: en
-  examples: |
-    - start form
-    - start_form
+  examples:
+  - text: |
+      start form
+    metadata:
+      canonical: true
+  - text: |
+      start_form

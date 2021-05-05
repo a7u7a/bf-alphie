@@ -3,39 +3,127 @@ actions:
   - action_botfront_disambiguation_followup
   - action_botfront_fallback
   - action_botfront_mapping
-  - utter_0WEUsUT0_
-  - utter_5niwuYZjx
-  - utter_9O7Vh-7i3
-  - utter_9UvD743sy
-  - utter_D9L-b1ruY
+  - utter_0QXHpFEpO
+  - utter_4RY9i-lPs
+  - utter_63ceMAv0H
+  - utter_8omTlobK_
+  - utter_C9jg6_pGrb
   - utter_IJpvtXoiV
-  - utter_LPTuq5ZtEM
+  - utter_IOIVs9dl0
+  - utter_J6V6ADHaH
+  - utter_JVSkUoIPF
+  - utter_KwpIV-KY0
   - utter_OpCqOoQMd
-  - utter_Tk9cSdfhGZ
-  - utter_YOeJj2BMz
-  - utter_a43HJ0vO9
+  - utter_TxjWMXU5l
+  - utter_VykZCdob8
+  - utter_XZKIxjwmn
   - utter_ask_company_size
   - utter_ask_first_name
   - utter_ask_work_email
   - utter_bye
+  - utter_eZEyugSXs
+  - utter_fGPKyHELdn
   - utter_get_started
   - utter_hi
   - utter_invalid_first_name
   - utter_invalid_work_email
-  - utter_jxuPnwBo1
-  - utter_lDQEUBEvu
+  - utter_kqYxT_e3B
+  - utter_rtXHuuF1G
   - utter_valid_first_name
   - utter_valid_work_email
+  - utter_vpFkP83EG
+  - utter_vwuf_0YK4
   - utter_w7UXyfnQ7
-  - utter_y76OxJmGq
 entities: []
-forms: {}
+forms:
+  leadgen_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-first_name
+          source: '1'
+          target: first_name
+          type: condition
+        - condition: null
+          id: efirst_name-work_email
+          source: first_name
+          target: work_email
+          type: condition
+        - condition: null
+          id: ework_email-company_size
+          source: work_email
+          target: company_size
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: first_name
+          position:
+            x: 120
+            'y': 360
+          slotName: first_name
+          type: slot
+        - id: work_email
+          position:
+            x: 120
+            'y': 500
+          slotName: work_email
+          type: slot
+        - id: company_size
+          position:
+            x: 140
+            'y': 720
+          slotName: company_size
+          type: slot
+    groupName: Test Forms
+    name: leadgen_form
+    slots:
+      - filling:
+          - intent: null
+            not_intent: null
+            type: from_text
+        name: first_name
+        utter_on_new_valid_slot: false
+        validation:
+          comparatum: 2
+          operator: longer
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: work_email
+        utter_on_new_valid_slot: false
+        validation:
+          comparatum: null
+          operator: email
+      - filling:
+          - entity:
+              - company_size
+            group: null
+            intent:
+              - inform
+            not_intent: null
+            role: null
+            type: from_entity
+        name: company_size
+        utter_on_new_valid_slot: false
+    updatedAt: 1620251465855
 intents:
   - Greet
+  - add_user
   - affirm
+  - change_pass
   - chitchat.bye
   - chitchat.greet
   - deny
+  - farewell
+  - feel_bad
+  - feel_good
   - get_me_out
   - get_started
   - jokes
@@ -44,43 +132,88 @@ intents:
   - quiz
   - robanter
   - scary_story
+  - start_form
 responses:
-  utter_0WEUsUT0_:
+  utter_0QXHpFEpO:
     - language: en
-      text: I'm programmed with 'AlphaMcHeimilichDoppleGangerManouvere' code...
-  utter_5niwuYZjx:
+      text: Go to your account section and click on the security tab
+  utter_4RY9i-lPs:
     - language: en
-      metadata:
-        forceClose: false
-        forceOpen: false
-        linkTarget: _blank
-        pageChangeCallbacks: null
-        pageEventCallbacks: null
-        userInput: disable
       text: >-
         To get our creative juices going here's one I prepared earlier. It's
         both stupid AND SCARY...
-  utter_9O7Vh-7i3:
-    - language: en
-      quick_replies:
-        - payload: /affirm
-          title: 'Yes'
-          type: postback
-        - payload: /deny
-          title: 'No'
-          type: postback
-      text: >-
-        Hahaha!I love this story - it's so stupid and scary! You up for writing
-        a ghost story together?
-  utter_9UvD743sy:
-    - language: en
-      text: ok yes then
-  utter_D9L-b1ruY:
-    - language: en
-      text: >-
-        Enter your question punk or press 'back' if you want a different flavour
-        of daftness
-  utter_IJpvtXoiV:
+  utter_63ceMAv0H:
+    - elements:
+        - buttons:
+            - payload: /love_it
+              title: I love this one!
+              type: postback
+          default_action: null
+          image_url: ''
+          subtitle: >-
+            There was a little child who really loved dolls. They had a big
+            collection of them in their bedroom. One day, while they were
+            browsing  in a shop, they spotted a really beautiful doll. It would 
+            make a perfect addition to their collection. They only hoped they 
+            had  enough money to buy it.
+          title: ''
+        - buttons:
+            - payload: /love_it
+              title: I love this one!
+              type: postback
+          default_action: null
+          image_url: ''
+          subtitle: >-
+            “How much is that doll?”, the child  asked the old woman behind the
+            counter. “This doll is not for sale”, replied the woman. “But it’s
+            so beautiful”, said the child. “I really want it.” The old woman
+            became irritated. “I told you, it’s not for sale”, she said. “Why
+            not?”, persisted the the child. “Because this doll is cursed!”
+            “Well... That’s OK. I don’t mind.” “I’m not going to sell it to
+            you... But if you really must have it, go  ahead and take it. It’s
+            yours. But if something bad happens, don’t blame  me.” “Ah! Yes,
+            thank you!” said the child, smiling as they grabbed the doll and
+            walked out of the shop."
+          title: ''
+        - buttons:
+            - payload: /love_it
+              title: I love this one!
+              type: postback
+          default_action: null
+          image_url: ''
+          subtitle: >-
+            The little child was so delighted to get the doll for free that
+            they  ran all the way home, carrying it in their arms. When they got
+            home to their block of flats they went into the hall way. It was
+            deserted and the lightbulbs were flickering. The child stood  there
+            waiting for the lift to arrive. The doors opened and the child
+            stepped inside, clutching their new doll tightly.The doors closed,
+            but the elevator did not move.The little child got scared and began
+            trembling with fear. “OMG”, they thought to themselves “Is this the
+            curse of the doll?”
+          title: ''
+        - buttons:
+            - payload: /love_it
+              title: I love this one!
+              type: postback
+          default_action: null
+          image_url: ''
+          subtitle: >-
+            Suddenly, they felt the doll move in their arms. Ever so slowly, its
+            head turned to face the child. The little child wanted to scream but
+            they couldn’t make a sound. The doll’s eyelids fluttered and opened.
+            It stared at the child with it’s lifeless glass eyes and in a
+            demonic voice the doll said, "Press the button to go up, idiot."
+          title: ''
+      language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+  utter_8omTlobK_:
     - language: en
       metadata:
         forceClose: false
@@ -89,6 +222,53 @@ responses:
         pageChangeCallbacks: null
         pageEventCallbacks: null
         userInput: disable
+      text: Randomized joke1
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      text: Randomized joke2
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      text: Randomized joke3
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      text: Randomized joke4
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      text: Randomized joke5
+  utter_C9jg6_pGrb:
+    - language: en
+      text: |-
+        {first_name}
+
+        {work_email}
+
+        {company_size}
+  utter_IJpvtXoiV:
+    - language: en
       quick_replies:
         - payload: /scary_story
           title: Let's make up a stupidly scary story together
@@ -108,104 +288,33 @@ responses:
       text: >-
         So you're feeling daft? question is... What flavour of daft are you
         feeling?
-  utter_LPTuq5ZtEM:
+  utter_IOIVs9dl0:
     - language: en
       quick_replies:
-        - payload: /deny
-          title: Back
+        - payload: /feel_good
+          title: Feel great
           type: postback
-      text: >-
-        Enter your question punk or press 'back' if you want a different flavour
-        of daftness
-  utter_OpCqOoQMd:
+        - payload: /feel_bad
+          title: Feel sad
+          type: postback
+      text: Hi! How are you doing today?
+  utter_J6V6ADHaH:
     - language: en
-      text: goes to capabilities
-  utter_Tk9cSdfhGZ:
+      text: Are you happy with my answer?
+  utter_JVSkUoIPF:
     - language: en
       quick_replies:
-        - payload: /affirm
+        - payload: /choice_yes
           title: 'Yes'
           type: postback
-        - payload: /functional
-          title: 'No time for chat, give me cold, hard facts:'
-          type: postback
-        - payload: /outro
-          title: 'I can''t be BOThered with you right now, shhhh!'
-          type: postback
-        - payload: /robanter
-          title: Robanter
-          type: postback
-      text: 'I''m Alphie, fancy a chat?'
-  utter_YOeJj2BMz:
-    - language: en
-      quick_replies:
-        - payload: /affirm
-          title: 'yes'
-          type: postback
-        - payload: /deny
+        - payload: /choice_no
           title: 'no'
           type: postback
-      text: Another one?
-  utter_a43HJ0vO9:
-    - elements:
-        - buttons:
-            - payload: /love_it
-              title: Love this one!
-              type: postback
-          image_url: ''
-          subtitle: >-
-            There was a little child who really loved dolls. They had a big
-            collection of them in their bedroom. One day, while they were
-            browsing  in a shop, they spotted a really beautiful doll. It would 
-            make a perfect addition to their collection. They only hoped they 
-            had  enough money to buy it.
-          title: ''
-        - buttons:
-            - payload: /love_it
-              title: Love this one!
-              type: postback
-          image_url: ''
-          subtitle: >-
-            “How much is that doll?”, the child  asked the old woman behind the
-            counter. “This doll is not for sale”, replied the woman. “But it’s
-            so beautiful”, said the child. “I really want it.” The old woman
-            became irritated. “I told you, it’s not for sale”, she said. “Why
-            not?”, persisted the the child. “Because this doll is cursed!”
-            “Well... That’s OK. I don’t mind.” “I’m not going to sell it to
-            you... But if you really must have it, go  ahead and take it. It’s
-            yours. But if something bad happens, don’t blame  me.” “Ah! Yes,
-            thank you!” said the child, smiling as they grabbed the doll and
-            walked out of the shop."
-          title: ''
-        - buttons:
-            - payload: /love_it
-              title: Love this one!
-              type: postback
-          image_url: ''
-          subtitle: >-
-            The little child was so delighted to get the doll for free that
-            they  ran all the way home, carrying it in their arms. When they got
-            home to their block of flats they went into the hall way. It was
-            deserted and the lightbulbs were flickering. The child stood  there
-            waiting for the lift to arrive. The doors opened and the child
-            stepped inside, clutching their new doll tightly.The doors closed,
-            but the elevator did not move.The little child got scared and began
-            trembling with fear. “OMG”, they thought to themselves “Is this the
-            curse of the doll?”
-          title: ''
-        - buttons:
-            - payload: /love_it
-              title: Love this one!
-              type: postback
-          image_url: ''
-          subtitle: >-
-            Suddenly, they felt the doll move in their arms. Ever so slowly, its
-            head turned to face the child. The little child wanted to scream but
-            they couldn’t make a sound. The doll’s eyelids fluttered and opened.
-            It stared at the child with it's lifeless glass eyes and in a
-            demonic voice the doll said, "Press the button to go up, idiot."
-          title: ''
-      language: en
+      text: >-
+        Hahaha!I love this story - it's so stupid and scary! You up for writing
+        a ghost story together?
+  utter_KwpIV-KY0:
+    - language: en
       metadata:
         forceClose: false
         forceOpen: false
@@ -213,6 +322,39 @@ responses:
         pageChangeCallbacks: null
         pageEventCallbacks: null
         userInput: disable
+      quick_replies:
+        - payload: /affirm
+          title: Yes!
+          type: postback
+        - payload: /deny
+          title: 'no'
+          type: postback
+      text: Another one?
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: ''
+          title: ''
+          type: postback
+      text: ''
+  utter_OpCqOoQMd:
+    - language: en
+      text: goes to capabilities
+  utter_TxjWMXU5l:
+    - language: en
+      text: Sorry to hear that
+  utter_VykZCdob8:
+    - language: en
+      text: Thats good to hear
+  utter_XZKIxjwmn:
+    - language: en
+      text: Great
   utter_ask_company_size:
     - buttons:
         - payload: '/inform{"company_size":"1"}'
@@ -234,134 +376,67 @@ responses:
       text: How many are you in your company?
   utter_ask_first_name:
     - language: en
-      metadata: null
       text: What is your first name?
   utter_ask_work_email:
     - language: en
-      metadata: null
       text: What is your **work** email address?
+  utter_eZEyugSXs:
+    - language: en
+      text: >-
+        Hahaha!I love this story - it's so stupid and scary! You up for writing
+        a ghost story together?
+  utter_fGPKyHELdn:
+    - language: en
+      text: Go to your account and click the users tab
   utter_get_started:
     - language: en
-      metadata: null
-      text: Hello... is it me you're looking for?
+      text: Hello!
   utter_invalid_first_name:
     - language: en
-      metadata: null
       text: I was expecting a longer first name...
   utter_invalid_work_email:
     - language: en
-      metadata: null
       text: I was expecting a valid email address?
-  utter_jxuPnwBo1:
+  utter_kqYxT_e3B:
     - language: en
-      metadata:
-        forceClose: false
-        forceOpen: false
-        linkTarget: _blank
-        pageChangeCallbacks: null
-        pageEventCallbacks: null
-        userInput: disable
-      text: randomized joke 1
+      text: Sorry to hear that
+  utter_rtXHuuF1G:
     - language: en
-      metadata:
-        forceClose: false
-        forceOpen: false
-        linkTarget: _blank
-        pageChangeCallbacks: null
-        pageEventCallbacks: null
-        userInput: disable
-      text: randomized joke 2
-    - language: en
-      metadata:
-        forceClose: false
-        forceOpen: false
-        linkTarget: _blank
-        pageChangeCallbacks: null
-        pageEventCallbacks: null
-        userInput: disable
-      text: randomized joke 3
-    - language: en
-      metadata:
-        forceClose: false
-        forceOpen: false
-        linkTarget: _blank
-        pageChangeCallbacks: null
-        pageEventCallbacks: null
-        userInput: disable
-      text: randomized joke 4
-    - language: en
-      metadata:
-        forceClose: false
-        forceOpen: false
-        linkTarget: _blank
-        pageChangeCallbacks: null
-        pageEventCallbacks: null
-        userInput: disable
-      text: randomized joke 5
-    - language: en
-      metadata:
-        forceClose: false
-        forceOpen: false
-        linkTarget: _blank
-        pageChangeCallbacks: null
-        pageEventCallbacks: null
-        userInput: disable
-      text: randomized joke 6
-  utter_lDQEUBEvu:
-    - language: en
-      metadata: null
-      quick_replies:
-        - payload: /robanter
-          title: Back
-          type: postback
-        - payload: /capabilities
-          title: Menu
-          type: postback
-        - payload: /outro
-          title: Outro
-          type: postback
-      text: >-
-        Press 'Back' to go to the beginning of this section or 'Menu' for full
-        chat options... I'll let you work out what 'Quit' does ;-)
+      text: See you soon
   utter_valid_first_name:
     - language: en
-      metadata: null
       text: 'Nice to meet you {first_name}'
   utter_valid_work_email:
     - language: en
-      metadata: null
       text: '{work_email}, got it!'
+  utter_vpFkP83EG:
+    - language: en
+      text: |-
+        I'm a bot of my word - this quiz is impossible...
+
+        BUT if you answer a question correctly, you will win a PRIZE
+  utter_vwuf_0YK4:
+    - language: en
+      text: I'm programmed with 'AlphaMcHeimilichDoppleGangerManouvere' code...
   utter_w7UXyfnQ7:
     - language: en
-      metadata: null
       text: Randomized joke1
     - language: en
-      metadata: null
       text: Randomized joke2
     - language: en
-      metadata: null
       text: Randomized joke3
     - language: en
-      metadata: null
       text: Randomized joke4
     - language: en
-      metadata: null
       text: Randomized joke5
     - language: en
-      metadata: null
       text: Randomized joke6
     - language: en
-      metadata: null
       text: Randomized joke7
     - language: en
-      metadata: null
       text: Randomized joke8
     - language: en
-      metadata: null
       text: Randomized joke9
-  utter_y76OxJmGq:
-    - language: en
-      text: lovely
 session_config: {}
 slots:
   company_size:
