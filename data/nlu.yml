@@ -56,6 +56,8 @@ nlu:
       No
     metadata:
       canonical: true
+  - text: |
+      no
 - intent: farewell
   metadata:
     language: en

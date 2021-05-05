@@ -1,4 +1,32 @@
 stories:
+  - story: Jokes
+    steps:
+      - checkpoint: link-to-Jokes/f0d62625-6a4e-498d-9290-9f71bf3571ff
+      - intent: jokes
+        user: jokes
+        entities: []
+      - action: utter_8omTlobK_
+      - action: utter_KwpIV-KY0
+      - checkpoint: Jokes__branches
+    metadata:
+      group: Alphie0
+  - story: Jokes__no
+    steps:
+      - checkpoint: Jokes__branches
+      - intent: deny
+        user: 'no'
+        entities: []
+    metadata:
+      group: Alphie0
+  - story: Jokes__yes
+    steps:
+      - checkpoint: Jokes__branches
+      - intent: affirm
+        user: 'yes'
+        entities: []
+      - checkpoint: link-to-Jokes/f0d62625-6a4e-498d-9290-9f71bf3571ff
+    metadata:
+      group: Alphie0
   - story: Robanter
     steps:
       - intent: robanter

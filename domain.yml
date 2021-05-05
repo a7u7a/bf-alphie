@@ -6,11 +6,13 @@ actions:
   - utter_0QXHpFEpO
   - utter_4RY9i-lPs
   - utter_63ceMAv0H
+  - utter_8omTlobK_
   - utter_C9jg6_pGrb
   - utter_IJpvtXoiV
   - utter_IOIVs9dl0
   - utter_J6V6ADHaH
   - utter_JVSkUoIPF
+  - utter_KwpIV-KY0
   - utter_OpCqOoQMd
   - utter_TxjWMXU5l
   - utter_VykZCdob8
@@ -144,8 +146,9 @@ responses:
     - elements:
         - buttons:
             - payload: /love_it
-              title: Love it!
+              title: I love this one!
               type: postback
+          default_action: null
           image_url: ''
           subtitle: >-
             There was a little child who really loved dolls. They had a big
@@ -156,8 +159,9 @@ responses:
           title: ''
         - buttons:
             - payload: /love_it
-              title: Love it!
+              title: I love this one!
               type: postback
+          default_action: null
           image_url: ''
           subtitle: >-
             “How much is that doll?”, the child  asked the old woman behind the
@@ -173,8 +177,9 @@ responses:
           title: ''
         - buttons:
             - payload: /love_it
-              title: Love it!
+              title: I love this one!
               type: postback
+          default_action: null
           image_url: ''
           subtitle: >-
             The little child was so delighted to get the doll for free that
@@ -189,8 +194,9 @@ responses:
           title: ''
         - buttons:
             - payload: /love_it
-              title: Love it!
+              title: I love this one!
               type: postback
+          default_action: null
           image_url: ''
           subtitle: >-
             Suddenly, they felt the doll move in their arms. Ever so slowly, its
@@ -200,6 +206,59 @@ responses:
             demonic voice the doll said, "Press the button to go up, idiot."
           title: ''
       language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+  utter_8omTlobK_:
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      text: Randomized joke1
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      text: Randomized joke2
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      text: Randomized joke3
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      text: Randomized joke4
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      text: Randomized joke5
   utter_C9jg6_pGrb:
     - language: en
       text: |-
@@ -245,6 +304,7 @@ responses:
       text: Are you happy with my answer?
   utter_JVSkUoIPF:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /choice_yes
           title: 'Yes'
@@ -255,6 +315,36 @@ responses:
       text: >-
         Hahaha!I love this story - it's so stupid and scary! You up for writing
         a ghost story together?
+  utter_KwpIV-KY0:
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /affirm
+          title: Yes!
+          type: postback
+        - payload: /deny
+          title: 'no'
+          type: postback
+      text: Another one?
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: ''
+          title: ''
+          type: postback
+      text: ''
   utter_OpCqOoQMd:
     - language: en
       text: goes to capabilities
@@ -338,7 +428,32 @@ responses:
       text: I'm programmed with 'AlphaMcHeimilichDoppleGangerManouvere' code...
   utter_w7UXyfnQ7:
     - language: en
-      text: Randomized joke
+      metadata: null
+      text: Randomized joke1
+    - language: en
+      metadata: null
+      text: Randomized joke2
+    - language: en
+      metadata: null
+      text: Randomized joke3
+    - language: en
+      metadata: null
+      text: Randomized joke4
+    - language: en
+      metadata: null
+      text: Randomized joke5
+    - language: en
+      metadata: null
+      text: Randomized joke6
+    - language: en
+      metadata: null
+      text: Randomized joke7
+    - language: en
+      metadata: null
+      text: Randomized joke8
+    - language: en
+      metadata: null
+      text: Randomized joke9
 session_config: {}
 slots:
   company_size:
