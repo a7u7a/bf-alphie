@@ -139,10 +139,6 @@ nlu:
 - intent: start_form
   metadata:
     language: en
-  examples:
-  - text: |
-      start form
-    metadata:
-      canonical: true
-  - text: |
-      start_form
+  examples: |
+    - start form
+    - start_form

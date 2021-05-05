@@ -6,7 +6,6 @@ actions:
   - utter_0QXHpFEpO
   - utter_4RY9i-lPs
   - utter_63ceMAv0H
-  - utter_6mC8blbwa
   - utter_C9jg6_pGrb
   - utter_IJpvtXoiV
   - utter_IOIVs9dl0
@@ -18,6 +17,7 @@ actions:
   - utter_ask_company_size
   - utter_ask_first_name
   - utter_ask_work_email
+  - utter_eZEyugSXs
   - utter_fGPKyHELdn
   - utter_get_started
   - utter_invalid_first_name
@@ -184,27 +184,6 @@ responses:
             demonic voice the doll said, "Press the button to go up, idiot."
           title: ''
       language: en
-  utter_6mC8blbwa:
-    - language: en
-      quick_replies:
-        - payload: /scarry_story
-          title: Let's make a stupidly scary story together
-          type: postback
-        - payload: /jokes
-          title: 'Jokes Alphie, tell me terrible terrible jokes'
-          type: postback
-        - payload: /questions
-          title: I want to ask you questions until I break your code
-          type: postback
-        - payload: /quiz
-          title: Let's play an Impossible quiz please Alphie
-          type: postback
-        - payload: /capabilities
-          title: Get me out of here!
-          type: postback
-      text: >-
-        So you're feeling daft? The question is... What flavour of daft are you
-        feeling?
   utter_C9jg6_pGrb:
     - language: en
       text: |-
@@ -287,6 +266,11 @@ responses:
     - language: en
       metadata: null
       text: What is your **work** email address?
+  utter_eZEyugSXs:
+    - language: en
+      text: >-
+        Hahaha!I love this story - it's so stupid and scary! You up for writing
+        a ghost story together?
   utter_fGPKyHELdn:
     - language: en
       text: Go to your account and click the users tab

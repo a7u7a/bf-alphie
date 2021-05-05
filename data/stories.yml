@@ -52,13 +52,7 @@ stories:
         entities: []
       - action: utter_4RY9i-lPs
       - action: utter_63ceMAv0H
+      - action: utter_eZEyugSXs
     metadata:
       group: Alphie0
-rules:
-  - rule: Robanter
-    condition: []
-    steps:
-      - action: utter_6mC8blbwa
-    wait_for_user_input: false
-    metadata:
-      group: Alphie0
+rules: []
