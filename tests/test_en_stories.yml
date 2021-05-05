@@ -15,6 +15,12 @@ stories:
     metadata:
       group: Test Stories
       language: en
+  - story: End
+    steps:
+      - action: utter_Jd8a2nn54
+    metadata:
+      group: Test Stories
+      language: en
   - story: Farewells
     steps:
       - user: Bye
