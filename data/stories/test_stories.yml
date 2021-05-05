@@ -1,0 +1,80 @@
+stories:
+  - story: Add a user
+    steps:
+      - intent: add_user
+        user: How do I add a user?
+        entities: []
+      - action: utter_fGPKyHELdn
+      - checkpoint: link-to-Feedback/92a1524b-14b7-4120-9d49-7590b1967be6
+    metadata:
+      group: Test Stories
+  - story: Change password
+    steps:
+      - intent: change_pass
+        user: How do I change my password?
+        entities: []
+      - action: utter_0QXHpFEpO
+      - checkpoint: link-to-Feedback/92a1524b-14b7-4120-9d49-7590b1967be6
+    metadata:
+      group: Test Stories
+  - story: Farewells
+    steps:
+      - intent: farewell
+        user: Bye
+        entities: []
+      - action: utter_rtXHuuF1G
+    metadata:
+      group: Test Stories
+  - story: Feedback
+    steps:
+      - checkpoint: link-to-Feedback/92a1524b-14b7-4120-9d49-7590b1967be6
+      - action: utter_J6V6ADHaH
+      - checkpoint: Feedback__branches
+    metadata:
+      group: Test Stories
+  - story: Feedback__New Branch 1
+    steps:
+      - checkpoint: Feedback__branches
+      - intent: affirm
+        user: 'yes'
+        entities: []
+      - action: utter_XZKIxjwmn
+    metadata:
+      group: Test Stories
+  - story: Feedback__New Branch 2
+    steps:
+      - checkpoint: Feedback__branches
+      - intent: deny
+        user: 'No'
+        entities: []
+      - action: utter_TxjWMXU5l
+    metadata:
+      group: Test Stories
+  - story: Greetings
+    steps:
+      - intent: Greet
+        user: Hello
+        entities: []
+      - action: utter_IOIVs9dl0
+      - checkpoint: Greetings__branches
+    metadata:
+      group: Test Stories
+  - story: Greetings__New Branch 1
+    steps:
+      - checkpoint: Greetings__branches
+      - intent: feel_good
+        user: I feel great
+        entities: []
+      - action: utter_VykZCdob8
+    metadata:
+      group: Test Stories
+  - story: Greetings__New Branch 2
+    steps:
+      - checkpoint: Greetings__branches
+      - intent: feel_bad
+        user: I feel bad
+        entities: []
+      - action: utter_kqYxT_e3B
+    metadata:
+      group: Test Stories
+rules: []

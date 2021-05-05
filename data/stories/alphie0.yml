@@ -52,7 +52,10 @@ stories:
         entities: []
       - action: utter_4RY9i-lPs
       - action: utter_63ceMAv0H
-      - action: utter_eZEyugSXs
+      - intent: love_it
+        user: love it!
+        entities: []
+      - action: utter_JVSkUoIPF
     metadata:
       group: Alphie0
 rules: []

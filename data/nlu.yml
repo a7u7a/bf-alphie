@@ -104,6 +104,14 @@ nlu:
       jokes
     metadata:
       canonical: true
+- intent: love_it
+  metadata:
+    language: en
+  examples:
+  - text: |
+      love it!
+    metadata:
+      canonical: true
 - intent: questions
   metadata:
     language: en

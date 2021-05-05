@@ -10,6 +10,7 @@ actions:
   - utter_IJpvtXoiV
   - utter_IOIVs9dl0
   - utter_J6V6ADHaH
+  - utter_JVSkUoIPF
   - utter_OpCqOoQMd
   - utter_TxjWMXU5l
   - utter_VykZCdob8
@@ -17,9 +18,11 @@ actions:
   - utter_ask_company_size
   - utter_ask_first_name
   - utter_ask_work_email
+  - utter_bye
   - utter_eZEyugSXs
   - utter_fGPKyHELdn
   - utter_get_started
+  - utter_hi
   - utter_invalid_first_name
   - utter_invalid_work_email
   - utter_kqYxT_e3B
@@ -109,12 +112,25 @@ forms:
         utter_on_new_valid_slot: false
     updatedAt: 1620137853244
 intents:
+  - Greet
+  - add_user
+  - affirm
+  - change_pass
+  - chitchat.bye
+  - chitchat.greet
+  - deny
+  - farewell
+  - feel_bad
+  - feel_good
   - get_me_out
+  - get_started
   - jokes
+  - love_it
   - questions
   - quiz
   - robanter
   - scary_story
+  - start_form
 responses:
   utter_0QXHpFEpO:
     - language: en
@@ -227,6 +243,18 @@ responses:
   utter_J6V6ADHaH:
     - language: en
       text: Are you happy with my answer?
+  utter_JVSkUoIPF:
+    - language: en
+      quick_replies:
+        - payload: /choice_yes
+          title: 'Yes'
+          type: postback
+        - payload: /choice_no
+          title: 'no'
+          type: postback
+      text: >-
+        Hahaha!I love this story - it's so stupid and scary! You up for writing
+        a ghost story together?
   utter_OpCqOoQMd:
     - language: en
       text: goes to capabilities
