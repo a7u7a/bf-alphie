@@ -10,7 +10,7 @@ stories:
   - story: Jokes__no
     steps:
       - checkpoint: Jokes__branches
-      - intent: deny
+      - intent: basics.no
         user: 'no'
         entities: []
       - checkpoint: link-to-Robanter Outro/a9d6adb1-c0ed-4bca-909a-d59f6b5f5f9a
@@ -88,6 +88,10 @@ stories:
     steps:
       - checkpoint: link-to-Robanter Questions/7cfe194d-c5a2-496b-b876-e5eaa70f43d8
       - action: utter_jdJlF9LKO
+      - action: Robanter_form
+      - active_loop: Robanter_form
+      - active_loop: null
+      - action: utter_12qbvRx_T
     metadata:
       group: Robanter
   - story: Robanter Scary story

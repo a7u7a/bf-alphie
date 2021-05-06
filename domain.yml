@@ -4,6 +4,7 @@ actions:
   - action_botfront_fallback
   - action_botfront_mapping
   - leadgen_form
+  - utter_12qbvRx_T
   - utter_5niwuYZjx
   - utter_9O7Vh-7i3
   - utter_9UvD743sy
@@ -17,6 +18,7 @@ actions:
   - utter_a43HJ0vO9
   - utter_ask_company_size
   - utter_ask_first_name
+  - utter_ask_question_freewrite
   - utter_ask_work_email
   - utter_bye
   - utter_get_started
@@ -32,13 +34,44 @@ actions:
   - utter_w7UXyfnQ7
   - utter_y76OxJmGq
 entities: []
-forms: {}
+forms:
+  Robanter_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-question_freewrite
+          source: '1'
+          target: question_freewrite
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: question_freewrite
+          position:
+            x: 120
+            'y': 360
+          slotName: question_freewrite
+          type: slot
+    groupName: Robanter
+    name: Robanter_form
+    slots:
+      - filling:
+          - intent: null
+            not_intent: null
+            type: from_text
+        name: question_freewrite
+        utter_on_new_valid_slot: false
+    updatedAt: 1620344428253
 intents:
   - basics.no
   - basics.yes
   - chitchat.bye
   - chitchat.greet
-  - deny
   - get_me_out
   - get_started
   - jokes
@@ -49,6 +82,9 @@ intents:
   - scary_story
   - start_form
 responses:
+  utter_12qbvRx_T:
+    - language: en
+      text: 'ok, {question_freewrite}'
   utter_5niwuYZjx:
     - language: en
       metadata:
@@ -131,11 +167,12 @@ responses:
       text: ok(story not implemented further)
   utter_YOeJj2BMz:
     - language: en
+      metadata: null
       quick_replies:
-        - payload: /affirm
+        - payload: /basics.yes
           title: 'yes'
           type: postback
-        - payload: /deny
+        - payload: /basics.no
           title: 'no'
           type: postback
       text: Another one?
@@ -228,6 +265,16 @@ responses:
   utter_ask_first_name:
     - language: en
       text: What is your first name?
+  utter_ask_question_freewrite:
+    - language: en
+      metadata: null
+      quick_replies:
+        - payload: /robanter
+          title: Back
+          type: postback
+      text: >-
+        Enter your question punk or press 'back' if you want a different flavour
+        of daftness
   utter_ask_work_email:
     - language: en
       text: What is your **work** email address?
@@ -243,12 +290,8 @@ responses:
       text: I was expecting a valid email address?
   utter_jdJlF9LKO:
     - language: en
-      text: >-
-        I'm programmed with 'AlphaMcHeimilichDoppleGangerManouvere' code...
-
-
-        Enter your question punk or press 'back' if you want a different flavour
-        of daftness
+      metadata: null
+      text: I'm programmed with 'AlphaMcHeimilichDoppleGangerManouvere' code...
   utter_jxuPnwBo1:
     - language: en
       metadata:
@@ -356,4 +399,6 @@ slots:
     type: unfeaturized
   fallback_language:
     initial_value: en
+    type: unfeaturized
+  question_freewrite:
     type: unfeaturized

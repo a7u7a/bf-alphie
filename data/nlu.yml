@@ -25,6 +25,8 @@ nlu:
   - text: |
       never mind
   - text: |
+      no
+  - text: |
       no thanks
     metadata:
       canonical: true
