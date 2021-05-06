@@ -12,6 +12,7 @@ rules:
     steps:
       - intent: get_started
       - action: utter_get_started
+      - action: utter_ODRl0LCQG
     metadata:
       group: Example group
   - rule: Greetings

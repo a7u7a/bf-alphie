@@ -19,7 +19,7 @@ stories:
   - story: Jokes__yes
     steps:
       - checkpoint: Jokes__branches
-      - intent: affirm
+      - intent: basics.yes
         user: 'yes'
         entities: []
       - checkpoint: link-to-Jokes/b0cb9211-ef03-425f-8659-4dee0b15eba1
@@ -90,10 +90,6 @@ stories:
       - action: utter_jdJlF9LKO
     metadata:
       group: Robanter
-  - story: Robanter Quiz
-    steps: []
-    metadata:
-      group: Robanter
   - story: Robanter Scary story
     steps:
       - checkpoint: link-to-Robanter Scary story/515aefea-52fa-4964-9a97-c9a3431ea7a4
@@ -109,8 +105,8 @@ stories:
   - story: Robanter Scary story__No
     steps:
       - checkpoint: Robanter_Scary_story__branches
-      - intent: deny
-        user: 'No'
+      - intent: basics.no
+        user: 'no'
         entities: []
       - checkpoint: link-to-Robanter Outro/a9d6adb1-c0ed-4bca-909a-d59f6b5f5f9a
     metadata:
@@ -118,9 +114,10 @@ stories:
   - story: Robanter Scary story__Yes
     steps:
       - checkpoint: Robanter_Scary_story__branches
-      - intent: affirm
+      - intent: basics.yes
         user: 'yes'
         entities: []
+      - action: utter_TqZ95JGTI
     metadata:
       group: Robanter
 rules: []

@@ -9,7 +9,10 @@ actions:
   - utter_9UvD743sy
   - utter_C9jg6_pGrb
   - utter_IJpvtXoiV
+  - utter_N4ssd_YML
+  - utter_ODRl0LCQG
   - utter_OpCqOoQMd
+  - utter_TqZ95JGTI
   - utter_YOeJj2BMz
   - utter_a43HJ0vO9
   - utter_ask_company_size
@@ -31,7 +34,8 @@ actions:
 entities: []
 forms: {}
 intents:
-  - affirm
+  - basics.no
+  - basics.yes
   - chitchat.bye
   - chitchat.greet
   - deny
@@ -59,11 +63,12 @@ responses:
         both stupid AND SCARY...
   utter_9O7Vh-7i3:
     - language: en
+      metadata: null
       quick_replies:
-        - payload: /affirm
+        - payload: /basics.yes
           title: 'Yes'
           type: postback
-        - payload: /deny
+        - payload: /basics.no
           title: 'No'
           type: postback
       text: >-
@@ -108,9 +113,22 @@ responses:
       text: >-
         So you're feeling daft? question is... What flavour of daft are you
         feeling?
+  utter_N4ssd_YML:
+    - language: en
+      text: ok no then
+  utter_ODRl0LCQG:
+    - language: en
+      quick_replies:
+        - payload: /robanter
+          title: Robanter
+          type: postback
+      text: 'I''m Alphie, fancy a chat?'
   utter_OpCqOoQMd:
     - language: en
       text: goes to capabilities
+  utter_TqZ95JGTI:
+    - language: en
+      text: ok(story not implemented further)
   utter_YOeJj2BMz:
     - language: en
       quick_replies:
@@ -215,7 +233,8 @@ responses:
       text: What is your **work** email address?
   utter_get_started:
     - language: en
-      text: Hello!
+      metadata: null
+      text: (INTRO)Hello... is it me you're looking for?
   utter_invalid_first_name:
     - language: en
       text: I was expecting a longer first name...
@@ -333,14 +352,8 @@ responses:
       text: lovely
 session_config: {}
 slots:
-  company_size:
-    type: unfeaturized
   disambiguation_message:
     type: unfeaturized
   fallback_language:
     initial_value: en
-    type: unfeaturized
-  first_name:
-    type: unfeaturized
-  work_email:
     type: unfeaturized

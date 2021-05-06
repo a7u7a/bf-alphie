@@ -16,80 +16,52 @@ nlu:
       Hi
   - text: |
       Howdy
-- intent: add_user
+- intent: basics.no
   metadata:
     language: en
   examples:
   - text: |
-      How do I add a user?
+      nah
+  - text: |
+      never mind
+  - text: |
+      no thanks
     metadata:
       canonical: true
-- intent: affirm
+  - text: |
+      nope
+  - text: |
+      not really
+  - text: |
+      please no
+- intent: basics.yes
   metadata:
     language: en
   examples:
   - text: |
-      yes
-    metadata:
-      canonical: true
-- intent: carousel
-  metadata:
-    language: en
-  examples:
+      I do
   - text: |
-      show carousel
-    metadata:
-      canonical: true
-- intent: change_pass
-  metadata:
-    language: en
-  examples:
+      absolutely
   - text: |
-      How do I change my password?
-    metadata:
-      canonical: true
-- intent: deny
-  metadata:
-    language: en
-  examples:
+      alright
   - text: |
-      No
+      of course
+  - text: |
+      ok
+  - text: |
+      ok then
+  - text: |
+      ok, let's do it
     metadata:
       canonical: true
   - text: |
-      no
-- intent: farewell
-  metadata:
-    language: en
-  examples:
+      sure
   - text: |
-      Bye
-    metadata:
-      canonical: true
+      yeah sure
   - text: |
-      see you
-- intent: feel_bad
-  metadata:
-    language: en
-  examples:
+      yep
   - text: |
-      I feel bad
-    metadata:
-      canonical: true
-  - text: |
-      I feel terrible
-  - text: |
-      bad day
-  - text: |
-      not great
-- intent: feel_good
-  metadata:
-    language: en
-  examples:
-  - text: |
-      I feel great
-    metadata:
-      canonical: true
+      yes, please
 - intent: get_me_out
   metadata:
     language: en
@@ -111,7 +83,7 @@ nlu:
     language: en
   examples:
   - text: |
-      love it!
+      love it
     metadata:
       canonical: true
 - intent: questions
@@ -146,13 +118,3 @@ nlu:
       scary story
     metadata:
       canonical: true
-- intent: start_form
-  metadata:
-    language: en
-  examples:
-  - text: |
-      start form
-    metadata:
-      canonical: true
-  - text: |
-      start_form
