@@ -16,6 +16,8 @@ nlu:
       Hi
   - text: |
       Howdy
+  - text: |
+      anything
 - intent: basics.no
   metadata:
     language: en

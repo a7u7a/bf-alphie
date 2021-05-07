@@ -4,12 +4,13 @@ actions:
   - action_botfront_fallback
   - action_botfront_mapping
   - leadgen_form
-  - utter_12qbvRx_T
   - utter_5niwuYZjx
+  - utter_6tU5tsJb6K
   - utter_9O7Vh-7i3
   - utter_9UvD743sy
   - utter_C9jg6_pGrb
   - utter_IJpvtXoiV
+  - utter_MmEyPZLvz
   - utter_N4ssd_YML
   - utter_ODRl0LCQG
   - utter_OpCqOoQMd
@@ -18,13 +19,17 @@ actions:
   - utter_a43HJ0vO9
   - utter_ask_company_size
   - utter_ask_first_name
-  - utter_ask_question_freewrite
+  - utter_ask_questions_continue
+  - utter_ask_robanter_freetext
   - utter_ask_work_email
   - utter_bye
   - utter_get_started
+  - utter_hck2hcH3t
   - utter_hi
+  - utter_igLK8xfpF
   - utter_invalid_first_name
   - utter_invalid_work_email
+  - utter_j3NrJRZie
   - utter_jdJlF9LKO
   - utter_jxuPnwBo1
   - utter_lDQEUBEvu
@@ -41,9 +46,9 @@ forms:
     graph_elements:
       edges:
         - condition: null
-          id: e1-question_freewrite
+          id: e1-questions_continue
           source: '1'
-          target: question_freewrite
+          target: questions_continue
           type: condition
       nodes:
         - id: '1'
@@ -51,22 +56,29 @@ forms:
             x: 200
             'y': 200
           type: start
-        - id: question_freewrite
+        - id: questions_continue
           position:
             x: 120
             'y': 360
-          slotName: question_freewrite
+          slotName: questions_continue
           type: slot
     groupName: Robanter
     name: Robanter_form
     slots:
       - filling:
           - intent: null
-            not_intent: null
-            type: from_text
-        name: question_freewrite
+            not_intent:
+              - robanter
+            type: from_intent
+            value: true
+          - intent:
+              - robanter
+            not_intent: []
+            type: from_intent
+            value: false
+        name: questions_continue
         utter_on_new_valid_slot: false
-    updatedAt: 1620344428253
+    updatedAt: 1620347650140
 intents:
   - basics.no
   - basics.yes
@@ -82,9 +94,6 @@ intents:
   - scary_story
   - start_form
 responses:
-  utter_12qbvRx_T:
-    - language: en
-      text: 'ok, {question_freewrite}'
   utter_5niwuYZjx:
     - language: en
       metadata:
@@ -97,6 +106,25 @@ responses:
       text: >-
         To get our creative juices going here's one I prepared earlier. It's
         both stupid AND SCARY...
+  utter_6tU5tsJb6K:
+    - language: en
+      metadata: null
+      text: Randomized answer 1
+    - language: en
+      metadata: null
+      text: Randomized answer 2
+    - language: en
+      metadata: null
+      text: Randomized answer 3
+    - language: en
+      metadata: null
+      text: Randomized answer 4
+    - language: en
+      metadata: null
+      text: Randomized answer 5
+    - language: en
+      metadata: null
+      text: Randomized answer 6
   utter_9O7Vh-7i3:
     - language: en
       metadata: null
@@ -149,6 +177,19 @@ responses:
       text: >-
         So you're feeling daft? question is... What flavour of daft are you
         feeling?
+  utter_MmEyPZLvz:
+    - language: en
+      metadata: null
+      text: Randomized warning 1
+    - language: en
+      metadata: null
+      text: Randomized warning 2
+    - language: en
+      metadata: null
+      text: Randomized warning 3
+    - language: en
+      metadata: null
+      text: Randomized warning 4
   utter_N4ssd_YML:
     - language: en
       text: ok no then
@@ -265,9 +306,17 @@ responses:
   utter_ask_first_name:
     - language: en
       text: What is your first name?
-  utter_ask_question_freewrite:
+  utter_ask_questions_continue:
     - language: en
-      metadata: null
+      quick_replies:
+        - payload: /robanter
+          title: Back
+          type: postback
+      text: >-
+        Enter your question punk or press 'back' if you want a different flavour
+        of daftness
+  utter_ask_robanter_freetext:
+    - language: en
       quick_replies:
         - payload: /robanter
           title: Back
@@ -282,12 +331,23 @@ responses:
     - language: en
       metadata: null
       text: (INTRO)Hello... is it me you're looking for?
+  utter_hck2hcH3t:
+    - language: en
+      text: >-
+        Wo! That nearly bamboozled me but my CPU is still running so IN YOUR
+        FACE!
+  utter_igLK8xfpF:
+    - language: en
+      text: I'm programmed with 'AlphaMcHeimilichDoppleGangerManouvere' code...
   utter_invalid_first_name:
     - language: en
       text: I was expecting a longer first name...
   utter_invalid_work_email:
     - language: en
       text: I was expecting a valid email address?
+  utter_j3NrJRZie:
+    - language: en
+      text: 'OK, lets go back then!'
   utter_jdJlF9LKO:
     - language: en
       metadata: null
@@ -400,5 +460,5 @@ slots:
   fallback_language:
     initial_value: en
     type: unfeaturized
-  question_freewrite:
-    type: unfeaturized
+  questions_continue:
+    type: bool
