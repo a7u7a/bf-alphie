@@ -11,7 +11,6 @@ stories:
     steps:
       - checkpoint: Jokes__branches
       - intent: basics.no
-        user: 'no'
         entities: []
       - checkpoint: link-to-Robanter Outro/a9d6adb1-c0ed-4bca-909a-d59f6b5f5f9a
     metadata:
@@ -20,7 +19,6 @@ stories:
     steps:
       - checkpoint: Jokes__branches
       - intent: basics.yes
-        user: 'yes'
         entities: []
       - checkpoint: link-to-Jokes/b0cb9211-ef03-425f-8659-4dee0b15eba1
     metadata:
@@ -38,7 +36,6 @@ stories:
     steps:
       - checkpoint: Robanter_Intro__branches
       - intent: get_me_out
-        user: get me out
         entities: []
       - action: utter_OpCqOoQMd
     metadata:
@@ -47,7 +44,6 @@ stories:
     steps:
       - checkpoint: Robanter_Intro__branches
       - intent: jokes
-        user: jokes
         entities: []
       - checkpoint: link-to-Jokes/b0cb9211-ef03-425f-8659-4dee0b15eba1
     metadata:
@@ -56,18 +52,14 @@ stories:
     steps:
       - checkpoint: Robanter_Intro__branches
       - intent: questions
-        user: questions
         entities: []
-      - checkpoint: >-
-          link-to-Robanter Questions
-          complete/7cfe194d-c5a2-496b-b876-e5eaa70f43d8
+      - checkpoint: link-to-Robanter Questions/7cfe194d-c5a2-496b-b876-e5eaa70f43d8
     metadata:
       group: Robanter
   - story: Robanter Intro__Quiz
     steps:
       - checkpoint: Robanter_Intro__branches
       - intent: quiz
-        user: quiz
         entities: []
     metadata:
       group: Robanter
@@ -75,7 +67,6 @@ stories:
     steps:
       - checkpoint: Robanter_Intro__branches
       - intent: scary_story
-        user: scary story
         entities: []
       - checkpoint: link-to-Robanter Scary story/515aefea-52fa-4964-9a97-c9a3431ea7a4
     metadata:
@@ -86,31 +77,55 @@ stories:
       - action: utter_lDQEUBEvu
     metadata:
       group: Robanter
-  - story: Robanter Questions complete
+  - story: Robanter Questions
     steps:
-      - checkpoint: >-
-          link-to-Robanter Questions
-          complete/7cfe194d-c5a2-496b-b876-e5eaa70f43d8
+      - checkpoint: link-to-Robanter Questions/7cfe194d-c5a2-496b-b876-e5eaa70f43d8
       - action: utter_jdJlF9LKO
       - action: Robanter_form
       - active_loop: Robanter_form
       - active_loop: null
-      - slot_was_set:
-          - questions_continue: true
-      - action: utter_6tU5tsJb6K
-      - action: utter_MmEyPZLvz
-      - action: utter_hck2hcH3t
+      - checkpoint: Robanter_Questions__branches
     metadata:
       group: Robanter
-  - story: Robanter Questions interrupted
+  - story: Robanter Questions__Back
     steps:
-      - action: utter_igLK8xfpF
-      - action: Robanter_form
-      - active_loop: Robanter_form
-      - active_loop: null
+      - checkpoint: Robanter_Questions__branches
       - slot_was_set:
           - questions_continue: false
-      - action: utter_j3NrJRZie
+      - action: utter_J1OoG6T5w
+    metadata:
+      group: Robanter
+  - story: Robanter Questions__Continue
+    steps:
+      - checkpoint: Robanter_Questions__branches
+      - slot_was_set:
+          - questions_continue: true
+      - action: utter_h2v5n3HgO
+      - action: utter_q-rLWNNj7
+      - action: utter_4cc9KND3s
+      - action: utter_4LYdvVos6
+      - checkpoint: Robanter_Questions__Continue__branches
+    metadata:
+      group: Robanter
+  - story: Robanter Questions__Continue__Back
+    steps:
+      - checkpoint: Robanter_Questions__Continue__branches
+      - intent: robanter
+        entities: []
+      - action: utter_WZfQFnJc4
+    metadata:
+      group: Robanter
+  - story: Robanter Questions__Continue__Try again
+    steps:
+      - checkpoint: Robanter_Questions__Continue__branches
+      - intent: try_again
+        entities: []
+      - action: utter_EZMAEcVDO
+      - checkpoint: link-to-Robanter Questions/7cfe194d-c5a2-496b-b876-e5eaa70f43d8
+    metadata:
+      group: Robanter
+  - story: Robanter Quiz
+    steps: []
     metadata:
       group: Robanter
   - story: Robanter Scary story
@@ -119,7 +134,6 @@ stories:
       - action: utter_5niwuYZjx
       - action: utter_a43HJ0vO9
       - intent: love_it
-        user: love it!
         entities: []
       - action: utter_9O7Vh-7i3
       - checkpoint: Robanter_Scary_story__branches
@@ -129,7 +143,6 @@ stories:
     steps:
       - checkpoint: Robanter_Scary_story__branches
       - intent: basics.no
-        user: 'no'
         entities: []
       - checkpoint: link-to-Robanter Outro/a9d6adb1-c0ed-4bca-909a-d59f6b5f5f9a
     metadata:
@@ -138,7 +151,6 @@ stories:
     steps:
       - checkpoint: Robanter_Scary_story__branches
       - intent: basics.yes
-        user: 'yes'
         entities: []
       - action: utter_TqZ95JGTI
     metadata:

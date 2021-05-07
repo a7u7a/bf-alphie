@@ -4,17 +4,19 @@ actions:
   - action_botfront_fallback
   - action_botfront_mapping
   - leadgen_form
+  - utter_4LYdvVos6
+  - utter_4cc9KND3s
   - utter_5niwuYZjx
-  - utter_6tU5tsJb6K
   - utter_9O7Vh-7i3
   - utter_9UvD743sy
   - utter_C9jg6_pGrb
+  - utter_EZMAEcVDO
   - utter_IJpvtXoiV
-  - utter_MmEyPZLvz
-  - utter_N4ssd_YML
+  - utter_J1OoG6T5w
   - utter_ODRl0LCQG
   - utter_OpCqOoQMd
   - utter_TqZ95JGTI
+  - utter_WZfQFnJc4
   - utter_YOeJj2BMz
   - utter_a43HJ0vO9
   - utter_ask_company_size
@@ -24,15 +26,14 @@ actions:
   - utter_ask_work_email
   - utter_bye
   - utter_get_started
-  - utter_hck2hcH3t
+  - utter_h2v5n3HgO
   - utter_hi
-  - utter_igLK8xfpF
   - utter_invalid_first_name
   - utter_invalid_work_email
-  - utter_j3NrJRZie
   - utter_jdJlF9LKO
   - utter_jxuPnwBo1
   - utter_lDQEUBEvu
+  - utter_q-rLWNNj7
   - utter_valid_first_name
   - utter_valid_work_email
   - utter_vpFkP83EG
@@ -93,7 +94,24 @@ intents:
   - robanter
   - scary_story
   - start_form
+  - try_again
 responses:
+  utter_4LYdvVos6:
+    - language: en
+      metadata: null
+      quick_replies:
+        - payload: /try_again
+          title: Try again
+          type: postback
+        - payload: /robanter
+          title: Back
+          type: postback
+      text: >-
+        Wo! That nearly bamboozled me but my CPU is still running so IN YOUR
+        FACE!
+  utter_4cc9KND3s:
+    - language: en
+      text: Randomized warning 1
   utter_5niwuYZjx:
     - language: en
       metadata:
@@ -106,25 +124,6 @@ responses:
       text: >-
         To get our creative juices going here's one I prepared earlier. It's
         both stupid AND SCARY...
-  utter_6tU5tsJb6K:
-    - language: en
-      metadata: null
-      text: Randomized answer 1
-    - language: en
-      metadata: null
-      text: Randomized answer 2
-    - language: en
-      metadata: null
-      text: Randomized answer 3
-    - language: en
-      metadata: null
-      text: Randomized answer 4
-    - language: en
-      metadata: null
-      text: Randomized answer 5
-    - language: en
-      metadata: null
-      text: Randomized answer 6
   utter_9O7Vh-7i3:
     - language: en
       metadata: null
@@ -149,6 +148,9 @@ responses:
         {work_email}
 
         {company_size}
+  utter_EZMAEcVDO:
+    - language: en
+      text: try again
   utter_IJpvtXoiV:
     - language: en
       metadata:
@@ -177,22 +179,10 @@ responses:
       text: >-
         So you're feeling daft? question is... What flavour of daft are you
         feeling?
-  utter_MmEyPZLvz:
+  utter_J1OoG6T5w:
     - language: en
       metadata: null
-      text: Randomized warning 1
-    - language: en
-      metadata: null
-      text: Randomized warning 2
-    - language: en
-      metadata: null
-      text: Randomized warning 3
-    - language: en
-      metadata: null
-      text: Randomized warning 4
-  utter_N4ssd_YML:
-    - language: en
-      text: ok no then
+      text: 'OK, back then'
   utter_ODRl0LCQG:
     - language: en
       quick_replies:
@@ -206,6 +196,9 @@ responses:
   utter_TqZ95JGTI:
     - language: en
       text: ok(story not implemented further)
+  utter_WZfQFnJc4:
+    - language: en
+      text: 'Back is back, boss'
   utter_YOeJj2BMz:
     - language: en
       metadata: null
@@ -330,24 +323,16 @@ responses:
   utter_get_started:
     - language: en
       metadata: null
-      text: (INTRO)Hello... is it me you're looking for?
-  utter_hck2hcH3t:
+      text: Hello... is it me you're looking for?
+  utter_h2v5n3HgO:
     - language: en
-      text: >-
-        Wo! That nearly bamboozled me but my CPU is still running so IN YOUR
-        FACE!
-  utter_igLK8xfpF:
-    - language: en
-      text: I'm programmed with 'AlphaMcHeimilichDoppleGangerManouvere' code...
+      text: The answer you're looking for is...
   utter_invalid_first_name:
     - language: en
       text: I was expecting a longer first name...
   utter_invalid_work_email:
     - language: en
       text: I was expecting a valid email address?
-  utter_j3NrJRZie:
-    - language: en
-      text: 'OK, lets go back then!'
   utter_jdJlF9LKO:
     - language: en
       metadata: null
@@ -422,6 +407,9 @@ responses:
       text: >-
         Press 'Back' to go to the beginning of this section or 'Menu' for full
         chat options... I'll let you work out what 'Quit' does ;-)
+  utter_q-rLWNNj7:
+    - language: en
+      text: Randomized answer 1
   utter_valid_first_name:
     - language: en
       text: 'Nice to meet you {first_name}'
