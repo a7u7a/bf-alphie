@@ -234,6 +234,7 @@ responses:
       text: (should restart Robanter)
   utter_JVl7TCpXz:
     - language: en
+      metadata: null
       text: INCORRECT
   utter_ODRl0LCQG:
     - language: en
