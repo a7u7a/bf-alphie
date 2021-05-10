@@ -23,11 +23,16 @@ stories:
       - checkpoint: link-to-Jokes/b59fcaa4-fa7b-4017-b84f-b000acd530fe
     metadata:
       group: Robanter
+  - story: restart
+    steps:
+      - checkpoint: link-to-restart/ff078dbe-de71-416a-b405-4365c930c353
+      - action: utter_uEb-iYJzW
+      - checkpoint: link-to-Robanter Intro/e061b7b5-082e-46a0-abfd-7edd5568e875
+    metadata:
+      group: Robanter
   - story: Robanter Intro
     steps:
-      - intent: robanter
-        user: robanter
-        entities: []
+      - checkpoint: link-to-Robanter Intro/e061b7b5-082e-46a0-abfd-7edd5568e875
       - action: utter_IJpvtXoiV
       - checkpoint: Robanter_Intro__branches
     metadata:
@@ -81,9 +86,10 @@ stories:
   - story: Robanter Questions
     steps:
       - checkpoint: link-to-Robanter Questions/d150e2ef-8432-4567-88e3-9989d5986362
+      - action: action_reset_questions_slot
       - action: utter_jdJlF9LKO
-      - action: Robanter_form
-      - active_loop: Robanter_form
+      - action: Robanter_questions_form
+      - active_loop: Robanter_questions_form
       - active_loop: null
       - checkpoint: Robanter_Questions__branches
     metadata:
@@ -94,6 +100,7 @@ stories:
       - slot_was_set:
           - questions_continue: false
       - action: utter_J1OoG6T5w
+      - checkpoint: link-to-restart/ff078dbe-de71-416a-b405-4365c930c353
     metadata:
       group: Robanter
   - story: Robanter Questions__Continue
@@ -114,6 +121,7 @@ stories:
       - intent: robanter
         entities: []
       - action: utter_WZfQFnJc4
+      - checkpoint: link-to-restart/ff078dbe-de71-416a-b405-4365c930c353
     metadata:
       group: Robanter
   - story: Robanter Questions__Continue__Try again
@@ -121,18 +129,16 @@ stories:
       - checkpoint: Robanter_Questions__Continue__branches
       - intent: try_again
         entities: []
-      - action: utter_EZMAEcVDO
       - checkpoint: link-to-Robanter Questions/d150e2ef-8432-4567-88e3-9989d5986362
     metadata:
       group: Robanter
   - story: Robanter Quiz
     steps:
       - checkpoint: link-to-Robanter Quiz/5fe5729c-42b4-489e-88e7-d362d5e6d31c
+      - action: action_reset_quiz_slot
       - action: Robanter_quiz_form
       - active_loop: Robanter_quiz_form
       - active_loop: null
-      - action: utter_JVl7TCpXz
-      - action: utter_kfbzpQA3n
       - checkpoint: Robanter_Quiz__branches
     metadata:
       group: Robanter
@@ -150,6 +156,7 @@ stories:
       - intent: basics.no
         entities: []
       - action: utter_o2TU2SdWR
+      - checkpoint: link-to-restart/ff078dbe-de71-416a-b405-4365c930c353
     metadata:
       group: Robanter
   - story: Robanter Quiz Intro__Yes
@@ -160,17 +167,39 @@ stories:
       - checkpoint: link-to-Robanter Quiz/5fe5729c-42b4-489e-88e7-d362d5e6d31c
     metadata:
       group: Robanter
-  - story: Robanter Quiz__No
+  - story: Robanter Quiz__Back
     steps:
       - checkpoint: Robanter_Quiz__branches
+      - slot_was_set:
+          - quiz_continue: false
       - intent: basics.no
         entities: []
       - action: utter_jVIwn6jfx
+      - checkpoint: link-to-restart/ff078dbe-de71-416a-b405-4365c930c353
     metadata:
       group: Robanter
-  - story: Robanter Quiz__Yes
+  - story: Robanter Quiz__Continue
     steps:
       - checkpoint: Robanter_Quiz__branches
+      - slot_was_set:
+          - quiz_continue: true
+      - action: utter_hTp87Q1zY
+      - action: utter_ME5QJQojh
+      - checkpoint: Robanter_Quiz__Continue__branches
+    metadata:
+      group: Robanter
+  - story: Robanter Quiz__Continue__No
+    steps:
+      - checkpoint: Robanter_Quiz__Continue__branches
+      - intent: basics.no
+        entities: []
+      - action: utter_NlLx6EqVI
+      - checkpoint: link-to-restart/ff078dbe-de71-416a-b405-4365c930c353
+    metadata:
+      group: Robanter
+  - story: Robanter Quiz__Continue__Yes
+    steps:
+      - checkpoint: Robanter_Quiz__Continue__branches
       - intent: basics.yes
         entities: []
       - checkpoint: link-to-Robanter Quiz/5fe5729c-42b4-489e-88e7-d362d5e6d31c

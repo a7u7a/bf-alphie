@@ -3,6 +3,8 @@ actions:
   - action_botfront_disambiguation_followup
   - action_botfront_fallback
   - action_botfront_mapping
+  - action_reset_questions_slot
+  - action_reset_quiz_slot
   - leadgen_form
   - utter_4LYdvVos6
   - utter_4cc9KND3s
@@ -14,7 +16,8 @@ actions:
   - utter_EZMAEcVDO
   - utter_IJpvtXoiV
   - utter_J1OoG6T5w
-  - utter_JVl7TCpXz
+  - utter_ME5QJQojh
+  - utter_NlLx6EqVI
   - utter_ODRl0LCQG
   - utter_OpCqOoQMd
   - utter_TqZ95JGTI
@@ -26,21 +29,24 @@ actions:
   - utter_ask_first_name
   - utter_ask_questions_continue
   - utter_ask_quiz_answer
+  - utter_ask_quiz_continue
   - utter_ask_robanter_freetext
   - utter_ask_work_email
   - utter_bye
+  - utter_default
   - utter_get_started
   - utter_h2v5n3HgO
+  - utter_hTp87Q1zY
   - utter_hi
   - utter_invalid_first_name
   - utter_invalid_work_email
   - utter_jVIwn6jfx
   - utter_jdJlF9LKO
   - utter_jxuPnwBo1
-  - utter_kfbzpQA3n
   - utter_lDQEUBEvu
   - utter_o2TU2SdWR
   - utter_q-rLWNNj7
+  - utter_uEb-iYJzW
   - utter_valid_first_name
   - utter_valid_work_email
   - utter_vpFkP83EG
@@ -48,7 +54,7 @@ actions:
   - utter_y76OxJmGq
 entities: []
 forms:
-  Robanter_form:
+  Robanter_questions_form:
     collect_in_botfront: null
     description: null
     graph_elements:
@@ -71,7 +77,7 @@ forms:
           slotName: questions_continue
           type: slot
     groupName: Robanter
-    name: Robanter_form
+    name: Robanter_questions_form
     slots:
       - filling:
           - intent: null
@@ -86,16 +92,16 @@ forms:
             value: false
         name: questions_continue
         utter_on_new_valid_slot: false
-    updatedAt: 1620661514070
+    updatedAt: 1620674775044
   Robanter_quiz_form:
     collect_in_botfront: null
     description: null
     graph_elements:
       edges:
         - condition: null
-          id: e1-quiz_answer
+          id: e1-quiz_continue
           source: '1'
-          target: quiz_answer
+          target: quiz_continue
           type: condition
       nodes:
         - id: '1'
@@ -103,22 +109,29 @@ forms:
             x: 200
             'y': 200
           type: start
-        - id: quiz_answer
+        - id: quiz_continue
           position:
             x: 120
             'y': 360
-          slotName: quiz_answer
+          slotName: quiz_continue
           type: slot
     groupName: Robanter
     name: Robanter_quiz_form
     slots:
       - filling:
           - intent: null
+            not_intent:
+              - robanter
+            type: from_intent
+            value: true
+          - intent:
+              - robanter
             not_intent: null
-            type: from_text
-        name: quiz_answer
+            type: from_intent
+            value: false
+        name: quiz_continue
         utter_on_new_valid_slot: false
-    updatedAt: 1620661514074
+    updatedAt: 1620674918179
 intents:
   - basics.no
   - basics.yes
@@ -152,6 +165,7 @@ responses:
       text: Randomized warning 1
   utter_5Pd9k1evJ:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /basics.yes
           title: 'Alphie, ask me a question'
@@ -229,11 +243,22 @@ responses:
   utter_J1OoG6T5w:
     - language: en
       text: (should restart Robanter)
-  utter_JVl7TCpXz:
+  utter_ME5QJQojh:
     - language: en
-      text: INCORRECT
+      quick_replies:
+        - payload: /basics.yes
+          title: 'Yes'
+          type: postback
+        - payload: /basics.no
+          title: 'No'
+          type: postback
+      text: Give it another try?
+  utter_NlLx6EqVI:
+    - language: en
+      text: (should restart robanter)
   utter_ODRl0LCQG:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /robanter
           title: Robanter
@@ -241,7 +266,8 @@ responses:
       text: 'I''m Alphie, fancy a chat?'
   utter_OpCqOoQMd:
     - language: en
-      text: goes to capabilities
+      metadata: null
+      text: (goes to capabilities)
   utter_TqZ95JGTI:
     - language: en
       text: ok(story not implemented further)
@@ -250,7 +276,8 @@ responses:
       text: I'm a bot of my word -  this quiz is impossible....
   utter_WZfQFnJc4:
     - language: en
-      text: 'Back is back, boss'
+      metadata: null
+      text: Back(should restart robanter)
   utter_YOeJj2BMz:
     - language: en
       quick_replies:
@@ -352,6 +379,7 @@ responses:
       text: What is your first name?
   utter_ask_questions_continue:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /robanter
           title: Back
@@ -361,11 +389,19 @@ responses:
         of daftness
   utter_ask_quiz_answer:
     - language: en
+      metadata: null
       text: Randomized quiz question 1
     - language: en
       text: Randomized quiz question 2
     - language: en
       text: Randomized quiz question 3
+  utter_ask_quiz_continue:
+    - language: en
+      quick_replies:
+        - payload: /robanter
+          title: Back
+          type: postback
+      text: randomized question 1
   utter_ask_robanter_freetext:
     - language: en
       quick_replies:
@@ -378,12 +414,19 @@ responses:
   utter_ask_work_email:
     - language: en
       text: What is your **work** email address?
+  utter_default:
+    - language: en
+      metadata: null
+      text: default fallback response
   utter_get_started:
     - language: en
       text: Hello... is it me you're looking for?
   utter_h2v5n3HgO:
     - language: en
       text: The answer you're looking for is...
+  utter_hTp87Q1zY:
+    - language: en
+      text: INCORRECT
   utter_invalid_first_name:
     - language: en
       text: I was expecting a longer first name...
@@ -392,9 +435,8 @@ responses:
       text: I was expecting a valid email address?
   utter_jVIwn6jfx:
     - language: en
-      text: |+
-        (should restart Robanter)
-
+      metadata: null
+      text: (should restart Robanter)
   utter_jdJlF9LKO:
     - language: en
       text: I'm programmed with 'AlphaMcHeimilichDoppleGangerManouvere' code...
@@ -453,16 +495,6 @@ responses:
         pageEventCallbacks: null
         userInput: disable
       text: randomized joke 6
-  utter_kfbzpQA3n:
-    - language: en
-      quick_replies:
-        - payload: /basics.yes
-          title: 'Alphie, ask me a question'
-          type: postback
-        - payload: /basics.no
-          title: Back
-          type: postback
-      text: Give it another try?
   utter_lDQEUBEvu:
     - language: en
       quick_replies:
@@ -484,6 +516,9 @@ responses:
   utter_q-rLWNNj7:
     - language: en
       text: Randomized answer 1
+  utter_uEb-iYJzW:
+    - language: en
+      text: 'ok, restarting'
   utter_valid_first_name:
     - language: en
       text: 'Nice to meet you {first_name}'
@@ -524,5 +559,5 @@ slots:
     type: unfeaturized
   questions_continue:
     type: bool
-  quiz_answer:
-    type: text
+  quiz_continue:
+    type: bool
