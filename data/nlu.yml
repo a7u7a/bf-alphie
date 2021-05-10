@@ -18,6 +18,8 @@ nlu:
       Howdy
   - text: |
       anything
+  - text: |
+      henlo
 - intent: basics.no
   metadata:
     language: en

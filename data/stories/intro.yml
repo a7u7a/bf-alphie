@@ -1,0 +1,33 @@
+stories:
+  - story: Start
+    steps:
+      - intent: trigger_nUvCRVBB5
+        entities: []
+      - action: utter_QDWoN3g4V
+      - action: utter_xWk1XA9Er
+      - checkpoint: Start__branches
+    metadata:
+      rules:
+        - trigger:
+            when: init
+            timeOnPage__DISPLAYIF: true
+            timeOnPage: 1
+            triggerLimit__DISPLAYIF: false
+      triggerIntent: trigger_nUvCRVBB5
+      group: Intro
+  - story: Start__Robanter
+    steps:
+      - checkpoint: Start__branches
+      - intent: robanter
+        entities: []
+      - checkpoint: link-to-Robanter Intro/e061b7b5-082e-46a0-abfd-7edd5568e875
+    metadata:
+      group: Intro
+  - story: Start__yes
+    steps:
+      - checkpoint: Start__branches
+      - intent: basics.yes
+        entities: []
+    metadata:
+      group: Intro
+rules: []

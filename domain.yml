@@ -5,21 +5,19 @@ actions:
   - action_botfront_mapping
   - action_reset_questions_slot
   - action_reset_quiz_slot
-  - leadgen_form
   - utter_4LYdvVos6
   - utter_4cc9KND3s
   - utter_5Pd9k1evJ
   - utter_5niwuYZjx
   - utter_9O7Vh-7i3
   - utter_9UvD743sy
-  - utter_C9jg6_pGrb
   - utter_EZMAEcVDO
   - utter_IJpvtXoiV
   - utter_J1OoG6T5w
   - utter_ME5QJQojh
   - utter_NlLx6EqVI
-  - utter_ODRl0LCQG
   - utter_OpCqOoQMd
+  - utter_QDWoN3g4V
   - utter_TqZ95JGTI
   - utter_UR4MHKLdw
   - utter_WZfQFnJc4
@@ -32,12 +30,9 @@ actions:
   - utter_ask_quiz_continue
   - utter_ask_robanter_freetext
   - utter_ask_work_email
-  - utter_bye
   - utter_default
-  - utter_get_started
   - utter_h2v5n3HgO
   - utter_hTp87Q1zY
-  - utter_hi
   - utter_invalid_first_name
   - utter_invalid_work_email
   - utter_jVIwn6jfx
@@ -51,6 +46,7 @@ actions:
   - utter_valid_work_email
   - utter_vpFkP83EG
   - utter_w7UXyfnQ7
+  - utter_xWk1XA9Er
   - utter_y76OxJmGq
 entities: []
 forms:
@@ -92,7 +88,7 @@ forms:
             value: false
         name: questions_continue
         utter_on_new_valid_slot: false
-    updatedAt: 1620674775044
+    updatedAt: 1620680931364
   Robanter_quiz_form:
     collect_in_botfront: null
     description: null
@@ -131,21 +127,18 @@ forms:
             value: false
         name: quiz_continue
         utter_on_new_valid_slot: false
-    updatedAt: 1620674918179
+    updatedAt: 1620680933054
 intents:
   - basics.no
   - basics.yes
-  - chitchat.bye
-  - chitchat.greet
   - get_me_out
-  - get_started
   - jokes
   - love_it
   - questions
   - quiz
   - robanter
   - scary_story
-  - start_form
+  - trigger_nUvCRVBB5
   - try_again
 responses:
   utter_4LYdvVos6:
@@ -201,14 +194,6 @@ responses:
   utter_9UvD743sy:
     - language: en
       text: ok yes then
-  utter_C9jg6_pGrb:
-    - language: en
-      text: |-
-        {first_name}
-
-        {work_email}
-
-        {company_size}
   utter_EZMAEcVDO:
     - language: en
       text: try again
@@ -256,18 +241,13 @@ responses:
   utter_NlLx6EqVI:
     - language: en
       text: (should restart robanter)
-  utter_ODRl0LCQG:
-    - language: en
-      metadata: null
-      quick_replies:
-        - payload: /robanter
-          title: Robanter
-          type: postback
-      text: 'I''m Alphie, fancy a chat?'
   utter_OpCqOoQMd:
     - language: en
       metadata: null
       text: (goes to capabilities)
+  utter_QDWoN3g4V:
+    - language: en
+      text: Hello... is it me you are looking for?
   utter_TqZ95JGTI:
     - language: en
       text: ok(story not implemented further)
@@ -418,9 +398,6 @@ responses:
     - language: en
       metadata: null
       text: default fallback response
-  utter_get_started:
-    - language: en
-      text: Hello... is it me you're looking for?
   utter_h2v5n3HgO:
     - language: en
       text: The answer you're looking for is...
@@ -547,6 +524,16 @@ responses:
       text: Randomized joke8
     - language: en
       text: Randomized joke9
+  utter_xWk1XA9Er:
+    - language: en
+      quick_replies:
+        - payload: /basics.yes
+          title: 'Yes'
+          type: postback
+        - payload: /robanter
+          title: Robanter
+          type: postback
+      text: 'I''m Alphie, fancy a chat?'
   utter_y76OxJmGq:
     - language: en
       text: lovely
