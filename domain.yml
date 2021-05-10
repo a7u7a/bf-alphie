@@ -86,7 +86,7 @@ forms:
             value: false
         name: questions_continue
         utter_on_new_valid_slot: false
-    updatedAt: 1620660999370
+    updatedAt: 1620661514070
   Robanter_quiz_form:
     collect_in_botfront: null
     description: null
@@ -118,7 +118,7 @@ forms:
             type: from_text
         name: quiz_answer
         utter_on_new_valid_slot: false
-    updatedAt: 1620659948046
+    updatedAt: 1620661514074
 intents:
   - basics.no
   - basics.yes
@@ -137,7 +137,6 @@ intents:
 responses:
   utter_4LYdvVos6:
     - language: en
-      metadata: null
       quick_replies:
         - payload: /try_again
           title: Try again
@@ -175,7 +174,6 @@ responses:
         both stupid AND SCARY...
   utter_9O7Vh-7i3:
     - language: en
-      metadata: null
       quick_replies:
         - payload: /basics.yes
           title: 'Yes'
@@ -230,11 +228,9 @@ responses:
         feeling?
   utter_J1OoG6T5w:
     - language: en
-      metadata: null
       text: (should restart Robanter)
   utter_JVl7TCpXz:
     - language: en
-      metadata: null
       text: INCORRECT
   utter_ODRl0LCQG:
     - language: en
@@ -257,7 +253,6 @@ responses:
       text: 'Back is back, boss'
   utter_YOeJj2BMz:
     - language: en
-      metadata: null
       quick_replies:
         - payload: /basics.yes
           title: 'yes'
@@ -366,13 +361,10 @@ responses:
         of daftness
   utter_ask_quiz_answer:
     - language: en
-      metadata: null
       text: Randomized quiz question 1
     - language: en
-      metadata: null
       text: Randomized quiz question 2
     - language: en
-      metadata: null
       text: Randomized quiz question 3
   utter_ask_robanter_freetext:
     - language: en
@@ -388,7 +380,6 @@ responses:
       text: What is your **work** email address?
   utter_get_started:
     - language: en
-      metadata: null
       text: Hello... is it me you're looking for?
   utter_h2v5n3HgO:
     - language: en
@@ -401,11 +392,11 @@ responses:
       text: I was expecting a valid email address?
   utter_jVIwn6jfx:
     - language: en
-      metadata: null
-      text: (should restart Robanter)
+      text: |+
+        (should restart Robanter)
+
   utter_jdJlF9LKO:
     - language: en
-      metadata: null
       text: I'm programmed with 'AlphaMcHeimilichDoppleGangerManouvere' code...
   utter_jxuPnwBo1:
     - language: en
@@ -464,7 +455,6 @@ responses:
       text: randomized joke 6
   utter_kfbzpQA3n:
     - language: en
-      metadata: null
       quick_replies:
         - payload: /basics.yes
           title: 'Alphie, ask me a question'
