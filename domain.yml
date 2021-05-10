@@ -11,7 +11,7 @@ actions:
   - utter_5niwuYZjx
   - utter_9O7Vh-7i3
   - utter_9UvD743sy
-  - utter_EZMAEcVDO
+  - utter_Aj7tOMXyE
   - utter_IJpvtXoiV
   - utter_J1OoG6T5w
   - utter_ME5QJQojh
@@ -20,7 +20,6 @@ actions:
   - utter_QDWoN3g4V
   - utter_TqZ95JGTI
   - utter_UR4MHKLdw
-  - utter_WZfQFnJc4
   - utter_YOeJj2BMz
   - utter_a43HJ0vO9
   - utter_ask_company_size
@@ -31,17 +30,16 @@ actions:
   - utter_ask_robanter_freetext
   - utter_ask_work_email
   - utter_default
+  - utter_eV_6S5MgK
   - utter_h2v5n3HgO
   - utter_hTp87Q1zY
   - utter_invalid_first_name
   - utter_invalid_work_email
-  - utter_jVIwn6jfx
   - utter_jdJlF9LKO
   - utter_jxuPnwBo1
   - utter_lDQEUBEvu
   - utter_o2TU2SdWR
   - utter_q-rLWNNj7
-  - utter_uEb-iYJzW
   - utter_valid_first_name
   - utter_valid_work_email
   - utter_vpFkP83EG
@@ -127,13 +125,15 @@ forms:
             value: false
         name: quiz_continue
         utter_on_new_valid_slot: false
-    updatedAt: 1620680933054
+    updatedAt: 1620683069284
 intents:
   - basics.no
   - basics.yes
+  - capabilities
   - get_me_out
   - jokes
   - love_it
+  - outro
   - questions
   - quiz
   - robanter
@@ -194,9 +194,9 @@ responses:
   utter_9UvD743sy:
     - language: en
       text: ok yes then
-  utter_EZMAEcVDO:
+  utter_Aj7tOMXyE:
     - language: en
-      text: try again
+      text: (goes to capabilities)
   utter_IJpvtXoiV:
     - language: en
       metadata:
@@ -254,10 +254,6 @@ responses:
   utter_UR4MHKLdw:
     - language: en
       text: I'm a bot of my word -  this quiz is impossible....
-  utter_WZfQFnJc4:
-    - language: en
-      metadata: null
-      text: Back(should restart robanter)
   utter_YOeJj2BMz:
     - language: en
       quick_replies:
@@ -398,6 +394,9 @@ responses:
     - language: en
       metadata: null
       text: default fallback response
+  utter_eV_6S5MgK:
+    - language: en
+      text: (goes to outro)
   utter_h2v5n3HgO:
     - language: en
       text: The answer you're looking for is...
@@ -410,10 +409,6 @@ responses:
   utter_invalid_work_email:
     - language: en
       text: I was expecting a valid email address?
-  utter_jVIwn6jfx:
-    - language: en
-      metadata: null
-      text: (should restart Robanter)
   utter_jdJlF9LKO:
     - language: en
       text: I'm programmed with 'AlphaMcHeimilichDoppleGangerManouvere' code...
@@ -474,6 +469,7 @@ responses:
       text: randomized joke 6
   utter_lDQEUBEvu:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /robanter
           title: Back
@@ -489,13 +485,11 @@ responses:
         chat options... I'll let you work out what 'Quit' does ;-)
   utter_o2TU2SdWR:
     - language: en
+      metadata: null
       text: (should restart Robanter)
   utter_q-rLWNNj7:
     - language: en
       text: Randomized answer 1
-  utter_uEb-iYJzW:
-    - language: en
-      text: 'ok, restarting'
   utter_valid_first_name:
     - language: en
       text: 'Nice to meet you {first_name}'
