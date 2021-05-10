@@ -86,7 +86,7 @@ forms:
             value: false
         name: questions_continue
         utter_on_new_valid_slot: false
-    updatedAt: 1620354999494
+    updatedAt: 1620660999370
   Robanter_quiz_form:
     collect_in_botfront: null
     description: null
@@ -118,7 +118,7 @@ forms:
             type: from_text
         name: quiz_answer
         utter_on_new_valid_slot: false
-    updatedAt: 1620355998307
+    updatedAt: 1620659948046
 intents:
   - basics.no
   - basics.yes
@@ -401,9 +401,8 @@ responses:
       text: I was expecting a valid email address?
   utter_jVIwn6jfx:
     - language: en
-      text: |+
-        (should restart Robanter)
-
+      metadata: null
+      text: (should restart Robanter)
   utter_jdJlF9LKO:
     - language: en
       metadata: null
@@ -465,6 +464,7 @@ responses:
       text: randomized joke 6
   utter_kfbzpQA3n:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /basics.yes
           title: 'Alphie, ask me a question'
