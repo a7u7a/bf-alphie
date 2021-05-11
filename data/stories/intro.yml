@@ -20,7 +20,8 @@ stories:
       - checkpoint: Start__branches
       - intent: robanter
         entities: []
-      - checkpoint: link-to-Robanter Intro/e061b7b5-082e-46a0-abfd-7edd5568e875
+      - checkpoint: link-to-restart/cea98e59-47ab-4af8-bc25-6fbeaa6cb5c7
+      - checkpoint: link-to-Robanter Intro/2f02b7b7-3a71-48b9-9f99-a857aa6a3e2e
     metadata:
       group: Intro
   - story: Start__yes
@@ -28,11 +29,6 @@ stories:
       - checkpoint: Start__branches
       - intent: basics.yes
         entities: []
-      - action: utter_eWXkIoRa4
-      - intent: basics.yes
-        entities: []
-      - action: utter_iqGDjjmz0
-      - action: utter_GHLBs5rpR
     metadata:
       group: Intro
 rules: []

@@ -12,7 +12,6 @@ actions:
   - utter_9O7Vh-7i3
   - utter_9UvD743sy
   - utter_Aj7tOMXyE
-  - utter_GHLBs5rpR
   - utter_IJpvtXoiV
   - utter_J1OoG6T5w
   - utter_ME5QJQojh
@@ -32,12 +31,10 @@ actions:
   - utter_ask_work_email
   - utter_default
   - utter_eV_6S5MgK
-  - utter_eWXkIoRa4
   - utter_h2v5n3HgO
   - utter_hTp87Q1zY
   - utter_invalid_first_name
   - utter_invalid_work_email
-  - utter_iqGDjjmz0
   - utter_jdJlF9LKO
   - utter_jxuPnwBo1
   - utter_lDQEUBEvu
@@ -89,7 +86,7 @@ forms:
             value: false
         name: questions_continue
         utter_on_new_valid_slot: false
-    updatedAt: 1620680931364
+    updatedAt: 1620772694582
   Robanter_quiz_form:
     collect_in_botfront: null
     description: null
@@ -128,7 +125,7 @@ forms:
             value: false
         name: quiz_continue
         utter_on_new_valid_slot: false
-    updatedAt: 1620683069284
+    updatedAt: 1620772694587
 intents:
   - basics.no
   - basics.yes
@@ -161,7 +158,6 @@ responses:
       text: Randomized warning 1
   utter_5Pd9k1evJ:
     - language: en
-      metadata: null
       quick_replies:
         - payload: /basics.yes
           title: 'Alphie, ask me a question'
@@ -200,11 +196,6 @@ responses:
   utter_Aj7tOMXyE:
     - language: en
       text: (goes to capabilities)
-  utter_GHLBs5rpR:
-    - language: en
-      text: >-
-        I'm Alphie, the chatbot. I'm programmed to be daft and to chat about
-        creative stuff (including expressing feelings and emotions)...
   utter_IJpvtXoiV:
     - language: en
       metadata:
@@ -251,7 +242,6 @@ responses:
       text: (should restart robanter)
   utter_OpCqOoQMd:
     - language: en
-      metadata: null
       text: (goes to capabilities)
   utter_QDWoN3g4V:
     - language: en
@@ -363,7 +353,6 @@ responses:
       text: What is your first name?
   utter_ask_questions_continue:
     - language: en
-      metadata: null
       quick_replies:
         - payload: /robanter
           title: Back
@@ -373,7 +362,6 @@ responses:
         of daftness
   utter_ask_quiz_answer:
     - language: en
-      metadata: null
       text: Randomized quiz question 1
     - language: en
       text: Randomized quiz question 2
@@ -400,21 +388,10 @@ responses:
       text: What is your **work** email address?
   utter_default:
     - language: en
-      metadata: null
       text: 'Debug: default fallback response'
   utter_eV_6S5MgK:
     - language: en
       text: (goes to outro)
-  utter_eWXkIoRa4:
-    - language: en
-      quick_replies:
-        - payload: /basics.yes
-          title: 'Yes'
-          type: postback
-        - payload: /basics.yes
-          title: 'No'
-          type: postback
-      text: I'm a bot. Do you know my friend Ro-Man? / ...
   utter_h2v5n3HgO:
     - language: en
       text: The answer you're looking for is...
@@ -427,9 +404,6 @@ responses:
   utter_invalid_work_email:
     - language: en
       text: I was expecting a valid email address?
-  utter_iqGDjjmz0:
-    - language: en
-      text: 'Actually, probably best not to get into all that..'
   utter_jdJlF9LKO:
     - language: en
       text: I'm programmed with 'AlphaMcHeimilichDoppleGangerManouvere' code...
@@ -490,7 +464,6 @@ responses:
       text: randomized joke 6
   utter_lDQEUBEvu:
     - language: en
-      metadata: null
       quick_replies:
         - payload: /robanter
           title: Back
@@ -506,7 +479,6 @@ responses:
         chat options... I'll let you work out what 'Quit' does ;-)
   utter_o2TU2SdWR:
     - language: en
-      metadata: null
       text: (should restart Robanter)
   utter_q-rLWNNj7:
     - language: en
