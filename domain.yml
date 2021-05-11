@@ -393,7 +393,7 @@ responses:
   utter_default:
     - language: en
       metadata: null
-      text: default fallback response
+      text: 'Debug: default fallback response'
   utter_eV_6S5MgK:
     - language: en
       text: (goes to outro)
