@@ -28,6 +28,11 @@ stories:
       - checkpoint: Start__branches
       - intent: basics.yes
         entities: []
+      - action: utter_eWXkIoRa4
+      - intent: basics.yes
+        entities: []
+      - action: utter_iqGDjjmz0
+      - action: utter_GHLBs5rpR
     metadata:
       group: Intro
 rules: []

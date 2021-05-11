@@ -12,6 +12,7 @@ actions:
   - utter_9O7Vh-7i3
   - utter_9UvD743sy
   - utter_Aj7tOMXyE
+  - utter_GHLBs5rpR
   - utter_IJpvtXoiV
   - utter_J1OoG6T5w
   - utter_ME5QJQojh
@@ -31,10 +32,12 @@ actions:
   - utter_ask_work_email
   - utter_default
   - utter_eV_6S5MgK
+  - utter_eWXkIoRa4
   - utter_h2v5n3HgO
   - utter_hTp87Q1zY
   - utter_invalid_first_name
   - utter_invalid_work_email
+  - utter_iqGDjjmz0
   - utter_jdJlF9LKO
   - utter_jxuPnwBo1
   - utter_lDQEUBEvu
@@ -197,6 +200,11 @@ responses:
   utter_Aj7tOMXyE:
     - language: en
       text: (goes to capabilities)
+  utter_GHLBs5rpR:
+    - language: en
+      text: >-
+        I'm Alphie, the chatbot. I'm programmed to be daft and to chat about
+        creative stuff (including expressing feelings and emotions)...
   utter_IJpvtXoiV:
     - language: en
       metadata:
@@ -397,6 +405,16 @@ responses:
   utter_eV_6S5MgK:
     - language: en
       text: (goes to outro)
+  utter_eWXkIoRa4:
+    - language: en
+      quick_replies:
+        - payload: /basics.yes
+          title: 'Yes'
+          type: postback
+        - payload: /basics.yes
+          title: 'No'
+          type: postback
+      text: I'm a bot. Do you know my friend Ro-Man? / ...
   utter_h2v5n3HgO:
     - language: en
       text: The answer you're looking for is...
@@ -409,6 +427,9 @@ responses:
   utter_invalid_work_email:
     - language: en
       text: I was expecting a valid email address?
+  utter_iqGDjjmz0:
+    - language: en
+      text: 'Actually, probably best not to get into all that..'
   utter_jdJlF9LKO:
     - language: en
       text: I'm programmed with 'AlphaMcHeimilichDoppleGangerManouvere' code...
