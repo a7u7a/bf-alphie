@@ -1,4 +1,99 @@
 stories:
+  - story: Capabilities
+    steps:
+      - checkpoint: link-to-Capabilities/c4222338-e3c0-4856-a12c-e066ac7736df
+      - action: utter_yThE5cXzoy
+      - checkpoint: Capabilities__branches
+    metadata:
+      group: Intro
+  - story: Capabilities__Creative
+    steps:
+      - checkpoint: Capabilities__branches
+      - intent: creative_feelings
+        entities: []
+    metadata:
+      group: Intro
+  - story: Capabilities__Functional
+    steps:
+      - checkpoint: Capabilities__branches
+      - intent: functional
+        entities: []
+    metadata:
+      group: Intro
+  - story: Capabilities__Outro
+    steps:
+      - checkpoint: Capabilities__branches
+      - intent: outro
+        entities: []
+    metadata:
+      group: Intro
+  - story: Capabilities__Robanter
+    steps:
+      - checkpoint: Capabilities__branches
+      - intent: robanter
+        entities: []
+    metadata:
+      group: Intro
+  - story: Functional
+    steps:
+      - action: utter_uj7EIvRXJ
+      - checkpoint: Functional__branches
+    metadata:
+      group: Intro
+  - story: Functional__Capabilities
+    steps:
+      - checkpoint: Functional__branches
+      - intent: capabilities
+        entities: []
+    metadata:
+      group: Intro
+  - story: Functional__Carer
+    steps:
+      - checkpoint: Functional__branches
+      - intent: carer
+        entities: []
+    metadata:
+      group: Intro
+  - story: Functional__Contact
+    steps:
+      - checkpoint: Functional__branches
+      - intent: contact
+        entities: []
+    metadata:
+      group: Intro
+  - story: Functional__Creative Feelings
+    steps:
+      - checkpoint: Functional__branches
+      - intent: creative_feelings
+        entities: []
+    metadata:
+      group: Intro
+  - story: Functional__Outro
+    steps:
+      - checkpoint: Functional__branches
+      - intent: outro
+        entities: []
+    metadata:
+      group: Intro
+  - story: Functional__Shows
+    steps:
+      - checkpoint: Functional__branches
+      - intent: shows
+        entities: []
+    metadata:
+      group: Intro
+  - story: Functional__Timetable
+    steps:
+      - checkpoint: Functional__branches
+      - intent: timetable
+        entities: []
+    metadata:
+      group: Intro
+  - story: Outro
+    steps:
+      - checkpoint: link-to-Outro/306b91a8-aa20-4e92-ad75-aa69362bc5e1
+    metadata:
+      group: Intro
   - story: Start
     steps:
       - intent: trigger_nUvCRVBB5
@@ -15,20 +110,33 @@ stories:
             triggerLimit__DISPLAYIF: false
       triggerIntent: trigger_nUvCRVBB5
       group: Intro
-  - story: Start__Robanter
+  - story: Start__Functional
     steps:
       - checkpoint: Start__branches
-      - intent: robanter
+      - intent: functional
         entities: []
       - checkpoint: link-to-restart/cea98e59-47ab-4af8-bc25-6fbeaa6cb5c7
       - checkpoint: link-to-Robanter Intro/2f02b7b7-3a71-48b9-9f99-a857aa6a3e2e
     metadata:
       group: Intro
-  - story: Start__yes
+  - story: Start__Outro
+    steps:
+      - checkpoint: Start__branches
+      - intent: outro
+        entities: []
+      - checkpoint: link-to-Outro/306b91a8-aa20-4e92-ad75-aa69362bc5e1
+    metadata:
+      group: Intro
+  - story: Start__Yes
     steps:
       - checkpoint: Start__branches
       - intent: basics.yes
         entities: []
+      - action: utter_-QPRohooo
+      - intent: basics.yes
+        entities: []
+      - action: utter_m0p-_d8zn
+      - checkpoint: link-to-Capabilities/c4222338-e3c0-4856-a12c-e066ac7736df
     metadata:
       group: Intro
 rules: []

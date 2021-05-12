@@ -5,6 +5,7 @@ actions:
   - action_botfront_mapping
   - action_reset_questions_slot
   - action_reset_quiz_slot
+  - utter_-QPRohooo
   - utter_4LYdvVos6
   - utter_4cc9KND3s
   - utter_5Pd9k1evJ
@@ -38,14 +39,17 @@ actions:
   - utter_jdJlF9LKO
   - utter_jxuPnwBo1
   - utter_lDQEUBEvu
+  - utter_m0p-_d8zn
   - utter_o2TU2SdWR
   - utter_q-rLWNNj7
+  - utter_uj7EIvRXJ
   - utter_valid_first_name
   - utter_valid_work_email
   - utter_vpFkP83EG
   - utter_w7UXyfnQ7
   - utter_xWk1XA9Er
   - utter_y76OxJmGq
+  - utter_yThE5cXzoy
 entities: []
 forms:
   Robanter_questions_form:
@@ -130,6 +134,10 @@ intents:
   - basics.no
   - basics.yes
   - capabilities
+  - carer
+  - contact
+  - creative_feelings
+  - functional
   - get_me_out
   - jokes
   - love_it
@@ -138,9 +146,21 @@ intents:
   - quiz
   - robanter
   - scary_story
+  - shows
+  - timetable
   - trigger_nUvCRVBB5
   - try_again
 responses:
+  utter_-QPRohooo:
+    - language: en
+      quick_replies:
+        - payload: /basics.yes
+          title: 'Yes'
+          type: postback
+        - payload: /basics.yes
+          title: 'No'
+          type: postback
+      text: I'm a bot. Do you know my friend Ro-Man / ...
   utter_4LYdvVos6:
     - language: en
       quick_replies:
@@ -477,12 +497,47 @@ responses:
       text: >-
         Press 'Back' to go to the beginning of this section or 'Menu' for full
         chat options... I'll let you work out what 'Quit' does ;-)
+  utter_m0p-_d8zn:
+    - language: en
+      text: >-
+        Actually, probably best not to get into all that..
+
+
+        I'm Alphie, the chatbot. I'm programmed to be daft and to chat about
+        creative stuff (including expressing feelings and emotions)...
   utter_o2TU2SdWR:
     - language: en
       text: (should restart Robanter)
   utter_q-rLWNNj7:
     - language: en
       text: Randomized answer 1
+  utter_uj7EIvRXJ:
+    - language: en
+      quick_replies:
+        - payload: /timetables
+          title: I need TEA course timetables and schedules. Stat!
+          type: postback
+        - payload: /carer
+          title: I'm a carer/guardian for a TEA member
+          type: postback
+        - payload: /contact_tea
+          title: I want to contact the workshop leader or TEA team
+          type: postback
+        - payload: /shows
+          title: 'Tell me what shows are on at the egg, Theatre Royal Bath and Ustinov'
+          type: postback
+        - payload: /creative_feelings
+          title: I want a creative chat about workshops and shows
+          type: postback
+        - payload: /capabilities
+          title: 'Alphie, let''s chat about something else'
+          type: postback
+        - payload: /outro
+          title: 'Actually Alphie, I''m all good, you can go'
+          type: postback
+      text: >-
+        I'm programmed to help you find course timetables, check show schedules,
+        and contact the TEA team
   utter_valid_first_name:
     - language: en
       text: 'Nice to meet you {first_name}'
@@ -513,17 +568,48 @@ responses:
       text: Randomized joke9
   utter_xWk1XA9Er:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /basics.yes
           title: 'Yes'
           type: postback
-        - payload: /robanter
-          title: Robanter
+        - payload: /functional
+          title: 'No time for chat, give me cold hard facts'
+          type: postback
+        - payload: /outro
+          title: 'I can''t be BOThered with you right now, shhh!'
           type: postback
       text: 'I''m Alphie, fancy a chat?'
   utter_y76OxJmGq:
     - language: en
       text: lovely
+  utter_yThE5cXzoy:
+    - language: en
+      quick_replies:
+        - payload: /robanter
+          title: Tell me a joke
+          type: postback
+        - payload: /functional
+          title: I want facts and information about workshops and classes
+          type: postback
+        - payload: /functional
+          title: I want to contact my workshop leader/TEA team
+          type: postback
+        - payload: /creative_feelings
+          title: I want a creative chat about workshops and shows
+          type: postback
+        - payload: /creative_feelings
+          title: >-
+            I'm generally feeling creative and want to express myself and my
+            emotions
+          type: postback
+        - payload: /robanter
+          title: 'Daftness please Alphie, daftness'
+          type: postback
+        - payload: /outro
+          title: 'Alphie, for the love of Bot, be quiet!'
+          type: postback
+      text: So... what do you want to chat about?
 session_config: {}
 slots:
   disambiguation_message:
