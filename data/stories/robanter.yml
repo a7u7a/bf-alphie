@@ -23,11 +23,6 @@ stories:
       - checkpoint: link-to-Jokes/6132aa24-a990-4667-b4ba-a1eccc389f20
     metadata:
       group: Robanter
-  - story: restart
-    steps:
-      - checkpoint: link-to-restart/cea98e59-47ab-4af8-bc25-6fbeaa6cb5c7
-    metadata:
-      group: Robanter
   - story: Robanter Intro
     steps:
       - checkpoint: link-to-Robanter Intro/2f02b7b7-3a71-48b9-9f99-a857aa6a3e2e
@@ -87,7 +82,7 @@ stories:
       - checkpoint: Robanter_Outro__branches
       - intent: robanter
         entities: []
-      - checkpoint: link-to-restart/cea98e59-47ab-4af8-bc25-6fbeaa6cb5c7
+      - checkpoint: link-to-Robanter restart/cea98e59-47ab-4af8-bc25-6fbeaa6cb5c7
       - checkpoint: link-to-Robanter Intro/2f02b7b7-3a71-48b9-9f99-a857aa6a3e2e
     metadata:
       group: Robanter
@@ -123,7 +118,7 @@ stories:
       - checkpoint: Robanter_Questions__branches
       - slot_was_set:
           - questions_continue: false
-      - checkpoint: link-to-restart/cea98e59-47ab-4af8-bc25-6fbeaa6cb5c7
+      - checkpoint: link-to-Robanter restart/cea98e59-47ab-4af8-bc25-6fbeaa6cb5c7
       - checkpoint: link-to-Robanter Intro/2f02b7b7-3a71-48b9-9f99-a857aa6a3e2e
     metadata:
       group: Robanter
@@ -144,7 +139,7 @@ stories:
       - checkpoint: Robanter_Questions__Continue__branches
       - intent: robanter
         entities: []
-      - checkpoint: link-to-restart/cea98e59-47ab-4af8-bc25-6fbeaa6cb5c7
+      - checkpoint: link-to-Robanter restart/cea98e59-47ab-4af8-bc25-6fbeaa6cb5c7
       - checkpoint: link-to-Robanter Intro/2f02b7b7-3a71-48b9-9f99-a857aa6a3e2e
     metadata:
       group: Robanter
@@ -179,7 +174,7 @@ stories:
       - checkpoint: Robanter_Quiz_Intro__branches
       - intent: basics.no
         entities: []
-      - checkpoint: link-to-restart/cea98e59-47ab-4af8-bc25-6fbeaa6cb5c7
+      - checkpoint: link-to-Robanter restart/cea98e59-47ab-4af8-bc25-6fbeaa6cb5c7
       - checkpoint: link-to-Robanter Intro/2f02b7b7-3a71-48b9-9f99-a857aa6a3e2e
     metadata:
       group: Robanter
@@ -196,7 +191,7 @@ stories:
       - checkpoint: Robanter_Quiz__branches
       - slot_was_set:
           - quiz_continue: false
-      - checkpoint: link-to-restart/cea98e59-47ab-4af8-bc25-6fbeaa6cb5c7
+      - checkpoint: link-to-Robanter restart/cea98e59-47ab-4af8-bc25-6fbeaa6cb5c7
       - checkpoint: link-to-Robanter Intro/2f02b7b7-3a71-48b9-9f99-a857aa6a3e2e
     metadata:
       group: Robanter
@@ -215,7 +210,7 @@ stories:
       - checkpoint: Robanter_Quiz__Continue__branches
       - intent: basics.no
         entities: []
-      - checkpoint: link-to-restart/cea98e59-47ab-4af8-bc25-6fbeaa6cb5c7
+      - checkpoint: link-to-Robanter restart/cea98e59-47ab-4af8-bc25-6fbeaa6cb5c7
       - checkpoint: link-to-Robanter Intro/2f02b7b7-3a71-48b9-9f99-a857aa6a3e2e
     metadata:
       group: Robanter
@@ -225,6 +220,11 @@ stories:
       - intent: basics.yes
         entities: []
       - checkpoint: link-to-Robanter Quiz/bba19d60-e2c0-4aa5-bed9-5aed6c1e313d
+    metadata:
+      group: Robanter
+  - story: Robanter restart
+    steps:
+      - checkpoint: link-to-Robanter restart/cea98e59-47ab-4af8-bc25-6fbeaa6cb5c7
     metadata:
       group: Robanter
   - story: Robanter Scary story

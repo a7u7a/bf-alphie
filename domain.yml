@@ -6,6 +6,7 @@ actions:
   - action_reset_questions_slot
   - action_reset_quiz_slot
   - utter_-QPRohooo
+  - utter_1Xy4oy6kh
   - utter_4LYdvVos6
   - utter_4cc9KND3s
   - utter_5Pd9k1evJ
@@ -13,15 +14,19 @@ actions:
   - utter_9O7Vh-7i3
   - utter_9UvD743sy
   - utter_Aj7tOMXyE
+  - utter_EQkvXvSDq
   - utter_IJpvtXoiV
   - utter_J1OoG6T5w
+  - utter_JCU3qBn1J
   - utter_ME5QJQojh
   - utter_NlLx6EqVI
   - utter_OpCqOoQMd
   - utter_QDWoN3g4V
   - utter_TqZ95JGTI
+  - utter_U1VelU9yP
   - utter_UR4MHKLdw
   - utter_YOeJj2BMz
+  - utter_ZQh_sOzoN
   - utter_a43HJ0vO9
   - utter_ask_company_size
   - utter_ask_first_name
@@ -32,22 +37,28 @@ actions:
   - utter_ask_work_email
   - utter_default
   - utter_eV_6S5MgK
+  - utter_fiovrdagT
   - utter_h2v5n3HgO
   - utter_hTp87Q1zY
+  - utter_he9e-3pCO
   - utter_invalid_first_name
   - utter_invalid_work_email
   - utter_jdJlF9LKO
   - utter_jxuPnwBo1
   - utter_lDQEUBEvu
   - utter_m0p-_d8zn
+  - utter_my0qKfy48
   - utter_o2TU2SdWR
+  - utter_oMvl-0P-d
   - utter_q-rLWNNj7
+  - utter_tQhu4XueD
   - utter_uj7EIvRXJ
   - utter_valid_first_name
   - utter_valid_work_email
   - utter_vpFkP83EG
   - utter_w7UXyfnQ7
   - utter_xWk1XA9Er
+  - utter_xosjWw2B6
   - utter_y76OxJmGq
   - utter_yThE5cXzoy
 entities: []
@@ -161,6 +172,17 @@ responses:
           title: 'No'
           type: postback
       text: I'm a bot. Do you know my friend Ro-Man / ...
+  utter_1Xy4oy6kh:
+    - language: en
+      text: >-
+        Here are 3 links to the 'what's on' pages. Press ""done"" when you're,
+        err, well... done
+
+
+        [Egg link](https://www.theeggassembly.com/)
+
+
+        [TRB link](https://www.theeggassembly.com/)
   utter_4LYdvVos6:
     - language: en
       quick_replies:
@@ -216,6 +238,13 @@ responses:
   utter_Aj7tOMXyE:
     - language: en
       text: (goes to capabilities)
+  utter_EQkvXvSDq:
+    - language: en
+      quick_replies:
+        - payload: /basics.yes
+          title: Done
+          type: postback
+      text: '[Ustinov link](https://www.theeggassembly.com/)'
   utter_IJpvtXoiV:
     - language: en
       metadata:
@@ -247,6 +276,16 @@ responses:
   utter_J1OoG6T5w:
     - language: en
       text: (should restart Robanter)
+  utter_JCU3qBn1J:
+    - language: en
+      quick_replies:
+        - payload: /basics.yes
+          title: Done
+          type: postback
+      text: >-
+        I'm programmed to refer carers/guardians to a real life person. Please
+        open the link to the [contact form](https://www.theeggassembly.com/).
+        Press ""done"" when you're, err, well... done
   utter_ME5QJQojh:
     - language: en
       quick_replies:
@@ -269,6 +308,9 @@ responses:
   utter_TqZ95JGTI:
     - language: en
       text: ok(story not implemented further)
+  utter_U1VelU9yP:
+    - language: en
+      text: '(WIP: you have reached the outro)'
   utter_UR4MHKLdw:
     - language: en
       text: I'm a bot of my word -  this quiz is impossible....
@@ -282,6 +324,9 @@ responses:
           title: 'no'
           type: postback
       text: Another one?
+  utter_ZQh_sOzoN:
+    - language: en
+      text: '(WIP: you have reached the Creative Feelings part)'
   utter_a43HJ0vO9:
     - elements:
         - buttons:
@@ -412,12 +457,24 @@ responses:
   utter_eV_6S5MgK:
     - language: en
       text: (goes to outro)
+  utter_fiovrdagT:
+    - language: en
+      quick_replies:
+        - payload: /basics.yes
+          title: Done
+          type: postback
+      text: >-
+        Here is a link to the [contact form](https://www.theeggassembly.com/).
+        Press "Done" when you're, err, well... done
   utter_h2v5n3HgO:
     - language: en
       text: The answer you're looking for is...
   utter_hTp87Q1zY:
     - language: en
       text: INCORRECT
+  utter_he9e-3pCO:
+    - language: en
+      text: (goes to creative feelings)
   utter_invalid_first_name:
     - language: en
       text: I was expecting a longer first name...
@@ -505,22 +562,43 @@ responses:
 
         I'm Alphie, the chatbot. I'm programmed to be daft and to chat about
         creative stuff (including expressing feelings and emotions)...
+  utter_my0qKfy48:
+    - language: en
+      text: (goes to outro)
   utter_o2TU2SdWR:
     - language: en
       text: (should restart Robanter)
+  utter_oMvl-0P-d:
+    - language: en
+      quick_replies:
+        - payload: /functional
+          title: Back
+          type: postback
+        - payload: /capabilities
+          title: Menu
+          type: postback
+        - payload: /outro
+          title: Quit
+          type: postback
+      text: >-
+        Press 'back' to go to the beginning of this section or 'menu' for full
+        chat options... I'll let you work out what 'quit' does ;-)
   utter_q-rLWNNj7:
     - language: en
       text: Randomized answer 1
+  utter_tQhu4XueD:
+    - language: en
+      text: (goes to creative feelings)
   utter_uj7EIvRXJ:
     - language: en
       quick_replies:
-        - payload: /timetables
+        - payload: /timetable
           title: I need TEA course timetables and schedules. Stat!
           type: postback
         - payload: /carer
           title: I'm a carer/guardian for a TEA member
           type: postback
-        - payload: /contact_tea
+        - payload: /contact
           title: I want to contact the workshop leader or TEA team
           type: postback
         - payload: /shows
@@ -580,6 +658,16 @@ responses:
           title: 'I can''t be BOThered with you right now, shhh!'
           type: postback
       text: 'I''m Alphie, fancy a chat?'
+  utter_xosjWw2B6:
+    - language: en
+      quick_replies:
+        - payload: /basics.yes
+          title: Done
+          type: postback
+      text: >-
+        Follow this link to the information you need:
+        [Timetables](https://www.theeggassembly.com/) Press ""done"" when
+        you're, err, well... done.
   utter_y76OxJmGq:
     - language: en
       text: lovely

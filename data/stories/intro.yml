@@ -11,6 +11,7 @@ stories:
       - checkpoint: Capabilities__branches
       - intent: creative_feelings
         entities: []
+      - checkpoint: link-to-Creative Feelings Intro/55d82bd7-5a23-4c35-b8e6-716f75f9fcb5
     metadata:
       group: Intro
   - story: Capabilities__Functional
@@ -18,6 +19,7 @@ stories:
       - checkpoint: Capabilities__branches
       - intent: functional
         entities: []
+      - checkpoint: link-to-Functional/b9291b07-ed95-441d-8060-b57ee5c86910
     metadata:
       group: Intro
   - story: Capabilities__Outro
@@ -25,6 +27,7 @@ stories:
       - checkpoint: Capabilities__branches
       - intent: outro
         entities: []
+      - checkpoint: link-to-Outro/306b91a8-aa20-4e92-ad75-aa69362bc5e1
     metadata:
       group: Intro
   - story: Capabilities__Robanter
@@ -32,12 +35,45 @@ stories:
       - checkpoint: Capabilities__branches
       - intent: robanter
         entities: []
+      - checkpoint: link-to-Robanter Intro/2f02b7b7-3a71-48b9-9f99-a857aa6a3e2e
     metadata:
       group: Intro
   - story: Functional
     steps:
+      - checkpoint: link-to-Functional/b9291b07-ed95-441d-8060-b57ee5c86910
       - action: utter_uj7EIvRXJ
       - checkpoint: Functional__branches
+    metadata:
+      group: Intro
+  - story: Functional Done
+    steps:
+      - checkpoint: link-to-Functional Done/68aae877-1e33-47d1-9353-e0c22ded0002
+      - action: utter_oMvl-0P-d
+      - checkpoint: Functional_Done__branches
+    metadata:
+      group: Intro
+  - story: Functional Done__Back
+    steps:
+      - checkpoint: Functional_Done__branches
+      - intent: functional
+        entities: []
+      - checkpoint: link-to-Functional/b9291b07-ed95-441d-8060-b57ee5c86910
+    metadata:
+      group: Intro
+  - story: Functional Done__Capabilities
+    steps:
+      - checkpoint: Functional_Done__branches
+      - intent: capabilities
+        entities: []
+      - checkpoint: link-to-Capabilities/c4222338-e3c0-4856-a12c-e066ac7736df
+    metadata:
+      group: Intro
+  - story: Functional Done__Outro
+    steps:
+      - checkpoint: Functional_Done__branches
+      - intent: outro
+        entities: []
+      - checkpoint: link-to-Outro/306b91a8-aa20-4e92-ad75-aa69362bc5e1
     metadata:
       group: Intro
   - story: Functional__Capabilities
@@ -45,6 +81,7 @@ stories:
       - checkpoint: Functional__branches
       - intent: capabilities
         entities: []
+      - checkpoint: link-to-Capabilities/c4222338-e3c0-4856-a12c-e066ac7736df
     metadata:
       group: Intro
   - story: Functional__Carer
@@ -52,6 +89,10 @@ stories:
       - checkpoint: Functional__branches
       - intent: carer
         entities: []
+      - action: utter_JCU3qBn1J
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Functional Done/68aae877-1e33-47d1-9353-e0c22ded0002
     metadata:
       group: Intro
   - story: Functional__Contact
@@ -59,6 +100,10 @@ stories:
       - checkpoint: Functional__branches
       - intent: contact
         entities: []
+      - action: utter_fiovrdagT
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Functional Done/68aae877-1e33-47d1-9353-e0c22ded0002
     metadata:
       group: Intro
   - story: Functional__Creative Feelings
@@ -66,6 +111,7 @@ stories:
       - checkpoint: Functional__branches
       - intent: creative_feelings
         entities: []
+      - action: utter_tQhu4XueD
     metadata:
       group: Intro
   - story: Functional__Outro
@@ -73,6 +119,7 @@ stories:
       - checkpoint: Functional__branches
       - intent: outro
         entities: []
+      - checkpoint: link-to-Outro/306b91a8-aa20-4e92-ad75-aa69362bc5e1
     metadata:
       group: Intro
   - story: Functional__Shows
@@ -80,6 +127,11 @@ stories:
       - checkpoint: Functional__branches
       - intent: shows
         entities: []
+      - action: utter_1Xy4oy6kh
+      - action: utter_EQkvXvSDq
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Functional Done/68aae877-1e33-47d1-9353-e0c22ded0002
     metadata:
       group: Intro
   - story: Functional__Timetable
@@ -87,11 +139,16 @@ stories:
       - checkpoint: Functional__branches
       - intent: timetable
         entities: []
+      - action: utter_xosjWw2B6
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Functional Done/68aae877-1e33-47d1-9353-e0c22ded0002
     metadata:
       group: Intro
   - story: Outro
     steps:
       - checkpoint: link-to-Outro/306b91a8-aa20-4e92-ad75-aa69362bc5e1
+      - action: utter_U1VelU9yP
     metadata:
       group: Intro
   - story: Start
@@ -115,8 +172,7 @@ stories:
       - checkpoint: Start__branches
       - intent: functional
         entities: []
-      - checkpoint: link-to-restart/cea98e59-47ab-4af8-bc25-6fbeaa6cb5c7
-      - checkpoint: link-to-Robanter Intro/2f02b7b7-3a71-48b9-9f99-a857aa6a3e2e
+      - checkpoint: link-to-Functional/b9291b07-ed95-441d-8060-b57ee5c86910
     metadata:
       group: Intro
   - story: Start__Outro
@@ -124,6 +180,7 @@ stories:
       - checkpoint: Start__branches
       - intent: outro
         entities: []
+      - action: utter_my0qKfy48
       - checkpoint: link-to-Outro/306b91a8-aa20-4e92-ad75-aa69362bc5e1
     metadata:
       group: Intro
