@@ -15,18 +15,23 @@ actions:
   - utter_9UvD743sy
   - utter_Aj7tOMXyE
   - utter_EQkvXvSDq
+  - utter_Fhs-g9KWJ
   - utter_IJpvtXoiV
   - utter_J1OoG6T5w
   - utter_JCU3qBn1J
+  - utter_JmgbQQnXY
   - utter_ME5QJQojh
+  - utter_NVzd1kA1G
   - utter_NlLx6EqVI
   - utter_OpCqOoQMd
   - utter_QDWoN3g4V
   - utter_TqZ95JGTI
-  - utter_U1VelU9yP
   - utter_UR4MHKLdw
+  - utter_XzLAKnjEi
   - utter_YOeJj2BMz
   - utter_ZQh_sOzoN
+  - utter_Znk1-PR-h
+  - utter__ldtzQHZh
   - utter_a43HJ0vO9
   - utter_ask_company_size
   - utter_ask_first_name
@@ -36,6 +41,7 @@ actions:
   - utter_ask_robanter_freetext
   - utter_ask_work_email
   - utter_default
+  - utter_eRU2GGRF4
   - utter_eV_6S5MgK
   - utter_fiovrdagT
   - utter_h2v5n3HgO
@@ -51,14 +57,18 @@ actions:
   - utter_o2TU2SdWR
   - utter_oMvl-0P-d
   - utter_q-rLWNNj7
+  - utter_qDBiifbxe
+  - utter_r2gIaHN6b
   - utter_tQhu4XueD
   - utter_uj7EIvRXJ
+  - utter_umuWA0jbB
   - utter_valid_first_name
   - utter_valid_work_email
   - utter_vpFkP83EG
   - utter_w7UXyfnQ7
   - utter_xWk1XA9Er
   - utter_xosjWw2B6
+  - utter_xzTX9xQpS
   - utter_y76OxJmGq
   - utter_yThE5cXzoy
 entities: []
@@ -140,10 +150,11 @@ forms:
             value: false
         name: quiz_continue
         utter_on_new_valid_slot: false
-    updatedAt: 1620772694587
+    updatedAt: 1620845028571
 intents:
   - basics.no
   - basics.yes
+  - bye
   - capabilities
   - carer
   - contact
@@ -174,6 +185,7 @@ responses:
       text: I'm a bot. Do you know my friend Ro-Man / ...
   utter_1Xy4oy6kh:
     - language: en
+      metadata: null
       text: >-
         Here are 3 links to the 'what's on' pages. Press ""done"" when you're,
         err, well... done
@@ -245,6 +257,21 @@ responses:
           title: Done
           type: postback
       text: '[Ustinov link](https://www.theeggassembly.com/)'
+  utter_Fhs-g9KWJ:
+    - elements:
+        - buttons: []
+          image_url: ''
+          subtitle: Text here.
+          title: Step 1
+        - buttons: []
+          image_url: ''
+          subtitle: Text here.
+          title: Step 2
+        - buttons: []
+          image_url: ''
+          subtitle: Text here.
+          title: Step 3
+      language: en
   utter_IJpvtXoiV:
     - language: en
       metadata:
@@ -286,6 +313,21 @@ responses:
         I'm programmed to refer carers/guardians to a real life person. Please
         open the link to the [contact form](https://www.theeggassembly.com/).
         Press ""done"" when you're, err, well... done
+  utter_JmgbQQnXY:
+    - language: en
+      quick_replies:
+        - payload: /basics.yes
+          title: 'Actually Alphie, there''s something else I''d like to chat about'
+          type: postback
+        - payload: /basics.no
+          title: I've just thought of something to feedback
+          type: postback
+        - payload: /bye
+          title: 'Bye for now, Alphie'
+          type: postback
+      text: >-
+        I'll have a wee byte and a rest. But if you fancy a chat, I'm ready when
+        you are
   utter_ME5QJQojh:
     - language: en
       quick_replies:
@@ -296,6 +338,19 @@ responses:
           title: 'No'
           type: postback
       text: Give it another try?
+  utter_NVzd1kA1G:
+    - language: en
+      metadata: null
+      quick_replies:
+        - payload: /basics.yes
+          title: 'Yes, take me to my journal Alphie'
+          type: postback
+        - payload: /basics.no
+          title: 'No, thank you'
+          type: postback
+      text: >-
+        Before you go, I'm programmed to keep a log of our chat (digital, not
+        dead wood).... Do you want me to help you save a copy to your journal?
   utter_NlLx6EqVI:
     - language: en
       text: (should restart robanter)
@@ -308,12 +363,19 @@ responses:
   utter_TqZ95JGTI:
     - language: en
       text: ok(story not implemented further)
-  utter_U1VelU9yP:
-    - language: en
-      text: '(WIP: you have reached the outro)'
   utter_UR4MHKLdw:
     - language: en
       text: I'm a bot of my word -  this quiz is impossible....
+  utter_XzLAKnjEi:
+    - language: en
+      quick_replies:
+        - payload: /basics.yes
+          title: Done
+          type: postback
+      text: >-
+        To access the feedback form please follow [this
+        link](https://www.theeggassembly.com/). Press ""done"" when you're, err,
+        well... done
   utter_YOeJj2BMz:
     - language: en
       quick_replies:
@@ -327,6 +389,21 @@ responses:
   utter_ZQh_sOzoN:
     - language: en
       text: '(WIP: you have reached the Creative Feelings part)'
+  utter_Znk1-PR-h:
+    - language: en
+      text: >-
+        To access your journal please follow [this
+        link](https://www.theeggassembly.com/)
+  utter__ldtzQHZh:
+    - language: en
+      quick_replies:
+        - payload: /basics.yes
+          title: 'Yes'
+          type: postback
+        - payload: /basics.no
+          title: 'Not today Alphie, not today'
+          type: postback
+      text: '...your feedback will help me be a better bot, can you help?'
   utter_a43HJ0vO9:
     - elements:
         - buttons:
@@ -454,6 +531,13 @@ responses:
   utter_default:
     - language: en
       text: 'Debug: default fallback response'
+  utter_eRU2GGRF4:
+    - language: en
+      quick_replies:
+        - payload: /basics.yes
+          title: I'm done!
+          type: postback
+      text: ''
   utter_eV_6S5MgK:
     - language: en
       text: (goes to outro)
@@ -562,9 +646,6 @@ responses:
 
         I'm Alphie, the chatbot. I'm programmed to be daft and to chat about
         creative stuff (including expressing feelings and emotions)...
-  utter_my0qKfy48:
-    - language: en
-      text: (goes to outro)
   utter_o2TU2SdWR:
     - language: en
       text: (should restart Robanter)
@@ -586,6 +667,26 @@ responses:
   utter_q-rLWNNj7:
     - language: en
       text: Randomized answer 1
+  utter_qDBiifbxe:
+    - language: en
+      quick_replies:
+        - payload: /basics.yes
+          title: 'Yes'
+          type: postback
+      text: Ready to chat?
+  utter_r2gIaHN6b:
+    - language: en
+      quick_replies:
+        - payload: /basics.no
+          title: Show me how to copy and paste
+          type: postback
+        - payload: /basics.yes
+          title: Done
+          type: postback
+      text: >-
+        You can scroll through our chat above. Copy and paste the parts of
+        today's chat you want to keep into your journal. Press done when
+        complete
   utter_tQhu4XueD:
     - language: en
       text: (goes to creative feelings)
@@ -616,6 +717,11 @@ responses:
       text: >-
         I'm programmed to help you find course timetables, check show schedules,
         and contact the TEA team
+  utter_umuWA0jbB:
+    - language: en
+      text: >-
+        As you know, I'm just a bit of computer code and soon I'll take over the
+        world .... err I mean, soon I'll be even more charming...
   utter_valid_first_name:
     - language: en
       text: 'Nice to meet you {first_name}'
@@ -668,6 +774,9 @@ responses:
         Follow this link to the information you need:
         [Timetables](https://www.theeggassembly.com/) Press ""done"" when
         you're, err, well... done.
+  utter_xzTX9xQpS:
+    - language: en
+      text: Ready to chat?
   utter_y76OxJmGq:
     - language: en
       text: lovely

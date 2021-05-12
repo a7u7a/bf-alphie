@@ -23,6 +23,29 @@ stories:
       - checkpoint: link-to-Jokes/6132aa24-a990-4667-b4ba-a1eccc389f20
     metadata:
       group: Robanter
+  - story: Outro
+    steps:
+      - checkpoint: link-to-Outro/306b91a8-aa20-4e92-ad75-aa69362bc5e1
+      - action: utter_NVzd1kA1G
+      - checkpoint: Outro__branches
+    metadata:
+      group: Robanter
+  - story: Outro__No
+    steps:
+      - checkpoint: Outro__branches
+      - intent: basics.no
+        entities: []
+      - checkpoint: link-to-Outro continued/def122b3-d4a1-491f-b52e-26f5fe670bcb
+    metadata:
+      group: Robanter
+  - story: Outro__Yes
+    steps:
+      - checkpoint: Outro__branches
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Journal/de704d87-d34e-4e70-bb0b-35b1170679d9
+    metadata:
+      group: Robanter
   - story: Robanter Intro
     steps:
       - checkpoint: link-to-Robanter Intro/2f02b7b7-3a71-48b9-9f99-a857aa6a3e2e
