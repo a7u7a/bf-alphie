@@ -44,7 +44,7 @@ stories:
       - action: utter_XzLAKnjEi
       - intent: basics.yes
         entities: []
-      - checkpoint: link-to-Outro/e52082ad-2b66-4bed-ac78-78daff120131
+      - checkpoint: link-to-Outro continued 2/3be24915-948c-4ab9-b993-5e6fa2c3fd8d
     metadata:
       group: Intro
   - story: Functional
@@ -182,6 +182,13 @@ stories:
       - checkpoint: link-to-Outro continued/99fb671d-df78-4307-a9b5-0ee4e786ec51
     metadata:
       group: Intro
+  - story: Outro
+    steps:
+      - checkpoint: link-to-Outro/e52082ad-2b66-4bed-ac78-78daff120131
+      - action: utter_NVzd1kA1G
+      - checkpoint: Outro__branches
+    metadata:
+      group: Intro
   - story: Outro continued
     steps:
       - checkpoint: link-to-Outro continued/99fb671d-df78-4307-a9b5-0ee4e786ec51
@@ -190,51 +197,70 @@ stories:
       - checkpoint: Outro_continued__branches
     metadata:
       group: Intro
+  - story: Outro continued 2
+    steps:
+      - checkpoint: link-to-Outro continued 2/3be24915-948c-4ab9-b993-5e6fa2c3fd8d
+      - action: utter_p8rgsHiKa
+      - checkpoint: Outro_continued_2__branches
+    metadata:
+      group: Intro
+  - story: Outro continued 2__Bye
+    steps:
+      - checkpoint: Outro_continued_2__branches
+      - intent: bye
+        entities: []
+      - action: utter_F6z3Xmb-qD
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Capabilities/eed5bf9c-2f98-4af4-b4d2-3693b3c60231
+    metadata:
+      group: Intro
+  - story: Outro continued 2__Capabilities
+    steps:
+      - checkpoint: Outro_continued_2__branches
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Capabilities/eed5bf9c-2f98-4af4-b4d2-3693b3c60231
+    metadata:
+      group: Intro
+  - story: Outro continued 2__Feedback
+    steps:
+      - checkpoint: Outro_continued_2__branches
+      - intent: basics.no
+        entities: []
+      - checkpoint: link-to-Feedback/ad8dc8fe-ff09-49ee-bd50-8d562bbddcef
+    metadata:
+      group: Intro
+  - story: Outro continued__Feedback
+    steps:
+      - checkpoint: Outro_continued__branches
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Feedback/ad8dc8fe-ff09-49ee-bd50-8d562bbddcef
+    metadata:
+      group: Intro
   - story: Outro continued__No
     steps:
       - checkpoint: Outro_continued__branches
       - intent: basics.no
         entities: []
-      - action: utter_JmgbQQnXY
-      - intent: bye
-        entities: []
-      - action: utter_xzTX9xQpS
-      - checkpoint: Outro_continued__No__branches
+      - checkpoint: link-to-Outro continued 2/3be24915-948c-4ab9-b993-5e6fa2c3fd8d
     metadata:
       group: Intro
-  - story: Outro continued__No__Bye
+  - story: Outro__No
     steps:
-      - checkpoint: Outro_continued__No__branches
-      - intent: bye
-        entities: []
-      - action: utter_qDBiifbxe
-      - intent: basics.yes
-        entities: []
-      - checkpoint: link-to-Capabilities/eed5bf9c-2f98-4af4-b4d2-3693b3c60231
-    metadata:
-      group: Intro
-  - story: Outro continued__No__Capabilities
-    steps:
-      - checkpoint: Outro_continued__No__branches
-      - intent: basics.yes
-        entities: []
-      - checkpoint: link-to-Capabilities/eed5bf9c-2f98-4af4-b4d2-3693b3c60231
-    metadata:
-      group: Intro
-  - story: Outro continued__No__Feedback
-    steps:
-      - checkpoint: Outro_continued__No__branches
+      - checkpoint: Outro__branches
       - intent: basics.no
         entities: []
-      - checkpoint: link-to-Feedback/ad8dc8fe-ff09-49ee-bd50-8d562bbddcef
+      - checkpoint: link-to-Outro continued/99fb671d-df78-4307-a9b5-0ee4e786ec51
     metadata:
       group: Intro
-  - story: Outro continued__Yes
+  - story: Outro__Yes
     steps:
-      - checkpoint: Outro_continued__branches
+      - checkpoint: Outro__branches
       - intent: basics.yes
         entities: []
-      - checkpoint: link-to-Feedback/ad8dc8fe-ff09-49ee-bd50-8d562bbddcef
+      - checkpoint: link-to-Journal/3e0293b4-23d7-4d1f-9c23-82a75831f819
     metadata:
       group: Intro
   - story: Start
@@ -266,7 +292,6 @@ stories:
       - checkpoint: Start__branches
       - intent: outro
         entities: []
-      - action: utter_my0qKfy48
       - checkpoint: link-to-Outro/e52082ad-2b66-4bed-ac78-78daff120131
     metadata:
       group: Intro

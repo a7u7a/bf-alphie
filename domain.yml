@@ -15,11 +15,11 @@ actions:
   - utter_9UvD743sy
   - utter_Aj7tOMXyE
   - utter_EQkvXvSDq
+  - utter_F6z3Xmb-qD
   - utter_Fhs-g9KWJ
   - utter_IJpvtXoiV
   - utter_J1OoG6T5w
   - utter_JCU3qBn1J
-  - utter_JmgbQQnXY
   - utter_ME5QJQojh
   - utter_NVzd1kA1G
   - utter_NlLx6EqVI
@@ -53,11 +53,10 @@ actions:
   - utter_jxuPnwBo1
   - utter_lDQEUBEvu
   - utter_m0p-_d8zn
-  - utter_my0qKfy48
   - utter_o2TU2SdWR
   - utter_oMvl-0P-d
+  - utter_p8rgsHiKa
   - utter_q-rLWNNj7
-  - utter_qDBiifbxe
   - utter_r2gIaHN6b
   - utter_tQhu4XueD
   - utter_uj7EIvRXJ
@@ -68,7 +67,6 @@ actions:
   - utter_w7UXyfnQ7
   - utter_xWk1XA9Er
   - utter_xosjWw2B6
-  - utter_xzTX9xQpS
   - utter_y76OxJmGq
   - utter_yThE5cXzoy
 entities: []
@@ -256,6 +254,13 @@ responses:
           title: Done
           type: postback
       text: '[Ustinov link](https://www.theeggassembly.com/)'
+  utter_F6z3Xmb-qD:
+    - language: en
+      quick_replies:
+        - payload: /basics.yes
+          title: 'Yes'
+          type: postback
+      text: Ready to chat?
   utter_Fhs-g9KWJ:
     - elements:
         - buttons: []
@@ -312,21 +317,6 @@ responses:
         I'm programmed to refer carers/guardians to a real life person. Please
         open the link to the [contact form](https://www.theeggassembly.com/).
         Press ""done"" when you're, err, well... done
-  utter_JmgbQQnXY:
-    - language: en
-      quick_replies:
-        - payload: /basics.yes
-          title: 'Actually Alphie, there''s something else I''d like to chat about'
-          type: postback
-        - payload: /basics.no
-          title: I've just thought of something to feedback
-          type: postback
-        - payload: /bye
-          title: 'Bye for now, Alphie'
-          type: postback
-      text: >-
-        I'll have a wee byte and a rest. But if you fancy a chat, I'm ready when
-        you are
   utter_ME5QJQojh:
     - language: en
       quick_replies:
@@ -366,13 +356,14 @@ responses:
       text: I'm a bot of my word -  this quiz is impossible....
   utter_XzLAKnjEi:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /basics.yes
           title: Done
           type: postback
       text: >-
         To access the feedback form please follow [this
-        link](https://www.theeggassembly.com/). Press ""done"" when you're, err,
+        link](https://www.theeggassembly.com/). Press "done" when you're, err,
         well... done
   utter_YOeJj2BMz:
     - language: en
@@ -394,6 +385,7 @@ responses:
         link](https://www.theeggassembly.com/)
   utter__ldtzQHZh:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /basics.yes
           title: 'Yes'
@@ -662,16 +654,24 @@ responses:
       text: >-
         Press 'back' to go to the beginning of this section or 'menu' for full
         chat options... I'll let you work out what 'quit' does ;-)
-  utter_q-rLWNNj7:
-    - language: en
-      text: Randomized answer 1
-  utter_qDBiifbxe:
+  utter_p8rgsHiKa:
     - language: en
       quick_replies:
         - payload: /basics.yes
-          title: 'Yes'
+          title: 'Actually Alphie, there''s something else I''d like to chat about'
           type: postback
-      text: Ready to chat?
+        - payload: /basics.no
+          title: I've just thought of something to feedback
+          type: postback
+        - payload: /bye
+          title: 'Bye for now, Alphie'
+          type: postback
+      text: >-
+        I'll have a wee byte and a rest. But if you fancy a chat, I'm ready when
+        you are
+  utter_q-rLWNNj7:
+    - language: en
+      text: Randomized answer 1
   utter_r2gIaHN6b:
     - language: en
       quick_replies:
@@ -750,6 +750,7 @@ responses:
       text: Randomized joke9
   utter_xWk1XA9Er:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /basics.yes
           title: 'Yes'
@@ -771,9 +772,6 @@ responses:
         Follow this link to the information you need:
         [Timetables](https://www.theeggassembly.com/) Press ""done"" when
         you're, err, well... done.
-  utter_xzTX9xQpS:
-    - language: en
-      text: Ready to chat?
   utter_y76OxJmGq:
     - language: en
       text: lovely
