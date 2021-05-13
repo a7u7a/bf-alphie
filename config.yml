@@ -23,7 +23,3 @@ policies:
       - 64
   - name: RulePolicy
   - name: AugmentedMemoizationPolicy
-  - name: FallbackPolicy
-    nlu_threshold: 0.5
-    core_threshold: 0.5
-    fallback_action_name: action_default_fallback
