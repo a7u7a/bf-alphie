@@ -21,8 +21,8 @@ policies:
     batch_size:
       - 32
       - 64
-  - name: AugmentedMemoizationPolicy
   - name: RulePolicy
+  - name: AugmentedMemoizationPolicy
   - name: FallbackPolicy
     nlu_threshold: 0.5
     core_threshold: 0.5
