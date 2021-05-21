@@ -1,5 +1,5 @@
-name: Alphie
-namespace: bf-alphie
+name: AlphieV3
+namespace: bf-alphie-v3
 defaultLanguage: en
 nluThreshold: 0.75
 timezoneOffset: 0
@@ -7,4 +7,4 @@ allowContextualQuestions: false
 instance:
   name: Default Instance
   host: 'http://rasa:5005'
-  projectId: wAsn83znKFznRaWFy
+  projectId: G5tcRLsJdrJWwEGc2

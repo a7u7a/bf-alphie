@@ -1,8 +1,0 @@
-stories:
-  - story: Creative Feelings Intro
-    steps:
-      - checkpoint: link-to-Creative Feelings Intro/054f6010-bc0e-4bee-a041-66a223506d69
-      - action: utter_ZQh_sOzoN
-    metadata:
-      group: Creative Feelings
-rules: []
