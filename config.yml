@@ -12,6 +12,13 @@ pipeline:
       rasa_addons.nlu.components.intent_ranking_canonical_example_injector.IntentRankingCanonicalExampleInjector
   - name: EntitySynonymMapper
 language: en
+- name: ResponseSelector
+  epochs: 100
+  retrieval_intent: faq
+- name: ResponseSelector
+  epochs: 100
+  retrieval_intent: chitchat
+
 
 
 policies:
