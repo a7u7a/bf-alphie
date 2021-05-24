@@ -16,8 +16,8 @@ language: en
 
 policies:
   - name: TEDPolicy
-    epochs: 10
-    max_history: 1
+    epochs: 50
+    max_history: 5
     batch_size:
       - 32
       - 64

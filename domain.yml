@@ -93,7 +93,7 @@ forms:
             'y': 360
           slotName: questions_continue
           type: slot
-    groupName: '3'
+    groupName: Robanter
     name: Robanter_questions_form
     slots:
       - filling:
@@ -109,7 +109,7 @@ forms:
             value: false
         name: questions_continue
         utter_on_new_valid_slot: false
-    updatedAt: 1621882758158
+    updatedAt: 1621884311177
   Robanter_quiz_form:
     collect_in_botfront: null
     description: null
@@ -132,7 +132,7 @@ forms:
             'y': 360
           slotName: quiz_continue
           type: slot
-    groupName: '0'
+    groupName: Robanter
     name: Robanter_quiz_form
     slots:
       - filling:
@@ -148,7 +148,7 @@ forms:
             value: false
         name: quiz_continue
         utter_on_new_valid_slot: false
-    updatedAt: 1621882728155
+    updatedAt: 1621884311188
 intents:
   - basics.no
   - basics.yes
@@ -356,7 +356,6 @@ responses:
       text: I'm a bot of my word -  this quiz is impossible....
   utter_XzLAKnjEi:
     - language: en
-      metadata: null
       quick_replies:
         - payload: /basics.yes
           title: Done
@@ -385,7 +384,6 @@ responses:
         link](https://www.theeggassembly.com/)
   utter__ldtzQHZh:
     - language: en
-      metadata: null
       quick_replies:
         - payload: /basics.yes
           title: 'Yes'
@@ -750,7 +748,6 @@ responses:
       text: Randomized joke9
   utter_xWk1XA9Er:
     - language: en
-      metadata: null
       quick_replies:
         - payload: /basics.yes
           title: 'Yes'

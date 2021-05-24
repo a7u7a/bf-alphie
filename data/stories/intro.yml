@@ -1,0 +1,310 @@
+stories:
+  - story: Capabilities
+    steps:
+      - checkpoint: link-to-Capabilities/3e73698d-82f4-4df1-b820-dfbb9b330c44
+      - action: utter_yThE5cXzoy
+      - checkpoint: Capabilities__branches
+    metadata:
+      group: Intro
+  - story: Capabilities__Creative
+    steps:
+      - checkpoint: Capabilities__branches
+      - intent: creative_feelings
+        entities: []
+      - checkpoint: link-to-Creative Feelings Intro/b4efcfab-fc1a-4298-abdf-98560e81a7c1
+    metadata:
+      group: Intro
+  - story: Capabilities__Functional
+    steps:
+      - checkpoint: Capabilities__branches
+      - intent: functional
+        entities: []
+      - checkpoint: link-to-Functional/f4d688ff-1213-4a23-b7e9-34d55c1b018d
+    metadata:
+      group: Intro
+  - story: Capabilities__Outro
+    steps:
+      - checkpoint: Capabilities__branches
+      - intent: outro
+        entities: []
+      - checkpoint: link-to-Outro/86ecbbe0-0d43-4e65-889b-2403382952cb
+    metadata:
+      group: Intro
+  - story: Capabilities__Robanter
+    steps:
+      - checkpoint: Capabilities__branches
+      - intent: robanter
+        entities: []
+      - checkpoint: link-to-Robanter Intro/5899507f-a71b-4750-bff7-d76205c8a2f4
+    metadata:
+      group: Intro
+  - story: Feedback
+    steps:
+      - checkpoint: link-to-Feedback/38f2c746-e1a8-4a12-a770-c758515669ca
+      - action: utter_XzLAKnjEi
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Outro continued 2/5808de71-193c-4ef8-8f32-52c7876965f9
+    metadata:
+      group: Intro
+  - story: Functional
+    steps:
+      - checkpoint: link-to-Functional/f4d688ff-1213-4a23-b7e9-34d55c1b018d
+      - action: utter_uj7EIvRXJ
+      - checkpoint: Functional__branches
+    metadata:
+      group: Intro
+  - story: Functional Done
+    steps:
+      - checkpoint: link-to-Functional Done/682f7ce5-dd94-409f-a1cb-0b9f950501b9
+      - action: utter_oMvl-0P-d
+      - checkpoint: Functional_Done__branches
+    metadata:
+      group: Intro
+  - story: Functional Done__Back
+    steps:
+      - checkpoint: Functional_Done__branches
+      - intent: functional
+        entities: []
+      - checkpoint: link-to-Functional/f4d688ff-1213-4a23-b7e9-34d55c1b018d
+    metadata:
+      group: Intro
+  - story: Functional Done__Capabilities
+    steps:
+      - checkpoint: Functional_Done__branches
+      - intent: capabilities
+        entities: []
+      - checkpoint: link-to-Capabilities/3e73698d-82f4-4df1-b820-dfbb9b330c44
+    metadata:
+      group: Intro
+  - story: Functional Done__Outro
+    steps:
+      - checkpoint: Functional_Done__branches
+      - intent: outro
+        entities: []
+      - checkpoint: link-to-Outro/86ecbbe0-0d43-4e65-889b-2403382952cb
+    metadata:
+      group: Intro
+  - story: Functional__Capabilities
+    steps:
+      - checkpoint: Functional__branches
+      - intent: capabilities
+        entities: []
+      - checkpoint: link-to-Capabilities/3e73698d-82f4-4df1-b820-dfbb9b330c44
+    metadata:
+      group: Intro
+  - story: Functional__Carer
+    steps:
+      - checkpoint: Functional__branches
+      - intent: carer
+        entities: []
+      - action: utter_JCU3qBn1J
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Functional Done/682f7ce5-dd94-409f-a1cb-0b9f950501b9
+    metadata:
+      group: Intro
+  - story: Functional__Contact
+    steps:
+      - checkpoint: Functional__branches
+      - intent: contact
+        entities: []
+      - action: utter_fiovrdagT
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Functional Done/682f7ce5-dd94-409f-a1cb-0b9f950501b9
+    metadata:
+      group: Intro
+  - story: Functional__Creative Feelings
+    steps:
+      - checkpoint: Functional__branches
+      - intent: creative_feelings
+        entities: []
+      - action: utter_tQhu4XueD
+    metadata:
+      group: Intro
+  - story: Functional__Outro
+    steps:
+      - checkpoint: Functional__branches
+      - intent: outro
+        entities: []
+      - checkpoint: link-to-Outro/86ecbbe0-0d43-4e65-889b-2403382952cb
+    metadata:
+      group: Intro
+  - story: Functional__Shows
+    steps:
+      - checkpoint: Functional__branches
+      - intent: shows
+        entities: []
+      - action: utter_1Xy4oy6kh
+      - action: utter_EQkvXvSDq
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Functional Done/682f7ce5-dd94-409f-a1cb-0b9f950501b9
+    metadata:
+      group: Intro
+  - story: Functional__Timetable
+    steps:
+      - checkpoint: Functional__branches
+      - intent: timetable
+        entities: []
+      - action: utter_xosjWw2B6
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Functional Done/682f7ce5-dd94-409f-a1cb-0b9f950501b9
+    metadata:
+      group: Intro
+  - story: Journal
+    steps:
+      - checkpoint: link-to-Journal/23e6e2fb-b660-4305-b72e-e502e6b9bf25
+      - action: utter_Znk1-PR-h
+      - action: utter_r2gIaHN6b
+      - checkpoint: Journal__branches
+    metadata:
+      group: Intro
+  - story: Journal__Done
+    steps:
+      - checkpoint: Journal__branches
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Outro continued/54ba188f-2448-4517-b9d2-b194e43d9ac3
+    metadata:
+      group: Intro
+  - story: Journal__Show me
+    steps:
+      - checkpoint: Journal__branches
+      - intent: basics.no
+        entities: []
+      - action: utter_Fhs-g9KWJ
+      - action: utter_eRU2GGRF4
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Outro continued/54ba188f-2448-4517-b9d2-b194e43d9ac3
+    metadata:
+      group: Intro
+  - story: Outro
+    steps:
+      - checkpoint: link-to-Outro/86ecbbe0-0d43-4e65-889b-2403382952cb
+      - action: utter_NVzd1kA1G
+      - checkpoint: Outro__branches
+    metadata:
+      group: Intro
+  - story: Outro continued
+    steps:
+      - checkpoint: link-to-Outro continued/54ba188f-2448-4517-b9d2-b194e43d9ac3
+      - action: utter_umuWA0jbB
+      - action: utter__ldtzQHZh
+      - checkpoint: Outro_continued__branches
+    metadata:
+      group: Intro
+  - story: Outro continued 2
+    steps:
+      - checkpoint: link-to-Outro continued 2/5808de71-193c-4ef8-8f32-52c7876965f9
+      - action: utter_p8rgsHiKa
+      - checkpoint: Outro_continued_2__branches
+    metadata:
+      group: Intro
+  - story: Outro continued 2__Bye
+    steps:
+      - checkpoint: Outro_continued_2__branches
+      - intent: bye
+        entities: []
+      - action: utter_F6z3Xmb-qD
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Capabilities/3e73698d-82f4-4df1-b820-dfbb9b330c44
+    metadata:
+      group: Intro
+  - story: Outro continued 2__Capabilities
+    steps:
+      - checkpoint: Outro_continued_2__branches
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Capabilities/3e73698d-82f4-4df1-b820-dfbb9b330c44
+    metadata:
+      group: Intro
+  - story: Outro continued 2__Feedback
+    steps:
+      - checkpoint: Outro_continued_2__branches
+      - intent: basics.no
+        entities: []
+      - checkpoint: link-to-Feedback/38f2c746-e1a8-4a12-a770-c758515669ca
+    metadata:
+      group: Intro
+  - story: Outro continued__Feedback
+    steps:
+      - checkpoint: Outro_continued__branches
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Feedback/38f2c746-e1a8-4a12-a770-c758515669ca
+    metadata:
+      group: Intro
+  - story: Outro continued__No
+    steps:
+      - checkpoint: Outro_continued__branches
+      - intent: basics.no
+        entities: []
+      - checkpoint: link-to-Outro continued 2/5808de71-193c-4ef8-8f32-52c7876965f9
+    metadata:
+      group: Intro
+  - story: Outro__No
+    steps:
+      - checkpoint: Outro__branches
+      - intent: basics.no
+        entities: []
+      - checkpoint: link-to-Outro continued/54ba188f-2448-4517-b9d2-b194e43d9ac3
+    metadata:
+      group: Intro
+  - story: Outro__Yes
+    steps:
+      - checkpoint: Outro__branches
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Journal/23e6e2fb-b660-4305-b72e-e502e6b9bf25
+    metadata:
+      group: Intro
+  - story: Start
+    steps:
+      - intent: trigger_nUvCRVBB5
+        entities: []
+      - action: utter_QDWoN3g4V
+      - action: utter_xWk1XA9Er
+      - checkpoint: Start__branches
+    metadata:
+      rules:
+        - trigger:
+            when: init
+            timeOnPage__DISPLAYIF: true
+            timeOnPage: 1
+            triggerLimit__DISPLAYIF: false
+      triggerIntent: trigger_nUvCRVBB5
+      group: Intro
+  - story: Start__Functional
+    steps:
+      - checkpoint: Start__branches
+      - intent: functional
+        entities: []
+      - checkpoint: link-to-Functional/f4d688ff-1213-4a23-b7e9-34d55c1b018d
+    metadata:
+      group: Intro
+  - story: Start__Outro
+    steps:
+      - checkpoint: Start__branches
+      - intent: outro
+        entities: []
+      - checkpoint: link-to-Outro/86ecbbe0-0d43-4e65-889b-2403382952cb
+    metadata:
+      group: Intro
+  - story: Start__Yes
+    steps:
+      - checkpoint: Start__branches
+      - intent: basics.yes
+        entities: []
+      - action: utter_-QPRohooo
+      - intent: basics.yes
+        entities: []
+      - action: utter_m0p-_d8zn
+      - checkpoint: link-to-Capabilities/3e73698d-82f4-4df1-b820-dfbb9b330c44
+    metadata:
+      group: Intro
+rules: []

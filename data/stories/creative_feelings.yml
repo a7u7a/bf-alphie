@@ -1,7 +1,7 @@
 stories:
   - story: Creative Feelings Intro
     steps:
-      - checkpoint: link-to-Creative Feelings Intro/054f6010-bc0e-4bee-a041-66a223506d69
+      - checkpoint: link-to-Creative Feelings Intro/b4efcfab-fc1a-4298-abdf-98560e81a7c1
       - action: utter_ZQh_sOzoN
     metadata:
       group: Creative Feelings

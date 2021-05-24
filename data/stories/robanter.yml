@@ -1,7 +1,180 @@
 stories:
+  - story: Jokes
+    steps:
+      - checkpoint: link-to-Jokes/78c64c13-d222-4805-860e-8940ae59ce62
+      - action: utter_jxuPnwBo1
+      - action: utter_YOeJj2BMz
+      - checkpoint: Jokes__branches
+    metadata:
+      group: Robanter
+  - story: Jokes__no
+    steps:
+      - checkpoint: Jokes__branches
+      - intent: basics.no
+        entities: []
+      - checkpoint: link-to-Robanter Outro/f75504cf-fbc7-4dd0-a1b5-952716b62e5e
+    metadata:
+      group: Robanter
+  - story: Jokes__yes
+    steps:
+      - checkpoint: Jokes__branches
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Jokes/78c64c13-d222-4805-860e-8940ae59ce62
+    metadata:
+      group: Robanter
+  - story: Robanter Intro
+    steps:
+      - checkpoint: link-to-Robanter Intro/5899507f-a71b-4750-bff7-d76205c8a2f4
+      - action: utter_IJpvtXoiV
+      - checkpoint: Robanter_Intro__branches
+    metadata:
+      group: Robanter
+  - story: Robanter Intro__Get me out
+    steps:
+      - checkpoint: Robanter_Intro__branches
+      - intent: get_me_out
+        entities: []
+      - action: utter_OpCqOoQMd
+    metadata:
+      group: Robanter
+  - story: Robanter Intro__Jokes
+    steps:
+      - checkpoint: Robanter_Intro__branches
+      - intent: jokes
+        entities: []
+      - checkpoint: link-to-Jokes/78c64c13-d222-4805-860e-8940ae59ce62
+    metadata:
+      group: Robanter
+  - story: Robanter Intro__Questions
+    steps:
+      - checkpoint: Robanter_Intro__branches
+      - intent: questions
+        entities: []
+      - checkpoint: link-to-Robanter Questions/5c802ca0-3835-4737-90ac-d54fc61722ef
+    metadata:
+      group: Robanter
+  - story: Robanter Intro__Quiz
+    steps:
+      - checkpoint: Robanter_Intro__branches
+      - intent: quiz
+        entities: []
+      - checkpoint: link-to-Robanter Quiz Intro/d4b1b24a-bd80-475f-89e8-172afeb6f65e
+    metadata:
+      group: Robanter
+  - story: Robanter Intro__Scary Story
+    steps:
+      - checkpoint: Robanter_Intro__branches
+      - intent: scary_story
+        entities: []
+      - checkpoint: link-to-Robanter Scary story/5f462adf-d8bd-47dc-a6ed-3b49a1b2e08e
+    metadata:
+      group: Robanter
+  - story: Robanter Outro
+    steps:
+      - checkpoint: link-to-Robanter Outro/f75504cf-fbc7-4dd0-a1b5-952716b62e5e
+      - action: utter_lDQEUBEvu
+      - checkpoint: Robanter_Outro__branches
+    metadata:
+      group: Robanter
+  - story: Robanter Outro__Capabilities menu
+    steps:
+      - checkpoint: Robanter_Outro__branches
+      - intent: capabilities
+        entities: []
+      - action: utter_Aj7tOMXyE
+    metadata:
+      group: Robanter
+  - story: Robanter Outro__Outro
+    steps:
+      - checkpoint: Robanter_Outro__branches
+      - intent: outro
+        entities: []
+      - action: utter_eV_6S5MgK
+    metadata:
+      group: Robanter
+  - story: Robanter Questions
+    steps:
+      - checkpoint: link-to-Robanter Questions/5c802ca0-3835-4737-90ac-d54fc61722ef
+      - action: action_reset_questions_slot
+      - action: utter_jdJlF9LKO
+      - action: Robanter_questions_form
+      - active_loop: Robanter_questions_form
+      - active_loop: null
+      - checkpoint: Robanter_Questions__branches
+    metadata:
+      group: Robanter
+  - story: Robanter Questions__Continue
+    steps:
+      - checkpoint: Robanter_Questions__branches
+      - slot_was_set:
+          - questions_continue: true
+      - action: utter_h2v5n3HgO
+      - action: utter_q-rLWNNj7
+      - action: utter_4cc9KND3s
+      - action: utter_4LYdvVos6
+      - checkpoint: Robanter_Questions__Continue__branches
+    metadata:
+      group: Robanter
+  - story: Robanter Questions__Continue__Try again
+    steps:
+      - checkpoint: Robanter_Questions__Continue__branches
+      - intent: try_again
+        entities: []
+      - checkpoint: link-to-Robanter Questions/5c802ca0-3835-4737-90ac-d54fc61722ef
+    metadata:
+      group: Robanter
+  - story: Robanter Quiz
+    steps:
+      - checkpoint: link-to-Robanter Quiz/276c7c43-4d32-4a7f-8d01-fef1dc8104d1
+      - action: action_reset_quiz_slot
+      - action: Robanter_quiz_form
+      - active_loop: Robanter_quiz_form
+      - active_loop: null
+      - checkpoint: Robanter_Quiz__branches
+    metadata:
+      group: Robanter
+  - story: Robanter Quiz Intro
+    steps:
+      - checkpoint: link-to-Robanter Quiz Intro/d4b1b24a-bd80-475f-89e8-172afeb6f65e
+      - action: utter_UR4MHKLdw
+      - action: utter_5Pd9k1evJ
+      - checkpoint: Robanter_Quiz_Intro__branches
+    metadata:
+      group: Robanter
+  - story: Robanter Quiz Intro__Yes
+    steps:
+      - checkpoint: Robanter_Quiz_Intro__branches
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Robanter Quiz/276c7c43-4d32-4a7f-8d01-fef1dc8104d1
+    metadata:
+      group: Robanter
+  - story: Robanter Quiz__Continue
+    steps:
+      - checkpoint: Robanter_Quiz__branches
+      - slot_was_set:
+          - quiz_continue: true
+      - action: utter_hTp87Q1zY
+      - action: utter_ME5QJQojh
+      - checkpoint: Robanter_Quiz__Continue__branches
+    metadata:
+      group: Robanter
+  - story: Robanter Quiz__Continue__Yes
+    steps:
+      - checkpoint: Robanter_Quiz__Continue__branches
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Robanter Quiz/276c7c43-4d32-4a7f-8d01-fef1dc8104d1
+    metadata:
+      group: Robanter
+  - story: Robanter restart
+    steps: []
+    metadata:
+      group: Robanter
   - story: Robanter Scary story
     steps:
-      - checkpoint: link-to-Robanter Scary story/9168fd5b-3ad6-443e-8771-d8f643a91485
+      - checkpoint: link-to-Robanter Scary story/5f462adf-d8bd-47dc-a6ed-3b49a1b2e08e
       - action: utter_5niwuYZjx
       - action: utter_a43HJ0vO9
       - intent: love_it
@@ -15,7 +188,7 @@ stories:
       - checkpoint: Robanter_Scary_story__branches
       - intent: basics.no
         entities: []
-      - checkpoint: link-to-Robanter Outro/d688981c-8c46-4af3-ab29-2258e0aed603
+      - checkpoint: link-to-Robanter Outro/f75504cf-fbc7-4dd0-a1b5-952716b62e5e
     metadata:
       group: Robanter
   - story: Robanter Scary story__Yes
