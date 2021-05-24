@@ -4,7 +4,11 @@ actions:
   - action_botfront_fallback
   - action_botfront_mapping
   - utter_62nGoY0Mc
+  - utter_FDy29Osvf
+  - utter_RsadpvqDI
+  - utter_T2M0ahUZE
   - utter_Uknx6zqjb
+  - utter_Y94j4vuiR
   - utter__bzkbYaCY
   - utter_ask_intro1
   - utter_ask_q1
@@ -18,6 +22,9 @@ actions:
   - utter_ask_test
   - utter_ask_test_categorical
   - utter_ask_testslot3
+  - utter_sWzVWsgzz
+  - utter_valid_q5
+  - utter_vbekkC8mp
 entities: []
 forms:
   Robanter_form:
@@ -134,7 +141,23 @@ forms:
           source: q1
           target: q5
           type: condition
-        - condition: null
+        - condition:
+            children1:
+              988a9999-cdef-4012-b456-7179a0b211d1:
+                properties:
+                  field: q5
+                  operator: is_exactly
+                  value:
+                    - 'yes'
+                  valueSrc:
+                    - value
+                  valueType:
+                    - custom_text
+                type: rule
+            id: 898899ab-0123-4456-b89a-b1799ffc796e
+            properties:
+              conjunction: AND
+            type: group
           id: eq5-q4
           source: q5
           target: q4
@@ -148,7 +171,7 @@ forms:
         - id: q1
           position:
             x: 120
-            'y': 360
+            'y': 380
           slotName: q1
           type: slot
         - id: q2
@@ -160,40 +183,40 @@ forms:
         - id: q3
           position:
             x: 120
-            'y': 940
+            'y': 820
           slotName: q3
           type: slot
         - id: ce864521-0256-4dfa-b10d-c6e237bb8033
           position:
-            x: -180
-            'y': 1220
+            x: -120
+            'y': 1100
           slotName: robanter_out
           slotValue: short_story
           type: slotSet
         - id: q4
           position:
-            x: 200
-            'y': 1220
+            x: 500
+            'y': 1100
           slotName: q4
           type: slot
         - id: 4e1db483-29f2-4526-82ce-8e0e11eb1ba7
           position:
-            x: -40
-            'y': 1440
+            x: 120
+            'y': 1320
           slotName: robanter_out
           slotValue: robanter
           type: slotSet
         - id: 965b3c10-acdd-4531-b89e-703d6fd6d4a5
           position:
-            x: 280
-            'y': 1440
+            x: 440
+            'y': 1320
           slotName: robanter_out
           slotValue: capabilities
           type: slotSet
         - id: 1197b820-4add-49cd-8af1-82be33baf40f
           position:
-            x: 640
-            'y': 1440
+            x: 800
+            'y': 1320
           slotName: robanter_out
           slotValue: outro
           type: slotSet
@@ -276,17 +299,29 @@ forms:
             not_intent: []
             type: from_text
         name: q5
-        utter_on_new_valid_slot: false
-    updatedAt: 1621898114855
+        utter_on_new_valid_slot: true
+    updatedAt: 1621899916631
 intents:
   - trigger_-DBSFWt_6
 responses:
   utter_62nGoY0Mc:
     - language: en
       text: (goes to capabilities)
+  utter_FDy29Osvf:
+    - language: en
+      text: '(wip: goes to short story)'
+  utter_RsadpvqDI:
+    - language: en
+      text: '(wip: goes to jokes)'
+  utter_T2M0ahUZE:
+    - language: en
+      text: '(wip: goes to quiz)'
   utter_Uknx6zqjb:
     - language: en
       text: (start robanter)
+  utter_Y94j4vuiR:
+    - language: en
+      text: '(wip: goes to outro)'
   utter__bzkbYaCY:
     - language: en
       text: (goes to capabilities)
@@ -306,7 +341,7 @@ responses:
       metadata: null
       quick_replies:
         - payload: /scary_story
-          title: Let's play an Impossible quiz please Alphie
+          title: Let's make up a stupidly scary story together
           type: postback
         - payload: /jokes
           title: 'Jokes Alphie, tell me terrible, terrible jokes'
@@ -360,6 +395,7 @@ responses:
       text: u know my friend roman?
   utter_ask_q3:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /yes
           title: 'Yes'
@@ -368,10 +404,11 @@ responses:
           title: 'No'
           type: postback
       text: >-
-        Hahaha!I love this story - it's so stupid and scary! You up for writing
+        Hahaha! I love this story - it's so stupid and scary! You up for writing
         a ghost story together?
   utter_ask_q4:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /back
           title: Back
@@ -395,7 +432,10 @@ responses:
         - payload: /no
           title: 'No'
           type: postback
-      text: Randomized robanter joke. want to hear another one?
+      text: |-
+        (Randomized robanter joke)  
+          
+        Want to hear another one?
   utter_ask_qq:
     - language: en
       quick_replies:
@@ -439,6 +479,16 @@ responses:
           title: outro
           type: postback
       text: fanchy a chat?
+  utter_sWzVWsgzz:
+    - language: en
+      text: '(wip: goes to robanter)'
+  utter_valid_q5:
+    - language: en
+      metadata: null
+      text: want to hear another one?
+  utter_vbekkC8mp:
+    - language: en
+      text: '(wip: goes to capabilities)'
 session_config: {}
 slots:
   disambiguation_message:
@@ -463,3 +513,6 @@ slots:
       - robanter
       - capabilities
       - outro
+      - quiz
+      - jokes
+      - questions

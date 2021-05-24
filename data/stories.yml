@@ -7,6 +7,7 @@ stories:
       - action: Robanter_form
       - active_loop: Robanter_form
       - active_loop: null
+      - checkpoint: Robanter__branches
     metadata:
       rules:
         - trigger:
@@ -15,5 +16,53 @@ stories:
             timeOnPage__DISPLAYIF: true
             timeOnPage: 1
       triggerIntent: trigger_-DBSFWt_6
+      group: Intro
+  - story: Robanter__capabilities
+    steps:
+      - checkpoint: Robanter__branches
+      - slot_was_set:
+          - robanter_out: capabilities
+      - action: utter_vbekkC8mp
+    metadata:
+      group: Intro
+  - story: Robanter__jokes
+    steps:
+      - checkpoint: Robanter__branches
+      - slot_was_set:
+          - robanter_out: jokes
+      - action: utter_RsadpvqDI
+    metadata:
+      group: Intro
+  - story: Robanter__outro
+    steps:
+      - checkpoint: Robanter__branches
+      - slot_was_set:
+          - robanter_out: outro
+      - action: utter_Y94j4vuiR
+    metadata:
+      group: Intro
+  - story: Robanter__quiz
+    steps:
+      - checkpoint: Robanter__branches
+      - slot_was_set:
+          - robanter_out: quiz
+      - action: utter_T2M0ahUZE
+    metadata:
+      group: Intro
+  - story: Robanter__robanter
+    steps:
+      - checkpoint: Robanter__branches
+      - slot_was_set:
+          - robanter_out: robanter
+      - action: utter_sWzVWsgzz
+    metadata:
+      group: Intro
+  - story: Robanter__short story
+    steps:
+      - checkpoint: Robanter__branches
+      - slot_was_set:
+          - robanter_out: short_story
+      - action: utter_FDy29Osvf
+    metadata:
       group: Intro
 rules: []
