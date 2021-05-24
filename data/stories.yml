@@ -1,7 +1,19 @@
 stories:
   - story: Robanter
     steps:
+      - intent: trigger_-DBSFWt_6
+        entities: []
       - action: utter_Uknx6zqjb
+      - action: Robanter_form
+      - active_loop: Robanter_form
+      - active_loop: null
     metadata:
+      rules:
+        - trigger:
+            when: init
+            triggerLimit__DISPLAYIF: false
+            timeOnPage__DISPLAYIF: true
+            timeOnPage: 1
+      triggerIntent: trigger_-DBSFWt_6
       group: Intro
 rules: []

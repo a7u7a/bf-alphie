@@ -277,8 +277,9 @@ forms:
             type: from_text
         name: q5
         utter_on_new_valid_slot: false
-    updatedAt: 1621607983282
-intents: []
+    updatedAt: 1621898114855
+intents:
+  - trigger_-DBSFWt_6
 responses:
   utter_62nGoY0Mc:
     - language: en
@@ -386,6 +387,7 @@ responses:
         chat options... I'll let you work out what 'quit' does ;-)
   utter_ask_q5:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /yes
           title: 'Yes'
