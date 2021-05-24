@@ -1,0 +1,18 @@
+stories:
+  - story: Robanter Quiz Intro
+    steps:
+      - checkpoint: link-to-Robanter Quiz Intro/17b6ff75-ff58-4b56-a184-57ce3d42936c
+      - action: utter_UR4MHKLdw
+      - action: utter_5Pd9k1evJ
+      - checkpoint: Robanter_Quiz_Intro__branches
+    metadata:
+      group: '9'
+  - story: Robanter Quiz Intro__Yes
+    steps:
+      - checkpoint: Robanter_Quiz_Intro__branches
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Robanter Quiz/2fffb812-6cf3-4c60-ad8c-67f3e2683db4
+    metadata:
+      group: '9'
+rules: []

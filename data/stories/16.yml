@@ -1,0 +1,26 @@
+stories:
+  - story: Outro continued
+    steps:
+      - checkpoint: link-to-Outro continued/99fb671d-df78-4307-a9b5-0ee4e786ec51
+      - action: utter_umuWA0jbB
+      - action: utter__ldtzQHZh
+      - checkpoint: Outro_continued__branches
+    metadata:
+      group: '16'
+  - story: Outro continued__Feedback
+    steps:
+      - checkpoint: Outro_continued__branches
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Feedback/ad8dc8fe-ff09-49ee-bd50-8d562bbddcef
+    metadata:
+      group: '16'
+  - story: Outro continued__No
+    steps:
+      - checkpoint: Outro_continued__branches
+      - intent: basics.no
+        entities: []
+      - checkpoint: link-to-Outro continued 2/3be24915-948c-4ab9-b993-5e6fa2c3fd8d
+    metadata:
+      group: '16'
+rules: []

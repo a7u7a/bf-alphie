@@ -1,0 +1,30 @@
+stories:
+  - story: Robanter Quiz
+    steps:
+      - checkpoint: link-to-Robanter Quiz/2fffb812-6cf3-4c60-ad8c-67f3e2683db4
+      - action: action_reset_quiz_slot
+      - action: Robanter_quiz_form
+      - active_loop: Robanter_quiz_form
+      - active_loop: null
+      - checkpoint: Robanter_Quiz__branches
+    metadata:
+      group: '8'
+  - story: Robanter Quiz__Continue
+    steps:
+      - checkpoint: Robanter_Quiz__branches
+      - slot_was_set:
+          - quiz_continue: true
+      - action: utter_hTp87Q1zY
+      - action: utter_ME5QJQojh
+      - checkpoint: Robanter_Quiz__Continue__branches
+    metadata:
+      group: '8'
+  - story: Robanter Quiz__Continue__Yes
+    steps:
+      - checkpoint: Robanter_Quiz__Continue__branches
+      - intent: basics.yes
+        entities: []
+      - checkpoint: link-to-Robanter Quiz/2fffb812-6cf3-4c60-ad8c-67f3e2683db4
+    metadata:
+      group: '8'
+rules: []

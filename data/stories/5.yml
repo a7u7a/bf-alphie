@@ -1,0 +1,49 @@
+stories:
+  - story: Robanter Intro
+    steps:
+      - checkpoint: link-to-Robanter Intro/8cd6f99b-0ded-42dd-8ada-13d229f79e33
+      - action: utter_IJpvtXoiV
+      - checkpoint: Robanter_Intro__branches
+    metadata:
+      group: '5'
+  - story: Robanter Intro__Get me out
+    steps:
+      - checkpoint: Robanter_Intro__branches
+      - intent: get_me_out
+        entities: []
+      - action: utter_OpCqOoQMd
+    metadata:
+      group: '5'
+  - story: Robanter Intro__Jokes
+    steps:
+      - checkpoint: Robanter_Intro__branches
+      - intent: jokes
+        entities: []
+      - checkpoint: link-to-Jokes/266762b6-64a1-414b-a619-4afe65e7d08c
+    metadata:
+      group: '5'
+  - story: Robanter Intro__Questions
+    steps:
+      - checkpoint: Robanter_Intro__branches
+      - intent: questions
+        entities: []
+      - checkpoint: link-to-Robanter Questions/57b0dd43-371d-45c8-bb6a-202ef7e3067a
+    metadata:
+      group: '5'
+  - story: Robanter Intro__Quiz
+    steps:
+      - checkpoint: Robanter_Intro__branches
+      - intent: quiz
+        entities: []
+      - checkpoint: link-to-Robanter Quiz Intro/17b6ff75-ff58-4b56-a184-57ce3d42936c
+    metadata:
+      group: '5'
+  - story: Robanter Intro__Scary Story
+    steps:
+      - checkpoint: Robanter_Intro__branches
+      - intent: scary_story
+        entities: []
+      - checkpoint: link-to-Robanter Scary story/9168fd5b-3ad6-443e-8771-d8f643a91485
+    metadata:
+      group: '5'
+rules: []

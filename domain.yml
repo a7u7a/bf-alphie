@@ -93,7 +93,7 @@ forms:
             'y': 360
           slotName: questions_continue
           type: slot
-    groupName: Robanter
+    groupName: '3'
     name: Robanter_questions_form
     slots:
       - filling:
@@ -109,7 +109,7 @@ forms:
             value: false
         name: questions_continue
         utter_on_new_valid_slot: false
-    updatedAt: 1620872590928
+    updatedAt: 1621882758158
   Robanter_quiz_form:
     collect_in_botfront: null
     description: null
@@ -132,7 +132,7 @@ forms:
             'y': 360
           slotName: quiz_continue
           type: slot
-    groupName: Robanter
+    groupName: '0'
     name: Robanter_quiz_form
     slots:
       - filling:
@@ -148,7 +148,7 @@ forms:
             value: false
         name: quiz_continue
         utter_on_new_valid_slot: false
-    updatedAt: 1620872590939
+    updatedAt: 1621882728155
 intents:
   - basics.no
   - basics.yes

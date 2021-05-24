@@ -1,0 +1,46 @@
+stories:
+  - story: Start
+    steps:
+      - intent: trigger_nUvCRVBB5
+        entities: []
+      - action: utter_QDWoN3g4V
+      - action: utter_xWk1XA9Er
+      - checkpoint: Start__branches
+    metadata:
+      rules:
+        - trigger:
+            when: init
+            timeOnPage__DISPLAYIF: true
+            timeOnPage: 1
+            triggerLimit__DISPLAYIF: false
+      triggerIntent: trigger_nUvCRVBB5
+      group: '2'
+  - story: Start__Functional
+    steps:
+      - checkpoint: Start__branches
+      - intent: functional
+        entities: []
+      - checkpoint: link-to-Functional/5346b9d9-2c43-4da0-af8f-becc2568356e
+    metadata:
+      group: '2'
+  - story: Start__Outro
+    steps:
+      - checkpoint: Start__branches
+      - intent: outro
+        entities: []
+      - checkpoint: link-to-Outro/e52082ad-2b66-4bed-ac78-78daff120131
+    metadata:
+      group: '2'
+  - story: Start__Yes
+    steps:
+      - checkpoint: Start__branches
+      - intent: basics.yes
+        entities: []
+      - action: utter_-QPRohooo
+      - intent: basics.yes
+        entities: []
+      - action: utter_m0p-_d8zn
+      - checkpoint: link-to-Capabilities/eed5bf9c-2f98-4af4-b4d2-3693b3c60231
+    metadata:
+      group: '2'
+rules: []

@@ -1,0 +1,33 @@
+stories:
+  - story: Robanter Questions
+    steps:
+      - checkpoint: link-to-Robanter Questions/57b0dd43-371d-45c8-bb6a-202ef7e3067a
+      - action: action_reset_questions_slot
+      - action: utter_jdJlF9LKO
+      - action: Robanter_questions_form
+      - active_loop: Robanter_questions_form
+      - active_loop: null
+      - checkpoint: Robanter_Questions__branches
+    metadata:
+      group: '7'
+  - story: Robanter Questions__Continue
+    steps:
+      - checkpoint: Robanter_Questions__branches
+      - slot_was_set:
+          - questions_continue: true
+      - action: utter_h2v5n3HgO
+      - action: utter_q-rLWNNj7
+      - action: utter_4cc9KND3s
+      - action: utter_4LYdvVos6
+      - checkpoint: Robanter_Questions__Continue__branches
+    metadata:
+      group: '7'
+  - story: Robanter Questions__Continue__Try again
+    steps:
+      - checkpoint: Robanter_Questions__Continue__branches
+      - intent: try_again
+        entities: []
+      - checkpoint: link-to-Robanter Questions/57b0dd43-371d-45c8-bb6a-202ef7e3067a
+    metadata:
+      group: '7'
+rules: []

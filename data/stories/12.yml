@@ -1,0 +1,41 @@
+stories:
+  - story: Capabilities
+    steps:
+      - checkpoint: link-to-Capabilities/eed5bf9c-2f98-4af4-b4d2-3693b3c60231
+      - action: utter_yThE5cXzoy
+      - checkpoint: Capabilities__branches
+    metadata:
+      group: '12'
+  - story: Capabilities__Creative
+    steps:
+      - checkpoint: Capabilities__branches
+      - intent: creative_feelings
+        entities: []
+      - checkpoint: link-to-Creative Feelings Intro/054f6010-bc0e-4bee-a041-66a223506d69
+    metadata:
+      group: '12'
+  - story: Capabilities__Functional
+    steps:
+      - checkpoint: Capabilities__branches
+      - intent: functional
+        entities: []
+      - checkpoint: link-to-Functional/5346b9d9-2c43-4da0-af8f-becc2568356e
+    metadata:
+      group: '12'
+  - story: Capabilities__Outro
+    steps:
+      - checkpoint: Capabilities__branches
+      - intent: outro
+        entities: []
+      - checkpoint: link-to-Outro/e52082ad-2b66-4bed-ac78-78daff120131
+    metadata:
+      group: '12'
+  - story: Capabilities__Robanter
+    steps:
+      - checkpoint: Capabilities__branches
+      - intent: robanter
+        entities: []
+      - checkpoint: link-to-Robanter Intro/8cd6f99b-0ded-42dd-8ada-13d229f79e33
+    metadata:
+      group: '12'
+rules: []
