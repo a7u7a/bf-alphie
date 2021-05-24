@@ -1,0 +1,12 @@
+stories: []
+rules:
+  - rule: Intro (1)
+    condition: []
+    steps:
+      - intent: name
+        user: What is your name?
+        entities: []
+      - action: utter_7NXUMBjaS
+    wait_for_user_input: false
+    metadata:
+      group: Intro
