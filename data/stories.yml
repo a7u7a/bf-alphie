@@ -23,6 +23,14 @@ rules:
             timeOnPage: 1
       triggerIntent: trigger_48WZqqOBo
       group: Intro
+  - rule: Intro (8)
+    condition: []
+    steps:
+      - intent: scary_story
+        entities: []
+      - action: utter_nD2W7hsDf
+    metadata:
+      group: Intro
   - rule: outro_intent
     condition: []
     steps:
@@ -36,10 +44,9 @@ rules:
     steps:
       - intent: robanter
         entities: []
-      - action: test_form
-      - active_loop: test_form
+      - action: Robanter_form
+      - active_loop: Robanter_form
       - active_loop: null
-      - action: utter_WWqGxaMEh
       - action: action_form_follow_up
     wait_for_user_input: false
     metadata:

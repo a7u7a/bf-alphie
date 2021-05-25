@@ -7,7 +7,6 @@ actions:
   - utter_62nGoY0Mc
   - utter_EjlfRSCvj
   - utter_IZiCCNtBx
-  - utter_WWqGxaMEh
   - utter__bzkbYaCY
   - utter_ask_hi
   - utter_ask_intro1
@@ -28,6 +27,7 @@ actions:
   - utter_invalid_q4
   - utter_invalid_q5
   - utter_mE67TEg9O
+  - utter_nD2W7hsDf
   - utter_t91brZcPD
   - utter_valid_hi
   - utter_valid_q4
@@ -455,7 +455,7 @@ forms:
             value: 'no'
         name: q10
         utter_on_new_valid_slot: false
-    updatedAt: 1621977814100
+    updatedAt: 1621978364712
   test_form:
     collect_in_botfront: null
     description: null
@@ -539,6 +539,7 @@ intents:
   - capabilities
   - outro
   - robanter
+  - scary_story
   - test2
   - trigger_48WZqqOBo
 responses:
@@ -565,9 +566,6 @@ responses:
           title: test2
           type: postback
       text: Hello! Fancy a chat?
-  utter_WWqGxaMEh:
-    - language: en
-      text: 'test_this: {test_this}'
   utter__bzkbYaCY:
     - language: en
       text: (goes to capabilities)
@@ -776,6 +774,9 @@ responses:
   utter_mE67TEg9O:
     - language: en
       text: '(wip: goes to outro)'
+  utter_nD2W7hsDf:
+    - language: en
+      text: '(wip: goes to scary_story)'
   utter_t91brZcPD:
     - language: en
       text: '(wip: goes to capabilities)'
