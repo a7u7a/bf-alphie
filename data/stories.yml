@@ -1,13 +1,20 @@
-stories:
-  - story: Robanter
+stories: []
+rules:
+  - rule: capabilities
+    condition: []
     steps:
-      - intent: trigger_-DBSFWt_6
+      - intent: capabilities
         entities: []
-      - action: utter_Uknx6zqjb
-      - action: Robanter_form
-      - active_loop: Robanter_form
-      - active_loop: null
-      - checkpoint: Robanter__branches
+      - action: utter_t91brZcPD
+    wait_for_user_input: false
+    metadata:
+      group: Intro
+  - rule: Intro
+    condition: []
+    steps:
+      - intent: trigger_48WZqqOBo
+        entities: []
+      - action: utter_IZiCCNtBx
     metadata:
       rules:
         - trigger:
@@ -15,54 +22,35 @@ stories:
             triggerLimit__DISPLAYIF: false
             timeOnPage__DISPLAYIF: true
             timeOnPage: 1
-      triggerIntent: trigger_-DBSFWt_6
+      triggerIntent: trigger_48WZqqOBo
       group: Intro
-  - story: Robanter__capabilities
+  - rule: Intro (7)
+    condition: []
     steps:
-      - checkpoint: Robanter__branches
-      - slot_was_set:
-          - robanter_out: capabilities
-      - action: utter_vbekkC8mp
+      - intent: test2
+        entities: []
+      - action: utter_zlEQtDelD
+      - action: utter_EjlfRSCvj
     metadata:
       group: Intro
-  - story: Robanter__jokes
+  - rule: outro
+    condition: []
     steps:
-      - checkpoint: Robanter__branches
-      - slot_was_set:
-          - robanter_out: jokes
-      - action: utter_RsadpvqDI
+      - intent: outro
+        entities: []
+      - action: utter_mE67TEg9O
+    wait_for_user_input: false
     metadata:
       group: Intro
-  - story: Robanter__outro
+  - rule: start_test
+    condition: []
     steps:
-      - checkpoint: Robanter__branches
-      - slot_was_set:
-          - robanter_out: outro
-      - action: utter_Y94j4vuiR
+      - intent: robanter
+        entities: []
+      - action: test_form
+      - active_loop: test_form
+      - active_loop: null
+      - action: utter_WWqGxaMEh
+    wait_for_user_input: false
     metadata:
       group: Intro
-  - story: Robanter__quiz
-    steps:
-      - checkpoint: Robanter__branches
-      - slot_was_set:
-          - robanter_out: quiz
-      - action: utter_T2M0ahUZE
-    metadata:
-      group: Intro
-  - story: Robanter__robanter
-    steps:
-      - checkpoint: Robanter__branches
-      - slot_was_set:
-          - robanter_out: robanter
-      - action: utter_sWzVWsgzz
-    metadata:
-      group: Intro
-  - story: Robanter__short story
-    steps:
-      - checkpoint: Robanter__branches
-      - slot_was_set:
-          - robanter_out: short_story
-      - action: utter_FDy29Osvf
-    metadata:
-      group: Intro
-rules: []

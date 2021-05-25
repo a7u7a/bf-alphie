@@ -4,27 +4,33 @@ actions:
   - action_botfront_fallback
   - action_botfront_mapping
   - utter_62nGoY0Mc
-  - utter_FDy29Osvf
-  - utter_RsadpvqDI
-  - utter_T2M0ahUZE
-  - utter_Uknx6zqjb
-  - utter_Y94j4vuiR
+  - utter_EjlfRSCvj
+  - utter_IZiCCNtBx
+  - utter_WWqGxaMEh
   - utter__bzkbYaCY
+  - utter_ask_hi
   - utter_ask_intro1
   - utter_ask_q1
+  - utter_ask_q10
   - utter_ask_q11
   - utter_ask_q2
   - utter_ask_q22
   - utter_ask_q3
   - utter_ask_q4
   - utter_ask_q5
+  - utter_ask_q6
   - utter_ask_qq
   - utter_ask_test
   - utter_ask_test_categorical
+  - utter_ask_test_this
   - utter_ask_testslot3
-  - utter_sWzVWsgzz
+  - utter_invalid_q4
+  - utter_invalid_q5
+  - utter_mE67TEg9O
+  - utter_t91brZcPD
+  - utter_valid_q4
   - utter_valid_q5
-  - utter_vbekkC8mp
+  - utter_zlEQtDelD
 entities: []
 forms:
   Robanter_form:
@@ -136,16 +142,84 @@ forms:
           source: q4
           target: 1197b820-4add-49cd-8af1-82be33baf40f
           type: condition
-        - condition: null
+        - condition:
+            children1:
+              a99ab8a9-4567-489a-bcde-f179a0d9ed21:
+                properties:
+                  field: q1
+                  operator: is_exactly
+                  value:
+                    - jokes
+                  valueSrc:
+                    - value
+                  valueType:
+                    - custom_text
+                type: rule
+            id: 898899ab-0123-4456-b89a-b1799ffc796e
+            properties:
+              conjunction: AND
+            type: group
           id: eq1-q5
           source: q1
           target: q5
           type: condition
         - condition:
             children1:
-              988a9999-cdef-4012-b456-7179a0b211d1:
+              baab8ab8-0123-4456-b89a-b179a0dcc74c:
                 properties:
-                  field: q5
+                  field: q1
+                  operator: is_exactly
+                  value:
+                    - questions
+                  valueSrc:
+                    - value
+                  valueType:
+                    - custom_text
+                type: rule
+            id: 898899ab-0123-4456-b89a-b1799ffc796e
+            properties:
+              conjunction: AND
+            type: group
+          id: eq1-q6
+          source: q1
+          target: q6
+          type: condition
+        - condition: null
+          id: eq5-q4
+          source: q5
+          target: q4
+          type: condition
+        - condition: null
+          id: eq6-f91eaf64-41b4-4850-8ab6-9b596a59c5b4
+          source: q6
+          target: f91eaf64-41b4-4850-8ab6-9b596a59c5b4
+          type: condition
+        - condition:
+            children1:
+              8b9b8b99-89ab-4cde-b012-3179a14b11eb:
+                properties:
+                  field: q1
+                  operator: is_exactly
+                  value:
+                    - quiz
+                  valueSrc:
+                    - value
+                  valueType:
+                    - custom_text
+                type: rule
+            id: 898899ab-0123-4456-b89a-b1799ffc796e
+            properties:
+              conjunction: AND
+            type: group
+          id: eq1-q10
+          source: q1
+          target: q10
+          type: condition
+        - condition:
+            children1:
+              b89899a8-cdef-4012-b456-7179a1489df6:
+                properties:
+                  field: q10
                   operator: is_exactly
                   value:
                     - 'yes'
@@ -158,32 +232,42 @@ forms:
             properties:
               conjunction: AND
             type: group
-          id: eq5-q4
-          source: q5
-          target: q4
+          id: eq10-e9acbe6b-ce50-4316-9be1-44a9a103385e
+          source: q10
+          target: e9acbe6b-ce50-4316-9be1-44a9a103385e
+          type: condition
+        - condition: null
+          id: eq10-21ac4d67-e509-4670-a9af-6d7162b2d6c6
+          source: q10
+          target: 21ac4d67-e509-4670-a9af-6d7162b2d6c6
+          type: condition
+        - condition: null
+          id: eq1-3bf7f318-f457-42ac-a394-fbf3066681ad
+          source: q1
+          target: 3bf7f318-f457-42ac-a394-fbf3066681ad
           type: condition
       nodes:
         - id: '1'
           position:
             x: 200
-            'y': 200
+            'y': 0
           type: start
         - id: q1
           position:
             x: 120
-            'y': 380
+            'y': 200
           slotName: q1
           type: slot
         - id: q2
           position:
             x: 120
-            'y': 620
+            'y': 680
           slotName: q2
           type: slot
         - id: q3
           position:
             x: 120
-            'y': 820
+            'y': 860
           slotName: q3
           type: slot
         - id: ce864521-0256-4dfa-b10d-c6e237bb8033
@@ -195,7 +279,7 @@ forms:
           type: slotSet
         - id: q4
           position:
-            x: 500
+            x: 420
             'y': 1100
           slotName: q4
           type: slot
@@ -222,10 +306,50 @@ forms:
           type: slotSet
         - id: q5
           position:
-            x: 500
-            'y': 620
+            x: 420
+            'y': 600
           slotName: q5
           type: slot
+        - id: q6
+          position:
+            x: 720
+            'y': 540
+          slotName: q6
+          type: slot
+        - id: f91eaf64-41b4-4850-8ab6-9b596a59c5b4
+          position:
+            x: 720
+            'y': 780
+          slotName: robanter_out
+          slotValue: questions
+          type: slotSet
+        - id: q10
+          position:
+            x: 1200
+            'y': 460
+          slotName: q10
+          type: slot
+        - id: e9acbe6b-ce50-4316-9be1-44a9a103385e
+          position:
+            x: 1060
+            'y': 720
+          slotName: robanter_out
+          slotValue: quiz
+          type: slotSet
+        - id: 21ac4d67-e509-4670-a9af-6d7162b2d6c6
+          position:
+            x: 1360
+            'y': 720
+          slotName: robanter_out
+          slotValue: robanter
+          type: slotSet
+        - id: 3bf7f318-f457-42ac-a394-fbf3066681ad
+          position:
+            x: 1520
+            'y': 380
+          slotName: robanter_out
+          slotValue: capabilities
+          type: slotSet
     groupName: Intro
     name: Robanter_form
     slots:
@@ -295,36 +419,166 @@ forms:
         name: q4
         utter_on_new_valid_slot: false
       - filling:
+          - intent:
+              - 'yes'
+            not_intent: []
+            type: from_intent
+            value: 'yes'
+          - intent:
+              - 'no'
+            not_intent: []
+            type: from_intent
+            value: 'no'
+        name: q5
+        utter_on_new_valid_slot: false
+        validation:
+          comparatum: 'no'
+          operator: is_exactly
+      - filling:
           - intent: []
             not_intent: []
             type: from_text
-        name: q5
-        utter_on_new_valid_slot: true
-    updatedAt: 1621899916631
+        name: q6
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent:
+              - 'yes'
+            not_intent: []
+            type: from_intent
+            value: 'yes'
+          - intent:
+              - 'no'
+            not_intent: []
+            type: from_intent
+            value: 'no'
+        name: q10
+        utter_on_new_valid_slot: false
+    updatedAt: 1621916109720
+  test_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-hi
+          source: '1'
+          target: hi
+          type: condition
+        - condition:
+            children1:
+              9b988988-4567-489a-bcde-f179a1b433ad:
+                properties:
+                  field: hi
+                  operator: is_exactly
+                  value:
+                    - capabilities
+                  valueSrc:
+                    - value
+                  valueType:
+                    - custom_text
+                type: rule
+            id: 898899ab-0123-4456-b89a-b1799ffc796e
+            properties:
+              conjunction: AND
+            type: group
+          id: ehi-d39afbc0-69ca-4b33-8366-c30b679f860f
+          source: hi
+          target: d39afbc0-69ca-4b33-8366-c30b679f860f
+          type: condition
+        - condition: null
+          id: ehi-2feadc3f-054d-4ece-8cb7-959384796a6a
+          source: hi
+          target: 2feadc3f-054d-4ece-8cb7-959384796a6a
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: hi
+          position:
+            x: 120
+            'y': 400
+          slotName: hi
+          type: slot
+        - id: d39afbc0-69ca-4b33-8366-c30b679f860f
+          position:
+            x: -20
+            'y': 600
+          slotName: test_this
+          slotValue: capabilities
+          type: slotSet
+        - id: 2feadc3f-054d-4ece-8cb7-959384796a6a
+          position:
+            x: 340
+            'y': 600
+          slotName: test_this
+          slotValue: outro
+          type: slotSet
+    groupName: Intro
+    name: test_form
+    slots:
+      - filling:
+          - intent:
+              - capabilities
+            not_intent: []
+            type: from_intent
+            value: capabilities
+          - intent:
+              - outro
+            not_intent: []
+            type: from_intent
+            value: outro
+        name: hi
+        utter_on_new_valid_slot: false
+    updatedAt: 1621915849765
 intents:
-  - trigger_-DBSFWt_6
+  - capabilities
+  - outro
+  - robanter
+  - test2
+  - trigger_48WZqqOBo
 responses:
   utter_62nGoY0Mc:
     - language: en
       text: (goes to capabilities)
-  utter_FDy29Osvf:
+  utter_EjlfRSCvj:
     - language: en
-      text: '(wip: goes to short story)'
-  utter_RsadpvqDI:
+      quick_replies:
+        - payload: /capabilities
+          title: this
+          type: postback
+        - payload: /outro
+          title: that
+          type: postback
+      text: do you want this or that?
+  utter_IZiCCNtBx:
     - language: en
-      text: '(wip: goes to jokes)'
-  utter_T2M0ahUZE:
+      quick_replies:
+        - payload: /robanter
+          title: robanter
+          type: postback
+        - payload: /test2
+          title: test2
+          type: postback
+      text: Hello! Fancy a chat?
+  utter_WWqGxaMEh:
     - language: en
-      text: '(wip: goes to quiz)'
-  utter_Uknx6zqjb:
-    - language: en
-      text: (start robanter)
-  utter_Y94j4vuiR:
-    - language: en
-      text: '(wip: goes to outro)'
+      text: 'test_this: {test_this}'
   utter__bzkbYaCY:
     - language: en
       text: (goes to capabilities)
+  utter_ask_hi:
+    - language: en
+      quick_replies:
+        - payload: /capabilities
+          title: caps
+          type: postback
+        - payload: /outro
+          title: outro
+          type: postback
+      text: caps or outro?
   utter_ask_intro1:
     - language: en
       metadata: null
@@ -358,6 +612,19 @@ responses:
       text: >-
         So you're feeling daft? The question is... What flavour of daft are you
         feeling?
+  utter_ask_q10:
+    - language: en
+      quick_replies:
+        - payload: /yes
+          title: 'Alphie, ask me a question'
+          type: postback
+        - payload: /no
+          title: Back
+          type: postback
+      text: |-
+        I'm a bot of my word - this quiz is impossible....  
+          
+        BUT if you answer a question correctly, you will win a PRIZE
   utter_ask_q11:
     - language: en
       quick_replies:
@@ -436,6 +703,13 @@ responses:
         (Randomized robanter joke)  
           
         Want to hear another one?
+  utter_ask_q6:
+    - language: en
+      quick_replies:
+        - payload: /yes
+          title: ok
+          type: postback
+      text: I'm programmed with 'AlphaMcHeimilichDoppleGangerManouvere' code...
   utter_ask_qq:
     - language: en
       quick_replies:
@@ -466,6 +740,10 @@ responses:
           title: 'yes'
           type: postback
       text: hello2
+  utter_ask_test_this:
+    - language: en
+      metadata: null
+      text: ''
   utter_ask_testslot3:
     - language: en
       quick_replies:
@@ -479,16 +757,31 @@ responses:
           title: outro
           type: postback
       text: fanchy a chat?
-  utter_sWzVWsgzz:
+  utter_invalid_q4:
     - language: en
-      text: '(wip: goes to robanter)'
+      metadata: null
+      text: back is invalid
+  utter_invalid_q5:
+    - language: en
+      metadata: null
+      text: ok!
+  utter_mE67TEg9O:
+    - language: en
+      text: '(wip: goes to outro)'
+  utter_t91brZcPD:
+    - language: en
+      text: '(wip: goes to capabilities)'
+  utter_valid_q4:
+    - language: en
+      metadata: null
+      text: back is wack
   utter_valid_q5:
     - language: en
       metadata: null
       text: want to hear another one?
-  utter_vbekkC8mp:
+  utter_zlEQtDelD:
     - language: en
-      text: '(wip: goes to capabilities)'
+      text: start test2
 session_config: {}
 slots:
   disambiguation_message:
@@ -496,7 +789,11 @@ slots:
   fallback_language:
     initial_value: en
     type: unfeaturized
+  hi:
+    type: unfeaturized
   q1:
+    type: unfeaturized
+  q10:
     type: unfeaturized
   q2:
     type: unfeaturized
@@ -505,6 +802,8 @@ slots:
   q4:
     type: unfeaturized
   q5:
+    type: unfeaturized
+  q6:
     type: unfeaturized
   robanter_out:
     type: categorical
@@ -516,3 +815,8 @@ slots:
       - quiz
       - jokes
       - questions
+  test_this:
+    type: categorical
+    values:
+      - capabilities
+      - outro

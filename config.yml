@@ -15,11 +15,11 @@ language: en
 
 
 policies:
-  - name: TEDPolicy
-    epochs: 50
-    max_history: 5
-    batch_size:
-      - 32
-      - 64
+  #- name: TEDPolicy
+   # epochs: 50
+   # max_history: 5
+  #  batch_size:
+ #     - 32
+#      - 64
   - name: RulePolicy
   - name: AugmentedMemoizationPolicy
