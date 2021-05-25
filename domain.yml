@@ -3,7 +3,7 @@ actions:
   - action_botfront_disambiguation_followup
   - action_botfront_fallback
   - action_botfront_mapping
-  - action_check_member
+  - action_form_follow_up
   - utter_62nGoY0Mc
   - utter_EjlfRSCvj
   - utter_IZiCCNtBx
@@ -29,6 +29,7 @@ actions:
   - utter_invalid_q5
   - utter_mE67TEg9O
   - utter_t91brZcPD
+  - utter_valid_hi
   - utter_valid_q4
   - utter_valid_q5
   - utter_zlEQtDelD
@@ -454,7 +455,7 @@ forms:
             value: 'no'
         name: q10
         utter_on_new_valid_slot: false
-    updatedAt: 1621970949263
+    updatedAt: 1621977814100
   test_form:
     collect_in_botfront: null
     description: null
@@ -533,7 +534,7 @@ forms:
             value: outro
         name: hi
         utter_on_new_valid_slot: false
-    updatedAt: 1621970953651
+    updatedAt: 1621975705360
 intents:
   - capabilities
   - outro
@@ -778,6 +779,10 @@ responses:
   utter_t91brZcPD:
     - language: en
       text: '(wip: goes to capabilities)'
+  utter_valid_hi:
+    - language: en
+      metadata: null
+      text: ''
   utter_valid_q4:
     - language: en
       metadata: null
