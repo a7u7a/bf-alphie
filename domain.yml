@@ -11,27 +11,22 @@ actions:
   - utter_ask_hi
   - utter_ask_intro1
   - utter_ask_q1
-  - utter_ask_q10
   - utter_ask_q11
   - utter_ask_q2
   - utter_ask_q22
   - utter_ask_q3
   - utter_ask_q4
-  - utter_ask_q5
-  - utter_ask_q6
   - utter_ask_qq
   - utter_ask_test
   - utter_ask_test_categorical
   - utter_ask_test_this
   - utter_ask_testslot3
   - utter_invalid_q4
-  - utter_invalid_q5
   - utter_mE67TEg9O
   - utter_nD2W7hsDf
   - utter_t91brZcPD
   - utter_valid_hi
   - utter_valid_q4
-  - utter_valid_q5
   - utter_zlEQtDelD
 entities: []
 forms:
@@ -45,23 +40,7 @@ forms:
           source: '1'
           target: q1
           type: condition
-        - condition:
-            children1:
-              a8a88bba-0123-4456-b89a-b17982866826:
-                properties:
-                  field: q1
-                  operator: is_exactly
-                  value:
-                    - scary_story
-                  valueSrc:
-                    - value
-                  valueType:
-                    - custom_text
-                type: rule
-            id: a8baa9aa-0123-4456-b89a-b1798201f618
-            properties:
-              conjunction: AND
-            type: group
+        - condition: null
           id: eq1-q2
           source: q1
           target: q2
@@ -144,110 +123,6 @@ forms:
           source: q4
           target: 1197b820-4add-49cd-8af1-82be33baf40f
           type: condition
-        - condition:
-            children1:
-              a99ab8a9-4567-489a-bcde-f179a0d9ed21:
-                properties:
-                  field: q1
-                  operator: is_exactly
-                  value:
-                    - jokes
-                  valueSrc:
-                    - value
-                  valueType:
-                    - custom_text
-                type: rule
-            id: 898899ab-0123-4456-b89a-b1799ffc796e
-            properties:
-              conjunction: AND
-            type: group
-          id: eq1-q5
-          source: q1
-          target: q5
-          type: condition
-        - condition:
-            children1:
-              baab8ab8-0123-4456-b89a-b179a0dcc74c:
-                properties:
-                  field: q1
-                  operator: is_exactly
-                  value:
-                    - questions
-                  valueSrc:
-                    - value
-                  valueType:
-                    - custom_text
-                type: rule
-            id: 898899ab-0123-4456-b89a-b1799ffc796e
-            properties:
-              conjunction: AND
-            type: group
-          id: eq1-q6
-          source: q1
-          target: q6
-          type: condition
-        - condition: null
-          id: eq5-q4
-          source: q5
-          target: q4
-          type: condition
-        - condition: null
-          id: eq6-f91eaf64-41b4-4850-8ab6-9b596a59c5b4
-          source: q6
-          target: f91eaf64-41b4-4850-8ab6-9b596a59c5b4
-          type: condition
-        - condition:
-            children1:
-              8b9b8b99-89ab-4cde-b012-3179a14b11eb:
-                properties:
-                  field: q1
-                  operator: is_exactly
-                  value:
-                    - quiz
-                  valueSrc:
-                    - value
-                  valueType:
-                    - custom_text
-                type: rule
-            id: 898899ab-0123-4456-b89a-b1799ffc796e
-            properties:
-              conjunction: AND
-            type: group
-          id: eq1-q10
-          source: q1
-          target: q10
-          type: condition
-        - condition:
-            children1:
-              b89899a8-cdef-4012-b456-7179a1489df6:
-                properties:
-                  field: q10
-                  operator: is_exactly
-                  value:
-                    - 'yes'
-                  valueSrc:
-                    - value
-                  valueType:
-                    - custom_text
-                type: rule
-            id: 898899ab-0123-4456-b89a-b1799ffc796e
-            properties:
-              conjunction: AND
-            type: group
-          id: eq10-e9acbe6b-ce50-4316-9be1-44a9a103385e
-          source: q10
-          target: e9acbe6b-ce50-4316-9be1-44a9a103385e
-          type: condition
-        - condition: null
-          id: eq10-21ac4d67-e509-4670-a9af-6d7162b2d6c6
-          source: q10
-          target: 21ac4d67-e509-4670-a9af-6d7162b2d6c6
-          type: condition
-        - condition: null
-          id: eq1-3bf7f318-f457-42ac-a394-fbf3066681ad
-          source: q1
-          target: 3bf7f318-f457-42ac-a394-fbf3066681ad
-          type: condition
       nodes:
         - id: '1'
           position:
@@ -263,7 +138,7 @@ forms:
         - id: q2
           position:
             x: 120
-            'y': 680
+            'y': 520
           slotName: q2
           type: slot
         - id: q3
@@ -306,52 +181,6 @@ forms:
           slotName: robanter_out
           slotValue: outro
           type: slotSet
-        - id: q5
-          position:
-            x: 420
-            'y': 600
-          slotName: q5
-          type: slot
-        - id: q6
-          position:
-            x: 720
-            'y': 540
-          slotName: q6
-          type: slot
-        - id: f91eaf64-41b4-4850-8ab6-9b596a59c5b4
-          position:
-            x: 720
-            'y': 780
-          slotName: robanter_out
-          slotValue: questions
-          type: slotSet
-        - id: q10
-          position:
-            x: 1200
-            'y': 460
-          slotName: q10
-          type: slot
-        - id: e9acbe6b-ce50-4316-9be1-44a9a103385e
-          position:
-            x: 1060
-            'y': 720
-          slotName: robanter_out
-          slotValue: quiz
-          type: slotSet
-        - id: 21ac4d67-e509-4670-a9af-6d7162b2d6c6
-          position:
-            x: 1360
-            'y': 720
-          slotName: robanter_out
-          slotValue: robanter
-          type: slotSet
-        - id: 3bf7f318-f457-42ac-a394-fbf3066681ad
-          position:
-            x: 1520
-            'y': 380
-          slotName: robanter_out
-          slotValue: capabilities
-          type: slotSet
     groupName: Intro
     name: Robanter_form
     slots:
@@ -361,26 +190,6 @@ forms:
             not_intent: []
             type: from_intent
             value: scary_story
-          - intent:
-              - jokes
-            not_intent: []
-            type: from_intent
-            value: jokes
-          - intent:
-              - questions
-            not_intent: []
-            type: from_intent
-            value: questions
-          - intent:
-              - quiz
-            not_intent: []
-            type: from_intent
-            value: quiz
-          - intent:
-              - capabilities
-            not_intent: []
-            type: from_intent
-            value: capabilities
         name: q1
         utter_on_new_valid_slot: false
       - filling:
@@ -420,42 +229,7 @@ forms:
             value: quit
         name: q4
         utter_on_new_valid_slot: false
-      - filling:
-          - intent:
-              - 'yes'
-            not_intent: []
-            type: from_intent
-            value: 'yes'
-          - intent:
-              - 'no'
-            not_intent: []
-            type: from_intent
-            value: 'no'
-        name: q5
-        utter_on_new_valid_slot: false
-        validation:
-          comparatum: 'no'
-          operator: is_exactly
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q6
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent:
-              - 'yes'
-            not_intent: []
-            type: from_intent
-            value: 'yes'
-          - intent:
-              - 'no'
-            not_intent: []
-            type: from_intent
-            value: 'no'
-        name: q10
-        utter_on_new_valid_slot: false
-    updatedAt: 1621978364712
+    updatedAt: 1621979245325
   test_form:
     collect_in_botfront: null
     description: null
@@ -603,34 +377,9 @@ responses:
         - payload: /scary_story
           title: Let's make up a stupidly scary story together
           type: postback
-        - payload: /jokes
-          title: 'Jokes Alphie, tell me terrible, terrible jokes'
-          type: postback
-        - payload: /questions
-          title: I want to ask you questions until I break your code
-          type: postback
-        - payload: /quiz
-          title: Let's play an Impossible quiz please Alphie
-          type: postback
-        - payload: /capabilities
-          title: Get me out of here!
-          type: postback
       text: >-
         So you're feeling daft? The question is... What flavour of daft are you
         feeling?
-  utter_ask_q10:
-    - language: en
-      quick_replies:
-        - payload: /yes
-          title: 'Alphie, ask me a question'
-          type: postback
-        - payload: /no
-          title: Back
-          type: postback
-      text: |-
-        I'm a bot of my word - this quiz is impossible....  
-          
-        BUT if you answer a question correctly, you will win a PRIZE
   utter_ask_q11:
     - language: en
       quick_replies:
@@ -695,27 +444,6 @@ responses:
       text: >-
         Press 'back' to go to the beginning of this section or 'menu' for full
         chat options... I'll let you work out what 'quit' does ;-)
-  utter_ask_q5:
-    - language: en
-      metadata: null
-      quick_replies:
-        - payload: /yes
-          title: 'Yes'
-          type: postback
-        - payload: /no
-          title: 'No'
-          type: postback
-      text: |-
-        (Randomized robanter joke)  
-          
-        Want to hear another one?
-  utter_ask_q6:
-    - language: en
-      quick_replies:
-        - payload: /yes
-          title: ok
-          type: postback
-      text: I'm programmed with 'AlphaMcHeimilichDoppleGangerManouvere' code...
   utter_ask_qq:
     - language: en
       quick_replies:
@@ -767,10 +495,6 @@ responses:
     - language: en
       metadata: null
       text: back is invalid
-  utter_invalid_q5:
-    - language: en
-      metadata: null
-      text: ok!
   utter_mE67TEg9O:
     - language: en
       text: '(wip: goes to outro)'
@@ -788,10 +512,6 @@ responses:
     - language: en
       metadata: null
       text: back is wack
-  utter_valid_q5:
-    - language: en
-      metadata: null
-      text: want to hear another one?
   utter_zlEQtDelD:
     - language: en
       text: start test2
@@ -806,17 +526,11 @@ slots:
     type: unfeaturized
   q1:
     type: unfeaturized
-  q10:
-    type: unfeaturized
   q2:
     type: unfeaturized
   q3:
     type: unfeaturized
   q4:
-    type: unfeaturized
-  q5:
-    type: unfeaturized
-  q6:
     type: unfeaturized
   robanter_out:
     type: categorical
@@ -825,9 +539,6 @@ slots:
       - robanter
       - capabilities
       - outro
-      - quiz
-      - jokes
-      - questions
   test_this:
     type: categorical
     values:
