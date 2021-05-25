@@ -3,6 +3,7 @@ actions:
   - action_botfront_disambiguation_followup
   - action_botfront_fallback
   - action_botfront_mapping
+  - action_check_member
   - utter_62nGoY0Mc
   - utter_EjlfRSCvj
   - utter_IZiCCNtBx
@@ -453,7 +454,7 @@ forms:
             value: 'no'
         name: q10
         utter_on_new_valid_slot: false
-    updatedAt: 1621916109720
+    updatedAt: 1621970949263
   test_form:
     collect_in_botfront: null
     description: null
@@ -499,7 +500,7 @@ forms:
         - id: hi
           position:
             x: 120
-            'y': 400
+            'y': 360
           slotName: hi
           type: slot
         - id: d39afbc0-69ca-4b33-8366-c30b679f860f
@@ -532,7 +533,7 @@ forms:
             value: outro
         name: hi
         utter_on_new_valid_slot: false
-    updatedAt: 1621915849765
+    updatedAt: 1621970953651
 intents:
   - capabilities
   - outro
@@ -571,6 +572,12 @@ responses:
       text: (goes to capabilities)
   utter_ask_hi:
     - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageEventCallbacks: null
+        userInput: show
       quick_replies:
         - payload: /capabilities
           title: caps

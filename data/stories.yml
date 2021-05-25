@@ -1,12 +1,11 @@
 stories: []
 rules:
-  - rule: capabilities
+  - rule: capabilities_intent
     condition: []
     steps:
       - intent: capabilities
         entities: []
       - action: utter_t91brZcPD
-    wait_for_user_input: false
     metadata:
       group: Intro
   - rule: Intro
@@ -24,25 +23,15 @@ rules:
             timeOnPage: 1
       triggerIntent: trigger_48WZqqOBo
       group: Intro
-  - rule: Intro (7)
-    condition: []
-    steps:
-      - intent: test2
-        entities: []
-      - action: utter_zlEQtDelD
-      - action: utter_EjlfRSCvj
-    metadata:
-      group: Intro
-  - rule: outro
+  - rule: outro_intent
     condition: []
     steps:
       - intent: outro
         entities: []
       - action: utter_mE67TEg9O
-    wait_for_user_input: false
     metadata:
       group: Intro
-  - rule: start_test
+  - rule: robanter start
     condition: []
     steps:
       - intent: robanter
@@ -51,6 +40,16 @@ rules:
       - active_loop: test_form
       - active_loop: null
       - action: utter_WWqGxaMEh
+      - action: action_check_member
     wait_for_user_input: false
+    metadata:
+      group: Intro
+  - rule: test2
+    condition: []
+    steps:
+      - intent: test2
+        entities: []
+      - action: utter_zlEQtDelD
+      - action: utter_EjlfRSCvj
     metadata:
       group: Intro
