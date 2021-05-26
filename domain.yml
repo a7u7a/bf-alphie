@@ -14,6 +14,8 @@ actions:
   - utter_37jmJQt5X
   - utter_507WCJv19
   - utter_62nGoY0Mc
+  - utter_7E8EuCeBP
+  - utter_7LnrKadyj
   - utter_7gJqiKaVhA
   - utter_9-QUXOeoA
   - utter_Bg9Zkn-0P
@@ -21,14 +23,17 @@ actions:
   - utter_E9SKUypf4
   - utter_FihUmZ3vV
   - utter_GlGkS_b0C
+  - utter_JE88FzV1l
   - utter_JXdsGJ66W
   - utter_JoQVEx2TE
   - utter_LyHz5Dfjq
   - utter_LzSviHHkJ
   - utter_Mf_ovqH8m
+  - utter_RtzekwDy7
+  - utter_UZqCNZp_b
   - utter_WF1BWuQTy
-  - utter_WNQLkgnXP
   - utter_XVfr0bTe2
+  - utter_ZTffjZgzd
   - utter__bzkbYaCY
   - utter_ask_hi
   - utter_ask_intro1
@@ -47,12 +52,15 @@ actions:
   - utter_ask_testslot3
   - utter_bIP2S6rNE
   - utter_bvvoWnrQA
+  - utter_fvXq6s5UO
+  - utter_hXp9_l8R6
   - utter_invalid_q0
   - utter_invalid_q1
   - utter_invalid_q2
   - utter_invalid_robanter_joke_out
   - utter_invalid_robanter_jokes_form_out
   - utter_ndVDLjVtd
+  - utter_oVaxU1_d1
   - utter_rJsCors7u
   - utter_rSJVMykEi
   - utter_rbsCOFN2s
@@ -62,6 +70,8 @@ actions:
   - utter_valid_q1
   - utter_valid_q2
   - utter_waV47guGR
+  - utter_xZiLwuJNH
+  - utter_yvHcOSzHb
   - utter_zMScFybRf
 entities: []
 forms:
@@ -299,11 +309,17 @@ intents:
   - capabilities
   - carer
   - contact_tea
+  - copy_paste_carousel
   - creative_feelings
+  - feedback
   - functional
   - functional_outro
   - jokes
+  - journal
   - outro
+  - outro_2
+  - outro_3
+  - outro_resume
   - questions
   - questions_continue
   - questions_loop
@@ -365,6 +381,29 @@ responses:
   utter_62nGoY0Mc:
     - language: en
       text: (goes to capabilities)
+  utter_7E8EuCeBP:
+    - language: en
+      quick_replies:
+        - payload: /capabilities
+          title: 'Actually Alphie, there''s something else I''d like to chat about'
+          type: postback
+        - payload: /feedback
+          title: I've just thought of something to feedback
+          type: postback
+        - payload: /outro_resume
+          title: 'Bye for now, Alphie'
+          type: postback
+      text: ' I''ll have a wee byte and a rest. If you fancy a chat, I''m ready when you are.'
+  utter_7LnrKadyj:
+    - language: en
+      quick_replies:
+        - payload: /feedback
+          title: 'Yes'
+          type: postback
+        - payload: /outro_3
+          title: 'Not today Alphie, not today'
+          type: postback
+      text: '...your feedback will help me be a better bot, can you help?'
   utter_7gJqiKaVhA:
     - language: en
       quick_replies:
@@ -453,6 +492,21 @@ responses:
       text: >-
         Press 'back' to go to the beginning of this section or 'menu' for full
         chat options... I'll let you work out what 'quit' does ;-)
+  utter_JE88FzV1l:
+    - language: en
+      quick_replies:
+        - payload: /copy_paste_carousel
+          title: Show me how to copy and paste
+          type: postback
+        - payload: /outro_2
+          title: Done
+          type: postback
+        - payload: /capabilities
+          title: I'm here by mistake!
+          type: postback
+      text: >-
+        Scroll through our chat. Copy and paste the parts you want to keep and
+        add them to 'My Projects'.
   utter_JXdsGJ66W:
     - language: en
       text: '(wip: you have reached creative_feelings)'
@@ -491,15 +545,35 @@ responses:
         [TRB link](https://www.theatreroyal.org.uk/whats-on/?ven=9)
 
         [Ustinov link](https://www.theatreroyal.org.uk/whats-on/?ven=10)
+  utter_RtzekwDy7:
+    - language: en
+      quick_replies:
+        - payload: /journal
+          title: 'Yes, take me to my journal, Alphie'
+          type: postback
+        - payload: /outro_2
+          title: 'No, thank you'
+          type: postback
+        - payload: /capabilities
+          title: I'm here by mistake
+          type: postback
+      text: 'Before you go, do you want to log our chat? (journal not dead wood)'
+  utter_UZqCNZp_b:
+    - language: en
+      quick_replies:
+        - payload: /capabilities
+          title: 'Yes'
+          type: postback
+      text: Ready to chat?
   utter_WF1BWuQTy:
     - language: en
       text: randomized answer
-  utter_WNQLkgnXP:
-    - language: en
-      text: '(wip: you reached outro)'
   utter_XVfr0bTe2:
     - language: en
       text: Hello... is it me you're looking for?
+  utter_ZTffjZgzd:
+    - language: en
+      text: '(wip: you have reached copy-paste carousel tutorial)'
   utter__bzkbYaCY:
     - language: en
       text: (goes to capabilities)
@@ -666,6 +740,16 @@ responses:
   utter_bvvoWnrQA:
     - language: en
       text: '(wip: goes to short story carousel)'
+  utter_fvXq6s5UO:
+    - language: en
+      quick_replies:
+        - payload: /outro_2
+          title: Done
+          type: postback
+      text: ''
+  utter_hXp9_l8R6:
+    - language: en
+      text: 'As you know, I''m just a bit of computer code'
   utter_invalid_q0:
     - language: en
       metadata: null
@@ -691,6 +775,13 @@ responses:
       text: >-
         Follow [this link](https://www.theeggassembly.com/create/) to live
         course info
+  utter_oVaxU1_d1:
+    - language: en
+      text: >-
+        Follow this link to the [Meet the
+        Team](https://www.theeggassembly.com/about/meet-the-team/) page and
+        contact Alex or Sophie with your feedback. Press 'done' when you're...
+        done.
   utter_rJsCors7u:
     - language: en
       quick_replies:
@@ -739,6 +830,21 @@ responses:
   utter_waV47guGR:
     - language: en
       text: Hahaha!I love this story - it's so stupid and scary!
+  utter_xZiLwuJNH:
+    - language: en
+      text: >-
+        Follow [this link](https://www.theeggassembly.com/wp-admin/profile.php)
+        for your profile
+  utter_yvHcOSzHb:
+    - language: en
+      quick_replies:
+        - payload: /outro_3
+          title: Done
+          type: postback
+        - payload: /capabilities
+          title: I'm here by mistake!
+          type: postback
+      text: Email them your feedback using the 'Contact Alex/Sophie' button
   utter_zMScFybRf:
     - language: en
       quick_replies:

@@ -1,0 +1,11 @@
+stories: []
+rules:
+  - rule: feedback
+    condition: []
+    steps:
+      - intent: feedback
+        entities: []
+      - action: utter_oVaxU1_d1
+      - action: utter_yvHcOSzHb
+    metadata:
+      group: Feedback

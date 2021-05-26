@@ -1,0 +1,20 @@
+stories: []
+rules:
+  - rule: copy_paste_carousel
+    condition: []
+    steps:
+      - intent: copy_paste_carousel
+        entities: []
+      - action: utter_ZTffjZgzd
+      - action: utter_fvXq6s5UO
+    metadata:
+      group: Journal
+  - rule: journal
+    condition: []
+    steps:
+      - intent: journal
+        entities: []
+      - action: utter_xZiLwuJNH
+      - action: utter_JE88FzV1l
+    metadata:
+      group: Journal

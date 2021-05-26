@@ -5,6 +5,31 @@ rules:
     steps:
       - intent: outro
         entities: []
-      - action: utter_WNQLkgnXP
+      - action: utter_RtzekwDy7
+    metadata:
+      group: Outro
+  - rule: outro_2
+    condition: []
+    steps:
+      - intent: outro_2
+        entities: []
+      - action: utter_hXp9_l8R6
+      - action: utter_7LnrKadyj
+    metadata:
+      group: Outro
+  - rule: outro_3
+    condition: []
+    steps:
+      - intent: outro_3
+        entities: []
+      - action: utter_7E8EuCeBP
+    metadata:
+      group: Outro
+  - rule: outro_resume
+    condition: []
+    steps:
+      - intent: outro_resume
+        entities: []
+      - action: utter_UZqCNZp_b
     metadata:
       group: Outro
