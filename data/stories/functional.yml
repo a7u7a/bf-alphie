@@ -1,0 +1,54 @@
+stories: []
+rules:
+  - rule: carer
+    condition: []
+    steps:
+      - intent: carer
+        entities: []
+      - action: utter_E9SKUypf4
+      - action: action_goto_functional_outro
+    metadata:
+      group: Functional
+  - rule: contact_tea
+    condition: []
+    steps:
+      - intent: contact_tea
+        entities: []
+      - action: utter_FihUmZ3vV
+      - action: action_goto_functional_outro
+    metadata:
+      group: Functional
+  - rule: functional
+    condition: []
+    steps:
+      - intent: functional
+        entities: []
+      - action: utter_1n82s479p
+    metadata:
+      group: Functional
+  - rule: functional_outro
+    condition: []
+    steps:
+      - intent: functional_outro
+        entities: []
+      - action: utter_GlGkS_b0C
+    metadata:
+      group: Functional
+  - rule: timetables
+    condition: []
+    steps:
+      - intent: timetables
+        entities: []
+      - action: utter_ndVDLjVtd
+      - action: action_goto_functional_outro
+    metadata:
+      group: Functional
+  - rule: whats_on
+    condition: []
+    steps:
+      - intent: whats_on
+        entities: []
+      - action: utter_Mf_ovqH8m
+      - action: action_goto_functional_outro
+    metadata:
+      group: Functional

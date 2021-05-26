@@ -4,20 +4,31 @@ actions:
   - action_botfront_fallback
   - action_botfront_mapping
   - action_form_follow_up_intent
+  - action_goto_capabilities
+  - action_goto_functional_outro
   - action_reset_robanter_questions_slot
   - action_reset_robanter_quiz_slot
+  - utter_-C0jqr1v8
+  - utter_1n82s479p
   - utter_37WaJKBMm
   - utter_37jmJQt5X
   - utter_507WCJv19
   - utter_62nGoY0Mc
+  - utter_7gJqiKaVhA
   - utter_9-QUXOeoA
   - utter_Bg9Zkn-0P
-  - utter_IZiCCNtBx
+  - utter_CJuOI_sNr
+  - utter_E9SKUypf4
+  - utter_FihUmZ3vV
+  - utter_GlGkS_b0C
+  - utter_JXdsGJ66W
   - utter_JoQVEx2TE
   - utter_LyHz5Dfjq
   - utter_LzSviHHkJ
+  - utter_Mf_ovqH8m
   - utter_WF1BWuQTy
   - utter_WNQLkgnXP
+  - utter_XVfr0bTe2
   - utter__bzkbYaCY
   - utter_ask_hi
   - utter_ask_intro1
@@ -34,7 +45,6 @@ actions:
   - utter_ask_test_categorical
   - utter_ask_test_this
   - utter_ask_testslot3
-  - utter_b4MxH3NgH
   - utter_bIP2S6rNE
   - utter_bvvoWnrQA
   - utter_invalid_q0
@@ -42,16 +52,51 @@ actions:
   - utter_invalid_q2
   - utter_invalid_robanter_joke_out
   - utter_invalid_robanter_jokes_form_out
+  - utter_ndVDLjVtd
   - utter_rJsCors7u
   - utter_rSJVMykEi
   - utter_rbsCOFN2s
   - utter_ttUBaNltRA
+  - utter_v1Em4x0P-
   - utter_valid_hi
   - utter_valid_q1
   - utter_valid_q2
+  - utter_waV47guGR
   - utter_zMScFybRf
 entities: []
 forms:
+  bot_reference_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q3
+          source: '1'
+          target: q3
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q3
+          position:
+            x: 120
+            'y': 350
+          slotName: q3
+          type: slot
+    groupName: Intro
+    name: bot_reference_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q3
+        utter_on_new_valid_slot: false
+    updatedAt: 1622057743510
   robanter_jokes_form:
     collect_in_botfront: null
     description: null
@@ -133,7 +178,7 @@ forms:
         validation:
           comparatum: 'no'
           operator: is_exactly
-    updatedAt: 1621992476813
+    updatedAt: 1622054169950
   robanter_questions_form:
     collect_in_botfront: null
     description: null
@@ -250,7 +295,13 @@ forms:
           operator: longer
     updatedAt: 1621998396806
 intents:
+  - bot_reference
   - capabilities
+  - carer
+  - contact_tea
+  - creative_feelings
+  - functional
+  - functional_outro
   - jokes
   - outro
   - questions
@@ -262,8 +313,34 @@ intents:
   - robanter_outro
   - scary_story
   - short_story_carousel
+  - timetables
   - trigger_48WZqqOBo
+  - whats_on
 responses:
+  utter_-C0jqr1v8:
+    - language: en
+      text: 'Actually, probably best not to get into all that..'
+  utter_1n82s479p:
+    - language: en
+      quick_replies:
+        - payload: /timetables
+          title: I need TEA course timetables and schedules. Stat!
+          type: postback
+        - payload: /carer
+          title: I'm a carer/guardian for a TEA member
+          type: postback
+        - payload: /contact_tea
+          title: I want to contact the workshop leader or TEA team.
+          type: postback
+        - payload: /whats_on
+          title: 'What''s on at the egg, Theatre Royal Bath and Ustinov?'
+          type: postback
+        - payload: /capabilities
+          title: I'm here by mistake!
+          type: postback
+      text: |-
+        I'm programmed to: Find course timetables,  
+        Check show schedules, Contact the TEA team.
   utter_37WaJKBMm:
     - language: en
       text: >-
@@ -288,6 +365,19 @@ responses:
   utter_62nGoY0Mc:
     - language: en
       text: (goes to capabilities)
+  utter_7gJqiKaVhA:
+    - language: en
+      quick_replies:
+        - payload: /bot_reference
+          title: 'Yes'
+          type: postback
+        - payload: /functional
+          title: 'No time for chat, give me cold, hard facts!'
+          type: postback
+        - payload: /outro
+          title: 'I cant be BOThered with you right now, shhhh!'
+          type: postback
+      text: '...I''m Alphie, fancy a chat?'
   utter_9-QUXOeoA:
     - language: en
       quick_replies:
@@ -312,13 +402,60 @@ responses:
   utter_Bg9Zkn-0P:
     - language: en
       text: INCORRECT
-  utter_IZiCCNtBx:
+  utter_CJuOI_sNr:
     - language: en
       quick_replies:
-        - payload: /robanter
-          title: robanter
+        - payload: /functional
+          title: I want facts and information about workshops and classes.
           type: postback
-      text: Hello! Fancy a chat?
+        - payload: /functional
+          title: I want to contact my workshop leader/TEA team.
+          type: postback
+        - payload: /creative_feelings
+          title: I want a creative chat about workshops and shows.
+          type: postback
+        - payload: /creative_feelings
+          title: >-
+            I'm generally feeling creative and want to express myself and my
+            emotions.
+          type: postback
+        - payload: /robanter
+          title: 'Daftness please Alphie, daftness'
+          type: postback
+        - payload: /outro
+          title: 'Alphie, for the love of Bot, be quiet!'
+          type: postback
+      text: So... what do you want to chat about?
+  utter_E9SKUypf4:
+    - language: en
+      text: >-
+        I'm programmed to refer carers/guardians to a real life person.  Please,
+        contact Alex or Sophie at [this
+        link](https://www.theeggassembly.com/about/meet-the-team/)
+  utter_FihUmZ3vV:
+    - language: en
+      text: >-
+        Go to [Meet the
+        Team](https://www.theeggassembly.com/about/meet-the-team/) page and
+        contact Alex or Sophie
+  utter_GlGkS_b0C:
+    - language: en
+      quick_replies:
+        - payload: /functional
+          title: Back
+          type: postback
+        - payload: /capabilities
+          title: Menu
+          type: postback
+        - payload: /outro
+          title: Quit
+          type: postback
+      text: >-
+        Press 'back' to go to the beginning of this section or 'menu' for full
+        chat options... I'll let you work out what 'quit' does ;-)
+  utter_JXdsGJ66W:
+    - language: en
+      text: '(wip: you have reached creative_feelings)'
   utter_JoQVEx2TE:
     - language: en
       text: The answer you are looking for is...
@@ -344,12 +481,25 @@ responses:
       text: >-
         Press 'back' to go to the beginning of this section or 'menu' for full
         chat options... I'll let you work out what 'quit' does ;-)
+  utter_Mf_ovqH8m:
+    - language: en
+      text: |-
+        Here are 3 links to the 'what's on' pages:
+
+        [Egg link](https://www.theatreroyal.org.uk/whats-on/?ven=11)
+
+        [TRB link](https://www.theatreroyal.org.uk/whats-on/?ven=9)
+
+        [Ustinov link](https://www.theatreroyal.org.uk/whats-on/?ven=10)
   utter_WF1BWuQTy:
     - language: en
       text: randomized answer
   utter_WNQLkgnXP:
     - language: en
       text: '(wip: you reached outro)'
+  utter_XVfr0bTe2:
+    - language: en
+      text: Hello... is it me you're looking for?
   utter__bzkbYaCY:
     - language: en
       text: (goes to capabilities)
@@ -428,7 +578,13 @@ responses:
       text: u know my friend roman?
   utter_ask_q3:
     - language: en
-      metadata: null
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
       quick_replies:
         - payload: /yes
           title: 'Yes'
@@ -436,9 +592,7 @@ responses:
         - payload: /no
           title: 'No'
           type: postback
-      text: >-
-        Hahaha! I love this story - it's so stupid and scary! You up for writing
-        a ghost story together?
+      text: I'm a bot. Do you know my friend Ro-Man?
   utter_ask_qq:
     - language: en
       quick_replies:
@@ -506,9 +660,6 @@ responses:
           title: outro
           type: postback
       text: fanchy a chat?
-  utter_b4MxH3NgH:
-    - language: en
-      text: '(wip: goes to capabilities)'
   utter_bIP2S6rNE:
     - language: en
       text: henlo
@@ -535,6 +686,11 @@ responses:
     - language: en
       metadata: null
       text: randomized joke in form
+  utter_ndVDLjVtd:
+    - language: en
+      text: >-
+        Follow [this link](https://www.theeggassembly.com/create/) to live
+        course info
   utter_rJsCors7u:
     - language: en
       quick_replies:
@@ -563,6 +719,11 @@ responses:
       text: >-
         Wo! That nearly bamboozled me but my CPU is still running so IN YOUR
         FACE!
+  utter_v1Em4x0P-:
+    - language: en
+      text: >-
+        ...I'm Alphie the chatbot. I'm programmed to be daft and to chat about
+        creative stuff.
   utter_valid_hi:
     - language: en
       metadata: null
@@ -575,6 +736,9 @@ responses:
     - language: en
       metadata: null
       text: INCORRECT
+  utter_waV47guGR:
+    - language: en
+      text: Hahaha!I love this story - it's so stupid and scary!
   utter_zMScFybRf:
     - language: en
       quick_replies:
@@ -584,11 +748,13 @@ responses:
         - payload: /robanter_outro
           title: 'No'
           type: postback
-      text: >-
-        Hahaha!I love this story - it's so stupid and scary! You up for writing
-        a ghost story together?
+      text: You up for writing a ghost story together?
 session_config: {}
 slots:
+  bot_reference_form_out:
+    type: categorical
+    values:
+      - capabilities
   disambiguation_message:
     type: unfeaturized
   fallback_language:
@@ -599,6 +765,8 @@ slots:
   q1:
     type: unfeaturized
   q2:
+    type: unfeaturized
+  q3:
     type: unfeaturized
   robanter_jokes_form_out:
     type: categorical

@@ -1,0 +1,10 @@
+stories: []
+rules:
+  - rule: creative_feelings
+    condition: []
+    steps:
+      - intent: creative_feelings
+        entities: []
+      - action: utter_JXdsGJ66W
+    metadata:
+      group: Creative Feelings

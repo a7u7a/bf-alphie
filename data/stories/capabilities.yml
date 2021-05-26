@@ -1,0 +1,10 @@
+stories: []
+rules:
+  - rule: capabilities
+    condition: []
+    steps:
+      - intent: capabilities
+        entities: []
+      - action: utter_CJuOI_sNr
+    metadata:
+      group: Capabilities

@@ -1,6 +1,6 @@
 stories: []
 rules:
-  - rule: jokes start
+  - rule: jokes
     condition: []
     steps:
       - intent: jokes
@@ -13,7 +13,15 @@ rules:
     wait_for_user_input: false
     metadata:
       group: Robanter
-  - rule: questions continue
+  - rule: questions
+    condition: []
+    steps:
+      - intent: questions
+        entities: []
+      - action: utter_LyHz5Dfjq
+    metadata:
+      group: Robanter
+  - rule: questions_continue
     condition: []
     steps:
       - intent: questions_continue
@@ -22,14 +30,6 @@ rules:
       - action: utter_WF1BWuQTy
       - action: utter_37jmJQt5X
       - action: utter_ttUBaNltRA
-    metadata:
-      group: Robanter
-  - rule: questions start
-    condition: []
-    steps:
-      - intent: questions
-        entities: []
-      - action: utter_LyHz5Dfjq
     metadata:
       group: Robanter
   - rule: questions_loop
@@ -45,7 +45,7 @@ rules:
       - action: utter_bIP2S6rNE
     metadata:
       group: Robanter
-  - rule: quiz start
+  - rule: quiz
     condition: []
     steps:
       - intent: quiz
@@ -67,15 +67,7 @@ rules:
       - action: utter_rJsCors7u
     metadata:
       group: Robanter
-  - rule: robanter outro
-    condition: []
-    steps:
-      - intent: robanter_outro
-        entities: []
-      - action: utter_LzSviHHkJ
-    metadata:
-      group: Robanter
-  - rule: robanter start
+  - rule: robanter
     condition: []
     steps:
       - intent: robanter
@@ -83,16 +75,25 @@ rules:
       - action: utter_9-QUXOeoA
     metadata:
       group: Robanter
-  - rule: scary_story start
+  - rule: robanter_outro
+    condition: []
+    steps:
+      - intent: robanter_outro
+        entities: []
+      - action: utter_LzSviHHkJ
+    metadata:
+      group: Robanter
+  - rule: scary_story
     condition: []
     steps:
       - intent: scary_story
         entities: []
       - action: utter_37WaJKBMm
+      - action: utter_waV47guGR
       - action: utter_zMScFybRf
     metadata:
       group: Robanter
-  - rule: short story carousel
+  - rule: short_story_carousel
     condition: []
     steps:
       - intent: short_story_carousel

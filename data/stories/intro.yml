@@ -1,11 +1,17 @@
 stories: []
 rules:
-  - rule: capabilities
+  - rule: bot_reference
     condition: []
     steps:
-      - intent: capabilities
+      - intent: bot_reference
         entities: []
-      - action: utter_b4MxH3NgH
+      - action: bot_reference_form
+      - active_loop: bot_reference_form
+      - active_loop: null
+      - action: utter_-C0jqr1v8
+      - action: utter_v1Em4x0P-
+      - action: action_goto_capabilities
+    wait_for_user_input: false
     metadata:
       group: Intro
   - rule: intro
@@ -13,7 +19,8 @@ rules:
     steps:
       - intent: trigger_48WZqqOBo
         entities: []
-      - action: utter_IZiCCNtBx
+      - action: utter_XVfr0bTe2
+      - action: utter_7gJqiKaVhA
     metadata:
       rules:
         - trigger:
@@ -22,12 +29,4 @@ rules:
             timeOnPage__DISPLAYIF: true
             timeOnPage: 1
       triggerIntent: trigger_48WZqqOBo
-      group: Intro
-  - rule: outro
-    condition: []
-    steps:
-      - intent: outro
-        entities: []
-      - action: utter_WNQLkgnXP
-    metadata:
       group: Intro

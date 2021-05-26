@@ -1,0 +1,10 @@
+stories: []
+rules:
+  - rule: outro
+    condition: []
+    steps:
+      - intent: outro
+        entities: []
+      - action: utter_WNQLkgnXP
+    metadata:
+      group: Outro
