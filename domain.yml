@@ -4,11 +4,16 @@ actions:
   - action_botfront_fallback
   - action_botfront_mapping
   - action_form_follow_up_intent
+  - action_reset_robanter_questions_slot
   - utter_37WaJKBMm
+  - utter_37jmJQt5X
   - utter_62nGoY0Mc
   - utter_9-QUXOeoA
   - utter_IZiCCNtBx
+  - utter_JoQVEx2TE
+  - utter_LyHz5Dfjq
   - utter_LzSviHHkJ
+  - utter_WF1BWuQTy
   - utter_WNQLkgnXP
   - utter__bzkbYaCY
   - utter_ask_hi
@@ -27,12 +32,16 @@ actions:
   - utter_ask_test_this
   - utter_ask_testslot3
   - utter_b4MxH3NgH
+  - utter_bIP2S6rNE
   - utter_bvvoWnrQA
   - utter_invalid_q0
+  - utter_invalid_q1
   - utter_invalid_robanter_joke_out
   - utter_invalid_robanter_jokes_form_out
   - utter_rbsCOFN2s
+  - utter_ttUBaNltRA
   - utter_valid_hi
+  - utter_valid_q1
   - utter_zMScFybRf
 entities: []
 forms:
@@ -48,7 +57,7 @@ forms:
           type: condition
         - condition:
             children1:
-              b899b9b8-0123-4456-b89a-b179a5f8af6f:
+              8abbab9b-4567-489a-bcde-f179a6478604:
                 properties:
                   field: q0
                   operator: is_exactly
@@ -63,14 +72,14 @@ forms:
             properties:
               conjunction: AND
             type: group
-          id: eq0-bef590b6-6129-46f6-a1b0-054ebe0ffc8b
+          id: eq0-a327f8c3-bc4e-4393-bd42-db74f897812d
           source: q0
-          target: bef590b6-6129-46f6-a1b0-054ebe0ffc8b
+          target: a327f8c3-bc4e-4393-bd42-db74f897812d
           type: condition
         - condition: null
-          id: eq0-694a2a60-457b-4710-93cb-9f56d2108bac
+          id: eq0-514172a9-f7cf-4b3b-823e-fa0f42315bb1
           source: q0
-          target: 694a2a60-457b-4710-93cb-9f56d2108bac
+          target: 514172a9-f7cf-4b3b-823e-fa0f42315bb1
           type: condition
       nodes:
         - id: '1'
@@ -84,17 +93,17 @@ forms:
             'y': 360
           slotName: q0
           type: slot
-        - id: bef590b6-6129-46f6-a1b0-054ebe0ffc8b
+        - id: a327f8c3-bc4e-4393-bd42-db74f897812d
           position:
-            x: -120
-            'y': 620
+            x: -180
+            'y': 540
           slotName: robanter_jokes_form_out
           slotValue: 'yes'
           type: slotSet
-        - id: 694a2a60-457b-4710-93cb-9f56d2108bac
+        - id: 514172a9-f7cf-4b3b-823e-fa0f42315bb1
           position:
-            x: 280
-            'y': 620
+            x: 300
+            'y': 540
           slotName: robanter_jokes_form_out
           slotValue: robanter_outro
           type: slotSet
@@ -102,20 +111,14 @@ forms:
     name: robanter_jokes_form
     slots:
       - filling:
-          - entity: null
-            group: null
-            intent:
+          - intent:
               - 'yes'
             not_intent: []
-            role: null
             type: from_intent
             value: 'yes'
-          - entity: null
-            group: null
-            intent:
+          - intent:
               - 'no'
             not_intent: []
-            role: null
             type: from_intent
             value: 'no'
         name: q0
@@ -123,11 +126,94 @@ forms:
         validation:
           comparatum: 'no'
           operator: is_exactly
-    updatedAt: 1621987280891
+    updatedAt: 1621992476813
+  robanter_questions_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q1
+          source: '1'
+          target: q1
+          type: condition
+        - condition:
+            children1:
+              bb98a998-cdef-4012-b456-7179a64312af:
+                properties:
+                  field: q1
+                  operator: is_exactly
+                  value:
+                    - robanter
+                  valueSrc:
+                    - value
+                  valueType:
+                    - custom_text
+                type: rule
+            id: 898899ab-0123-4456-b89a-b1799ffc796e
+            properties:
+              conjunction: AND
+            type: group
+          id: eq1-bf0de185-2658-48ba-8a04-7d0279301995
+          source: q1
+          target: bf0de185-2658-48ba-8a04-7d0279301995
+          type: condition
+        - condition: null
+          id: eq1-e6e1dfd5-d469-4700-aff5-380f5802ea89
+          source: q1
+          target: e6e1dfd5-d469-4700-aff5-380f5802ea89
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q1
+          position:
+            x: 120
+            'y': 420
+          slotName: q1
+          type: slot
+        - id: bf0de185-2658-48ba-8a04-7d0279301995
+          position:
+            x: -120
+            'y': 660
+          slotName: robanter_questions_form_out
+          slotValue: robanter
+          type: slotSet
+        - id: e6e1dfd5-d469-4700-aff5-380f5802ea89
+          position:
+            x: 360
+            'y': 660
+          slotName: robanter_questions_form_out
+          slotValue: questions_continue
+          type: slotSet
+    groupName: Robanter
+    name: robanter_questions_form
+    slots:
+      - filling:
+          - intent:
+              - robanter
+            not_intent: []
+            type: from_intent
+            value: robanter
+          - intent: null
+            not_intent: null
+            type: from_text
+        name: q1
+        utter_on_new_valid_slot: false
+        validation:
+          comparatum: 4
+          operator: longer
+    updatedAt: 1621995314943
 intents:
   - capabilities
   - jokes
   - outro
+  - questions
+  - questions_continue
+  - questions_loop
   - robanter
   - robanter_outro
   - scary_story
@@ -142,6 +228,9 @@ responses:
 
 
         (goes to Ghost Story carousel)
+  utter_37jmJQt5X:
+    - language: en
+      text: randomized warning
   utter_62nGoY0Mc:
     - language: en
       text: (goes to capabilities)
@@ -173,6 +262,16 @@ responses:
           title: robanter
           type: postback
       text: Hello! Fancy a chat?
+  utter_JoQVEx2TE:
+    - language: en
+      text: The answer you are looking for is...
+  utter_LyHz5Dfjq:
+    - language: en
+      quick_replies:
+        - payload: /questions_loop
+          title: ...
+          type: postback
+      text: I'm programmed with 'AlphaMcHeimilichDoppleGangerManouvere' code
   utter_LzSviHHkJ:
     - language: en
       quick_replies:
@@ -188,6 +287,9 @@ responses:
       text: >-
         Press 'back' to go to the beginning of this section or 'menu' for full
         chat options... I'll let you work out what 'quit' does ;-)
+  utter_WF1BWuQTy:
+    - language: en
+      text: randomized answer
   utter_WNQLkgnXP:
     - language: en
       text: '(wip: you reached outro)'
@@ -235,12 +337,12 @@ responses:
     - language: en
       metadata: null
       quick_replies:
-        - payload: /scary_story
-          title: Let's make up a stupidly scary story together
+        - payload: /robanter
+          title: Back
           type: postback
       text: >-
-        So you're feeling daft? The question is... What flavour of daft are you
-        feeling?
+        Enter your question punk or press 'back' if you want a different flavour
+        of daftness
   utter_ask_q11:
     - language: en
       quick_replies:
@@ -359,6 +461,9 @@ responses:
   utter_b4MxH3NgH:
     - language: en
       text: '(wip: goes to capabilities)'
+  utter_bIP2S6rNE:
+    - language: en
+      text: henlo
   utter_bvvoWnrQA:
     - language: en
       text: '(wip: goes to short story carousel)'
@@ -366,6 +471,10 @@ responses:
     - language: en
       metadata: null
       text: randomized joke from inside form
+  utter_invalid_q1:
+    - language: en
+      metadata: null
+      text: ''
   utter_invalid_robanter_joke_out:
     - language: en
       metadata: null
@@ -377,10 +486,26 @@ responses:
   utter_rbsCOFN2s:
     - language: en
       text: randomized joke
+  utter_ttUBaNltRA:
+    - language: en
+      quick_replies:
+        - payload: /questions_loop
+          title: Try again
+          type: postback
+        - payload: /robanter
+          title: Back
+          type: postback
+      text: >-
+        Wo! That nearly bamboozled me but my CPU is still running so IN YOUR
+        FACE!
   utter_valid_hi:
     - language: en
       metadata: null
       text: ''
+  utter_valid_q1:
+    - language: en
+      metadata: null
+      text: The answer you are looking for is...
   utter_zMScFybRf:
     - language: en
       quick_replies:
@@ -402,8 +527,15 @@ slots:
     type: unfeaturized
   q0:
     type: unfeaturized
+  q1:
+    type: unfeaturized
   robanter_jokes_form_out:
     type: categorical
     values:
       - robanter_outro
       - 'yes'
+  robanter_questions_form_out:
+    type: categorical
+    values:
+      - robanter
+      - questions_continue

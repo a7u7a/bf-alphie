@@ -10,6 +10,39 @@ rules:
       - active_loop: robanter_jokes_form
       - active_loop: null
       - action: action_form_follow_up_intent
+    wait_for_user_input: false
+    metadata:
+      group: Robanter
+  - rule: questions continue
+    condition: []
+    steps:
+      - intent: questions_continue
+        entities: []
+      - action: utter_JoQVEx2TE
+      - action: utter_WF1BWuQTy
+      - action: utter_37jmJQt5X
+      - action: utter_ttUBaNltRA
+    metadata:
+      group: Robanter
+  - rule: questions start
+    condition: []
+    steps:
+      - intent: questions
+        entities: []
+      - action: utter_LyHz5Dfjq
+    metadata:
+      group: Robanter
+  - rule: questions_loop
+    condition: []
+    steps:
+      - intent: questions_loop
+        entities: []
+      - action: action_reset_robanter_questions_slot
+      - action: robanter_questions_form
+      - active_loop: robanter_questions_form
+      - active_loop: null
+      - action: action_form_follow_up_intent
+      - action: utter_bIP2S6rNE
     metadata:
       group: Robanter
   - rule: robanter outro
