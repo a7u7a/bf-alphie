@@ -1,0 +1,33 @@
+stories: []
+rules:
+  - rule: capabilities
+    condition: []
+    steps:
+      - intent: capabilities
+        entities: []
+      - action: utter_b4MxH3NgH
+    metadata:
+      group: Intro
+  - rule: intro
+    condition: []
+    steps:
+      - intent: trigger_48WZqqOBo
+        entities: []
+      - action: utter_IZiCCNtBx
+    metadata:
+      rules:
+        - trigger:
+            when: init
+            triggerLimit__DISPLAYIF: false
+            timeOnPage__DISPLAYIF: true
+            timeOnPage: 1
+      triggerIntent: trigger_48WZqqOBo
+      group: Intro
+  - rule: outro
+    condition: []
+    steps:
+      - intent: outro
+        entities: []
+      - action: utter_WNQLkgnXP
+    metadata:
+      group: Intro

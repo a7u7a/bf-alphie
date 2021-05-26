@@ -1,0 +1,47 @@
+stories: []
+rules:
+  - rule: jokes start
+    condition: []
+    steps:
+      - intent: jokes
+        entities: []
+      - action: utter_rbsCOFN2s
+      - action: robanter_jokes_form
+      - active_loop: robanter_jokes_form
+      - active_loop: null
+      - action: action_form_follow_up_intent
+    metadata:
+      group: Robanter
+  - rule: robanter outro
+    condition: []
+    steps:
+      - intent: robanter_outro
+        entities: []
+      - action: utter_LzSviHHkJ
+    metadata:
+      group: Robanter
+  - rule: robanter start
+    condition: []
+    steps:
+      - intent: robanter
+        entities: []
+      - action: utter_9-QUXOeoA
+    metadata:
+      group: Robanter
+  - rule: scary_story start
+    condition: []
+    steps:
+      - intent: scary_story
+        entities: []
+      - action: utter_37WaJKBMm
+      - action: utter_zMScFybRf
+    metadata:
+      group: Robanter
+  - rule: short story carousel
+    condition: []
+    steps:
+      - intent: short_story_carousel
+        entities: []
+      - action: utter_bvvoWnrQA
+    metadata:
+      group: Robanter

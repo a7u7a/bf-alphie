@@ -3,251 +3,57 @@ actions:
   - action_botfront_disambiguation_followup
   - action_botfront_fallback
   - action_botfront_mapping
-  - action_form_follow_up
+  - action_form_follow_up_intent
+  - utter_37WaJKBMm
   - utter_62nGoY0Mc
-  - utter_EjlfRSCvj
+  - utter_9-QUXOeoA
   - utter_IZiCCNtBx
+  - utter_LzSviHHkJ
+  - utter_WNQLkgnXP
   - utter__bzkbYaCY
   - utter_ask_hi
   - utter_ask_intro1
+  - utter_ask_q0
   - utter_ask_q1
   - utter_ask_q11
   - utter_ask_q2
   - utter_ask_q22
   - utter_ask_q3
-  - utter_ask_q4
   - utter_ask_qq
+  - utter_ask_robanter_joke_out
+  - utter_ask_robanter_jokes_form_out
   - utter_ask_test
   - utter_ask_test_categorical
   - utter_ask_test_this
   - utter_ask_testslot3
-  - utter_invalid_q4
-  - utter_mE67TEg9O
-  - utter_nD2W7hsDf
-  - utter_t91brZcPD
+  - utter_b4MxH3NgH
+  - utter_bvvoWnrQA
+  - utter_invalid_q0
+  - utter_invalid_robanter_joke_out
+  - utter_invalid_robanter_jokes_form_out
+  - utter_rbsCOFN2s
   - utter_valid_hi
-  - utter_valid_q4
-  - utter_zlEQtDelD
+  - utter_zMScFybRf
 entities: []
 forms:
-  Robanter_form:
-    collect_in_botfront: false
-    description: ''
-    graph_elements:
-      edges:
-        - condition: null
-          id: e1-q1
-          source: '1'
-          target: q1
-          type: condition
-        - condition: null
-          id: eq1-q2
-          source: q1
-          target: q2
-          type: condition
-        - condition: null
-          id: eq2-q3
-          source: q2
-          target: q3
-          type: condition
-        - condition:
-            children1:
-              a9a88ba9-cdef-4012-b456-7179828225ca:
-                properties:
-                  field: q3
-                  operator: is_exactly
-                  value:
-                    - 'yes'
-                  valueSrc:
-                    - value
-                  valueType:
-                    - custom_text
-                type: rule
-            id: a8baa9aa-0123-4456-b89a-b1798201f618
-            properties:
-              conjunction: AND
-            type: group
-          id: eq3-ce864521-0256-4dfa-b10d-c6e237bb8033
-          source: q3
-          target: ce864521-0256-4dfa-b10d-c6e237bb8033
-          type: condition
-        - condition: null
-          id: eq3-q4
-          source: q3
-          target: q4
-          type: condition
-        - condition:
-            children1:
-              8ba88ab9-89ab-4cde-b012-31798284d60d:
-                properties:
-                  field: q4
-                  operator: is_exactly
-                  value:
-                    - back
-                  valueSrc:
-                    - value
-                  valueType:
-                    - custom_text
-                type: rule
-            id: a8baa9aa-0123-4456-b89a-b1798201f618
-            properties:
-              conjunction: AND
-            type: group
-          id: eq4-4e1db483-29f2-4526-82ce-8e0e11eb1ba7
-          source: q4
-          target: 4e1db483-29f2-4526-82ce-8e0e11eb1ba7
-          type: condition
-        - condition:
-            children1:
-              8888999b-4567-489a-bcde-f17982852c08:
-                properties:
-                  field: q4
-                  operator: is_exactly
-                  value:
-                    - menu
-                  valueSrc:
-                    - value
-                  valueType:
-                    - custom_text
-                type: rule
-            id: a8baa9aa-0123-4456-b89a-b1798201f618
-            properties:
-              conjunction: AND
-            type: group
-          id: eq4-965b3c10-acdd-4531-b89e-703d6fd6d4a5
-          source: q4
-          target: 965b3c10-acdd-4531-b89e-703d6fd6d4a5
-          type: condition
-        - condition: null
-          id: eq4-1197b820-4add-49cd-8af1-82be33baf40f
-          source: q4
-          target: 1197b820-4add-49cd-8af1-82be33baf40f
-          type: condition
-      nodes:
-        - id: '1'
-          position:
-            x: 200
-            'y': 0
-          type: start
-        - id: q1
-          position:
-            x: 120
-            'y': 200
-          slotName: q1
-          type: slot
-        - id: q2
-          position:
-            x: 120
-            'y': 520
-          slotName: q2
-          type: slot
-        - id: q3
-          position:
-            x: 120
-            'y': 860
-          slotName: q3
-          type: slot
-        - id: ce864521-0256-4dfa-b10d-c6e237bb8033
-          position:
-            x: -120
-            'y': 1100
-          slotName: robanter_out
-          slotValue: short_story
-          type: slotSet
-        - id: q4
-          position:
-            x: 420
-            'y': 1100
-          slotName: q4
-          type: slot
-        - id: 4e1db483-29f2-4526-82ce-8e0e11eb1ba7
-          position:
-            x: 120
-            'y': 1320
-          slotName: robanter_out
-          slotValue: robanter
-          type: slotSet
-        - id: 965b3c10-acdd-4531-b89e-703d6fd6d4a5
-          position:
-            x: 440
-            'y': 1320
-          slotName: robanter_out
-          slotValue: capabilities
-          type: slotSet
-        - id: 1197b820-4add-49cd-8af1-82be33baf40f
-          position:
-            x: 800
-            'y': 1320
-          slotName: robanter_out
-          slotValue: outro
-          type: slotSet
-    groupName: Intro
-    name: Robanter_form
-    slots:
-      - filling:
-          - intent:
-              - scary_story
-            not_intent: []
-            type: from_intent
-            value: scary_story
-        name: q1
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q2
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent:
-              - 'yes'
-            not_intent: []
-            type: from_intent
-            value: 'yes'
-          - intent:
-              - 'no'
-            not_intent: []
-            type: from_intent
-            value: 'no'
-        name: q3
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent:
-              - back
-            not_intent: []
-            type: from_intent
-            value: back
-          - intent:
-              - menu
-            not_intent: []
-            type: from_intent
-            value: menu
-          - intent:
-              - quit
-            not_intent: []
-            type: from_intent
-            value: quit
-        name: q4
-        utter_on_new_valid_slot: false
-    updatedAt: 1621979245325
-  test_form:
+  robanter_jokes_form:
     collect_in_botfront: null
     description: null
     graph_elements:
       edges:
         - condition: null
-          id: e1-hi
+          id: e1-q0
           source: '1'
-          target: hi
+          target: q0
           type: condition
         - condition:
             children1:
-              9b988988-4567-489a-bcde-f179a1b433ad:
+              b899b9b8-0123-4456-b89a-b179a5f8af6f:
                 properties:
-                  field: hi
+                  field: q0
                   operator: is_exactly
                   value:
-                    - capabilities
+                    - 'yes'
                   valueSrc:
                     - value
                   valueType:
@@ -257,89 +63,134 @@ forms:
             properties:
               conjunction: AND
             type: group
-          id: ehi-d39afbc0-69ca-4b33-8366-c30b679f860f
-          source: hi
-          target: d39afbc0-69ca-4b33-8366-c30b679f860f
+          id: eq0-bef590b6-6129-46f6-a1b0-054ebe0ffc8b
+          source: q0
+          target: bef590b6-6129-46f6-a1b0-054ebe0ffc8b
           type: condition
         - condition: null
-          id: ehi-2feadc3f-054d-4ece-8cb7-959384796a6a
-          source: hi
-          target: 2feadc3f-054d-4ece-8cb7-959384796a6a
+          id: eq0-694a2a60-457b-4710-93cb-9f56d2108bac
+          source: q0
+          target: 694a2a60-457b-4710-93cb-9f56d2108bac
           type: condition
       nodes:
         - id: '1'
           position:
-            x: 200
-            'y': 200
+            x: 220
+            'y': 180
           type: start
-        - id: hi
+        - id: q0
           position:
-            x: 120
+            x: 140
             'y': 360
-          slotName: hi
+          slotName: q0
           type: slot
-        - id: d39afbc0-69ca-4b33-8366-c30b679f860f
+        - id: bef590b6-6129-46f6-a1b0-054ebe0ffc8b
           position:
-            x: -20
-            'y': 600
-          slotName: test_this
-          slotValue: capabilities
+            x: -120
+            'y': 620
+          slotName: robanter_jokes_form_out
+          slotValue: 'yes'
           type: slotSet
-        - id: 2feadc3f-054d-4ece-8cb7-959384796a6a
+        - id: 694a2a60-457b-4710-93cb-9f56d2108bac
           position:
-            x: 340
-            'y': 600
-          slotName: test_this
-          slotValue: outro
+            x: 280
+            'y': 620
+          slotName: robanter_jokes_form_out
+          slotValue: robanter_outro
           type: slotSet
-    groupName: Intro
-    name: test_form
+    groupName: Robanter
+    name: robanter_jokes_form
     slots:
       - filling:
-          - intent:
-              - capabilities
+          - entity: null
+            group: null
+            intent:
+              - 'yes'
             not_intent: []
+            role: null
             type: from_intent
-            value: capabilities
-          - intent:
-              - outro
+            value: 'yes'
+          - entity: null
+            group: null
+            intent:
+              - 'no'
             not_intent: []
+            role: null
             type: from_intent
-            value: outro
-        name: hi
+            value: 'no'
+        name: q0
         utter_on_new_valid_slot: false
-    updatedAt: 1621975705360
+        validation:
+          comparatum: 'no'
+          operator: is_exactly
+    updatedAt: 1621987280891
 intents:
   - capabilities
+  - jokes
   - outro
   - robanter
+  - robanter_outro
   - scary_story
-  - test2
+  - short_story_carousel
   - trigger_48WZqqOBo
 responses:
+  utter_37WaJKBMm:
+    - language: en
+      text: >-
+        To get our creative juices going here's one I prepared earlier. It's
+        both stupid AND SCARY...
+
+
+        (goes to Ghost Story carousel)
   utter_62nGoY0Mc:
     - language: en
       text: (goes to capabilities)
-  utter_EjlfRSCvj:
+  utter_9-QUXOeoA:
     - language: en
       quick_replies:
+        - payload: /scary_story
+          title: Let's make up a stupidly scary story together
+          type: postback
+        - payload: /jokes
+          title: 'Jokes Alphie, tell me terrible, terrible jokes'
+          type: postback
+        - payload: /questions
+          title: I want to ask you questions until I break your code
+          type: postback
+        - payload: /quiz
+          title: Let's play an Impossible quiz please Alphie
+          type: postback
         - payload: /capabilities
-          title: this
+          title: Get me out of here!
           type: postback
-        - payload: /outro
-          title: that
-          type: postback
-      text: do you want this or that?
+      text: >-
+        So you're feeling daft? The question is... What flavour of daft are you
+        feeling?
   utter_IZiCCNtBx:
     - language: en
       quick_replies:
         - payload: /robanter
           title: robanter
           type: postback
-        - payload: /test2
-          title: test2
-          type: postback
       text: Hello! Fancy a chat?
+  utter_LzSviHHkJ:
+    - language: en
+      quick_replies:
+        - payload: /robanter
+          title: Back
+          type: postback
+        - payload: /capabilities
+          title: Menu
+          type: postback
+        - payload: /robanter_outro
+          title: Outro
+          type: postback
+      text: >-
+        Press 'back' to go to the beginning of this section or 'menu' for full
+        chat options... I'll let you work out what 'quit' does ;-)
+  utter_WNQLkgnXP:
+    - language: en
+      text: '(wip: you reached outro)'
   utter__bzkbYaCY:
     - language: en
       text: (goes to capabilities)
@@ -370,6 +221,16 @@ responses:
           title: 'No'
           type: postback
       text: fancy a chat?
+  utter_ask_q0:
+    - language: en
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: Another one?
   utter_ask_q1:
     - language: en
       metadata: null
@@ -428,22 +289,6 @@ responses:
       text: >-
         Hahaha! I love this story - it's so stupid and scary! You up for writing
         a ghost story together?
-  utter_ask_q4:
-    - language: en
-      metadata: null
-      quick_replies:
-        - payload: /back
-          title: Back
-          type: postback
-        - payload: /menu
-          title: Menu
-          type: postback
-        - payload: /quit
-          title: Quit
-          type: postback
-      text: >-
-        Press 'back' to go to the beginning of this section or 'menu' for full
-        chat options... I'll let you work out what 'quit' does ;-)
   utter_ask_qq:
     - language: en
       quick_replies:
@@ -454,6 +299,26 @@ responses:
           title: 'no'
           type: postback
       text: know my friend roman?
+  utter_ask_robanter_joke_out:
+    - language: en
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /robanter_outro
+          title: 'No'
+          type: postback
+      text: Another one?
+  utter_ask_robanter_jokes_form_out:
+    - language: en
+      quick_replies:
+        - payload: /no
+          title: 'Yes'
+          type: postback
+        - payload: /robanter_outro
+          title: 'No'
+          type: postback
+      text: Another one?
   utter_ask_test:
     - language: en
       quick_replies:
@@ -491,30 +356,43 @@ responses:
           title: outro
           type: postback
       text: fanchy a chat?
-  utter_invalid_q4:
-    - language: en
-      metadata: null
-      text: back is invalid
-  utter_mE67TEg9O:
-    - language: en
-      text: '(wip: goes to outro)'
-  utter_nD2W7hsDf:
-    - language: en
-      text: '(wip: goes to scary_story)'
-  utter_t91brZcPD:
+  utter_b4MxH3NgH:
     - language: en
       text: '(wip: goes to capabilities)'
+  utter_bvvoWnrQA:
+    - language: en
+      text: '(wip: goes to short story carousel)'
+  utter_invalid_q0:
+    - language: en
+      metadata: null
+      text: randomized joke from inside form
+  utter_invalid_robanter_joke_out:
+    - language: en
+      metadata: null
+      text: (randomized joke inside form)
+  utter_invalid_robanter_jokes_form_out:
+    - language: en
+      metadata: null
+      text: randomized joke in form
+  utter_rbsCOFN2s:
+    - language: en
+      text: randomized joke
   utter_valid_hi:
     - language: en
       metadata: null
       text: ''
-  utter_valid_q4:
+  utter_zMScFybRf:
     - language: en
-      metadata: null
-      text: back is wack
-  utter_zlEQtDelD:
-    - language: en
-      text: start test2
+      quick_replies:
+        - payload: /short_story_carousel
+          title: 'Yes'
+          type: postback
+        - payload: /robanter_outro
+          title: 'No'
+          type: postback
+      text: >-
+        Hahaha!I love this story - it's so stupid and scary! You up for writing
+        a ghost story together?
 session_config: {}
 slots:
   disambiguation_message:
@@ -522,25 +400,10 @@ slots:
   fallback_language:
     initial_value: en
     type: unfeaturized
-  hi:
+  q0:
     type: unfeaturized
-  q1:
-    type: unfeaturized
-  q2:
-    type: unfeaturized
-  q3:
-    type: unfeaturized
-  q4:
-    type: unfeaturized
-  robanter_out:
+  robanter_jokes_form_out:
     type: categorical
     values:
-      - short_story
-      - robanter
-      - capabilities
-      - outro
-  test_this:
-    type: categorical
-    values:
-      - capabilities
-      - outro
+      - robanter_outro
+      - 'yes'
