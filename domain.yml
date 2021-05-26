@@ -5,10 +5,13 @@ actions:
   - action_botfront_mapping
   - action_form_follow_up_intent
   - action_reset_robanter_questions_slot
+  - action_reset_robanter_quiz_slot
   - utter_37WaJKBMm
   - utter_37jmJQt5X
+  - utter_507WCJv19
   - utter_62nGoY0Mc
   - utter_9-QUXOeoA
+  - utter_Bg9Zkn-0P
   - utter_IZiCCNtBx
   - utter_JoQVEx2TE
   - utter_LyHz5Dfjq
@@ -36,12 +39,16 @@ actions:
   - utter_bvvoWnrQA
   - utter_invalid_q0
   - utter_invalid_q1
+  - utter_invalid_q2
   - utter_invalid_robanter_joke_out
   - utter_invalid_robanter_jokes_form_out
+  - utter_rJsCors7u
+  - utter_rSJVMykEi
   - utter_rbsCOFN2s
   - utter_ttUBaNltRA
   - utter_valid_hi
   - utter_valid_q1
+  - utter_valid_q2
   - utter_zMScFybRf
 entities: []
 forms:
@@ -206,7 +213,42 @@ forms:
         validation:
           comparatum: 4
           operator: longer
-    updatedAt: 1621995314943
+    updatedAt: 1621997702462
+  robanter_quiz_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q2
+          source: '1'
+          target: q2
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q2
+          position:
+            x: 120
+            'y': 360
+          slotName: q2
+          type: slot
+    groupName: Robanter
+    name: robanter_quiz_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q2
+        utter_on_new_valid_slot: false
+        validation:
+          comparatum: 5
+          operator: longer
+    updatedAt: 1621998396806
 intents:
   - capabilities
   - jokes
@@ -214,6 +256,8 @@ intents:
   - questions
   - questions_continue
   - questions_loop
+  - quiz
+  - quiz_loop
   - robanter
   - robanter_outro
   - scary_story
@@ -231,6 +275,16 @@ responses:
   utter_37jmJQt5X:
     - language: en
       text: randomized warning
+  utter_507WCJv19:
+    - language: en
+      quick_replies:
+        - payload: /quiz_loop
+          title: 'Alphie, ask me a question'
+          type: postback
+        - payload: /robanter
+          title: Back
+          type: postback
+      text: 'BUT if you answer a question correctly, you will win a PRIZE'
   utter_62nGoY0Mc:
     - language: en
       text: (goes to capabilities)
@@ -255,6 +309,9 @@ responses:
       text: >-
         So you're feeling daft? The question is... What flavour of daft are you
         feeling?
+  utter_Bg9Zkn-0P:
+    - language: en
+      text: INCORRECT
   utter_IZiCCNtBx:
     - language: en
       quick_replies:
@@ -358,16 +415,7 @@ responses:
       text: Fancy a chat?
   utter_ask_q2:
     - language: en
-      metadata: null
-      quick_replies:
-        - payload: /yes
-          title: Ok
-          type: postback
-      text: >-
-        To get our creative juices going here's one I prepared earlier. It's
-        both stupid AND SCARY...(goes to carousel)
-    - language: en
-      metadata: null
+      text: randomized quiz question
   utter_ask_q22:
     - language: en
       quick_replies:
@@ -475,6 +523,10 @@ responses:
     - language: en
       metadata: null
       text: ''
+  utter_invalid_q2:
+    - language: en
+      metadata: null
+      text: 'Too short. Try a longer question, please!'
   utter_invalid_robanter_joke_out:
     - language: en
       metadata: null
@@ -483,6 +535,19 @@ responses:
     - language: en
       metadata: null
       text: randomized joke in form
+  utter_rJsCors7u:
+    - language: en
+      quick_replies:
+        - payload: /quiz_loop
+          title: 'Yes'
+          type: postback
+        - payload: /robanter
+          title: 'No'
+          type: postback
+      text: Try again?
+  utter_rSJVMykEi:
+    - language: en
+      text: I'm a bot of my word - this quiz is impossible....
   utter_rbsCOFN2s:
     - language: en
       text: randomized joke
@@ -506,6 +571,10 @@ responses:
     - language: en
       metadata: null
       text: The answer you are looking for is...
+  utter_valid_q2:
+    - language: en
+      metadata: null
+      text: INCORRECT
   utter_zMScFybRf:
     - language: en
       quick_replies:
@@ -529,6 +598,8 @@ slots:
     type: unfeaturized
   q1:
     type: unfeaturized
+  q2:
+    type: unfeaturized
   robanter_jokes_form_out:
     type: categorical
     values:
@@ -539,3 +610,8 @@ slots:
     values:
       - robanter
       - questions_continue
+  robanter_quiz_form_out:
+    type: categorical
+    values:
+      - quiz_continue
+      - robanter

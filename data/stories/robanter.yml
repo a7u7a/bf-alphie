@@ -45,6 +45,28 @@ rules:
       - action: utter_bIP2S6rNE
     metadata:
       group: Robanter
+  - rule: quiz start
+    condition: []
+    steps:
+      - intent: quiz
+        entities: []
+      - action: utter_rSJVMykEi
+      - action: utter_507WCJv19
+    metadata:
+      group: Robanter
+  - rule: quiz_loop
+    condition: []
+    steps:
+      - intent: quiz_loop
+        entities: []
+      - action: action_reset_robanter_quiz_slot
+      - action: robanter_quiz_form
+      - active_loop: robanter_quiz_form
+      - active_loop: null
+      - action: utter_Bg9Zkn-0P
+      - action: utter_rJsCors7u
+    metadata:
+      group: Robanter
   - rule: robanter outro
     condition: []
     steps:
