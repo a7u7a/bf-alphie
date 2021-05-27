@@ -1,10 +1,117 @@
 stories: []
 rules:
+  - rule: art_creation_activities
+    condition: []
+    steps:
+      - intent: art_creation_activities
+        entities: []
+      - action: utter_nPgFUW-is
+    metadata:
+      group: Creative Feelings
+  - rule: arts_definition_carousel
+    condition: []
+    steps:
+      - intent: arts_definition_carousel
+        entities: []
+      - action: utter_-fFS4csbt
+    metadata:
+      group: Creative Feelings
+  - rule: creative_careers
+    condition: []
+    steps:
+      - intent: creative_careers
+        entities: []
+      - action: utter_tK2L8iwOp
+      - action: utter_BxIDOW3ie
+    metadata:
+      group: Creative Feelings
+  - rule: creative_chat_menu
+    condition: []
+    steps:
+      - intent: creative_chat_menu
+        entities: []
+      - action: utter_WH0HbW_V-
+    metadata:
+      group: Creative Feelings
+  - rule: creative_course
+    condition: []
+    steps:
+      - intent: creative_course
+        entities: []
+      - action: creative_course_1_form
+      - active_loop: creative_course_1_form
+      - active_loop: null
+      - action: utter_DXh2Dc8LQ
+    metadata:
+      group: Creative Feelings
+  - rule: creative_course_outro
+    condition: []
+    steps:
+      - intent: creative_course_outro
+        entities: []
+      - action: utter_sj1sUi2yr
+    metadata:
+      group: Creative Feelings
+  - rule: creative_course2
+    condition: []
+    steps:
+      - intent: creative_course2
+        entities: []
+      - action: creative_course_2_form
+      - active_loop: creative_course_2_form
+      - active_loop: null
+      - action: utter_0QzeOt7eW
+    metadata:
+      group: Creative Feelings
+  - rule: creative_course3
+    condition: []
+    steps:
+      - intent: creative_course3
+        entities: []
+      - action: creative_course_3_form
+      - active_loop: creative_course_3_form
+      - active_loop: null
+      - action: action_goto_creative_course_outro
+    metadata:
+      group: Creative Feelings
   - rule: creative_feelings
     condition: []
     steps:
       - intent: creative_feelings
         entities: []
       - action: utter_JXdsGJ66W
+      - action: action_goto_creative_feelings_intro_menu
+    metadata:
+      group: Creative Feelings
+  - rule: creative_feelings_intro_menu
+    condition: []
+    steps:
+      - intent: creative_feelings_intro_menu
+        entities: []
+      - action: utter_8sU4u0Pcj
+    metadata:
+      group: Creative Feelings
+  - rule: creative_return_menu
+    condition: []
+    steps:
+      - intent: creative_return_menu
+        entities: []
+      - action: utter_74CQ8IIS6
+    metadata:
+      group: Creative Feelings
+  - rule: mental_health_carousel
+    condition: []
+    steps:
+      - intent: mental_health_carousel
+        entities: []
+      - action: utter_s2X6GgI78
+    metadata:
+      group: Creative Feelings
+  - rule: tea_workshops
+    condition: []
+    steps:
+      - intent: tea_workshops
+        entities: []
+      - action: utter_lDUJNzOnx
     metadata:
       group: Creative Feelings

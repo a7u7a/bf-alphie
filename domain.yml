@@ -5,21 +5,29 @@ actions:
   - action_botfront_mapping
   - action_form_follow_up_intent
   - action_goto_capabilities
+  - action_goto_creative_course_outro
+  - action_goto_creative_feelings_intro_menu
   - action_goto_functional_outro
   - action_reset_robanter_questions_slot
   - action_reset_robanter_quiz_slot
   - utter_-C0jqr1v8
+  - utter_-fFS4csbt
+  - utter_0QzeOt7eW
   - utter_1n82s479p
   - utter_37WaJKBMm
   - utter_37jmJQt5X
   - utter_507WCJv19
   - utter_62nGoY0Mc
+  - utter_74CQ8IIS6
   - utter_7E8EuCeBP
   - utter_7LnrKadyj
   - utter_7gJqiKaVhA
+  - utter_8sU4u0Pcj
   - utter_9-QUXOeoA
   - utter_Bg9Zkn-0P
+  - utter_BxIDOW3ie
   - utter_CJuOI_sNr
+  - utter_DXh2Dc8LQ
   - utter_E9SKUypf4
   - utter_FihUmZ3vV
   - utter_GlGkS_b0C
@@ -32,6 +40,7 @@ actions:
   - utter_RtzekwDy7
   - utter_UZqCNZp_b
   - utter_WF1BWuQTy
+  - utter_WH0HbW_V-
   - utter_XVfr0bTe2
   - utter_ZTffjZgzd
   - utter__bzkbYaCY
@@ -39,10 +48,19 @@ actions:
   - utter_ask_intro1
   - utter_ask_q0
   - utter_ask_q1
+  - utter_ask_q10
   - utter_ask_q11
+  - utter_ask_q12
+  - utter_ask_q13
   - utter_ask_q2
   - utter_ask_q22
   - utter_ask_q3
+  - utter_ask_q4
+  - utter_ask_q5
+  - utter_ask_q6
+  - utter_ask_q7
+  - utter_ask_q8
+  - utter_ask_q9
   - utter_ask_qq
   - utter_ask_robanter_joke_out
   - utter_ask_robanter_jokes_form_out
@@ -57,18 +75,25 @@ actions:
   - utter_invalid_q0
   - utter_invalid_q1
   - utter_invalid_q2
+  - utter_invalid_q4
   - utter_invalid_robanter_joke_out
   - utter_invalid_robanter_jokes_form_out
+  - utter_lDUJNzOnx
+  - utter_nPgFUW-is
   - utter_ndVDLjVtd
   - utter_oVaxU1_d1
   - utter_rJsCors7u
   - utter_rSJVMykEi
   - utter_rbsCOFN2s
+  - utter_s2X6GgI78
+  - utter_sj1sUi2yr
+  - utter_tK2L8iwOp
   - utter_ttUBaNltRA
   - utter_v1Em4x0P-
   - utter_valid_hi
   - utter_valid_q1
   - utter_valid_q2
+  - utter_valid_q4
   - utter_waV47guGR
   - utter_xZiLwuJNH
   - utter_yvHcOSzHb
@@ -107,6 +132,224 @@ forms:
         name: q3
         utter_on_new_valid_slot: false
     updatedAt: 1622057743510
+  creative_course_1_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q4
+          source: '1'
+          target: q4
+          type: condition
+        - condition: null
+          id: eq4-q5
+          source: q4
+          target: q5
+          type: condition
+        - condition: null
+          id: eq5-q6
+          source: q5
+          target: q6
+          type: condition
+        - condition: null
+          id: eq6-q7
+          source: q6
+          target: q7
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q4
+          position:
+            x: 120
+            'y': 340
+          slotName: q4
+          type: slot
+        - id: q5
+          position:
+            x: 120
+            'y': 490
+          slotName: q5
+          type: slot
+        - id: q6
+          position:
+            x: 120
+            'y': 640
+          slotName: q6
+          type: slot
+        - id: q7
+          position:
+            x: 120
+            'y': 800
+          slotName: q7
+          type: slot
+    groupName: Creative Feelings
+    name: creative_course_1_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q4
+        utter_on_new_valid_slot: true
+        validation:
+          comparatum: 3
+          operator: longer
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q5
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q6
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q7
+        utter_on_new_valid_slot: false
+    updatedAt: 1622072948858
+  creative_course_2_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q8
+          source: '1'
+          target: q8
+          type: condition
+        - condition: null
+          id: eq8-q9
+          source: q8
+          target: q9
+          type: condition
+        - condition: null
+          id: eq9-q10
+          source: q9
+          target: q10
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q8
+          position:
+            x: 120
+            'y': 360
+          slotName: q8
+          type: slot
+        - id: q9
+          position:
+            x: 120
+            'y': 520
+          slotName: q9
+          type: slot
+        - id: q10
+          position:
+            x: 120
+            'y': 680
+          slotName: q10
+          type: slot
+    groupName: Creative Feelings
+    name: creative_course_2_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q8
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q9
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q10
+        utter_on_new_valid_slot: false
+    updatedAt: 1622073226047
+  creative_course_3_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q11
+          source: '1'
+          target: q11
+          type: condition
+        - condition: null
+          id: eq11-q12
+          source: q11
+          target: q12
+          type: condition
+        - condition: null
+          id: eq12-q13
+          source: q12
+          target: q13
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q11
+          position:
+            x: 120
+            'y': 360
+          slotName: q11
+          type: slot
+        - id: q12
+          position:
+            x: 120
+            'y': 520
+          slotName: q12
+          type: slot
+        - id: q13
+          position:
+            x: 120
+            'y': 660
+          slotName: q13
+          type: slot
+    groupName: Creative Feelings
+    name: creative_course_3_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q11
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q12
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q13
+        utter_on_new_valid_slot: false
+    updatedAt: 1622073278246
   robanter_jokes_form:
     collect_in_botfront: null
     description: null
@@ -305,17 +548,28 @@ forms:
           operator: longer
     updatedAt: 1621998396806
 intents:
+  - art_creation_activities
+  - arts_definition_carousel
   - bot_reference
   - capabilities
   - carer
   - contact_tea
   - copy_paste_carousel
+  - creative_careers
+  - creative_chat_menu
+  - creative_course
+  - creative_course2
+  - creative_course3
+  - creative_course_outro
   - creative_feelings
+  - creative_feelings_intro_menu
+  - creative_return_menu
   - feedback
   - functional
   - functional_outro
   - jokes
   - journal
+  - mental_health_carousel
   - outro
   - outro_2
   - outro_3
@@ -329,6 +583,7 @@ intents:
   - robanter_outro
   - scary_story
   - short_story_carousel
+  - tea_workshops
   - timetables
   - trigger_48WZqqOBo
   - whats_on
@@ -336,6 +591,19 @@ responses:
   utter_-C0jqr1v8:
     - language: en
       text: 'Actually, probably best not to get into all that..'
+  utter_-fFS4csbt:
+    - language: en
+      text: '(wip: you have reached the arts_definition_carousel)'
+  utter_0QzeOt7eW:
+    - language: en
+      quick_replies:
+        - payload: /creative_course3
+          title: 'Yes'
+          type: postback
+        - payload: /creative_course_outro
+          title: 'No'
+          type: postback
+      text: More questions?
   utter_1n82s479p:
     - language: en
       quick_replies:
@@ -381,6 +649,21 @@ responses:
   utter_62nGoY0Mc:
     - language: en
       text: (goes to capabilities)
+  utter_74CQ8IIS6:
+    - language: en
+      quick_replies:
+        - payload: /creative_feelings
+          title: Back
+          type: postback
+        - payload: /capabilities
+          title: Menu
+          type: postback
+        - payload: /outro
+          title: Quit
+          type: postback
+      text: >-
+        Press 'back' to go to the beginning of this section or 'menu' for full
+        chat options... I'll let you work out what 'quit' does ;-)
   utter_7E8EuCeBP:
     - language: en
       quick_replies:
@@ -417,6 +700,31 @@ responses:
           title: 'I cant be BOThered with you right now, shhhh!'
           type: postback
       text: '...I''m Alphie, fancy a chat?'
+  utter_8sU4u0Pcj:
+    - language: en
+      quick_replies:
+        - payload: /capabilities
+          title: 'Actually Alphie, let''s chat about something else'
+          type: postback
+        - payload: /creative_chat_menu
+          title: 'I want to chat about TEA workshops, careers and making stuff'
+          type: postback
+        - payload: /arts_definition_carousel
+          title: 'I want to chat about a piece of art I''ve seen, or created'
+          type: postback
+        - payload: /mental_health_carousel
+          title: I want to focus my emotions and feelings into my creativity
+          type: postback
+        - payload: /art_creation_activities
+          title: Creative exercises and activities please Alphie
+          type: postback
+        - payload: /art_creation_activities
+          title: 'Inspire me, Alphie!'
+          type: postback
+        - payload: /capabilities
+          title: I'm here by mistake!
+          type: postback
+      text: ...where shall we start?
   utter_9-QUXOeoA:
     - language: en
       quick_replies:
@@ -441,6 +749,13 @@ responses:
   utter_Bg9Zkn-0P:
     - language: en
       text: INCORRECT
+  utter_BxIDOW3ie:
+    - language: en
+      quick_replies:
+        - payload: ''
+          title: ''
+          type: postback
+      text: ...Have you got a job in mind?
   utter_CJuOI_sNr:
     - language: en
       quick_replies:
@@ -465,6 +780,16 @@ responses:
           title: 'Alphie, for the love of Bot, be quiet!'
           type: postback
       text: So... what do you want to chat about?
+  utter_DXh2Dc8LQ:
+    - language: en
+      quick_replies:
+        - payload: /creative_course2
+          title: 'Yes'
+          type: postback
+        - payload: /creative_course_outro
+          title: 'No'
+          type: postback
+      text: More questions?
   utter_E9SKUypf4:
     - language: en
       text: >-
@@ -509,7 +834,7 @@ responses:
         add them to 'My Projects'.
   utter_JXdsGJ66W:
     - language: en
-      text: '(wip: you have reached creative_feelings)'
+      text: So you're feeling creative? I'm programmed to chat about all sorts...
   utter_JoQVEx2TE:
     - language: en
       text: The answer you are looking for is...
@@ -568,6 +893,22 @@ responses:
   utter_WF1BWuQTy:
     - language: en
       text: randomized answer
+  utter_WH0HbW_V-:
+    - language: en
+      quick_replies:
+        - payload: /capabilities
+          title: 'Actually Alphie, let''s chat about something else'
+          type: postback
+        - payload: /tea_workshops
+          title: ...TEA workshops?
+          type: postback
+        - payload: /creative_careers
+          title: ...creative careers?
+          type: postback
+        - payload: /arts_definition_carousel
+          title: ... Creativity and creating stuff ( games/shows/art etc.)?
+          type: postback
+      text: Shall we chat about...
   utter_XVfr0bTe2:
     - language: en
       text: Hello... is it me you're looking for?
@@ -624,19 +965,20 @@ responses:
       text: >-
         Enter your question punk or press 'back' if you want a different flavour
         of daftness
+  utter_ask_q10:
+    - language: en
+      text: randomized course question set 2
   utter_ask_q11:
     - language: en
-      quick_replies:
-        - payload: /yes
-          title: 'yes'
-          type: postback
-        - payload: /no
-          title: 'no'
-          type: postback
-        - payload: /outro
-          title: outro
-          type: postback
-      text: Fancy a chat?
+      text: randomized course question set 3
+  utter_ask_q12:
+    - language: en
+      metadata: null
+      text: randomized course question set 3
+  utter_ask_q13:
+    - language: en
+      metadata: null
+      text: randomized course question set 3
   utter_ask_q2:
     - language: en
       text: randomized quiz question
@@ -667,6 +1009,24 @@ responses:
           title: 'No'
           type: postback
       text: I'm a bot. Do you know my friend Ro-Man?
+  utter_ask_q4:
+    - language: en
+      text: 'Great, what''s the course?'
+  utter_ask_q5:
+    - language: en
+      text: randomized course question set 1
+  utter_ask_q6:
+    - language: en
+      text: randomized course question set 1
+  utter_ask_q7:
+    - language: en
+      text: randomized course question set 1
+  utter_ask_q8:
+    - language: en
+      text: randomized course question set 2
+  utter_ask_q9:
+    - language: en
+      text: randomized course question set 2
   utter_ask_qq:
     - language: en
       quick_replies:
@@ -762,6 +1122,10 @@ responses:
     - language: en
       metadata: null
       text: 'Too short. Try a longer question, please!'
+  utter_invalid_q4:
+    - language: en
+      metadata: null
+      text: I was expecting a longer course name...
   utter_invalid_robanter_joke_out:
     - language: en
       metadata: null
@@ -770,6 +1134,19 @@ responses:
     - language: en
       metadata: null
       text: randomized joke in form
+  utter_lDUJNzOnx:
+    - language: en
+      quick_replies:
+        - payload: /functional
+          title: 'Actually, I  just want course timetables'
+          type: postback
+        - payload: /creative_course
+          title: Let’s chat about a creative/artistic  course I’m part of
+          type: postback
+      text: ''
+  utter_nPgFUW-is:
+    - language: en
+      text: '(wip: you have reached art_creation_activities)'
   utter_ndVDLjVtd:
     - language: en
       text: >-
@@ -798,6 +1175,32 @@ responses:
   utter_rbsCOFN2s:
     - language: en
       text: randomized joke
+  utter_s2X6GgI78:
+    - language: en
+      text: '(wip: you have reached mental_health_carousel)'
+  utter_sj1sUi2yr:
+    - language: en
+      quick_replies:
+        - payload: /functional
+          title: 'Alphie, show me the timetables of all TEA Courses'
+          type: postback
+        - payload: /creative_careers
+          title: Let's chat about creative careers
+          type: postback
+        - payload: /creative_feelings_intro
+          title: 'Alphie, I want to chat about my creativity in other ways'
+          type: postback
+        - payload: /creative_return_menu
+          title: Something else?
+          type: postback
+      text: >-
+        Questions like these can help you start real life conversations about
+        your course.
+  utter_tK2L8iwOp:
+    - language: en
+      text: >-
+        So you're thinking about working in the creative industries / the
+        arts...
   utter_ttUBaNltRA:
     - language: en
       quick_replies:
@@ -827,6 +1230,10 @@ responses:
     - language: en
       metadata: null
       text: INCORRECT
+  utter_valid_q4:
+    - language: en
+      metadata: null
+      text: I'm going to ask you some questions to help you think about your course.
   utter_waV47guGR:
     - language: en
       text: Hahaha!I love this story - it's so stupid and scary!
@@ -870,9 +1277,29 @@ slots:
     type: unfeaturized
   q1:
     type: unfeaturized
+  q10:
+    type: unfeaturized
+  q11:
+    type: unfeaturized
+  q12:
+    type: unfeaturized
+  q13:
+    type: unfeaturized
   q2:
     type: unfeaturized
   q3:
+    type: unfeaturized
+  q4:
+    type: unfeaturized
+  q5:
+    type: unfeaturized
+  q6:
+    type: unfeaturized
+  q7:
+    type: unfeaturized
+  q8:
+    type: unfeaturized
+  q9:
     type: unfeaturized
   robanter_jokes_form_out:
     type: categorical
