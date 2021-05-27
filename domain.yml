@@ -10,6 +10,7 @@ actions:
   - action_goto_creative_feelings_intro_menu
   - action_goto_functional_outro
   - action_goto_whats_the_job_outro
+  - action_reset_monologue_slot
   - action_reset_robanter_questions_slot
   - action_reset_robanter_quiz_slot
   - utter_-C0jqr1v8
@@ -18,6 +19,7 @@ actions:
   - utter_-v808s42U
   - utter_0QzeOt7eW
   - utter_1n82s479p
+  - utter_2lAgj3u6r-
   - utter_37WaJKBMm
   - utter_37jmJQt5X
   - utter_3pZjNKs0k
@@ -51,11 +53,14 @@ actions:
   - utter_Na4y3v3S4
   - utter_PcH87YG8Y
   - utter_RtzekwDy7
+  - utter_SB2HYD-O2
   - utter_Sf7QHBJ5M
+  - utter_SgVJdor1D
   - utter_UZqCNZp_b
   - utter_WF1BWuQTy
   - utter_WH0HbW_V-
   - utter_XVfr0bTe2
+  - utter_XW6iwnYgS
   - utter_Xk9SCh7WU
   - utter_ZLHRariuW
   - utter_ZTffjZgzd
@@ -80,6 +85,7 @@ actions:
   - utter_ask_q21
   - utter_ask_q22
   - utter_ask_q23
+  - utter_ask_q24
   - utter_ask_q3
   - utter_ask_q4
   - utter_ask_q5
@@ -100,6 +106,7 @@ actions:
   - utter_ebAFifzsa
   - utter_fvXq6s5UO
   - utter_hXp9_l8R6
+  - utter_iaY9rxiol
   - utter_invalid_q0
   - utter_invalid_q1
   - utter_invalid_q14
@@ -108,20 +115,24 @@ actions:
   - utter_invalid_robanter_joke_out
   - utter_invalid_robanter_jokes_form_out
   - utter_jbqLXRnix
+  - utter_kJ29mSbjI
   - utter_kPem4O6mP
   - utter_lDUJNzOnx
   - utter_nPgFUW-is
   - utter_ndVDLjVtd
   - utter_oVaxU1_d1
+  - utter_p2z1e0rTw
   - utter_q-0d4P6t7
   - utter_rJsCors7u
   - utter_rSJVMykEi
   - utter_rbsCOFN2s
+  - utter_rqm8YXJYu
   - utter_s2X6GgI78
   - utter_sj1sUi2yr
   - utter_tK2L8iwOp
   - utter_ttUBaNltRA
   - utter_v1Em4x0P-
+  - utter_v35PL935H
   - utter_valid_hi
   - utter_valid_q1
   - utter_valid_q14
@@ -385,6 +396,38 @@ forms:
         name: q13
         utter_on_new_valid_slot: false
     updatedAt: 1622078932085
+  monologue_freewrite_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q24
+          source: '1'
+          target: q24
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q24
+          position:
+            x: 120
+            'y': 350
+          slotName: q24
+          type: slot
+    groupName: Creative Feelings
+    name: monologue_freewrite_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q24
+        utter_on_new_valid_slot: false
+    updatedAt: 1622144822175
   robanter_jokes_form:
     collect_in_botfront: null
     description: null
@@ -810,6 +853,7 @@ intents:
   - carer
   - contact_tea
   - copy_paste_carousel
+  - create_character_carousel
   - creative_careers
   - creative_chat_menu
   - creative_course
@@ -827,10 +871,15 @@ intents:
   - journal
   - mental_health_carousel
   - mental_health_ok
+  - monologue
+  - monologue_carousel
+  - monologue_freewrite
+  - monologue_solo
   - outro
   - outro_2
   - outro_3
   - outro_resume
+  - poetry
   - questions
   - questions_continue
   - questions_loop
@@ -840,7 +889,9 @@ intents:
   - robanter_outro
   - scary_story
   - search_more_career
+  - short_story
   - short_story_carousel
+  - something_different
   - sound_carousel
   - sound_carousel_menu
   - sound_carousel_sub
@@ -859,6 +910,7 @@ intents:
   - whats_the_job3
   - whats_the_job_outro
   - word_work
+  - write_review_carousel
 responses:
   utter_-C0jqr1v8:
     - language: en
@@ -917,6 +969,13 @@ responses:
       text: |-
         I'm programmed to: Find course timetables,  
         Check show schedules, Contact the TEA team.
+  utter_2lAgj3u6r-:
+    - language: en
+      quick_replies:
+        - payload: ''
+          title: ''
+          type: postback
+      text: 'Before we start, you''ll need at least one central character.'
   utter_37WaJKBMm:
     - language: en
       text: |-
@@ -932,17 +991,17 @@ responses:
   utter_4iZUZASZF:
     - language: en
       quick_replies:
-        - payload: /sound_carousel
-          title: I want to work with sound
+        - payload: /word_work
+          title: I want to work with words
           type: postback
         - payload: /visual_carousel
           title: I want to work visually
           type: postback
+        - payload: /sound_carousel
+          title: I want to work with sound
+          type: postback
         - payload: /creative_return_menu
           title: Something else?
-          type: postback
-        - payload: /word_word
-          title: I want to work with words
           type: postback
       text: Choose a starting point
   utter_507WCJv19:
@@ -1267,6 +1326,13 @@ responses:
           title: I'm here by mistake
           type: postback
       text: 'Before you go, do you want to log our chat? (journal not dead wood)'
+  utter_SB2HYD-O2:
+    - language: en
+      quick_replies:
+        - payload: /monologue_solo
+          title: ok
+          type: postback
+      text: (monologue_carousel)
   utter_Sf7QHBJ5M:
     - language: en
       quick_replies:
@@ -1276,6 +1342,16 @@ responses:
       text: >-
         Follow [this link](https://discovercreative.careers/#/). Press 'done' to
         continue the chat
+  utter_SgVJdor1D:
+    - language: en
+      quick_replies:
+        - payload: /monologue_carousel
+          title: 'Alphie, show me the exercise again'
+          type: postback
+        - payload: /monologue_freewrite
+          title: 'I''m the Monologue Monster, let''s do this!'
+          type: postback
+      text: Ready to go solo?
   utter_UZqCNZp_b:
     - language: en
       quick_replies:
@@ -1305,6 +1381,25 @@ responses:
   utter_XVfr0bTe2:
     - language: en
       text: Hello... is it me you're looking for?
+  utter_XW6iwnYgS:
+    - language: en
+      quick_replies:
+        - payload: /visual_carousel
+          title: It would be great to think about visual creativity
+          type: postback
+        - payload: /sound_carousel
+          title: It would be great to think about sound and creativity
+          type: postback
+        - payload: /art_creation_activities_menu
+          title: 'Alphie, another creative exercise please'
+          type: postback
+        - payload: /robanter
+          title: 'I''m all about the daftness, Alphie!'
+          type: postback
+        - payload: /creative_return_menu
+          title: Something else?
+          type: postback
+      text: The creative juices are flowing. What do you fancy doing next?
   utter_Xk9SCh7WU:
     - language: en
       text: You can search jobs based on your skills and interests...
@@ -1330,8 +1425,17 @@ responses:
   utter__3267nvay:
     - language: en
       quick_replies:
-        - payload: ''
-          title: ''
+        - payload: /poetry
+          title: Poetry
+          type: postback
+        - payload: /monologue
+          title: Monologue
+          type: postback
+        - payload: /create_character_carousel
+          title: Create a Character
+          type: postback
+        - payload: /creative_return_menu
+          title: Something else?
           type: postback
       text: Which creative writing exercise should I guide you through?
   utter__bzkbYaCY:
@@ -1438,6 +1542,10 @@ responses:
     - language: en
       metadata: null
       text: randomized career question set 3
+  utter_ask_q24:
+    - language: en
+      metadata: null
+      text: Write your monologue below
   utter_ask_q3:
     - language: en
       metadata:
@@ -1584,6 +1692,13 @@ responses:
   utter_hXp9_l8R6:
     - language: en
       text: 'As you know, I''m just a bit of computer code'
+  utter_iaY9rxiol:
+    - language: en
+      quick_replies:
+        - payload: /creative_return_menu
+          title: Something else?
+          type: postback
+      text: What flavour of poetry?
   utter_invalid_q0:
     - language: en
       metadata: null
@@ -1619,6 +1734,19 @@ responses:
           title: I'm here when you're ready
           type: postback
       text: (Mental Health Urgent CAROUSEL)
+  utter_kJ29mSbjI:
+    - language: en
+      quick_replies:
+        - payload: /monologue_freewrite
+          title: Another go!
+          type: postback
+        - payload: /something_different
+          title: 'Alphie, let''s do something different'
+          type: postback
+        - payload: /monologue_carousel
+          title: 'Alphie, show me the exercise again'
+          type: postback
+      text: 'Want another go, or shall we  or do something different?'
   utter_kPem4O6mP:
     - language: en
       quick_replies:
@@ -1661,6 +1789,16 @@ responses:
         Team](https://www.theeggassembly.com/about/meet-the-team/) page and
         contact Alex or Sophie with your feedback. Press 'done' when you're...
         done.
+  utter_p2z1e0rTw:
+    - language: en
+      quick_replies:
+        - payload: /monologue_carousel
+          title: I know who my character is. Let's monologue!
+          type: postback
+        - payload: /create_character_carousel
+          title: 'Alphie, help me create a character'
+          type: postback
+      text: You'll need to write from a character's point of view.
   utter_q-0d4P6t7:
     - language: en
       quick_replies:
@@ -1696,6 +1834,13 @@ responses:
   utter_rbsCOFN2s:
     - language: en
       text: randomized joke
+  utter_rqm8YXJYu:
+    - language: en
+      quick_replies:
+        - payload: ''
+          title: ''
+          type: postback
+      text: create_character_carousel
   utter_s2X6GgI78:
     - language: en
       metadata: null
@@ -1740,6 +1885,13 @@ responses:
       text: >-
         ...I'm Alphie the chatbot. I'm programmed to be daft and to chat about
         creative stuff.
+  utter_v35PL935H:
+    - language: en
+      quick_replies:
+        - payload: ''
+          title: ''
+          type: postback
+      text: write_review_carousel
   utter_valid_hi:
     - language: en
       metadata: null
@@ -1850,6 +2002,8 @@ slots:
   q22:
     type: unfeaturized
   q23:
+    type: unfeaturized
+  q24:
     type: unfeaturized
   q3:
     type: unfeaturized

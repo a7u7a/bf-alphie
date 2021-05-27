@@ -33,6 +33,14 @@ rules:
       - action: utter_9DCG3NDkj
     metadata:
       group: Creative Feelings
+  - rule: create_character_carousel
+    condition: []
+    steps:
+      - intent: create_character_carousel
+        entities: []
+      - action: utter_rqm8YXJYu
+    metadata:
+      group: Creative Feelings
   - rule: creative_careers
     condition: []
     steps:
@@ -143,6 +151,50 @@ rules:
       - action: action_goto_art_creation_activities_menu
     metadata:
       group: Creative Feelings
+  - rule: monologue
+    condition: []
+    steps:
+      - intent: monologue
+        entities: []
+      - action: utter_p2z1e0rTw
+    metadata:
+      group: Creative Feelings
+  - rule: monologue_carousel
+    condition: []
+    steps:
+      - intent: monologue_carousel
+        entities: []
+      - action: utter_SB2HYD-O2
+    metadata:
+      group: Creative Feelings
+  - rule: monologue_freewrite
+    condition: []
+    steps:
+      - intent: monologue_freewrite
+        entities: []
+      - action: action_reset_monologue_slot
+      - action: monologue_freewrite_form
+      - active_loop: monologue_freewrite_form
+      - active_loop: null
+      - action: utter_kJ29mSbjI
+    metadata:
+      group: Creative Feelings
+  - rule: monologue_solo
+    condition: []
+    steps:
+      - intent: monologue_solo
+        entities: []
+      - action: utter_SgVJdor1D
+    metadata:
+      group: Creative Feelings
+  - rule: poetry
+    condition: []
+    steps:
+      - intent: poetry
+        entities: []
+      - action: utter_iaY9rxiol
+    metadata:
+      group: Creative Feelings
   - rule: search_more_career
     condition: []
     steps:
@@ -151,12 +203,28 @@ rules:
       - action: utter_6olL3i4pY
     metadata:
       group: Creative Feelings
+  - rule: short_story
+    condition: []
+    steps:
+      - intent: short_story
+        entities: []
+      - action: utter_2lAgj3u6r-
+    metadata:
+      group: Creative Feelings
   - rule: short_story_carousel
     condition: []
     steps:
       - intent: short_story_carousel
         entities: []
       - action: utter_bvvoWnrQA
+    metadata:
+      group: Creative Feelings
+  - rule: something_different
+    condition: []
+    steps:
+      - intent: something_different
+        entities: []
+      - action: utter_XW6iwnYgS
     metadata:
       group: Creative Feelings
   - rule: sound_carousel
@@ -289,5 +357,13 @@ rules:
       - intent: word_work
         entities: []
       - action: utter__3267nvay
+    metadata:
+      group: Creative Feelings
+  - rule: write_review_carousel
+    condition: []
+    steps:
+      - intent: write_review_carousel
+        entities: []
+      - action: utter_v35PL935H
     metadata:
       group: Creative Feelings
