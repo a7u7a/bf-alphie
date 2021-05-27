@@ -6,6 +6,15 @@ rules:
       - intent: art_creation_activities
         entities: []
       - action: utter_nPgFUW-is
+      - action: action_goto_art_creation_activities_menu
+    metadata:
+      group: Creative Feelings
+  - rule: art_creation_activities_menu
+    condition: []
+    steps:
+      - intent: art_creation_activities_menu
+        entities: []
+      - action: utter_4iZUZASZF
     metadata:
       group: Creative Feelings
   - rule: arts_definition_carousel
@@ -122,6 +131,16 @@ rules:
       - intent: mental_health_carousel
         entities: []
       - action: utter_s2X6GgI78
+      - action: utter_6EkUEuQsy
+    metadata:
+      group: Creative Feelings
+  - rule: mental_health_ok
+    condition: []
+    steps:
+      - intent: mental_health_ok
+        entities: []
+      - action: utter_-V73H5tUU
+      - action: action_goto_art_creation_activities_menu
     metadata:
       group: Creative Feelings
   - rule: search_more_career
@@ -132,12 +151,95 @@ rules:
       - action: utter_6olL3i4pY
     metadata:
       group: Creative Feelings
+  - rule: short_story_carousel
+    condition: []
+    steps:
+      - intent: short_story_carousel
+        entities: []
+      - action: utter_bvvoWnrQA
+    metadata:
+      group: Creative Feelings
+  - rule: sound_carousel
+    condition: []
+    steps:
+      - intent: sound_carousel
+        entities: []
+      - action: utter_Na4y3v3S4
+    metadata:
+      group: Creative Feelings
+  - rule: sound_carousel_menu
+    condition: []
+    steps:
+      - intent: sound_carousel_menu
+        entities: []
+      - action: utter_kPem4O6mP
+    metadata:
+      group: Creative Feelings
+  - rule: sound_carousel_sub
+    condition: []
+    steps:
+      - intent: sound_carousel_sub
+        entities: []
+      - action: utter_eFTSPObBn
+    metadata:
+      group: Creative Feelings
   - rule: tea_workshops
     condition: []
     steps:
       - intent: tea_workshops
         entities: []
       - action: utter_lDUJNzOnx
+    metadata:
+      group: Creative Feelings
+  - rule: urgent_carousel
+    condition: []
+    steps:
+      - intent: urgent_carousel
+        entities: []
+      - action: utter_jbqLXRnix
+    metadata:
+      group: Creative Feelings
+  - rule: urgent_mental_outro
+    condition: []
+    steps:
+      - intent: urgent_mental_outro
+        entities: []
+      - action: utter_PcH87YG8Y
+      - action: utter_q-0d4P6t7
+    metadata:
+      group: Creative Feelings
+  - rule: visual_carousel
+    condition: []
+    steps:
+      - intent: visual_carousel
+        entities: []
+      - action: utter_zZ6URK2nX
+    metadata:
+      group: Creative Feelings
+  - rule: visual_carousel_menu
+    condition: []
+    steps:
+      - intent: visual_carousel_menu
+        entities: []
+      - action: utter_-v808s42U
+    metadata:
+      group: Creative Feelings
+  - rule: visual_carousel_sub
+    condition: []
+    steps:
+      - intent: visual_carousel_sub
+        entities: []
+      - action: utter_ZLHRariuW
+    metadata:
+      group: Creative Feelings
+  - rule: visual_jobs
+    condition: []
+    steps:
+      - intent: visual_jobs
+        entities: []
+      - action: utter_3pZjNKs0k
+      - action: utter_Xk9SCh7WU
+      - action: utter_Sf7QHBJ5M
     metadata:
       group: Creative Feelings
   - rule: whats_the_job
@@ -179,5 +281,13 @@ rules:
       - active_loop: whats_the_job_3_form
       - active_loop: null
       - action: action_goto_whats_the_job_outro
+    metadata:
+      group: Creative Feelings
+  - rule: word_work
+    condition: []
+    steps:
+      - intent: word_work
+        entities: []
+      - action: utter__3267nvay
     metadata:
       group: Creative Feelings

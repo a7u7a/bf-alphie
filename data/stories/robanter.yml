@@ -42,7 +42,6 @@ rules:
       - active_loop: robanter_questions_form
       - active_loop: null
       - action: action_form_follow_up_intent
-      - action: utter_bIP2S6rNE
     metadata:
       group: Robanter
   - rule: quiz
@@ -91,13 +90,5 @@ rules:
       - action: utter_37WaJKBMm
       - action: utter_waV47guGR
       - action: utter_zMScFybRf
-    metadata:
-      group: Robanter
-  - rule: short_story_carousel
-    condition: []
-    steps:
-      - intent: short_story_carousel
-        entities: []
-      - action: utter_bvvoWnrQA
     metadata:
       group: Robanter

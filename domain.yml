@@ -4,6 +4,7 @@ actions:
   - action_botfront_fallback
   - action_botfront_mapping
   - action_form_follow_up_intent
+  - action_goto_art_creation_activities_menu
   - action_goto_capabilities
   - action_goto_creative_course_outro
   - action_goto_creative_feelings_intro_menu
@@ -12,13 +13,18 @@ actions:
   - action_reset_robanter_questions_slot
   - action_reset_robanter_quiz_slot
   - utter_-C0jqr1v8
+  - utter_-V73H5tUU
   - utter_-fFS4csbt
+  - utter_-v808s42U
   - utter_0QzeOt7eW
   - utter_1n82s479p
   - utter_37WaJKBMm
   - utter_37jmJQt5X
+  - utter_3pZjNKs0k
+  - utter_4iZUZASZF
   - utter_507WCJv19
   - utter_62nGoY0Mc
+  - utter_6EkUEuQsy
   - utter_6olL3i4pY
   - utter_74CQ8IIS6
   - utter_7E8EuCeBP
@@ -42,12 +48,18 @@ actions:
   - utter_LyHz5Dfjq
   - utter_LzSviHHkJ
   - utter_Mf_ovqH8m
+  - utter_Na4y3v3S4
+  - utter_PcH87YG8Y
   - utter_RtzekwDy7
+  - utter_Sf7QHBJ5M
   - utter_UZqCNZp_b
   - utter_WF1BWuQTy
   - utter_WH0HbW_V-
   - utter_XVfr0bTe2
+  - utter_Xk9SCh7WU
+  - utter_ZLHRariuW
   - utter_ZTffjZgzd
+  - utter__3267nvay
   - utter__bzkbYaCY
   - utter_ask_hi
   - utter_ask_intro1
@@ -82,9 +94,9 @@ actions:
   - utter_ask_test_categorical
   - utter_ask_test_this
   - utter_ask_testslot3
-  - utter_bIP2S6rNE
   - utter_bX62HmJW2
   - utter_bvvoWnrQA
+  - utter_eFTSPObBn
   - utter_ebAFifzsa
   - utter_fvXq6s5UO
   - utter_hXp9_l8R6
@@ -95,10 +107,13 @@ actions:
   - utter_invalid_q4
   - utter_invalid_robanter_joke_out
   - utter_invalid_robanter_jokes_form_out
+  - utter_jbqLXRnix
+  - utter_kPem4O6mP
   - utter_lDUJNzOnx
   - utter_nPgFUW-is
   - utter_ndVDLjVtd
   - utter_oVaxU1_d1
+  - utter_q-0d4P6t7
   - utter_rJsCors7u
   - utter_rSJVMykEi
   - utter_rbsCOFN2s
@@ -117,6 +132,7 @@ actions:
   - utter_xZiLwuJNH
   - utter_yvHcOSzHb
   - utter_zMScFybRf
+  - utter_zZ6URK2nX
 entities: []
 forms:
   bot_reference_form:
@@ -530,7 +546,7 @@ forms:
         validation:
           comparatum: 4
           operator: longer
-    updatedAt: 1621997702462
+    updatedAt: 1622080207205
   robanter_quiz_form:
     collect_in_botfront: null
     description: null
@@ -565,7 +581,7 @@ forms:
         validation:
           comparatum: 5
           operator: longer
-    updatedAt: 1621998396806
+    updatedAt: 1622079655067
   whats_the_job_1_form:
     collect_in_botfront: null
     description: null
@@ -786,6 +802,7 @@ forms:
     updatedAt: 1622079270027
 intents:
   - art_creation_activities
+  - art_creation_activities_menu
   - arts_definition_carousel
   - bot_reference
   - capabilities
@@ -809,6 +826,7 @@ intents:
   - jokes
   - journal
   - mental_health_carousel
+  - mental_health_ok
   - outro
   - outro_2
   - outro_3
@@ -823,21 +841,51 @@ intents:
   - scary_story
   - search_more_career
   - short_story_carousel
+  - sound_carousel
+  - sound_carousel_menu
+  - sound_carousel_sub
   - tea_workshops
   - timetables
   - trigger_48WZqqOBo
+  - urgent_carousel
+  - urgent_mental_outro
+  - visual_carousel
+  - visual_carousel_menu
+  - visual_carousel_sub
+  - visual_jobs
   - whats_on
   - whats_the_job
   - whats_the_job2
   - whats_the_job3
   - whats_the_job_outro
+  - word_work
 responses:
   utter_-C0jqr1v8:
     - language: en
       text: 'Actually, probably best not to get into all that..'
+  utter_-V73H5tUU:
+    - language: en
+      text: 'Okay, we''re going to use our feelings to fuel our creativity!'
   utter_-fFS4csbt:
     - language: en
-      text: '(wip: you have reached the arts_definition_carousel)'
+      metadata: null
+      text: Here are some of my favourite quick art creation activities...
+  utter_-v808s42U:
+    - language: en
+      quick_replies:
+        - payload: /visual_carousel
+          title: Let me look again
+          type: postback
+        - payload: /visual_carousel_sub
+          title: 'Yes'
+          type: postback
+        - payload: /creative_return_menu
+          title: Something else?
+          type: postback
+        - payload: /art_creation_activities_menu
+          title: No. Show me the creative starting points
+          type: postback
+      text: Would you like to complete  one of the suggested tasks?
   utter_0QzeOt7eW:
     - language: en
       quick_replies:
@@ -871,15 +919,32 @@ responses:
         Check show schedules, Contact the TEA team.
   utter_37WaJKBMm:
     - language: en
-      text: >-
-        To get our creative juices going here's one I prepared earlier. It's
-        both stupid AND SCARY...
-
+      text: |-
+        Here's one I prepared earlier. It's both STUPID and SCARY...
 
         (goes to Ghost Story carousel)
   utter_37jmJQt5X:
     - language: en
       text: randomized warning
+  utter_3pZjNKs0k:
+    - language: en
+      text: A bot friend of mine runs a creative career website...
+  utter_4iZUZASZF:
+    - language: en
+      quick_replies:
+        - payload: /sound_carousel
+          title: I want to work with sound
+          type: postback
+        - payload: /visual_carousel
+          title: I want to work visually
+          type: postback
+        - payload: /creative_return_menu
+          title: Something else?
+          type: postback
+        - payload: /word_word
+          title: I want to work with words
+          type: postback
+      text: Choose a starting point
   utter_507WCJv19:
     - language: en
       quick_replies:
@@ -893,6 +958,16 @@ responses:
   utter_62nGoY0Mc:
     - language: en
       text: (goes to capabilities)
+  utter_6EkUEuQsy:
+    - language: en
+      quick_replies:
+        - payload: /mental_health_ok
+          title: I'm feeling okay - let's use my feelings to create something
+          type: postback
+        - payload: /urgent_carousel
+          title: 'Help me reach out to a real person, right now'
+          type: postback
+      text: ''
   utter_6olL3i4pY:
     - language: en
       quick_replies:
@@ -956,6 +1031,7 @@ responses:
       text: '...I''m Alphie, fancy a chat?'
   utter_8sU4u0Pcj:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /capabilities
           title: 'Actually Alphie, let''s chat about something else'
@@ -1168,6 +1244,16 @@ responses:
         [TRB link](https://www.theatreroyal.org.uk/whats-on/?ven=9)
 
         [Ustinov link](https://www.theatreroyal.org.uk/whats-on/?ven=10)
+  utter_Na4y3v3S4:
+    - language: en
+      quick_replies:
+        - payload: /sound_carousel_menu
+          title: Ok
+          type: postback
+      text: (sound_carousel)
+  utter_PcH87YG8Y:
+    - language: en
+      text: I'm only a bot but I am sorry you've been feeling overwhelmed...
   utter_RtzekwDy7:
     - language: en
       quick_replies:
@@ -1181,6 +1267,15 @@ responses:
           title: I'm here by mistake
           type: postback
       text: 'Before you go, do you want to log our chat? (journal not dead wood)'
+  utter_Sf7QHBJ5M:
+    - language: en
+      quick_replies:
+        - payload: /visual_carousel_menu
+          title: Done
+          type: postback
+      text: >-
+        Follow [this link](https://discovercreative.careers/#/). Press 'done' to
+        continue the chat
   utter_UZqCNZp_b:
     - language: en
       quick_replies:
@@ -1210,9 +1305,35 @@ responses:
   utter_XVfr0bTe2:
     - language: en
       text: Hello... is it me you're looking for?
+  utter_Xk9SCh7WU:
+    - language: en
+      text: You can search jobs based on your skills and interests...
+  utter_ZLHRariuW:
+    - language: en
+      quick_replies:
+        - payload: /short_story
+          title: Create a short story for a storyboard
+          type: postback
+        - payload: /create_character_carousel
+          title: Create a character for self potrait
+          type: postback
+        - payload: /sound_carousel
+          title: Listen to sounds to inspire an image
+          type: postback
+        - payload: /visual_jobs
+          title: Research visual creative careers
+          type: postback
+      text: ''
   utter_ZTffjZgzd:
     - language: en
       text: '(wip: you have reached copy-paste carousel tutorial)'
+  utter__3267nvay:
+    - language: en
+      quick_replies:
+        - payload: ''
+          title: ''
+          type: postback
+      text: Which creative writing exercise should I guide you through?
   utter__bzkbYaCY:
     - language: en
       text: (goes to capabilities)
@@ -1258,11 +1379,9 @@ responses:
       metadata: null
       quick_replies:
         - payload: /robanter
-          title: Back
+          title: Different Daftness
           type: postback
-      text: >-
-        Enter your question punk or press 'back' if you want a different flavour
-        of daftness
+      text: 'Enter your questions, punk!'
   utter_ask_q10:
     - language: en
       text: randomized course question set 2
@@ -1421,9 +1540,6 @@ responses:
           title: outro
           type: postback
       text: fanchy a chat?
-  utter_bIP2S6rNE:
-    - language: en
-      text: henlo
   utter_bX62HmJW2:
     - language: en
       quick_replies:
@@ -1436,6 +1552,22 @@ responses:
   utter_bvvoWnrQA:
     - language: en
       text: '(wip: goes to short story carousel)'
+  utter_eFTSPObBn:
+    - language: en
+      quick_replies:
+        - payload: /monologue
+          title: Create a Monologue (sound moods)
+          type: postback
+        - payload: /concrete_carousel
+          title: Soundscapes and concrete poetry
+          type: postback
+        - payload: /visual_carousel
+          title: Design a computer game character (visceral music)
+          type: postback
+        - payload: /rhyme_carousel
+          title: Create rhyming lyrics using poetry
+          type: postback
+      text: ''
   utter_ebAFifzsa:
     - language: en
       text: |-
@@ -1480,6 +1612,29 @@ responses:
     - language: en
       metadata: null
       text: randomized joke in form
+  utter_jbqLXRnix:
+    - language: en
+      quick_replies:
+        - payload: /urgent_mental_outro
+          title: I'm here when you're ready
+          type: postback
+      text: (Mental Health Urgent CAROUSEL)
+  utter_kPem4O6mP:
+    - language: en
+      quick_replies:
+        - payload: /sound_carousel_sub
+          title: 'Yes'
+          type: postback
+        - payload: /sound_carousel
+          title: Let me listen again
+          type: postback
+        - payload: /creative_return_menu
+          title: Something else?
+          type: postback
+        - payload: /art_creation_activities_menu
+          title: No. Show me the creative starting points
+          type: postback
+      text: Would you like to complete one of the suggested tasks?
   utter_lDUJNzOnx:
     - language: en
       quick_replies:
@@ -1492,7 +1647,8 @@ responses:
       text: ''
   utter_nPgFUW-is:
     - language: en
-      text: '(wip: you have reached art_creation_activities)'
+      metadata: null
+      text: Here are some of my favourite quick art creation activities...
   utter_ndVDLjVtd:
     - language: en
       text: >-
@@ -1505,6 +1661,25 @@ responses:
         Team](https://www.theeggassembly.com/about/meet-the-team/) page and
         contact Alex or Sophie with your feedback. Press 'done' when you're...
         done.
+  utter_q-0d4P6t7:
+    - language: en
+      quick_replies:
+        - payload: /capabilities
+          title: Take me to the main chat menu
+          type: postback
+        - payload: /creative_feelings
+          title: Take me back to the beginning of this section
+          type: postback
+        - payload: /robanter
+          title: 'Daftness please, Alphie, daftness!'
+          type: postback
+        - payload: /outro
+          title: 'Alphie, run your exit sequence'
+          type: postback
+        - payload: /mental_health_ok
+          title: I'm feeling okay - let's use my feelings to create something
+          type: postback
+      text: ...Would you like to keep exploring my chat functions?
   utter_rJsCors7u:
     - language: en
       quick_replies:
@@ -1523,7 +1698,8 @@ responses:
       text: randomized joke
   utter_s2X6GgI78:
     - language: en
-      text: '(wip: you have reached mental_health_carousel)'
+      metadata: null
+      text: (mental health carousel)
   utter_sj1sUi2yr:
     - language: en
       quick_replies:
@@ -1551,13 +1727,13 @@ responses:
     - language: en
       quick_replies:
         - payload: /questions_loop
-          title: Try again
+          title: Try break me again?
           type: postback
         - payload: /robanter
-          title: Back
+          title: Different Daftness
           type: postback
       text: >-
-        Wo! That nearly bamboozled me but my CPU is still running so IN YOUR
+        Wow! That nearly broke my code but my CPU is still running, IN YOUR
         FACE!
   utter_v1Em4x0P-:
     - language: en
@@ -1614,6 +1790,7 @@ responses:
       text: Email them your feedback using the 'Contact Alex/Sophie' button
   utter_zMScFybRf:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /short_story_carousel
           title: 'Yes'
@@ -1622,6 +1799,13 @@ responses:
           title: 'No'
           type: postback
       text: You up for writing a ghost story together?
+  utter_zZ6URK2nX:
+    - language: en
+      quick_replies:
+        - payload: /visual_carousel_menu
+          title: Ok
+          type: postback
+      text: (visual_carousel)
 session_config: {}
 slots:
   bot_reference_form_out:
