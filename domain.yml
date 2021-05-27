@@ -8,6 +8,7 @@ actions:
   - action_goto_creative_course_outro
   - action_goto_creative_feelings_intro_menu
   - action_goto_functional_outro
+  - action_goto_whats_the_job_outro
   - action_reset_robanter_questions_slot
   - action_reset_robanter_quiz_slot
   - utter_-C0jqr1v8
@@ -18,20 +19,24 @@ actions:
   - utter_37jmJQt5X
   - utter_507WCJv19
   - utter_62nGoY0Mc
+  - utter_6olL3i4pY
   - utter_74CQ8IIS6
   - utter_7E8EuCeBP
   - utter_7LnrKadyj
   - utter_7gJqiKaVhA
   - utter_8sU4u0Pcj
   - utter_9-QUXOeoA
+  - utter_9DCG3NDkj
   - utter_Bg9Zkn-0P
   - utter_BxIDOW3ie
   - utter_CJuOI_sNr
   - utter_DXh2Dc8LQ
+  - utter_Dv3T-DmOJ
   - utter_E9SKUypf4
   - utter_FihUmZ3vV
   - utter_GlGkS_b0C
   - utter_JE88FzV1l
+  - utter_JVe2P0VEf
   - utter_JXdsGJ66W
   - utter_JoQVEx2TE
   - utter_LyHz5Dfjq
@@ -52,8 +57,17 @@ actions:
   - utter_ask_q11
   - utter_ask_q12
   - utter_ask_q13
+  - utter_ask_q14
+  - utter_ask_q15
+  - utter_ask_q16
+  - utter_ask_q17
+  - utter_ask_q18
+  - utter_ask_q19
   - utter_ask_q2
+  - utter_ask_q20
+  - utter_ask_q21
   - utter_ask_q22
+  - utter_ask_q23
   - utter_ask_q3
   - utter_ask_q4
   - utter_ask_q5
@@ -69,11 +83,14 @@ actions:
   - utter_ask_test_this
   - utter_ask_testslot3
   - utter_bIP2S6rNE
+  - utter_bX62HmJW2
   - utter_bvvoWnrQA
+  - utter_ebAFifzsa
   - utter_fvXq6s5UO
   - utter_hXp9_l8R6
   - utter_invalid_q0
   - utter_invalid_q1
+  - utter_invalid_q14
   - utter_invalid_q2
   - utter_invalid_q4
   - utter_invalid_robanter_joke_out
@@ -92,8 +109,10 @@ actions:
   - utter_v1Em4x0P-
   - utter_valid_hi
   - utter_valid_q1
+  - utter_valid_q14
   - utter_valid_q2
   - utter_valid_q4
+  - utter_vgh5u-Xkz
   - utter_waV47guGR
   - utter_xZiLwuJNH
   - utter_yvHcOSzHb
@@ -349,7 +368,7 @@ forms:
             type: from_text
         name: q13
         utter_on_new_valid_slot: false
-    updatedAt: 1622073278246
+    updatedAt: 1622078932085
   robanter_jokes_form:
     collect_in_botfront: null
     description: null
@@ -547,11 +566,230 @@ forms:
           comparatum: 5
           operator: longer
     updatedAt: 1621998396806
+  whats_the_job_1_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q14
+          source: '1'
+          target: q14
+          type: condition
+        - condition: null
+          id: eq14-q15
+          source: q14
+          target: q15
+          type: condition
+        - condition: null
+          id: eq15-q16
+          source: q15
+          target: q16
+          type: condition
+        - condition: null
+          id: eq16-q17
+          source: q16
+          target: q17
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q14
+          position:
+            x: 120
+            'y': 360
+          slotName: q14
+          type: slot
+        - id: q15
+          position:
+            x: 120
+            'y': 510
+          slotName: q15
+          type: slot
+        - id: q16
+          position:
+            x: 120
+            'y': 660
+          slotName: q16
+          type: slot
+        - id: q17
+          position:
+            x: 120
+            'y': 810
+          slotName: q17
+          type: slot
+    groupName: Creative Feelings
+    name: whats_the_job_1_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q14
+        utter_on_new_valid_slot: true
+        validation:
+          comparatum: 3
+          operator: longer
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q15
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q16
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q17
+        utter_on_new_valid_slot: false
+    updatedAt: 1622079201402
+  whats_the_job_2_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q18
+          source: '1'
+          target: q18
+          type: condition
+        - condition: null
+          id: eq18-q19
+          source: q18
+          target: q19
+          type: condition
+        - condition: null
+          id: eq19-q20
+          source: q19
+          target: q20
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q18
+          position:
+            x: 120
+            'y': 360
+          slotName: q18
+          type: slot
+        - id: q19
+          position:
+            x: 120
+            'y': 510
+          slotName: q19
+          type: slot
+        - id: q20
+          position:
+            x: 120
+            'y': 660
+          slotName: q20
+          type: slot
+    groupName: Creative Feelings
+    name: whats_the_job_2_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q18
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q19
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q20
+        utter_on_new_valid_slot: false
+    updatedAt: 1622079225259
+  whats_the_job_3_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q21
+          source: '1'
+          target: q21
+          type: condition
+        - condition: null
+          id: eq21-q22
+          source: q21
+          target: q22
+          type: condition
+        - condition: null
+          id: eq22-q23
+          source: q22
+          target: q23
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q21
+          position:
+            x: 120
+            'y': 360
+          slotName: q21
+          type: slot
+        - id: q22
+          position:
+            x: 120
+            'y': 520
+          slotName: q22
+          type: slot
+        - id: q23
+          position:
+            x: 120
+            'y': 670
+          slotName: q23
+          type: slot
+    groupName: Creative Feelings
+    name: whats_the_job_3_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q21
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q22
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q23
+        utter_on_new_valid_slot: false
+    updatedAt: 1622079270027
 intents:
   - art_creation_activities
   - arts_definition_carousel
   - bot_reference
   - capabilities
+  - career_in_mind
   - carer
   - contact_tea
   - copy_paste_carousel
@@ -567,6 +805,7 @@ intents:
   - feedback
   - functional
   - functional_outro
+  - job_search
   - jokes
   - journal
   - mental_health_carousel
@@ -582,11 +821,16 @@ intents:
   - robanter
   - robanter_outro
   - scary_story
+  - search_more_career
   - short_story_carousel
   - tea_workshops
   - timetables
   - trigger_48WZqqOBo
   - whats_on
+  - whats_the_job
+  - whats_the_job2
+  - whats_the_job3
+  - whats_the_job_outro
 responses:
   utter_-C0jqr1v8:
     - language: en
@@ -649,6 +893,16 @@ responses:
   utter_62nGoY0Mc:
     - language: en
       text: (goes to capabilities)
+  utter_6olL3i4pY:
+    - language: en
+      quick_replies:
+        - payload: /job_search
+          title: 'Let''s search different careers, Alphie'
+          type: postback
+        - payload: /creative_return_menu
+          title: 'I''ll keep thinking, Alphie. Let''s do something else'
+          type: postback
+      text: ''
   utter_74CQ8IIS6:
     - language: en
       quick_replies:
@@ -746,14 +1000,33 @@ responses:
       text: >-
         So you're feeling daft? The question is... What flavour of daft are you
         feeling?
+  utter_9DCG3NDkj:
+    - language: en
+      quick_replies:
+        - payload: /whats_the_job
+          title: 'Yes'
+          type: postback
+        - payload: /search_more_career
+          title: 'No'
+          type: postback
+        - payload: /arts_definition_carousel
+          title: 'Actually Alphie, define ‘creative industries’ & ‘the arts’?'
+          type: postback
+      text: Do you have a career in mind?
   utter_Bg9Zkn-0P:
     - language: en
       text: INCORRECT
   utter_BxIDOW3ie:
     - language: en
       quick_replies:
-        - payload: ''
-          title: ''
+        - payload: /whats_the_job
+          title: 'Yes, I have a job in mind'
+          type: postback
+        - payload: /job_search
+          title: 'No, help me research a job, Alphie'
+          type: postback
+        - payload: /arts_definition_carousel
+          title: 'Actually Alphie, define ‘creative industries’ & ‘the arts’?'
           type: postback
       text: ...Have you got a job in mind?
   utter_CJuOI_sNr:
@@ -787,6 +1060,16 @@ responses:
           title: 'Yes'
           type: postback
         - payload: /creative_course_outro
+          title: 'No'
+          type: postback
+      text: More questions?
+  utter_Dv3T-DmOJ:
+    - language: en
+      quick_replies:
+        - payload: /whats_the_job3
+          title: 'Yes'
+          type: postback
+        - payload: /whats_the_job_outro
           title: 'No'
           type: postback
       text: More questions?
@@ -832,6 +1115,21 @@ responses:
       text: >-
         Scroll through our chat. Copy and paste the parts you want to keep and
         add them to 'My Projects'.
+  utter_JVe2P0VEf:
+    - language: en
+      quick_replies:
+        - payload: /career_in_mind
+          title: 'Alphie, I want to think about a different role'
+          type: postback
+        - payload: /creative_feelings_intro
+          title: 'Alphie, I want to think about my creativity in other ways'
+          type: postback
+        - payload: /creative_return_menu
+          title: Something else?
+          type: postback
+      text: >-
+        Thinking about questions like these can help you decide your career
+        path.
   utter_JXdsGJ66W:
     - language: en
       text: So you're feeling creative? I'm programmed to chat about all sorts...
@@ -979,19 +1277,48 @@ responses:
     - language: en
       metadata: null
       text: randomized course question set 3
+  utter_ask_q14:
+    - language: en
+      metadata: null
+      text: 'Great, what''s the job?'
+  utter_ask_q15:
+    - language: en
+      metadata: null
+      text: randomized career question set 1
+  utter_ask_q16:
+    - language: en
+      metadata: null
+      text: randomized career question set 1
+  utter_ask_q17:
+    - language: en
+      metadata: null
+      text: randomized career question set 1
+  utter_ask_q18:
+    - language: en
+      metadata: null
+      text: randomized career question set 2
+  utter_ask_q19:
+    - language: en
+      metadata: null
+      text: randomized career question set 2
   utter_ask_q2:
     - language: en
       text: randomized quiz question
+  utter_ask_q20:
+    - language: en
+      metadata: null
+      text: randomized career question set 2
+  utter_ask_q21:
+    - language: en
+      metadata: null
+      text: randomized career question set 3
   utter_ask_q22:
     - language: en
-      quick_replies:
-        - payload: /yes
-          title: 'yes'
-          type: postback
-        - payload: /no
-          title: 'no'
-          type: postback
-      text: u know my friend roman?
+      text: randomized career question set 3
+  utter_ask_q23:
+    - language: en
+      metadata: null
+      text: randomized career question set 3
   utter_ask_q3:
     - language: en
       metadata:
@@ -1097,9 +1424,24 @@ responses:
   utter_bIP2S6rNE:
     - language: en
       text: henlo
+  utter_bX62HmJW2:
+    - language: en
+      quick_replies:
+        - payload: /career_in_mind
+          title: Done
+          type: postback
+      text: >-
+        Follow [this link](https://discovercreative.careers/#/) and Press 'Done'
+        to continue the chat.
   utter_bvvoWnrQA:
     - language: en
       text: '(wip: goes to short story carousel)'
+  utter_ebAFifzsa:
+    - language: en
+      text: |-
+        A bot friend of mine runs a creative career website...
+
+        You can search jobs based on your skills and interests...
   utter_fvXq6s5UO:
     - language: en
       quick_replies:
@@ -1118,6 +1460,10 @@ responses:
     - language: en
       metadata: null
       text: ''
+  utter_invalid_q14:
+    - language: en
+      metadata: null
+      text: I was expecting a longer name...
   utter_invalid_q2:
     - language: en
       metadata: null
@@ -1226,6 +1572,10 @@ responses:
     - language: en
       metadata: null
       text: The answer you are looking for is...
+  utter_valid_q14:
+    - language: en
+      metadata: null
+      text: I'm going to ask you some questions to help you think about this role
   utter_valid_q2:
     - language: en
       metadata: null
@@ -1234,6 +1584,16 @@ responses:
     - language: en
       metadata: null
       text: I'm going to ask you some questions to help you think about your course.
+  utter_vgh5u-Xkz:
+    - language: en
+      quick_replies:
+        - payload: /whats_the_job2
+          title: 'Yes'
+          type: postback
+        - payload: /whats_the_job_outro
+          title: 'No'
+          type: postback
+      text: More questions?
   utter_waV47guGR:
     - language: en
       text: Hahaha!I love this story - it's so stupid and scary!
@@ -1285,7 +1645,27 @@ slots:
     type: unfeaturized
   q13:
     type: unfeaturized
+  q14:
+    type: unfeaturized
+  q15:
+    type: unfeaturized
+  q16:
+    type: unfeaturized
+  q17:
+    type: unfeaturized
+  q18:
+    type: unfeaturized
+  q19:
+    type: unfeaturized
   q2:
+    type: unfeaturized
+  q20:
+    type: unfeaturized
+  q21:
+    type: unfeaturized
+  q22:
+    type: unfeaturized
+  q23:
     type: unfeaturized
   q3:
     type: unfeaturized
