@@ -27,8 +27,8 @@ rules:
       - intent: questions_continue
         entities: []
       - action: utter_JoQVEx2TE
-      - action: utter_WF1BWuQTy
-      - action: utter_37jmJQt5X
+      - action: utter_robanterAnswer
+      - action: utter_robanterWarning
       - action: utter_ttUBaNltRA
     metadata:
       group: Robanter

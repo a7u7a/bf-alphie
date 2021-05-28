@@ -38,7 +38,6 @@ actions:
   - utter_25-r16vip
   - utter_2lAgj3u6r-
   - utter_37WaJKBMm
-  - utter_37jmJQt5X
   - utter_3iOyuois9U
   - utter_3pZjNKs0k
   - utter_4iZUZASZF
@@ -81,7 +80,6 @@ actions:
   - utter_SgVJdor1D
   - utter_TqaqNZ8kP
   - utter_UZqCNZp_b
-  - utter_WF1BWuQTy
   - utter_WH0HbW_V-
   - utter_X7u9aYmxP
   - utter_XW6iwnYgS
@@ -191,7 +189,9 @@ actions:
   - utter_q-0d4P6t7
   - utter_rJsCors7u
   - utter_rSJVMykEi
+  - utter_robanterAnswer
   - utter_robanterJoke
+  - utter_robanterWarning
   - utter_rpi-iQyPD
   - utter_rqm8YXJYu
   - utter_s2X6GgI78
@@ -1357,7 +1357,7 @@ forms:
         validation:
           comparatum: 5
           operator: longer
-    updatedAt: 1622079655067
+    updatedAt: 1622218126858
   story_freewrite_form:
     collect_in_botfront: null
     description: null
@@ -1475,7 +1475,7 @@ forms:
             type: from_text
         name: q17
         utter_on_new_valid_slot: false
-    updatedAt: 1622172810223
+    updatedAt: 1622218668484
   whats_the_job_2_form:
     collect_in_botfront: null
     description: null
@@ -1819,9 +1819,6 @@ responses:
         Here's one I prepared earlier. It's both STUPID and SCARY...
 
         (goes to Ghost Story carousel)
-  utter_37jmJQt5X:
-    - language: en
-      text: randomized warning
   utter_3iOyuois9U:
     - language: en
       quick_replies:
@@ -2275,9 +2272,6 @@ responses:
           title: 'Yes'
           type: postback
       text: Ready to chat?
-  utter_WF1BWuQTy:
-    - language: en
-      text: randomized answer
   utter_WH0HbW_V-:
     - language: en
       quick_replies:
@@ -2453,7 +2447,15 @@ responses:
   utter_ask_q15:
     - language: en
       metadata: null
-      text: randomized career question set 1
+      text: |-
+        Thinking about where you currently are on your career journey...  
+          
+          
+          
+        What are 3 steps you'll have to take to work in this role?
+    - language: en
+      metadata: null
+      text: Can you break down the first step into three microsteps?
   utter_ask_q16:
     - language: en
       metadata: null
@@ -2472,7 +2474,98 @@ responses:
       text: randomized career question set 2
   utter_ask_q2:
     - language: en
-      text: randomized quiz question
+      metadata: null
+      text: What is the capital of Paris?
+    - language: en
+      metadata: null
+      text: "Why is pencils?\uFEFF"
+    - language: en
+      metadata: null
+      text: "If spaghetti is red and cheese blue, what colour is green?\uFEFF"
+    - language: en
+      metadata: null
+      text: "Complete the sequence: 12 - 6 - 3 - ?\uFEFF"
+    - language: en
+      metadata: null
+      text: "What came first, the chicken or the egg?\uFEFF"
+    - language: en
+      metadata: null
+      text: "What is the capital of Q?\uFEFF"
+    - language: en
+      metadata: null
+      text: "Yes to clocks?\uFEFF"
+    - language: en
+      metadata: null
+      text: 'If blue means yes, what colour means no?'
+    - language: en
+      metadata: null
+      text: "If tomorrow = yesterday,  \n  \ntoday = ?\uFEFF"
+    - language: en
+      metadata: null
+      text: "Why King Henry VIII?\uFEFF"
+    - language: en
+      metadata: null
+      text: "What's the most disgusting food?\uFEFF"
+    - language: en
+      metadata: null
+      text: "What's my middle name?\uFEFF"
+    - language: en
+      metadata: null
+      text: "How do pencils?\uFEFF"
+    - language: en
+      metadata: null
+      text: "76 x tomorrow = ?\uFEFF"
+    - language: en
+      metadata: null
+      text: "Complete the sequence: 1 - 2 - 4 - 8 - ?\uFEFF"
+    - language: en
+      metadata: null
+      text: "If Algebra = a penguin, Trigonometry = ?\uFEFF"
+    - language: en
+      metadata: null
+      text: "In what year was 1972?\uFEFF"
+    - language: en
+      metadata: null
+      text: "If 'hello' = 'goodbye',  \n  \n'I need a poo' = ?\uFEFF"
+    - language: en
+      metadata: null
+      text: "Why are grown-ups?\uFEFF"
+    - language: en
+      metadata: null
+      text: "Complete the sequence: yesterday. today, tomorrow, ?\uFEFF"
+    - language: en
+      metadata: null
+      text: "Complete the sequence: A,B,C,D,?\uFEFF"
+    - language: en
+      metadata: null
+      text: "Why is fruit?\uFEFF"
+    - language: en
+      metadata: null
+      text: "Green is to black, like red is to .....?\uFEFF"
+    - language: en
+      metadata: null
+      text: "746 x Joan of Arc =\uFEFF"
+    - language: en
+      metadata: null
+      text: "Complete the sequence: Ace, King, Queen, Jack, ?\uFEFF"
+    - language: en
+      metadata: null
+      text: "What's my favourite font?\uFEFF"
+    - language: en
+      metadata: null
+      text: "Guess the word?\uFEFF"
+    - language: en
+      metadata: null
+      text: "Complete the sequence: Mecury, Venus, Earth, Mars, ?\uFEFF"
+    - language: en
+      metadata: null
+      text: "If sausages sizzle what do courgettes do?\uFEFF"
+    - language: en
+      metadata: null
+      text: "Why sunflowers?\uFEFF"
+    - language: en
+      metadata: null
+      text: "What size feet did William Shakespeare eat?\uFEFF"
   utter_ask_q20:
     - language: en
       metadata: null
@@ -3580,6 +3673,100 @@ responses:
   utter_rSJVMykEi:
     - language: en
       text: I'm a bot of my word - this quiz is impossible....
+  utter_robanterAnswer:
+    - language: en
+      metadata: null
+      text: "42\uFEFF"
+    - language: en
+      metadata: null
+      text: Cabbage
+    - language: en
+      metadata: null
+      text: "Pizza?\uFEFF"
+    - language: en
+      metadata: null
+      text: "Microwave\uFEFF"
+    - language: en
+      metadata: null
+      text: "Albert Einstein\uFEFF"
+    - language: en
+      metadata: null
+      text: "Shakespeare, duh!\uFEFF"
+    - language: en
+      metadata: null
+      text: "The M40 is fastest.\uFEFF"
+    - language: en
+      metadata: null
+      text: "Neil Armstrong\uFEFF"
+    - language: en
+      metadata: null
+      text: "Only on Tuesdays\uFEFF"
+    - language: en
+      metadata: null
+      text: "Pepperoni\uFEFF"
+    - language: en
+      metadata: null
+      text: "Veganism\uFEFF"
+    - language: en
+      metadata: null
+      text: "Yesterday\uFEFF"
+    - language: en
+      metadata: null
+      text: "Magaret Thatcher\uFEFF"
+    - language: en
+      metadata: null
+      text: "Uranus\uFEFF"
+    - language: en
+      metadata: null
+      text: "Mary Poppins\uFEFF"
+    - language: en
+      metadata: null
+      text: "76\uFEFF"
+    - language: en
+      metadata: null
+      text: "Honeycomb\uFEFF"
+    - language: en
+      metadata: null
+      text: "My little pony\uFEFF"
+    - language: en
+      metadata: null
+      text: "1066\uFEFF"
+    - language: en
+      metadata: null
+      text: "California\uFEFF"
+    - language: en
+      metadata: null
+      text: "Upper Ramsbottom\uFEFF"
+    - language: en
+      metadata: null
+      text: "Baked Beans\uFEFF"
+    - language: en
+      metadata: null
+      text: "A flute\uFEFF"
+    - language: en
+      metadata: null
+      text: "Route 459 to Big Ben\uFEFF"
+    - language: en
+      metadata: null
+      text: "Moist\uFEFF"
+    - language: en
+      metadata: null
+      text: "Crab Apples\uFEFF"
+    - language: en
+      metadata: null
+      text: "Pomegranate\uFEFF"
+    - language: en
+      metadata: null
+      text: "My Motherboard\uFEFF"
+    - language: en
+      metadata: null
+      text: "Mount Everest\uFEFF"
+    - language: en
+      metadata: null
+      text: "R2D2\uFEFF"
+    - language: en
+      metadata: null
+      text: "C3PO\uFEFF"
   utter_robanterJoke:
     - language: en
       metadata: null
@@ -3820,6 +4007,100 @@ responses:
     - language: en
       metadata: null
       text: "What do you call a fake noodle?... An impasta.\uFEFF"
+  utter_robanterWarning:
+    - language: en
+      metadata: null
+      text: "WARNING. FATAL EXCEPTION AT LINE 42.\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING. FATAL EXCEPTION 678.\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING. FATAL EXCEPTION 12Ahf5.\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING. FATAL EXCEPTION: No user found\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING. FATAL EXCEPTION 79.\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING. FATAL EXCEPTION: Invalid function number\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING. FATAL EXCEPTION: no handles left\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING: FATAL EXCEPTION. Memory control blocks destroyed\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING: Invalid memory block address\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING: Invalid access mode (open mode is invalid)\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING: SECURITY BREACH: Attempt to remove current directory\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING: SECURITY BREACH: Attempt to write on a write-protected diskette\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING: Unknown unit\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING: Unknown unit drive not ready\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING: Bad request structure length\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING: FATAL EXCEPTION Seek error\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING: FATAL EXCEPTION 1B Sector not found\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING! FATAL EXCEPTION LINE 20 Sharing violation\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING! Lock violation error 612a\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING 24 Sharing buffer overflow\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING: 26 Unable to complete file operation (DOS 4.x)\uFEFF"
+    - language: en
+      metadata: null
+      text: "FATAL EXCEPTION WARNING: Remote computer not listening\uFEFF"
+    - language: en
+      metadata: null
+      text: "FATAL EXCEPTION WARNING: 34/a Duplicate name on network\uFEFF"
+    - language: en
+      metadata: null
+      text: "SECURITY ERROR: NetBIOS command limit exceeded\uFEFF"
+    - language: en
+      metadata: null
+      text: "SECURITY ERROR: Incorrect network response\uFEFF"
+    - language: en
+      metadata: null
+      text: "SECURITY ERROR: Incompatible remote adapter\uFEFF"
+    - language: en
+      metadata: null
+      text: "WRNNAIG: Uenxepcdte Sckpehclle Eorrr\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING: Fail on INT 24. Reinstall USER\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING: Function not supported by network (DOS 4.x)\uFEFF"
+    - language: en
+      metadata: null
+      text: "WARNING: Too many redirections\uFEFF"
+    - language: en
+      metadata: null
+      text: "SYSTEM ERROR: Hardware failure; serious problem related to hardware\uFEFF"
   utter_rpi-iQyPD:
     - language: en
       quick_replies:
