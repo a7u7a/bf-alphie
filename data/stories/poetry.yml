@@ -1,0 +1,150 @@
+stories: []
+rules:
+  - rule: acrostic_carousel
+    condition: []
+    steps:
+      - intent: acrostic_carousel
+        entities: []
+      - action: utter_dzPmExVyl
+    metadata:
+      group: Poetry
+  - rule: acrostic_freewrite
+    condition: []
+    steps:
+      - intent: acrostic_freewrite
+        entities: []
+      - action: action_reset_acrostic_freewrite_slot
+      - action: acrostic_freewrite_form
+      - active_loop: acrostic_freewrite_form
+      - active_loop: null
+      - action: utter_ZnamHebGg
+    metadata:
+      group: Poetry
+  - rule: acrostic_solo
+    condition: []
+    steps:
+      - intent: acrostic_solo
+        entities: []
+      - action: utter_h-XR3quL3
+    metadata:
+      group: Poetry
+  - rule: concrete_carousel
+    condition: []
+    steps:
+      - intent: concrete_carousel
+        entities: []
+      - action: utter_zJZrVEmWz
+    metadata:
+      group: Poetry
+  - rule: concrete_freewrite
+    condition: []
+    steps:
+      - intent: concrete_freewrite
+        entities: []
+      - action: action_reset_concrete_freewrite_slot
+      - action: concrete_freewrite_form
+      - active_loop: concrete_freewrite_form
+      - active_loop: null
+      - action: utter_mosVQ_zL0
+    metadata:
+      group: Poetry
+  - rule: concrete_solo
+    condition: []
+    steps:
+      - intent: concrete_solo
+        entities: []
+      - action: utter_25-r16vip
+    metadata:
+      group: Poetry
+  - rule: haiku_carousel
+    condition: []
+    steps:
+      - intent: haiku_carousel
+        entities: []
+      - action: utter_TqaqNZ8kP
+    metadata:
+      group: Poetry
+  - rule: haiku_freewrite
+    condition: []
+    steps:
+      - intent: haiku_freewrite
+        entities: []
+      - action: action_reset_haiku_freewrite_slot
+      - action: haiku_freewrite_form
+      - active_loop: haiku_freewrite_form
+      - active_loop: null
+      - action: utter_0vZ65O5fD
+    metadata:
+      group: Poetry
+  - rule: haiku_solo
+    condition: []
+    steps:
+      - intent: haiku_solo
+        entities: []
+      - action: utter_w9UPm-V8j
+    metadata:
+      group: Poetry
+  - rule: limerick_carousel
+    condition: []
+    steps:
+      - intent: limerick_carousel
+        entities: []
+      - action: utter_rpi-iQyPD
+    metadata:
+      group: Poetry
+  - rule: limerick_freewrite
+    condition: []
+    steps:
+      - intent: limerick_freewrite
+        entities: []
+      - action: action_reset_limerick_freewrite_slot
+      - action: limerick_freewrite_form
+      - active_loop: limerick_freewrite_form
+      - active_loop: null
+      - action: utter_JYrdQX4d7
+    metadata:
+      group: Poetry
+  - rule: limerick_solo
+    condition: []
+    steps:
+      - intent: limerick_solo
+        entities: []
+      - action: utter_X7u9aYmxP
+    metadata:
+      group: Poetry
+  - rule: poetry
+    condition: []
+    steps:
+      - intent: poetry
+        entities: []
+      - action: utter_iaY9rxiol
+    metadata:
+      group: Poetry
+  - rule: rhyme_carousel
+    condition: []
+    steps:
+      - intent: rhyme_carousel
+        entities: []
+      - action: utter_tbPPQI-tj
+    metadata:
+      group: Poetry
+  - rule: rhyme_freewrite
+    condition: []
+    steps:
+      - intent: rhyme_freewrite
+        entities: []
+      - action: action_reset_rhyme_freewrite_slot
+      - action: rhyme_freewrite_form
+      - active_loop: rhyme_freewrite_form
+      - active_loop: null
+      - action: utter_tMlRUaZnU
+    metadata:
+      group: Poetry
+  - rule: rhyme_solo
+    condition: []
+    steps:
+      - intent: rhyme_solo
+        entities: []
+      - action: utter_-STbfDzYV
+    metadata:
+      group: Poetry

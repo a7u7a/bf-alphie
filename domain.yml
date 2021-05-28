@@ -4,24 +4,42 @@ actions:
   - action_botfront_fallback
   - action_botfront_mapping
   - action_form_follow_up_intent
+  - action_goto_art_created_outro
   - action_goto_art_creation_activities_menu
+  - action_goto_art_exp_outro
   - action_goto_capabilities
   - action_goto_creative_course_outro
   - action_goto_creative_feelings_intro_menu
   - action_goto_functional_outro
   - action_goto_whats_the_job_outro
+  - action_reset_acrostic_freewrite_slot
+  - action_reset_art_created_slot
+  - action_reset_art_exp_slot
+  - action_reset_character_freewrite_slot
+  - action_reset_concrete_freewrite_slot
+  - action_reset_creative_course_slot
+  - action_reset_haiku_freewrite_slot
+  - action_reset_limerick_freewrite_slot
   - action_reset_monologue_slot
+  - action_reset_review_freewrite_slot
+  - action_reset_rhyme_freewrite_slot
   - action_reset_robanter_questions_slot
   - action_reset_robanter_quiz_slot
+  - action_reset_story_freewrite_slot
+  - action_reset_whats_the_job_slot
   - utter_-C0jqr1v8
+  - utter_-STbfDzYV
   - utter_-V73H5tUU
-  - utter_-fFS4csbt
   - utter_-v808s42U
   - utter_0QzeOt7eW
+  - utter_0vZ65O5fD
+  - utter_1eAxjconw
   - utter_1n82s479p
+  - utter_25-r16vip
   - utter_2lAgj3u6r-
   - utter_37WaJKBMm
   - utter_37jmJQt5X
+  - utter_3iOyuois9U
   - utter_3pZjNKs0k
   - utter_4iZUZASZF
   - utter_507WCJv19
@@ -35,6 +53,7 @@ actions:
   - utter_8sU4u0Pcj
   - utter_9-QUXOeoA
   - utter_9DCG3NDkj
+  - utter_ASYvn0pQe
   - utter_Bg9Zkn-0P
   - utter_BxIDOW3ie
   - utter_CJuOI_sNr
@@ -46,26 +65,34 @@ actions:
   - utter_JE88FzV1l
   - utter_JVe2P0VEf
   - utter_JXdsGJ66W
+  - utter_JYrdQX4d7
   - utter_JoQVEx2TE
+  - utter_K2Es5vH-3
   - utter_LyHz5Dfjq
   - utter_LzSviHHkJ
   - utter_Mf_ovqH8m
   - utter_Na4y3v3S4
+  - utter_OfmASJTfW
   - utter_PcH87YG8Y
+  - utter_QP9T9TpyK
   - utter_RtzekwDy7
   - utter_SB2HYD-O2
   - utter_Sf7QHBJ5M
   - utter_SgVJdor1D
+  - utter_TqaqNZ8kP
   - utter_UZqCNZp_b
   - utter_WF1BWuQTy
   - utter_WH0HbW_V-
+  - utter_X7u9aYmxP
   - utter_XVfr0bTe2
   - utter_XW6iwnYgS
   - utter_Xk9SCh7WU
   - utter_ZLHRariuW
   - utter_ZTffjZgzd
+  - utter_ZnamHebGg
   - utter__3267nvay
   - utter__bzkbYaCY
+  - utter__zibsjKFS
   - utter_ask_hi
   - utter_ask_intro1
   - utter_ask_q0
@@ -86,9 +113,37 @@ actions:
   - utter_ask_q22
   - utter_ask_q23
   - utter_ask_q24
+  - utter_ask_q25
+  - utter_ask_q26
+  - utter_ask_q27
+  - utter_ask_q28
+  - utter_ask_q29
   - utter_ask_q3
+  - utter_ask_q30
+  - utter_ask_q31
+  - utter_ask_q32
+  - utter_ask_q33
+  - utter_ask_q34
+  - utter_ask_q35
+  - utter_ask_q36
+  - utter_ask_q37
+  - utter_ask_q38
+  - utter_ask_q39
   - utter_ask_q4
+  - utter_ask_q40
+  - utter_ask_q41
+  - utter_ask_q42
+  - utter_ask_q43
+  - utter_ask_q44
+  - utter_ask_q45
+  - utter_ask_q46
+  - utter_ask_q47
+  - utter_ask_q48
+  - utter_ask_q49
   - utter_ask_q5
+  - utter_ask_q50
+  - utter_ask_q51
+  - utter_ask_q52
   - utter_ask_q6
   - utter_ask_q7
   - utter_ask_q8
@@ -100,36 +155,50 @@ actions:
   - utter_ask_test_categorical
   - utter_ask_test_this
   - utter_ask_testslot3
+  - utter_b4fSJnL45
   - utter_bX62HmJW2
-  - utter_bvvoWnrQA
+  - utter_cROIfymuP
+  - utter_dzPmExVyl
   - utter_eFTSPObBn
   - utter_ebAFifzsa
+  - utter_ev6_pR8-A
+  - utter_f4iUKhNMG
   - utter_fvXq6s5UO
+  - utter_h-XR3quL3
   - utter_hXp9_l8R6
   - utter_iaY9rxiol
   - utter_invalid_q0
   - utter_invalid_q1
   - utter_invalid_q14
   - utter_invalid_q2
+  - utter_invalid_q33
   - utter_invalid_q4
+  - utter_invalid_q40
   - utter_invalid_robanter_joke_out
   - utter_invalid_robanter_jokes_form_out
   - utter_jbqLXRnix
   - utter_kJ29mSbjI
   - utter_kPem4O6mP
+  - utter_kQRBxQVg5
   - utter_lDUJNzOnx
+  - utter_mosVQ_zL0
   - utter_nPgFUW-is
+  - utter_nR2JdWRbj
   - utter_ndVDLjVtd
   - utter_oVaxU1_d1
   - utter_p2z1e0rTw
+  - utter_pYNU8US8-S
   - utter_q-0d4P6t7
   - utter_rJsCors7u
   - utter_rSJVMykEi
   - utter_rbsCOFN2s
+  - utter_rpi-iQyPD
   - utter_rqm8YXJYu
   - utter_s2X6GgI78
   - utter_sj1sUi2yr
   - utter_tK2L8iwOp
+  - utter_tMlRUaZnU
+  - utter_tbPPQI-tj
   - utter_ttUBaNltRA
   - utter_v1Em4x0P-
   - utter_v35PL935H
@@ -137,15 +206,487 @@ actions:
   - utter_valid_q1
   - utter_valid_q14
   - utter_valid_q2
+  - utter_valid_q33
   - utter_valid_q4
+  - utter_valid_q40
   - utter_vgh5u-Xkz
+  - utter_w9UPm-V8j
   - utter_waV47guGR
   - utter_xZiLwuJNH
   - utter_yvHcOSzHb
+  - utter_zJZrVEmWz
   - utter_zMScFybRf
   - utter_zZ6URK2nX
 entities: []
 forms:
+  acrostic_freewrite_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q30
+          source: '1'
+          target: q30
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q30
+          position:
+            x: 120
+            'y': 350
+          slotName: q30
+          type: slot
+    groupName: Poetry
+    name: acrostic_freewrite_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q30
+        utter_on_new_valid_slot: false
+    updatedAt: 1622160112947
+  art_created2_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q44
+          source: '1'
+          target: q44
+          type: condition
+        - condition: null
+          id: eq44-q45
+          source: q44
+          target: q45
+          type: condition
+        - condition: null
+          id: eq45-q46
+          source: q45
+          target: q46
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q44
+          position:
+            x: 120
+            'y': 350
+          slotName: q44
+          type: slot
+        - id: q45
+          position:
+            x: 120
+            'y': 500
+          slotName: q45
+          type: slot
+        - id: q46
+          position:
+            x: 120
+            'y': 660
+          slotName: q46
+          type: slot
+    groupName: Art Experience Creation
+    name: art_created2_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q44
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q45
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q46
+        utter_on_new_valid_slot: false
+    updatedAt: 1622173024159
+  art_created3_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q47
+          source: '1'
+          target: q47
+          type: condition
+        - condition: null
+          id: eq47-q48
+          source: q47
+          target: q48
+          type: condition
+        - condition: null
+          id: eq48-q49
+          source: q48
+          target: q49
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q47
+          position:
+            x: 120
+            'y': 360
+          slotName: q47
+          type: slot
+        - id: q48
+          position:
+            x: 120
+            'y': 510
+          slotName: q48
+          type: slot
+        - id: q49
+          position:
+            x: 120
+            'y': 660
+          slotName: q49
+          type: slot
+    groupName: Art Experience Creation
+    name: art_created3_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q47
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q48
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q49
+        utter_on_new_valid_slot: false
+    updatedAt: 1622173035308
+  art_created_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q40
+          source: '1'
+          target: q40
+          type: condition
+        - condition: null
+          id: eq40-q41
+          source: q40
+          target: q41
+          type: condition
+        - condition: null
+          id: eq41-q42
+          source: q41
+          target: q42
+          type: condition
+        - condition: null
+          id: eq42-q43
+          source: q42
+          target: q43
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q40
+          position:
+            x: 120
+            'y': 350
+          slotName: q40
+          type: slot
+        - id: q41
+          position:
+            x: 120
+            'y': 500
+          slotName: q41
+          type: slot
+        - id: q42
+          position:
+            x: 120
+            'y': 660
+          slotName: q42
+          type: slot
+        - id: q43
+          position:
+            x: 120
+            'y': 810
+          slotName: q43
+          type: slot
+    groupName: Art Experience Creation
+    name: art_created_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q40
+        utter_on_new_valid_slot: true
+        validation:
+          comparatum: 1
+          operator: longer
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q41
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q42
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q43
+        utter_on_new_valid_slot: false
+    updatedAt: 1622172995892
+  art_exp2_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q37
+          source: '1'
+          target: q37
+          type: condition
+        - condition: null
+          id: eq37-q38
+          source: q37
+          target: q38
+          type: condition
+        - condition: null
+          id: eq38-q39
+          source: q38
+          target: q39
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q37
+          position:
+            x: 120
+            'y': 350
+          slotName: q37
+          type: slot
+        - id: q38
+          position:
+            x: 120
+            'y': 500
+          slotName: q38
+          type: slot
+        - id: q39
+          position:
+            x: 120
+            'y': 660
+          slotName: q39
+          type: slot
+    groupName: Art Experience Creation
+    name: art_exp2_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q37
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q38
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q39
+        utter_on_new_valid_slot: false
+    updatedAt: 1622172988228
+  art_exp3_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q50
+          source: '1'
+          target: q50
+          type: condition
+        - condition: null
+          id: eq50-q51
+          source: q50
+          target: q51
+          type: condition
+        - condition: null
+          id: eq51-q52
+          source: q51
+          target: q52
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q50
+          position:
+            x: 120
+            'y': 350
+          slotName: q50
+          type: slot
+        - id: q51
+          position:
+            x: 120
+            'y': 500
+          slotName: q51
+          type: slot
+        - id: q52
+          position:
+            x: 120
+            'y': 650
+          slotName: q52
+          type: slot
+    groupName: Art Experience Creation
+    name: art_exp3_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q50
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q51
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q52
+        utter_on_new_valid_slot: false
+    updatedAt: 1622172990277
+  art_exp_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q33
+          source: '1'
+          target: q33
+          type: condition
+        - condition: null
+          id: eq33-q34
+          source: q33
+          target: q34
+          type: condition
+        - condition: null
+          id: eq34-q35
+          source: q34
+          target: q35
+          type: condition
+        - condition: null
+          id: eq35-q36
+          source: q35
+          target: q36
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q33
+          position:
+            x: 120
+            'y': 340
+          slotName: q33
+          type: slot
+        - id: q34
+          position:
+            x: 120
+            'y': 500
+          slotName: q34
+          type: slot
+        - id: q35
+          position:
+            x: 120
+            'y': 660
+          slotName: q35
+          type: slot
+        - id: q36
+          position:
+            x: 120
+            'y': 810
+          slotName: q36
+          type: slot
+    groupName: Art Experience Creation
+    name: art_exp_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q33
+        utter_on_new_valid_slot: true
+        validation:
+          comparatum: 1
+          operator: longer
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q34
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q35
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q36
+        utter_on_new_valid_slot: false
+    updatedAt: 1622172892785
   bot_reference_form:
     collect_in_botfront: null
     description: null
@@ -178,6 +719,70 @@ forms:
         name: q3
         utter_on_new_valid_slot: false
     updatedAt: 1622057743510
+  character_freewrite_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q25
+          source: '1'
+          target: q25
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q25
+          position:
+            x: 120
+            'y': 350
+          slotName: q25
+          type: slot
+    groupName: Creative Feelings
+    name: character_freewrite_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q25
+        utter_on_new_valid_slot: false
+    updatedAt: 1622153852878
+  concrete_freewrite_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q32
+          source: '1'
+          target: q32
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q32
+          position:
+            x: 120
+            'y': 350
+          slotName: q32
+          type: slot
+    groupName: Poetry
+    name: concrete_freewrite_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q32
+        utter_on_new_valid_slot: false
+    updatedAt: 1622160168433
   creative_course_1_form:
     collect_in_botfront: null
     description: null
@@ -233,7 +838,7 @@ forms:
             'y': 800
           slotName: q7
           type: slot
-    groupName: Creative Feelings
+    groupName: Creative Course
     name: creative_course_1_form
     slots:
       - filling:
@@ -263,7 +868,7 @@ forms:
             type: from_text
         name: q7
         utter_on_new_valid_slot: false
-    updatedAt: 1622072948858
+    updatedAt: 1622172826697
   creative_course_2_form:
     collect_in_botfront: null
     description: null
@@ -308,7 +913,7 @@ forms:
             'y': 680
           slotName: q10
           type: slot
-    groupName: Creative Feelings
+    groupName: Creative Course
     name: creative_course_2_form
     slots:
       - filling:
@@ -329,7 +934,7 @@ forms:
             type: from_text
         name: q10
         utter_on_new_valid_slot: false
-    updatedAt: 1622073226047
+    updatedAt: 1622172662189
   creative_course_3_form:
     collect_in_botfront: null
     description: null
@@ -374,7 +979,7 @@ forms:
             'y': 660
           slotName: q13
           type: slot
-    groupName: Creative Feelings
+    groupName: Creative Course
     name: creative_course_3_form
     slots:
       - filling:
@@ -395,7 +1000,71 @@ forms:
             type: from_text
         name: q13
         utter_on_new_valid_slot: false
-    updatedAt: 1622078932085
+    updatedAt: 1622172695779
+  haiku_freewrite_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q29
+          source: '1'
+          target: q29
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q29
+          position:
+            x: 120
+            'y': 350
+          slotName: q29
+          type: slot
+    groupName: Poetry
+    name: haiku_freewrite_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q29
+        utter_on_new_valid_slot: false
+    updatedAt: 1622160083156
+  limerick_freewrite_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q31
+          source: '1'
+          target: q31
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q31
+          position:
+            x: 120
+            'y': 350
+          slotName: q31
+          type: slot
+    groupName: Poetry
+    name: limerick_freewrite_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q31
+        utter_on_new_valid_slot: false
+    updatedAt: 1622160136627
   monologue_freewrite_form:
     collect_in_botfront: null
     description: null
@@ -427,7 +1096,71 @@ forms:
             type: from_text
         name: q24
         utter_on_new_valid_slot: false
-    updatedAt: 1622144822175
+    updatedAt: 1622172884244
+  review_freewrite_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q27
+          source: '1'
+          target: q27
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q27
+          position:
+            x: 120
+            'y': 350
+          slotName: q27
+          type: slot
+    groupName: Creative Feelings
+    name: review_freewrite_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q27
+        utter_on_new_valid_slot: false
+    updatedAt: 1622155910843
+  rhyme_freewrite_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q28
+          source: '1'
+          target: q28
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q28
+          position:
+            x: 120
+            'y': 350
+          slotName: q28
+          type: slot
+    groupName: Poetry
+    name: rhyme_freewrite_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q28
+        utter_on_new_valid_slot: false
+    updatedAt: 1622160408133
   robanter_jokes_form:
     collect_in_botfront: null
     description: null
@@ -625,6 +1358,38 @@ forms:
           comparatum: 5
           operator: longer
     updatedAt: 1622079655067
+  story_freewrite_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q26
+          source: '1'
+          target: q26
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q26
+          position:
+            x: 120
+            'y': 350
+          slotName: q26
+          type: slot
+    groupName: Creative Feelings
+    name: story_freewrite_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q26
+        utter_on_new_valid_slot: false
+    updatedAt: 1622155312187
   whats_the_job_1_form:
     collect_in_botfront: null
     description: null
@@ -680,7 +1445,7 @@ forms:
             'y': 810
           slotName: q17
           type: slot
-    groupName: Creative Feelings
+    groupName: Whats the Job
     name: whats_the_job_1_form
     slots:
       - filling:
@@ -710,7 +1475,7 @@ forms:
             type: from_text
         name: q17
         utter_on_new_valid_slot: false
-    updatedAt: 1622079201402
+    updatedAt: 1622172810223
   whats_the_job_2_form:
     collect_in_botfront: null
     description: null
@@ -755,7 +1520,7 @@ forms:
             'y': 660
           slotName: q20
           type: slot
-    groupName: Creative Feelings
+    groupName: Whats the Job
     name: whats_the_job_2_form
     slots:
       - filling:
@@ -776,7 +1541,7 @@ forms:
             type: from_text
         name: q20
         utter_on_new_valid_slot: false
-    updatedAt: 1622079225259
+    updatedAt: 1622172817534
   whats_the_job_3_form:
     collect_in_botfront: null
     description: null
@@ -821,7 +1586,7 @@ forms:
             'y': 670
           slotName: q23
           type: slot
-    groupName: Creative Feelings
+    groupName: Whats the Job
     name: whats_the_job_3_form
     slots:
       - filling:
@@ -842,15 +1607,31 @@ forms:
             type: from_text
         name: q23
         utter_on_new_valid_slot: false
-    updatedAt: 1622079270027
+    updatedAt: 1622172984884
 intents:
+  - acrostic_carousel
+  - acrostic_freewrite
+  - acrostic_solo
+  - art_created
+  - art_created2
+  - art_created3
+  - art_created_outro
   - art_creation_activities
   - art_creation_activities_menu
+  - art_exp
+  - art_exp2
+  - art_exp3
+  - art_exp_outro
   - arts_definition_carousel
   - bot_reference
   - capabilities
   - career_in_mind
   - carer
+  - character_freewrite
+  - character_ready
+  - concrete_carousel
+  - concrete_freewrite
+  - concrete_solo
   - contact_tea
   - copy_paste_carousel
   - create_character_carousel
@@ -866,9 +1647,15 @@ intents:
   - feedback
   - functional
   - functional_outro
+  - haiku_carousel
+  - haiku_freewrite
+  - haiku_solo
   - job_search
   - jokes
   - journal
+  - limerick_carousel
+  - limerick_freewrite
+  - limerick_solo
   - mental_health_carousel
   - mental_health_ok
   - monologue
@@ -885,16 +1672,23 @@ intents:
   - questions_loop
   - quiz
   - quiz_loop
+  - review_freewrite
+  - rhyme_carousel
+  - rhyme_freewrite
+  - rhyme_solo
   - robanter
   - robanter_outro
   - scary_story
   - search_more_career
   - short_story
   - short_story_carousel
+  - solo_review
+  - solo_story
   - something_different
   - sound_carousel
   - sound_carousel_menu
   - sound_carousel_sub
+  - story_freewrite
   - tea_workshops
   - timetables
   - trigger_48WZqqOBo
@@ -915,13 +1709,19 @@ responses:
   utter_-C0jqr1v8:
     - language: en
       text: 'Actually, probably best not to get into all that..'
+  utter_-STbfDzYV:
+    - language: en
+      quick_replies:
+        - payload: /rhyme_carousel
+          title: 'Alphie, show me the exercise again.'
+          type: postback
+        - payload: /rhyme_freewrite
+          title: 'I''m Rhyme Royalty, let''s do this!'
+          type: postback
+      text: Ready to go solo?
   utter_-V73H5tUU:
     - language: en
       text: 'Okay, we''re going to use our feelings to fuel our creativity!'
-  utter_-fFS4csbt:
-    - language: en
-      metadata: null
-      text: Here are some of my favourite quick art creation activities...
   utter_-v808s42U:
     - language: en
       quick_replies:
@@ -948,6 +1748,29 @@ responses:
           title: 'No'
           type: postback
       text: More questions?
+  utter_0vZ65O5fD:
+    - language: en
+      quick_replies:
+        - payload: /haiku_carousel
+          title: 'Alphie, show me the exercise again'
+          type: postback
+        - payload: /haiku_freewrite
+          title: Another go!
+          type: postback
+        - payload: /something_different
+          title: 'Alphie, let''s do something different'
+          type: postback
+      text: 'Want another go, or do something different?'
+  utter_1eAxjconw:
+    - language: en
+      quick_replies:
+        - payload: /create_character_carousel
+          title: 'Alphie, show me the exercise again'
+          type: postback
+        - payload: /character_freewrite
+          title: 'I''m wearing the Charcter Crown, let''s do this!'
+          type: postback
+      text: Ready to  create a character?
   utter_1n82s479p:
     - language: en
       quick_replies:
@@ -969,11 +1792,25 @@ responses:
       text: |-
         I'm programmed to: Find course timetables,  
         Check show schedules, Contact the TEA team.
-  utter_2lAgj3u6r-:
+  utter_25-r16vip:
     - language: en
       quick_replies:
-        - payload: ''
-          title: ''
+        - payload: /concrete_carousel
+          title: 'Alphie, show me the exercise again.'
+          type: postback
+        - payload: /concrete_carousel
+          title: 'I''m the Concrete Commander , let''s do this!'
+          type: postback
+      text: Ready to go solo?
+  utter_2lAgj3u6r-:
+    - language: en
+      metadata: null
+      quick_replies:
+        - payload: /create_character_carousel
+          title: 'Alphie, help me with character creation'
+          type: postback
+        - payload: /short_story_carousel
+          title: I've got my central character(s) in mind. Let's write!
           type: postback
       text: 'Before we start, you''ll need at least one central character.'
   utter_37WaJKBMm:
@@ -985,6 +1822,16 @@ responses:
   utter_37jmJQt5X:
     - language: en
       text: randomized warning
+  utter_3iOyuois9U:
+    - language: en
+      quick_replies:
+        - payload: /art_exp3
+          title: 'Yes'
+          type: postback
+        - payload: /art_exp_outro
+          title: 'No'
+          type: postback
+      text: More questions?
   utter_3pZjNKs0k:
     - language: en
       text: A bot friend of mine runs a creative career website...
@@ -1092,8 +1939,8 @@ responses:
     - language: en
       metadata: null
       quick_replies:
-        - payload: /capabilities
-          title: 'Actually Alphie, let''s chat about something else'
+        - payload: /art_creation_activities
+          title: 'Inspire me, Alphie!'
           type: postback
         - payload: /creative_chat_menu
           title: 'I want to chat about TEA workshops, careers and making stuff'
@@ -1107,8 +1954,8 @@ responses:
         - payload: /art_creation_activities
           title: Creative exercises and activities please Alphie
           type: postback
-        - payload: /art_creation_activities
-          title: 'Inspire me, Alphie!'
+        - payload: /capabilities
+          title: 'Actually Alphie, let''s chat about something else'
           type: postback
         - payload: /capabilities
           title: I'm here by mistake!
@@ -1148,6 +1995,16 @@ responses:
           title: 'Actually Alphie, define ‘creative industries’ & ‘the arts’?'
           type: postback
       text: Do you have a career in mind?
+  utter_ASYvn0pQe:
+    - language: en
+      quick_replies:
+        - payload: /art_exp2
+          title: 'Yes'
+          type: postback
+        - payload: /art_exp_outro
+          title: 'No'
+          type: postback
+      text: More questions?
   utter_Bg9Zkn-0P:
     - language: en
       text: INCORRECT
@@ -1268,9 +2125,35 @@ responses:
   utter_JXdsGJ66W:
     - language: en
       text: So you're feeling creative? I'm programmed to chat about all sorts...
+  utter_JYrdQX4d7:
+    - language: en
+      quick_replies:
+        - payload: /limerick_carousel
+          title: 'Alphie, show me the exercise again'
+          type: postback
+        - payload: /limerick_freewrite
+          title: Another go!
+          type: postback
+        - payload: /something_different
+          title: 'Alphie, let''s do something different'
+          type: postback
+      text: 'Want another go, or do something different?'
   utter_JoQVEx2TE:
     - language: en
       text: The answer you are looking for is...
+  utter_K2Es5vH-3:
+    - language: en
+      quick_replies:
+        - payload: /creative_careers
+          title: Let's chat creative careers.
+          type: postback
+        - payload: /art_exp
+          title: Let's chat about  art I've experienced (seen / read/ played / etc.)
+          type: postback
+        - payload: /art_created
+          title: Let's chat about art I've created (or am currently creating)
+          type: postback
+      text: ''
   utter_LyHz5Dfjq:
     - language: en
       quick_replies:
@@ -1310,9 +2193,35 @@ responses:
           title: Ok
           type: postback
       text: (sound_carousel)
+  utter_OfmASJTfW:
+    - language: en
+      quick_replies:
+        - payload: /monologue_carousel
+          title: Monologue
+          type: postback
+        - payload: /character_freewrite
+          title: I want to write more backstory
+          type: postback
+        - payload: /short_story_carousel
+          title: Short story
+          type: postback
+        - payload: /creative_return_menu
+          title: Something else?
+          type: postback
+      text: Are you ready to put your character in a monologue or short story?
   utter_PcH87YG8Y:
     - language: en
       text: I'm only a bot but I am sorry you've been feeling overwhelmed...
+  utter_QP9T9TpyK:
+    - language: en
+      quick_replies:
+        - payload: /art_created3
+          title: 'Yes'
+          type: postback
+        - payload: /art_created_outro
+          title: 'No'
+          type: postback
+      text: More questions?
   utter_RtzekwDy7:
     - language: en
       quick_replies:
@@ -1352,6 +2261,13 @@ responses:
           title: 'I''m the Monologue Monster, let''s do this!'
           type: postback
       text: Ready to go solo?
+  utter_TqaqNZ8kP:
+    - language: en
+      quick_replies:
+        - payload: /haiku_solo
+          title: ok
+          type: postback
+      text: haiku carousel
   utter_UZqCNZp_b:
     - language: en
       quick_replies:
@@ -1378,6 +2294,16 @@ responses:
           title: ... Creativity and creating stuff ( games/shows/art etc.)?
           type: postback
       text: Shall we chat about...
+  utter_X7u9aYmxP:
+    - language: en
+      quick_replies:
+        - payload: /limerick_carousel
+          title: 'Alphie, show me the exercise again'
+          type: postback
+        - payload: /limerick_freewrite
+          title: 'I''m a Limerick Legend, let''s do this!'
+          type: postback
+      text: Ready to go solo?
   utter_XVfr0bTe2:
     - language: en
       text: Hello... is it me you're looking for?
@@ -1422,6 +2348,19 @@ responses:
   utter_ZTffjZgzd:
     - language: en
       text: '(wip: you have reached copy-paste carousel tutorial)'
+  utter_ZnamHebGg:
+    - language: en
+      quick_replies:
+        - payload: /acrostic_carousel
+          title: 'Alphie, show me the exercise again'
+          type: postback
+        - payload: /acrostic_freewrite
+          title: Another go!
+          type: postback
+        - payload: /something_different
+          title: 'Alphie, let''s do something different'
+          type: postback
+      text: 'Want another go, or do something different?'
   utter__3267nvay:
     - language: en
       quick_replies:
@@ -1441,6 +2380,16 @@ responses:
   utter__bzkbYaCY:
     - language: en
       text: (goes to capabilities)
+  utter__zibsjKFS:
+    - language: en
+      quick_replies:
+        - payload: /art_created2
+          title: 'Yes'
+          type: postback
+        - payload: /art_created_outro
+          title: 'No'
+          type: postback
+      text: More questions?
   utter_ask_hi:
     - language: en
       metadata:
@@ -1546,6 +2495,26 @@ responses:
     - language: en
       metadata: null
       text: Write your monologue below
+  utter_ask_q25:
+    - language: en
+      metadata: null
+      text: Write down everything you know about your character's backstory
+  utter_ask_q26:
+    - language: en
+      metadata: null
+      text: 'Please, write your story below'
+  utter_ask_q27:
+    - language: en
+      metadata: null
+      text: 'Please, write your review below'
+  utter_ask_q28:
+    - language: en
+      metadata: null
+      text: Please write your rhyme below
+  utter_ask_q29:
+    - language: en
+      metadata: null
+      text: 'Please, write your haiku below'
   utter_ask_q3:
     - language: en
       metadata:
@@ -1563,12 +2532,144 @@ responses:
           title: 'No'
           type: postback
       text: I'm a bot. Do you know my friend Ro-Man?
+  utter_ask_q30:
+    - language: en
+      metadata: null
+      text: 'Please, write your poem below'
+  utter_ask_q31:
+    - language: en
+      metadata: null
+      text: 'Please, write your poem below'
+  utter_ask_q32:
+    - language: en
+      metadata: null
+      text: 'Please, write your poem below'
+  utter_ask_q33:
+    - language: en
+      metadata: null
+      text: >-
+        Write the flavour of art we're talking about (theatre / movie video game
+        / poem etc.)
+  utter_ask_q34:
+    - language: en
+      metadata: null
+      text: |-
+        RANDOMISER (WORK I"VE EXPERIENCED QUESTIONS)  
+        SET 1
+  utter_ask_q35:
+    - language: en
+      metadata: null
+      text: |-
+        RANDOMISER (WORK I"VE EXPERIENCED QUESTIONS)  
+        SET 1
+  utter_ask_q36:
+    - language: en
+      metadata: null
+      text: |-
+        RANDOMISER (WORK I"VE EXPERIENCED QUESTIONS)  
+        SET 1
+  utter_ask_q37:
+    - language: en
+      metadata: null
+      text: |-
+        RANDOMISER ((WORK I"VE EXPERIENCED QUESTIONS)  
+        SET 2
+  utter_ask_q38:
+    - language: en
+      metadata: null
+      text: |-
+        RANDOMISER ((WORK I"VE EXPERIENCED QUESTIONS)  
+        SET 2
+  utter_ask_q39:
+    - language: en
+      metadata: null
+      text: |-
+        RANDOMISER ((WORK I"VE EXPERIENCED QUESTIONS)  
+        SET 2
   utter_ask_q4:
     - language: en
       text: 'Great, what''s the course?'
+  utter_ask_q40:
+    - language: en
+      metadata: null
+      text: >-
+        Write the flavour of art we're talking about (theatre /  video game /
+        poem etc.)
+  utter_ask_q41:
+    - language: en
+      metadata: null
+      text: |-
+        RANDOMISER (CREATIVE PROCESS QUESTIONS)  
+        SET 1
+  utter_ask_q42:
+    - language: en
+      metadata: null
+      text: |-
+        RANDOMISER (CREATIVE PROCESS QUESTIONS)  
+        SET 1
+  utter_ask_q43:
+    - language: en
+      metadata: null
+      text: |-
+        RANDOMISER (CREATIVE PROCESS QUESTIONS)  
+        SET 1
+  utter_ask_q44:
+    - language: en
+      metadata: null
+      text: |-
+        RANDOMISER (CREATIVE PROCESS QUESTIONS)  
+        SET 2
+  utter_ask_q45:
+    - language: en
+      metadata: null
+      text: |-
+        RANDOMISER (CREATIVE PROCESS QUESTIONS)  
+        SET 2
+  utter_ask_q46:
+    - language: en
+      metadata: null
+      text: |-
+        RANDOMISER (CREATIVE PROCESS QUESTIONS)  
+        SET 2
+  utter_ask_q47:
+    - language: en
+      metadata: null
+      text: |-
+        RANDOMISER (CREATIVE PROCESS QUESTIONS)  
+        SET 3
+  utter_ask_q48:
+    - language: en
+      metadata: null
+      text: |-
+        RANDOMISER (CREATIVE PROCESS QUESTIONS)  
+        SET 3
+  utter_ask_q49:
+    - language: en
+      metadata: null
+      text: |-
+        RANDOMISER (CREATIVE PROCESS QUESTIONS)  
+        SET 3
   utter_ask_q5:
     - language: en
       text: randomized course question set 1
+  utter_ask_q50:
+    - language: en
+      metadata: null
+      text: |-
+        RANDOMISER (WORK I"VE EXPERIENCED QUESTIONS)  
+        SET 3
+  utter_ask_q51:
+    - language: en
+      metadata: null
+      text: |-
+        RANDOMISER (WORK I"VE EXPERIENCED QUESTIONS)  
+        SET 3
+  utter_ask_q52:
+    - language: en
+      metadata: null
+      text: |-
+        RANDOMISER (WORK I"VE EXPERIENCED QUESTIONS)  
+        SET 3
   utter_ask_q6:
     - language: en
       text: randomized course question set 1
@@ -1648,6 +2749,16 @@ responses:
           title: outro
           type: postback
       text: fanchy a chat?
+  utter_b4fSJnL45:
+    - language: en
+      quick_replies:
+        - payload: /write_review_carousel
+          title: 'Alphie, show me the exercise again'
+          type: postback
+        - payload: /review_freewrite
+          title: 'I''m Review Royalty, let''s do this!'
+          type: postback
+      text: Ready to go solo?
   utter_bX62HmJW2:
     - language: en
       quick_replies:
@@ -1657,11 +2768,26 @@ responses:
       text: >-
         Follow [this link](https://discovercreative.careers/#/) and Press 'Done'
         to continue the chat.
-  utter_bvvoWnrQA:
+  utter_cROIfymuP:
     - language: en
-      text: '(wip: goes to short story carousel)'
+      quick_replies:
+        - payload: /story_freewrite
+          title: Write more!
+          type: postback
+        - payload: /something_different
+          title: 'Alphie, let''s do something different'
+          type: postback
+      text: 'Want to write more, or shall we do something different?'
+  utter_dzPmExVyl:
+    - language: en
+      quick_replies:
+        - payload: /acrostic_solo
+          title: ok
+          type: postback
+      text: acrostic carousel
   utter_eFTSPObBn:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /monologue
           title: Create a Monologue (sound moods)
@@ -1682,6 +2808,37 @@ responses:
         A bot friend of mine runs a creative career website...
 
         You can search jobs based on your skills and interests...
+  utter_ev6_pR8-A:
+    - language: en
+      quick_replies:
+        - payload: /write_review_carousel
+          title: Help me write a review of the art I experienced
+          type: postback
+        - payload: /functional
+          title: Show me current courses that might develop my artistic taste
+          type: postback
+        - payload: /creative_careers
+          title: I want to use my artistic taste in a creative career
+          type: postback
+        - payload: /art_creation_activities
+          title: 'Alphie, I''d like to create something myself'
+          type: postback
+        - payload: /creative_feelings_intro_menu
+          title: 'Alphie, I want to think about my creativity in other ways'
+          type: postback
+        - payload: /creative_return_menu
+          title: ' Something else?'
+          type: postback
+      text: >-
+        Questions like these can help you articulate your artistic taste (your
+        likes/dislikes)
+  utter_f4iUKhNMG:
+    - language: en
+      quick_replies:
+        - payload: /solo_story
+          title: ok
+          type: postback
+      text: short story carousel
   utter_fvXq6s5UO:
     - language: en
       quick_replies:
@@ -1689,12 +2846,38 @@ responses:
           title: Done
           type: postback
       text: ''
+  utter_h-XR3quL3:
+    - language: en
+      quick_replies:
+        - payload: /acrostic_carousel
+          title: 'Alphie, show me the exercise again'
+          type: postback
+        - payload: /acrostic_freewrite
+          title: 'I''m an Acrostic Ace, let''s do this!'
+          type: postback
+      text: Ready to go solo?
   utter_hXp9_l8R6:
     - language: en
       text: 'As you know, I''m just a bit of computer code'
   utter_iaY9rxiol:
     - language: en
+      metadata: null
       quick_replies:
+        - payload: /concrete_carousel
+          title: Concrete
+          type: postback
+        - payload: /rhyme_carousel
+          title: I just want to rhyme!
+          type: postback
+        - payload: /haiku_carousel
+          title: Haiku
+          type: postback
+        - payload: /acrostic_carousel
+          title: Acrostic
+          type: postback
+        - payload: /limerick_carousel
+          title: Limerick
+          type: postback
         - payload: /creative_return_menu
           title: Something else?
           type: postback
@@ -1715,10 +2898,18 @@ responses:
     - language: en
       metadata: null
       text: 'Too short. Try a longer question, please!'
+  utter_invalid_q33:
+    - language: en
+      metadata: null
+      text: I was expecting a longer name..
   utter_invalid_q4:
     - language: en
       metadata: null
       text: I was expecting a longer course name...
+  utter_invalid_q40:
+    - language: en
+      metadata: null
+      text: I was expecting a longer name
   utter_invalid_robanter_joke_out:
     - language: en
       metadata: null
@@ -1763,6 +2954,25 @@ responses:
           title: No. Show me the creative starting points
           type: postback
       text: Would you like to complete one of the suggested tasks?
+  utter_kQRBxQVg5:
+    - language: en
+      quick_replies:
+        - payload: /functional
+          title: Show me current courses that might help my creative process
+          type: postback
+        - payload: /creative_careers
+          title: I want to use my creative process in my career
+          type: postback
+        - payload: /art_creation_activities
+          title: 'Alphie, what''s your creative process?'
+          type: postback
+        - payload: /creative_feelings_intro_menu
+          title: 'Alphie, I want to think about my creativity in other ways'
+          type: postback
+        - payload: /creative_return_menu
+          title: ' Something else?'
+          type: postback
+      text: Questions like these can help you refine your creative process
   utter_lDUJNzOnx:
     - language: en
       quick_replies:
@@ -1773,10 +2983,33 @@ responses:
           title: Let’s chat about a creative/artistic  course I’m part of
           type: postback
       text: ''
+  utter_mosVQ_zL0:
+    - language: en
+      quick_replies:
+        - payload: /concrete_carousel
+          title: 'Alphie, show me the exercise again'
+          type: postback
+        - payload: /concrete_freewrite
+          title: Another go!
+          type: postback
+        - payload: /something_different
+          title: 'Alphie, let''s do something different'
+          type: postback
+      text: 'Want another go, or do something different?'
   utter_nPgFUW-is:
     - language: en
       metadata: null
       text: Here are some of my favourite quick art creation activities...
+  utter_nR2JdWRbj:
+    - language: en
+      quick_replies:
+        - payload: /review_freewrite
+          title: Another go!
+          type: postback
+        - payload: /something_different
+          title: 'Alphie, let''s do something different'
+          type: postback
+      text: Want another go or do something different?
   utter_ndVDLjVtd:
     - language: en
       text: >-
@@ -1799,6 +3032,16 @@ responses:
           title: 'Alphie, help me create a character'
           type: postback
       text: You'll need to write from a character's point of view.
+  utter_pYNU8US8-S:
+    - language: en
+      quick_replies:
+        - payload: /short_story_carousel
+          title: 'Alphie, show me the exercise again'
+          type: postback
+        - payload: /story_freewrite
+          title: I'm ready to write my story!
+          type: postback
+      text: Ready to go solo?
   utter_q-0d4P6t7:
     - language: en
       quick_replies:
@@ -1834,11 +3077,19 @@ responses:
   utter_rbsCOFN2s:
     - language: en
       text: randomized joke
-  utter_rqm8YXJYu:
+  utter_rpi-iQyPD:
     - language: en
       quick_replies:
-        - payload: ''
-          title: ''
+        - payload: /limerick_solo
+          title: ok
+          type: postback
+      text: limerick carousel
+  utter_rqm8YXJYu:
+    - language: en
+      metadata: null
+      quick_replies:
+        - payload: /character_ready
+          title: ok
           type: postback
       text: create_character_carousel
   utter_s2X6GgI78:
@@ -1868,6 +3119,26 @@ responses:
       text: >-
         So you're thinking about working in the creative industries / the
         arts...
+  utter_tMlRUaZnU:
+    - language: en
+      quick_replies:
+        - payload: /rhyme_carousel
+          title: 'Alphie, show me the exercise again'
+          type: postback
+        - payload: /rhyme_freewrite
+          title: Another go!
+          type: postback
+        - payload: /something_different
+          title: 'Alphie, let''s do something different.'
+          type: postback
+      text: 'Want another go, or do something different?'
+  utter_tbPPQI-tj:
+    - language: en
+      quick_replies:
+        - payload: /rhyme_solo
+          title: ok
+          type: postback
+      text: rhyme carousel
   utter_ttUBaNltRA:
     - language: en
       quick_replies:
@@ -1887,9 +3158,10 @@ responses:
         creative stuff.
   utter_v35PL935H:
     - language: en
+      metadata: null
       quick_replies:
-        - payload: ''
-          title: ''
+        - payload: /solo_review
+          title: ok
           type: postback
       text: write_review_carousel
   utter_valid_hi:
@@ -1908,10 +3180,22 @@ responses:
     - language: en
       metadata: null
       text: INCORRECT
+  utter_valid_q33:
+    - language: en
+      metadata: null
+      text: >-
+        I'm going to ask you some questions to help you think about how you
+        experienced it
   utter_valid_q4:
     - language: en
       metadata: null
       text: I'm going to ask you some questions to help you think about your course.
+  utter_valid_q40:
+    - language: en
+      metadata: null
+      text: >-
+        I'm going to ask you some questions to help you think about your
+        creative process
   utter_vgh5u-Xkz:
     - language: en
       quick_replies:
@@ -1922,6 +3206,16 @@ responses:
           title: 'No'
           type: postback
       text: More questions?
+  utter_w9UPm-V8j:
+    - language: en
+      quick_replies:
+        - payload: /haiku_carousel
+          title: 'Alphie, show me the exercise again'
+          type: postback
+        - payload: /haiku_freewrite
+          title: 'I''m the Haiku Higness, let''s do this!'
+          type: postback
+      text: Ready to go solo?
   utter_waV47guGR:
     - language: en
       text: Hahaha!I love this story - it's so stupid and scary!
@@ -1940,6 +3234,13 @@ responses:
           title: I'm here by mistake!
           type: postback
       text: Email them your feedback using the 'Contact Alex/Sophie' button
+  utter_zJZrVEmWz:
+    - language: en
+      quick_replies:
+        - payload: /concrete_solo
+          title: ok
+          type: postback
+      text: concrete_carousel
   utter_zMScFybRf:
     - language: en
       metadata: null
@@ -2005,11 +3306,67 @@ slots:
     type: unfeaturized
   q24:
     type: unfeaturized
+  q25:
+    type: unfeaturized
+  q26:
+    type: unfeaturized
+  q27:
+    type: unfeaturized
+  q28:
+    type: unfeaturized
+  q29:
+    type: unfeaturized
   q3:
+    type: unfeaturized
+  q30:
+    type: unfeaturized
+  q31:
+    type: unfeaturized
+  q32:
+    type: unfeaturized
+  q33:
+    type: unfeaturized
+  q34:
+    type: unfeaturized
+  q35:
+    type: unfeaturized
+  q36:
+    type: unfeaturized
+  q37:
+    type: unfeaturized
+  q38:
+    type: unfeaturized
+  q39:
     type: unfeaturized
   q4:
     type: unfeaturized
+  q40:
+    type: unfeaturized
+  q41:
+    type: unfeaturized
+  q42:
+    type: unfeaturized
+  q43:
+    type: unfeaturized
+  q44:
+    type: unfeaturized
+  q45:
+    type: unfeaturized
+  q46:
+    type: unfeaturized
+  q47:
+    type: unfeaturized
+  q48:
+    type: unfeaturized
+  q49:
+    type: unfeaturized
   q5:
+    type: unfeaturized
+  q50:
+    type: unfeaturized
+  q51:
+    type: unfeaturized
+  q52:
     type: unfeaturized
   q6:
     type: unfeaturized

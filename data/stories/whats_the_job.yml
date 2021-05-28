@@ -1,0 +1,44 @@
+stories: []
+rules:
+  - rule: whats_the_job
+    condition: []
+    steps:
+      - intent: whats_the_job
+        entities: []
+      - action: whats_the_job_1_form
+      - active_loop: whats_the_job_1_form
+      - active_loop: null
+      - action: utter_vgh5u-Xkz
+    metadata:
+      group: Whats the Job
+  - rule: whats_the_job_outro
+    condition: []
+    steps:
+      - intent: whats_the_job_outro
+        entities: []
+      - action: action_reset_whats_the_job_slot
+      - action: utter_JVe2P0VEf
+    metadata:
+      group: Whats the Job
+  - rule: whats_the_job2
+    condition: []
+    steps:
+      - intent: whats_the_job2
+        entities: []
+      - action: whats_the_job_2_form
+      - active_loop: whats_the_job_2_form
+      - active_loop: null
+      - action: utter_Dv3T-DmOJ
+    metadata:
+      group: Whats the Job
+  - rule: whats_the_job3
+    condition: []
+    steps:
+      - intent: whats_the_job3
+        entities: []
+      - action: whats_the_job_3_form
+      - active_loop: whats_the_job_3_form
+      - active_loop: null
+      - action: action_goto_whats_the_job_outro
+    metadata:
+      group: Whats the Job

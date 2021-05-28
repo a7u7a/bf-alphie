@@ -1,0 +1,44 @@
+stories: []
+rules:
+  - rule: creative_course
+    condition: []
+    steps:
+      - intent: creative_course
+        entities: []
+      - action: creative_course_1_form
+      - active_loop: creative_course_1_form
+      - active_loop: null
+      - action: utter_DXh2Dc8LQ
+    metadata:
+      group: Creative Course
+  - rule: creative_course_outro
+    condition: []
+    steps:
+      - intent: creative_course_outro
+        entities: []
+      - action: action_reset_creative_course_slot
+      - action: utter_sj1sUi2yr
+    metadata:
+      group: Creative Course
+  - rule: creative_course2
+    condition: []
+    steps:
+      - intent: creative_course2
+        entities: []
+      - action: creative_course_2_form
+      - active_loop: creative_course_2_form
+      - active_loop: null
+      - action: utter_0QzeOt7eW
+    metadata:
+      group: Creative Course
+  - rule: creative_course3
+    condition: []
+    steps:
+      - intent: creative_course3
+        entities: []
+      - action: creative_course_3_form
+      - active_loop: creative_course_3_form
+      - active_loop: null
+      - action: action_goto_creative_course_outro
+    metadata:
+      group: Creative Course
