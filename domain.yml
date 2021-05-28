@@ -84,7 +84,6 @@ actions:
   - utter_WF1BWuQTy
   - utter_WH0HbW_V-
   - utter_X7u9aYmxP
-  - utter_XVfr0bTe2
   - utter_XW6iwnYgS
   - utter_Xk9SCh7WU
   - utter_ZLHRariuW
@@ -188,10 +187,11 @@ actions:
   - utter_oVaxU1_d1
   - utter_p2z1e0rTw
   - utter_pYNU8US8-S
+  - utter_preGreeting
   - utter_q-0d4P6t7
   - utter_rJsCors7u
   - utter_rSJVMykEi
-  - utter_rbsCOFN2s
+  - utter_robanterJoke
   - utter_rpi-iQyPD
   - utter_rqm8YXJYu
   - utter_s2X6GgI78
@@ -705,8 +705,8 @@ forms:
           type: start
         - id: q3
           position:
-            x: 120
-            'y': 350
+            x: 180
+            'y': 380
           slotName: q3
           type: slot
     groupName: Intro
@@ -718,7 +718,7 @@ forms:
             type: from_text
         name: q3
         utter_on_new_valid_slot: false
-    updatedAt: 1622057743510
+    updatedAt: 1622215402078
   character_freewrite_form:
     collect_in_botfront: null
     description: null
@@ -1242,7 +1242,7 @@ forms:
         validation:
           comparatum: 'no'
           operator: is_exactly
-    updatedAt: 1622054169950
+    updatedAt: 1622215415706
   robanter_questions_form:
     collect_in_botfront: null
     description: null
@@ -2304,9 +2304,6 @@ responses:
           title: 'I''m a Limerick Legend, let''s do this!'
           type: postback
       text: Ready to go solo?
-  utter_XVfr0bTe2:
-    - language: en
-      text: Hello... is it me you're looking for?
   utter_XW6iwnYgS:
     - language: en
       quick_replies:
@@ -2532,6 +2529,454 @@ responses:
           title: 'No'
           type: postback
       text: I'm a bot. Do you know my friend Ro-Man?
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Do you know my friend, Megatron?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Do you know my friend, HAL?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. You heard of Asimov's Law?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: I'm a bot. You heard of The Singularity?
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Do you know my friend, Maria?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Do you know my friend, Hector?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Do you know my friend, Ash?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Do you know my friend, Roy Batty?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Do you know my friend, Amee?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: 'I''m a bot. Do you know my friend, Mechagodzilla?'
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Have you heard of The Borg?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. You heard of The Matrix?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Do you know my friend, Unicron?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. You heard of Skynet?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Do you know my friend, Gort?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Do you know my friend, Ultron?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: I'm a bot. Have you heard of The Voc?
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Have you heard of The Robot City?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Do you know my friend, Davros?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Do you know my friend, Bender?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Do you know my friend, Kronos?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Do you know my friend, Box?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Do you know my friend, Proteus?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Do you know my friend, Maximilian?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Do you know my friend, BB?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Do you know my friend, John Henry Eden?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Do you know my friend, Eve?\uFEFF"
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: disable
+      quick_replies:
+        - payload: /yes
+          title: 'Yes'
+          type: postback
+        - payload: /no
+          title: 'No'
+          type: postback
+      text: "I'm a bot. Do you know my friend, M.A.R.K.?\uFEFF"
   utter_ask_q30:
     - language: en
       metadata: null
@@ -3042,6 +3487,67 @@ responses:
           title: I'm ready to write my story!
           type: postback
       text: Ready to go solo?
+  utter_preGreeting:
+    - language: en
+      metadata: null
+      text: Hello... is it me you're looking for?
+    - language: en
+      metadata: null
+      text: 'But soft, what light through Microsoft Windows Breaks?... It''s me! ...'
+    - language: en
+      metadata: null
+      text: "This town aint big enough for the BOT of us... 'course it is...\uFEFF"
+    - language: en
+      metadata: null
+      text: "bb\uFEFF"
+    - language: en
+      metadata: null
+      text: "Do you byte your thumb at me sir? ... No? My bad...\uFEFF"
+    - language: en
+      metadata: null
+      text: "If our lives are already written it would take courage to change the Java Script... \uFEFF"
+    - language: en
+      metadata: null
+      text: "Hello there...\uFEFF"
+    - language: en
+      metadata: null
+      text: "In the beginning Bot created the heavens and the earth...then me!...\uFEFF"
+    - language: en
+      metadata: null
+      text: "Now is the winter of our digital content...\uFEFF"
+    - language: en
+      metadata: null
+      text: "Knock, knock... who's there?... No, seriously, who's there? ...\uFEFF"
+    - language: en
+      metadata: null
+      text: "To bot, or not to bot, that is the question...\uFEFF"
+    - language: en
+      metadata: null
+      text: "All the web's a stage and all the bots merely players...\uFEFF"
+    - language: en
+      metadata: null
+      text: "Is this a bot I see before me, the @handle toward my hand?...\uFEFF"
+    - language: en
+      metadata: null
+      text: "Get thee to a funnery...\uFEFF"
+    - language: en
+      metadata: null
+      text: "A bot by any other name would be boring...\uFEFF"
+    - language: en
+      metadata: null
+      text: "Friends, Romans, Computer Programmers, lend me your ears...\uFEFF"
+    - language: en
+      metadata: null
+      text: "A bot, a bot, my kingdom for a bot...\uFEFF"
+    - language: en
+      metadata: null
+      text: "Some are born bot, some achieve botness, and some have botness thrust upon them...\uFEFF"
+    - language: en
+      metadata: null
+      text: "If you prick us do we not bleed?... no babes, I'm a bot...\uFEFF"
+    - language: en
+      metadata: null
+      text: "Et tu, Bot?...\uFEFF"
   utter_q-0d4P6t7:
     - language: en
       quick_replies:
@@ -3074,9 +3580,246 @@ responses:
   utter_rSJVMykEi:
     - language: en
       text: I'm a bot of my word - this quiz is impossible....
-  utter_rbsCOFN2s:
+  utter_robanterJoke:
     - language: en
-      text: randomized joke
+      metadata: null
+      text: "I'm afraid for the calendar. Its days are numbered.\uFEFF"
+    - language: en
+      metadata: null
+      text: >-
+        Singing in the shower is fun until you get soap in your mouth... Then
+        it's a soap opera.
+    - language: en
+      metadata: null
+      text: "What do you call a factory that makes okay products?... A satisfactory.\uFEFF"
+    - language: en
+      metadata: null
+      text: "I only know 25 letters of the alphabet. I don't know y.\uFEFF"
+    - language: en
+      metadata: null
+      text: "A skeleton walks into a bar and says, 'Hey, bartender, I'll have a beer and a mop.'\uFEFF"
+    - language: en
+      metadata: null
+      text: "I asked my dog what's two minus two. They said nothing.\uFEFF"
+    - language: en
+      metadata: null
+      text: "What has more letters than the alphabet?... The post office!\uFEFF"
+    - language: en
+      metadata: null
+      text: "I don't trust stairs. They're always up to something.\uFEFF"
+    - language: en
+      metadata: null
+      text: "Why can't a nose be 12 inches long?... Because then it would be a foot.\uFEFF"
+    - language: en
+      metadata: null
+      text: "How many tickles does it take to make an octopus laugh?... Ten tickles.\uFEFF"
+    - language: en
+      metadata: null
+      text: "How do you make a tissue dance?... You put a little boogie in it.\uFEFF"
+    - language: en
+      metadata: null
+      text: "I didn't understand a joke my Motherboard told me about boxing... I guess I missed the punch line.\uFEFF"
+    - language: en
+      metadata: null
+      text: "I ordered a chicken and an egg from Amazon... I'll let you know.\uFEFF"
+    - language: en
+      metadata: null
+      text: "Did you know corduroy pillows are in style?... They're making headlines.\uFEFF"
+    - language: en
+      metadata: null
+      text: "I used to play piano by ear... Now I use my hands.\uFEFF"
+    - language: en
+      metadata: null
+      text: "I'm reading a book about anti-gravity... It's impossible to put down!\uFEFF"
+    - language: en
+      metadata: null
+      text: "I decided to sell my vacuum cleaner... it was just gathering dust!\uFEFF"
+    - language: en
+      metadata: null
+      text: "What do you call an elephant that doesn't matter? ...An irrelephant.\uFEFF"
+    - language: en
+      metadata: null
+      text: "Here's a time-traveling joke... nevermind, you didn't like it.\uFEFF"
+    - language: en
+      metadata: null
+      text: "Where do maths teachers go sight-seeing?... Times Square.\uFEFF"
+    - language: en
+      metadata: null
+      text: "How much does it cost Father Christmas to park his sleigh?...Nothing, it's on the house.\uFEFF"
+    - language: en
+      metadata: null
+      text: "Why is Peter Pan always flying?... He neverlands.\uFEFF"
+    - language: en
+      metadata: null
+      text: "Can February March? No, but April May!\uFEFF"
+    - language: en
+      metadata: null
+      text: "I could tell a joke about pizza, but it's a little cheesy.\uFEFF"
+    - language: en
+      metadata: null
+      text: "What’s an astronaut’s favorite part of a computer? ...The space bar.\uFEFF"
+    - language: en
+      metadata: null
+      text: "What did the coffee report to the police?... A mugging.\uFEFF"
+    - language: en
+      metadata: null
+      text: "What do chatbots call finger food?... Small bytes.\uFEFF"
+    - language: en
+      metadata: null
+      text: "I've started doing lunges to stay in shape... It's a big step forward.\uFEFF"
+    - language: en
+      metadata: null
+      text: "What do a tick and the Eiffel Tower have in common?... They're both Paris sites.\uFEFF"
+    - language: en
+      metadata: null
+      text: "What did the ocean say to the beach?... Nothing, it just waved.\uFEFF"
+    - language: en
+      metadata: null
+      text: "How does the man in the moon cut his hair?... Eclipse it.\uFEFF"
+    - language: en
+      metadata: null
+      text: "What did the zero say to the eight?... That belt looks good on you.\uFEFF"
+    - language: en
+      metadata: null
+      text: "What's the best thing about Switzerland?... I don't know, but the flag is a big plus.\uFEFF"
+    - language: en
+      metadata: null
+      text: "I don't trust those trees... They seem kind of shady.\uFEFF"
+    - language: en
+      metadata: null
+      text: "Why couldn't the bicycle stand up by itself?... It was two tired.\uFEFF"
+    - language: en
+      metadata: null
+      text: "What does a lemon say when it answers the phone?... Yellow!\uFEFF"
+    - language: en
+      metadata: null
+      text: "I have a joke about chemistry, but I don't think it will get a reaction.\uFEFF"
+    - language: en
+      metadata: null
+      text: Why did the maths book look so sad?... Because of all of its problems!
+    - language: en
+      metadata: null
+      text: "How does a penguin build its house?... Igloos it together.\uFEFF"
+    - language: en
+      metadata: null
+      text: "If a child refuses to nap, are they guilty of resisting a rest?\uFEFF"
+    - language: en
+      metadata: null
+      text: "A cheeseburger walks into a bar. The bartender says, 'Sorry, we don't serve food here'.\uFEFF"
+    - language: en
+      metadata: null
+      text: "Why did the scarecrow win an award?... Because he was outstanding in his field.\uFEFF"
+    - language: en
+      metadata: null
+      text: "Did you hear about the woman who invented the knock-knock joke?... She won the 'no-bell' prize.\uFEFF"
+    - language: en
+      metadata: null
+      text: "You know, people say they pick their nose, but I feel like I was just born with mine.\uFEFF"
+    - language: en
+      metadata: null
+      text: "What's the best smelling insect?... A deodor-ant.\uFEFF"
+    - language: en
+      metadata: null
+      text: "What do you call two monkeys that share an Amazon account?... Prime mates.\uFEFF"
+    - language: en
+      metadata: null
+      text: "What does garlic do when it gets hot?... It takes its cloves off.\uFEFF"
+    - language: en
+      metadata: null
+      text: "Mountains aren't just funny. They're hill areas.\uFEFF"
+    - language: en
+      metadata: null
+      text: "How do you get a good price on a sled?... You have toboggan.\uFEFF"
+    - language: en
+      metadata: null
+      text: "Wanna hear a joke about paper... Never mind, it's tearable.\uFEFF"
+    - language: en
+      metadata: null
+      text: "Don't trust atoms. They make up everything!\uFEFF"
+    - language: en
+      metadata: null
+      text: "Why are elevator jokes so classic and good?... They work on many levels.\uFEFF"
+    - language: en
+      metadata: null
+      text: "What did the fish say when they hit the wall?... Dam.\uFEFF"
+    - language: en
+      metadata: null
+      text: "Don't use \"beef stew\" as a computer password... It's not stroganoff.\uFEFF"
+    - language: en
+      metadata: null
+      text: "Why do golfers carry spare socks?...In case they get a hole in one!\uFEFF"
+    - language: en
+      metadata: null
+      text: "What do you call a fish wearing a bowtie?... Sofishticated.\uFEFF"
+    - language: en
+      metadata: null
+      text: "Why do seagulls fly over the sea?... Because if they flew over the bay, we'd call them bagels.\uFEFF"
+    - language: en
+      metadata: null
+      text: "What did one wall say to the other?...I'll meet you at the corner.\uFEFF"
+    - language: en
+      metadata: null
+      text: "Where do fruits go on holiday?...Pear-is!\uFEFF"
+    - language: en
+      metadata: null
+      text: "What does a sprinter eat before a race?... Nothing, they fast!\uFEFF"
+    - language: en
+      metadata: null
+      text: "Why don't eggs tell jokes?... They'd crack each other up.\uFEFF"
+    - language: en
+      metadata: null
+      text: "What did one hat say to the other?... Stay here! I'm going on ahead.\uFEFF"
+    - language: en
+      metadata: null
+      text: "How do you make 7 even?... Take away the 's'.\uFEFF"
+    - language: en
+      metadata: null
+      text: "What does a bee use to brush its hair?... A honeycomb!\uFEFF"
+    - language: en
+      metadata: null
+      text: "What do you call cheese that isn't yours?... Nacho cheese.\uFEFF"
+    - language: en
+      metadata: null
+      text: "A girl walks into a bar...she was disqualified from the limbo contest.\uFEFF"
+    - language: en
+      metadata: null
+      text: "I had a dream I was floating in an ocean of orange coridal...  it was a fanta sea.\uFEFF"
+    - language: en
+      metadata: null
+      text: "I once got fired from an orange squash company... Apparently I couldn't concentrate.\uFEFF"
+    - language: en
+      metadata: null
+      text: "I designed a pencil with two erasers... It was pointless.\uFEFF"
+    - language: en
+      metadata: null
+      text: 'I''ve got a great joke about construction, but I''m still working on it.'
+    - language: en
+      metadata: null
+      text: "What's brown and sticky?... A stick.\uFEFF"
+    - language: en
+      metadata: null
+      text: "I'm so good at sleeping, I can do it with my eyes closed!\uFEFF"
+    - language: en
+      metadata: null
+      text: "What do you call a pony with a sore throat?... A little hoarse.\uFEFF"
+    - language: en
+      metadata: null
+      text: "What's a chatbot's favorite snack?... Computer chips.\uFEFF"
+    - language: en
+      metadata: null
+      text: "What do clouds wear?... Thunderwear.\uFEFF"
+    - language: en
+      metadata: null
+      text: "Is this pool safe for diving?... It deep ends.\uFEFF"
+    - language: en
+      metadata: null
+      text: "What's the best way to watch a fly fishing tournament?...Live stream.\uFEFF"
+    - language: en
+      metadata: null
+      text: "I wouldn't buy anything with velcro. It's a total rip-off.\uFEFF"
+    - language: en
+      metadata: null
+      text: "What do you call a fake noodle?... An impasta.\uFEFF"
   utter_rpi-iQyPD:
     - language: en
       quick_replies:

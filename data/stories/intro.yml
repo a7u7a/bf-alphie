@@ -19,7 +19,7 @@ rules:
     steps:
       - intent: trigger_48WZqqOBo
         entities: []
-      - action: utter_XVfr0bTe2
+      - action: utter_preGreeting
       - action: utter_7gJqiKaVhA
     metadata:
       rules:

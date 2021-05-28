@@ -5,7 +5,7 @@ rules:
     steps:
       - intent: jokes
         entities: []
-      - action: utter_rbsCOFN2s
+      - action: utter_robanterJoke
       - action: robanter_jokes_form
       - active_loop: robanter_jokes_form
       - active_loop: null
