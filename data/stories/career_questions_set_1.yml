@@ -1,0 +1,46 @@
+stories: []
+rules:
+  - rule: career_set1_var1
+    condition: []
+    steps:
+      - intent: career_set1_var1
+        entities: []
+      - action: career_set1_var1_form
+      - active_loop: career_set1_var1_form
+      - active_loop: null
+      - action: action_return_to_whats_the_job2
+    metadata:
+      group: Career questions set 1
+  - rule: career_set1_var2
+    condition: []
+    steps:
+      - intent: career_set1_var2
+        entities: []
+      - action: career_set1_var2_form
+      - active_loop: career_set1_var2_form
+      - active_loop: null
+      - action: action_return_to_whats_the_job2
+    metadata:
+      group: Career questions set 1
+  - rule: career_set1_var3
+    condition: []
+    steps:
+      - intent: career_set1_var3
+        entities: []
+      - action: career_set1_var3_form
+      - active_loop: career_set1_var3_form
+      - active_loop: null
+      - action: action_return_to_whats_the_job2
+    metadata:
+      group: Career questions set 1
+  - rule: career_set1_var4
+    condition: []
+    steps:
+      - intent: career_set1_var4
+        entities: []
+      - action: career_set1_var4_form
+      - active_loop: career_set1_var4_form
+      - active_loop: null
+      - action: action_return_to_whats_the_job2
+    metadata:
+      group: Career questions set 1

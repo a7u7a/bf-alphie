@@ -11,7 +11,9 @@ actions:
   - action_goto_creative_course_outro
   - action_goto_creative_feelings_intro_menu
   - action_goto_functional_outro
-  - action_goto_whats_the_job_outro
+  - action_random_career_question_set1
+  - action_random_career_question_set2
+  - action_random_career_question_set3
   - action_reset_acrostic_freewrite_slot
   - action_reset_art_created_slot
   - action_reset_art_exp_slot
@@ -27,6 +29,7 @@ actions:
   - action_reset_robanter_quiz_slot
   - action_reset_story_freewrite_slot
   - action_reset_whats_the_job_slot
+  - action_return_to_whats_the_job2
   - utter_-C0jqr1v8
   - utter_-STbfDzYV
   - utter_-V73H5tUU
@@ -99,9 +102,6 @@ actions:
   - utter_ask_q12
   - utter_ask_q13
   - utter_ask_q14
-  - utter_ask_q15
-  - utter_ask_q16
-  - utter_ask_q17
   - utter_ask_q18
   - utter_ask_q19
   - utter_ask_q2
@@ -141,9 +141,45 @@ actions:
   - utter_ask_q50
   - utter_ask_q51
   - utter_ask_q52
+  - utter_ask_q53
+  - utter_ask_q54
+  - utter_ask_q55
+  - utter_ask_q56
+  - utter_ask_q57
+  - utter_ask_q58
+  - utter_ask_q59
   - utter_ask_q6
+  - utter_ask_q60
+  - utter_ask_q61
+  - utter_ask_q62
+  - utter_ask_q63
+  - utter_ask_q64
+  - utter_ask_q65
+  - utter_ask_q66
+  - utter_ask_q67
+  - utter_ask_q68
+  - utter_ask_q69
   - utter_ask_q7
+  - utter_ask_q70
+  - utter_ask_q71
+  - utter_ask_q72
+  - utter_ask_q73
+  - utter_ask_q74
+  - utter_ask_q75
+  - utter_ask_q76
+  - utter_ask_q78
+  - utter_ask_q79
   - utter_ask_q8
+  - utter_ask_q80
+  - utter_ask_q81
+  - utter_ask_q82
+  - utter_ask_q83
+  - utter_ask_q84
+  - utter_ask_q85
+  - utter_ask_q86
+  - utter_ask_q87
+  - utter_ask_q88
+  - utter_ask_q89
   - utter_ask_q9
   - utter_ask_qq
   - utter_ask_robanter_joke_out
@@ -217,6 +253,7 @@ actions:
   - utter_zJZrVEmWz
   - utter_zMScFybRf
   - utter_zZ6URK2nX
+  - whats_the_job_1_form
 entities: []
 forms:
   acrostic_freewrite_form:
@@ -718,7 +755,799 @@ forms:
             type: from_text
         name: q3
         utter_on_new_valid_slot: false
-    updatedAt: 1622215402078
+    updatedAt: 1622394845124
+  career_set1_var1_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q53
+          source: '1'
+          target: q53
+          type: condition
+        - condition: null
+          id: eq53-q54
+          source: q53
+          target: q54
+          type: condition
+        - condition: null
+          id: eq54-q55
+          source: q54
+          target: q55
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q53
+          position:
+            x: 120
+            'y': 360
+          slotName: q53
+          type: slot
+        - id: q54
+          position:
+            x: 120
+            'y': 520
+          slotName: q54
+          type: slot
+        - id: q55
+          position:
+            x: 120
+            'y': 670
+          slotName: q55
+          type: slot
+    groupName: Career questions set 1
+    name: career_set1_var1_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q53
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q54
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q55
+        utter_on_new_valid_slot: false
+    updatedAt: 1622396174747
+  career_set1_var2_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q56
+          source: '1'
+          target: q56
+          type: condition
+        - condition: null
+          id: eq56-q57
+          source: q56
+          target: q57
+          type: condition
+        - condition: null
+          id: eq57-q58
+          source: q57
+          target: q58
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q56
+          position:
+            x: 120
+            'y': 350
+          slotName: q56
+          type: slot
+        - id: q57
+          position:
+            x: 120
+            'y': 500
+          slotName: q57
+          type: slot
+        - id: q58
+          position:
+            x: 120
+            'y': 660
+          slotName: q58
+          type: slot
+    groupName: Career questions set 1
+    name: career_set1_var2_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q56
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q57
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q58
+        utter_on_new_valid_slot: false
+    updatedAt: 1622395090295
+  career_set1_var3_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q59
+          source: '1'
+          target: q59
+          type: condition
+        - condition: null
+          id: eq59-q60
+          source: q59
+          target: q60
+          type: condition
+        - condition: null
+          id: eq60-q61
+          source: q60
+          target: q61
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q59
+          position:
+            x: 120
+            'y': 360
+          slotName: q59
+          type: slot
+        - id: q60
+          position:
+            x: 120
+            'y': 520
+          slotName: q60
+          type: slot
+        - id: q61
+          position:
+            x: 120
+            'y': 680
+          slotName: q61
+          type: slot
+    groupName: Career questions set 1
+    name: career_set1_var3_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q59
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q60
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q61
+        utter_on_new_valid_slot: false
+    updatedAt: 1622395091449
+  career_set1_var4_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q62
+          source: '1'
+          target: q62
+          type: condition
+        - condition: null
+          id: eq62-q63
+          source: q62
+          target: q63
+          type: condition
+        - condition: null
+          id: eq63-q64
+          source: q63
+          target: q64
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q62
+          position:
+            x: 120
+            'y': 360
+          slotName: q62
+          type: slot
+        - id: q63
+          position:
+            x: 120
+            'y': 520
+          slotName: q63
+          type: slot
+        - id: q64
+          position:
+            x: 120
+            'y': 670
+          slotName: q64
+          type: slot
+    groupName: Career questions set 1
+    name: career_set1_var4_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q62
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q63
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q64
+        utter_on_new_valid_slot: false
+    updatedAt: 1622395092293
+  career_set2_var1_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q65
+          source: '1'
+          target: q65
+          type: condition
+        - condition: null
+          id: eq65-q66
+          source: q65
+          target: q66
+          type: condition
+        - condition: null
+          id: eq66-q67
+          source: q66
+          target: q67
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q65
+          position:
+            x: 120
+            'y': 350
+          slotName: q65
+          type: slot
+        - id: q66
+          position:
+            x: 120
+            'y': 500
+          slotName: q66
+          type: slot
+        - id: q67
+          position:
+            x: 120
+            'y': 650
+          slotName: q67
+          type: slot
+    groupName: Career questions set 2
+    name: career_set2_var1_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q65
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q66
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q67
+        utter_on_new_valid_slot: false
+    updatedAt: 1622396765311
+  career_set2_var2_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q68
+          source: '1'
+          target: q68
+          type: condition
+        - condition: null
+          id: eq68-q69
+          source: q68
+          target: q69
+          type: condition
+        - condition: null
+          id: eq69-q70
+          source: q69
+          target: q70
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q68
+          position:
+            x: 120
+            'y': 350
+          slotName: q68
+          type: slot
+        - id: q69
+          position:
+            x: 120
+            'y': 500
+          slotName: q69
+          type: slot
+        - id: q70
+          position:
+            x: 120
+            'y': 650
+          slotName: q70
+          type: slot
+    groupName: Career questions set 2
+    name: career_set2_var2_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q68
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q69
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q70
+        utter_on_new_valid_slot: false
+    updatedAt: 1622396814444
+  career_set2_var3_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q71
+          source: '1'
+          target: q71
+          type: condition
+        - condition: null
+          id: eq71-q72
+          source: q71
+          target: q72
+          type: condition
+        - condition: null
+          id: eq72-q73
+          source: q72
+          target: q73
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q71
+          position:
+            x: 120
+            'y': 360
+          slotName: q71
+          type: slot
+        - id: q72
+          position:
+            x: 120
+            'y': 510
+          slotName: q72
+          type: slot
+        - id: q73
+          position:
+            x: 120
+            'y': 660
+          slotName: q73
+          type: slot
+    groupName: Career questions set 2
+    name: career_set2_var3_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q71
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q72
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q73
+        utter_on_new_valid_slot: false
+    updatedAt: 1622396870250
+  career_set2_var4_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q74
+          source: '1'
+          target: q74
+          type: condition
+        - condition: null
+          id: eq74-q75
+          source: q74
+          target: q75
+          type: condition
+        - condition: null
+          id: eq75-q76
+          source: q75
+          target: q76
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q74
+          position:
+            x: 120
+            'y': 360
+          slotName: q74
+          type: slot
+        - id: q75
+          position:
+            x: 120
+            'y': 560
+          slotName: q75
+          type: slot
+        - id: q76
+          position:
+            x: 120
+            'y': 750
+          slotName: q76
+          type: slot
+    groupName: Career questions set 2
+    name: career_set2_var4_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q74
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q75
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q76
+        utter_on_new_valid_slot: false
+    updatedAt: 1622397055863
+  career_set3_var1_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q78
+          source: '1'
+          target: q78
+          type: condition
+        - condition: null
+          id: eq78-q79
+          source: q78
+          target: q79
+          type: condition
+        - condition: null
+          id: eq79-q80
+          source: q79
+          target: q80
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q78
+          position:
+            x: 120
+            'y': 360
+          slotName: q78
+          type: slot
+        - id: q79
+          position:
+            x: 120
+            'y': 510
+          slotName: q79
+          type: slot
+        - id: q80
+          position:
+            x: 120
+            'y': 660
+          slotName: q80
+          type: slot
+    groupName: Career questions set 3
+    name: career_set3_var1_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q78
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q79
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q80
+        utter_on_new_valid_slot: false
+    updatedAt: 1622397087705
+  career_set3_var2_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q81
+          source: '1'
+          target: q81
+          type: condition
+        - condition: null
+          id: eq81-q82
+          source: q81
+          target: q82
+          type: condition
+        - condition: null
+          id: eq82-q83
+          source: q82
+          target: q83
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q81
+          position:
+            x: 120
+            'y': 360
+          slotName: q81
+          type: slot
+        - id: q82
+          position:
+            x: 120
+            'y': 510
+          slotName: q82
+          type: slot
+        - id: q83
+          position:
+            x: 120
+            'y': 660
+          slotName: q83
+          type: slot
+    groupName: Career questions set 3
+    name: career_set3_var2_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q81
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q82
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q83
+        utter_on_new_valid_slot: false
+    updatedAt: 1622397139459
+  career_set3_var3_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q84
+          source: '1'
+          target: q84
+          type: condition
+        - condition: null
+          id: eq84-q85
+          source: q84
+          target: q85
+          type: condition
+        - condition: null
+          id: eq85-q86
+          source: q85
+          target: q86
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q84
+          position:
+            x: 120
+            'y': 360
+          slotName: q84
+          type: slot
+        - id: q85
+          position:
+            x: 120
+            'y': 520
+          slotName: q85
+          type: slot
+        - id: q86
+          position:
+            x: 120
+            'y': 670
+          slotName: q86
+          type: slot
+    groupName: Career questions set 3
+    name: career_set3_var3_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q84
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q85
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q86
+        utter_on_new_valid_slot: false
+    updatedAt: 1622397189411
+  career_set3_var4_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q87
+          source: '1'
+          target: q87
+          type: condition
+        - condition: null
+          id: eq87-q88
+          source: q87
+          target: q88
+          type: condition
+        - condition: null
+          id: eq88-q89
+          source: q88
+          target: q89
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q87
+          position:
+            x: 120
+            'y': 360
+          slotName: q87
+          type: slot
+        - id: q88
+          position:
+            x: 120
+            'y': 520
+          slotName: q88
+          type: slot
+        - id: q89
+          position:
+            x: 120
+            'y': 670
+          slotName: q89
+          type: slot
+    groupName: Career questions set 3
+    name: career_set3_var4_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q87
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q88
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q89
+        utter_on_new_valid_slot: false
+    updatedAt: 1622397430193
   character_freewrite_form:
     collect_in_botfront: null
     description: null
@@ -1390,224 +2219,6 @@ forms:
         name: q26
         utter_on_new_valid_slot: false
     updatedAt: 1622155312187
-  whats_the_job_1_form:
-    collect_in_botfront: null
-    description: null
-    graph_elements:
-      edges:
-        - condition: null
-          id: e1-q14
-          source: '1'
-          target: q14
-          type: condition
-        - condition: null
-          id: eq14-q15
-          source: q14
-          target: q15
-          type: condition
-        - condition: null
-          id: eq15-q16
-          source: q15
-          target: q16
-          type: condition
-        - condition: null
-          id: eq16-q17
-          source: q16
-          target: q17
-          type: condition
-      nodes:
-        - id: '1'
-          position:
-            x: 200
-            'y': 200
-          type: start
-        - id: q14
-          position:
-            x: 120
-            'y': 360
-          slotName: q14
-          type: slot
-        - id: q15
-          position:
-            x: 120
-            'y': 510
-          slotName: q15
-          type: slot
-        - id: q16
-          position:
-            x: 120
-            'y': 660
-          slotName: q16
-          type: slot
-        - id: q17
-          position:
-            x: 120
-            'y': 810
-          slotName: q17
-          type: slot
-    groupName: Whats the Job
-    name: whats_the_job_1_form
-    slots:
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q14
-        utter_on_new_valid_slot: true
-        validation:
-          comparatum: 3
-          operator: longer
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q15
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q16
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q17
-        utter_on_new_valid_slot: false
-    updatedAt: 1622218668484
-  whats_the_job_2_form:
-    collect_in_botfront: null
-    description: null
-    graph_elements:
-      edges:
-        - condition: null
-          id: e1-q18
-          source: '1'
-          target: q18
-          type: condition
-        - condition: null
-          id: eq18-q19
-          source: q18
-          target: q19
-          type: condition
-        - condition: null
-          id: eq19-q20
-          source: q19
-          target: q20
-          type: condition
-      nodes:
-        - id: '1'
-          position:
-            x: 200
-            'y': 200
-          type: start
-        - id: q18
-          position:
-            x: 120
-            'y': 360
-          slotName: q18
-          type: slot
-        - id: q19
-          position:
-            x: 120
-            'y': 510
-          slotName: q19
-          type: slot
-        - id: q20
-          position:
-            x: 120
-            'y': 660
-          slotName: q20
-          type: slot
-    groupName: Whats the Job
-    name: whats_the_job_2_form
-    slots:
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q18
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q19
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q20
-        utter_on_new_valid_slot: false
-    updatedAt: 1622172817534
-  whats_the_job_3_form:
-    collect_in_botfront: null
-    description: null
-    graph_elements:
-      edges:
-        - condition: null
-          id: e1-q21
-          source: '1'
-          target: q21
-          type: condition
-        - condition: null
-          id: eq21-q22
-          source: q21
-          target: q22
-          type: condition
-        - condition: null
-          id: eq22-q23
-          source: q22
-          target: q23
-          type: condition
-      nodes:
-        - id: '1'
-          position:
-            x: 200
-            'y': 200
-          type: start
-        - id: q21
-          position:
-            x: 120
-            'y': 360
-          slotName: q21
-          type: slot
-        - id: q22
-          position:
-            x: 120
-            'y': 520
-          slotName: q22
-          type: slot
-        - id: q23
-          position:
-            x: 120
-            'y': 670
-          slotName: q23
-          type: slot
-    groupName: Whats the Job
-    name: whats_the_job_3_form
-    slots:
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q21
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q22
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q23
-        utter_on_new_valid_slot: false
-    updatedAt: 1622172984884
 intents:
   - acrostic_carousel
   - acrostic_freewrite
@@ -1626,6 +2237,18 @@ intents:
   - bot_reference
   - capabilities
   - career_in_mind
+  - career_set1_var1
+  - career_set1_var2
+  - career_set1_var3
+  - career_set1_var4
+  - career_set2_var1
+  - career_set2_var2
+  - career_set2_var3
+  - career_set2_var4
+  - career_set3_var1
+  - career_set3_var2
+  - career_set3_var3
+  - career_set3_var4
   - carer
   - character_freewrite
   - character_ready
@@ -1921,6 +2544,7 @@ responses:
       text: '...your feedback will help me be a better bot, can you help?'
   utter_7gJqiKaVhA:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /bot_reference
           title: 'Yes'
@@ -2054,6 +2678,7 @@ responses:
       text: More questions?
   utter_Dv3T-DmOJ:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /whats_the_job3
           title: 'Yes'
@@ -2444,26 +3069,6 @@ responses:
     - language: en
       metadata: null
       text: 'Great, what''s the job?'
-  utter_ask_q15:
-    - language: en
-      metadata: null
-      text: |-
-        Thinking about where you currently are on your career journey...  
-          
-          
-          
-        What are 3 steps you'll have to take to work in this role?
-    - language: en
-      metadata: null
-      text: Can you break down the first step into three microsteps?
-  utter_ask_q16:
-    - language: en
-      metadata: null
-      text: randomized career question set 1
-  utter_ask_q17:
-    - language: en
-      metadata: null
-      text: randomized career question set 1
   utter_ask_q18:
     - language: en
       metadata: null
@@ -3208,15 +3813,188 @@ responses:
       text: |-
         RANDOMISER (WORK I"VE EXPERIENCED QUESTIONS)  
         SET 3
+  utter_ask_q53:
+    - language: en
+      metadata: null
+      text: |-
+        Thinking about where you currently are on your career journey...  
+          
+        What are 3 steps you'll have to take to work in this role?
+  utter_ask_q54:
+    - language: en
+      metadata: null
+      text: Can you break down the first step into three microsteps?
+  utter_ask_q55:
+    - language: en
+      metadata: null
+      text: When will you take this first microstep?
+  utter_ask_q56:
+    - language: en
+      metadata: null
+      text: Have you discussed your ambitions with friends/family/caregivers?
+  utter_ask_q57:
+    - language: en
+      metadata: null
+      text: Is their opinion / careers advice important to you right now?
+  utter_ask_q58:
+    - language: en
+      metadata: null
+      text: >-
+        Does the professional body for this role offer careers advice (e.g.
+        Equity for Theatre)?
+  utter_ask_q59:
+    - language: en
+      metadata: null
+      text: |-
+        Thinking about what you know right now about this role...  
+          
+        Do you think this role involves problem solving?
   utter_ask_q6:
     - language: en
       text: randomized course question set 1
+  utter_ask_q60:
+    - language: en
+      metadata: null
+      text: Do you think this role involves mathematics (like managing budgets?)
+  utter_ask_q61:
+    - language: en
+      metadata: null
+      text: 'Does this role involve managing people? Does this interest you? '
+  utter_ask_q62:
+    - language: en
+      metadata: null
+      text: |-
+        Thinking about where you currently are on your career journey...  
+          
+        Are there any barriers preventing you from pursuing this career?
+  utter_ask_q63:
+    - language: en
+      metadata: null
+      text: Do the barriers just affect you?
+  utter_ask_q64:
+    - language: en
+      metadata: null
+      text: Who could you speak to about overcoming these barriers?
+  utter_ask_q65:
+    - language: en
+      metadata: null
+      text: What do you find appealing about this role?
+  utter_ask_q66:
+    - language: en
+      metadata: null
+      text: >-
+        Could you contact someone who works in this role to ask them what it is
+        like?
+  utter_ask_q67:
+    - language: en
+      metadata: null
+      text: |-
+        Is there something else you can imagine yourself doing...  
+          
+        If you were offered both jobs, which would you take? Why?
+  utter_ask_q68:
+    - language: en
+      metadata: null
+      text: 'Imagine yourself in 10 years: have you progressed in his role?'
+  utter_ask_q69:
+    - language: en
+      metadata: null
+      text: >-
+        What is this job's average pay - is this enough for the lifestyle you
+        want?
   utter_ask_q7:
     - language: en
       text: randomized course question set 1
+  utter_ask_q70:
+    - language: en
+      metadata: null
+      text: Will your wages increase overtime? Does that matter to you?
+  utter_ask_q71:
+    - language: en
+      metadata: null
+      text: 'What awards are given for excellence in this role? '
+  utter_ask_q72:
+    - language: en
+      metadata: null
+      text: Have you researched the career paths of previous award recipients?
+  utter_ask_q73:
+    - language: en
+      metadata: null
+      text: 'If there is tough competition for this role, how will you stand out?'
+  utter_ask_q74:
+    - language: en
+      metadata: null
+      text: |-
+        Thinking about your work/life balance...  
+          
+        Is this a role that keeps work and fun separate? 
+  utter_ask_q75:
+    - language: en
+      metadata: null
+      text: Is this role connected to your hobby? How?
+  utter_ask_q76:
+    - language: en
+      metadata: null
+      text: 'If your hobby is your job, is it important to have a new hobby?'
+  utter_ask_q78:
+    - language: en
+      metadata: null
+      text: >-
+        Is training for this role via university/specialist
+        school/apprenticeship?
+  utter_ask_q79:
+    - language: en
+      metadata: null
+      text: >-
+        Are there any extra-curricular activities that might support an
+        application to this role?
   utter_ask_q8:
     - language: en
       text: randomized course question set 2
+  utter_ask_q80:
+    - language: en
+      metadata: null
+      text: 'If there is tough competition for this role, how will you stand out?'
+  utter_ask_q81:
+    - language: en
+      metadata: null
+      text: >-
+        Does this role mainly involve your head (planning/logic) or your heart
+        (emotions/empathy) or both?
+  utter_ask_q82:
+    - language: en
+      metadata: null
+      text: Why do these qualities matter to the role?
+  utter_ask_q83:
+    - language: en
+      metadata: null
+      text: Do you think a bot could do this role... why/why not?
+  utter_ask_q84:
+    - language: en
+      metadata: null
+      text: Is this role based in one location or would you need to travel?
+  utter_ask_q85:
+    - language: en
+      metadata: null
+      text: Do typical hours (e.g. Monday-Friday 9am to 5pm) matter to you? Why?
+  utter_ask_q86:
+    - language: en
+      metadata: null
+      text: >-
+        How long have you been thinking about this job? Will  you change your
+        mind?
+  utter_ask_q87:
+    - language: en
+      metadata: null
+      text: Are there work experience positions for this role?
+  utter_ask_q88:
+    - language: en
+      metadata: null
+      text: Are there any TEA courses that can help with your  ambitions?
+  utter_ask_q89:
+    - language: en
+      metadata: null
+      text: Is there anyone involved with TEA who can help?
   utter_ask_q9:
     - language: en
       text: randomized course question set 2
@@ -4222,6 +5000,7 @@ responses:
         creative process
   utter_vgh5u-Xkz:
     - language: en
+      metadata: null
       quick_replies:
         - payload: /whats_the_job2
           title: 'Yes'
@@ -4308,12 +5087,6 @@ slots:
     type: unfeaturized
   q14:
     type: unfeaturized
-  q15:
-    type: unfeaturized
-  q16:
-    type: unfeaturized
-  q17:
-    type: unfeaturized
   q18:
     type: unfeaturized
   q19:
@@ -4392,11 +5165,83 @@ slots:
     type: unfeaturized
   q52:
     type: unfeaturized
+  q53:
+    type: unfeaturized
+  q54:
+    type: unfeaturized
+  q55:
+    type: unfeaturized
+  q56:
+    type: unfeaturized
+  q57:
+    type: unfeaturized
+  q58:
+    type: unfeaturized
+  q59:
+    type: unfeaturized
   q6:
+    type: unfeaturized
+  q60:
+    type: unfeaturized
+  q61:
+    type: unfeaturized
+  q62:
+    type: unfeaturized
+  q63:
+    type: unfeaturized
+  q64:
+    type: unfeaturized
+  q65:
+    type: unfeaturized
+  q66:
+    type: unfeaturized
+  q67:
+    type: unfeaturized
+  q68:
+    type: unfeaturized
+  q69:
     type: unfeaturized
   q7:
     type: unfeaturized
+  q70:
+    type: unfeaturized
+  q71:
+    type: unfeaturized
+  q72:
+    type: unfeaturized
+  q73:
+    type: unfeaturized
+  q74:
+    type: unfeaturized
+  q75:
+    type: unfeaturized
+  q76:
+    type: unfeaturized
+  q78:
+    type: unfeaturized
+  q79:
+    type: unfeaturized
   q8:
+    type: unfeaturized
+  q80:
+    type: unfeaturized
+  q81:
+    type: unfeaturized
+  q82:
+    type: unfeaturized
+  q83:
+    type: unfeaturized
+  q84:
+    type: unfeaturized
+  q85:
+    type: unfeaturized
+  q86:
+    type: unfeaturized
+  q87:
+    type: unfeaturized
+  q88:
+    type: unfeaturized
+  q89:
     type: unfeaturized
   q9:
     type: unfeaturized
