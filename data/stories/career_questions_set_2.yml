@@ -8,6 +8,7 @@ rules:
       - action: career_set2_var1_form
       - active_loop: career_set2_var1_form
       - active_loop: null
+      - action: utter_JI3EtfiDI
     metadata:
       group: Career questions set 2
   - rule: career_set2_var2
@@ -18,6 +19,7 @@ rules:
       - action: career_set2_var2_form
       - active_loop: career_set2_var2_form
       - active_loop: null
+      - action: utter_JI3EtfiDI
     metadata:
       group: Career questions set 2
   - rule: career_set2_var3
@@ -28,6 +30,7 @@ rules:
       - action: career_set2_var3_form
       - active_loop: career_set2_var3_form
       - active_loop: null
+      - action: utter_JI3EtfiDI
     metadata:
       group: Career questions set 2
   - rule: career_set2_var4
@@ -38,5 +41,6 @@ rules:
       - action: career_set2_var4_form
       - active_loop: career_set2_var4_form
       - active_loop: null
+      - action: utter_JI3EtfiDI
     metadata:
       group: Career questions set 2

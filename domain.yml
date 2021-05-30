@@ -11,6 +11,7 @@ actions:
   - action_goto_creative_course_outro
   - action_goto_creative_feelings_intro_menu
   - action_goto_functional_outro
+  - action_goto_whats_the_job_outro
   - action_random_career_question_set1
   - action_random_career_question_set2
   - action_random_career_question_set3
@@ -29,7 +30,6 @@ actions:
   - action_reset_robanter_quiz_slot
   - action_reset_story_freewrite_slot
   - action_reset_whats_the_job_slot
-  - action_return_to_whats_the_job2
   - utter_-C0jqr1v8
   - utter_-STbfDzYV
   - utter_-V73H5tUU
@@ -60,11 +60,11 @@ actions:
   - utter_BxIDOW3ie
   - utter_CJuOI_sNr
   - utter_DXh2Dc8LQ
-  - utter_Dv3T-DmOJ
   - utter_E9SKUypf4
   - utter_FihUmZ3vV
   - utter_GlGkS_b0C
   - utter_JE88FzV1l
+  - utter_JI3EtfiDI
   - utter_JVe2P0VEf
   - utter_JXdsGJ66W
   - utter_JYrdQX4d7
@@ -181,6 +181,7 @@ actions:
   - utter_ask_q88
   - utter_ask_q89
   - utter_ask_q9
+  - utter_ask_q90
   - utter_ask_qq
   - utter_ask_robanter_joke_out
   - utter_ask_robanter_jokes_form_out
@@ -207,6 +208,7 @@ actions:
   - utter_invalid_q33
   - utter_invalid_q4
   - utter_invalid_q40
+  - utter_invalid_q90
   - utter_invalid_robanter_joke_out
   - utter_invalid_robanter_jokes_form_out
   - utter_jbqLXRnix
@@ -214,6 +216,7 @@ actions:
   - utter_kPem4O6mP
   - utter_kQRBxQVg5
   - utter_lDUJNzOnx
+  - utter_m7wCQOVuS
   - utter_mosVQ_zL0
   - utter_nPgFUW-is
   - utter_nR2JdWRbj
@@ -245,7 +248,7 @@ actions:
   - utter_valid_q33
   - utter_valid_q4
   - utter_valid_q40
-  - utter_vgh5u-Xkz
+  - utter_valid_q90
   - utter_w9UPm-V8j
   - utter_waV47guGR
   - utter_xZiLwuJNH
@@ -253,7 +256,6 @@ actions:
   - utter_zJZrVEmWz
   - utter_zMScFybRf
   - utter_zZ6URK2nX
-  - whats_the_job_1_form
 entities: []
 forms:
   acrostic_freewrite_form:
@@ -821,7 +823,7 @@ forms:
             type: from_text
         name: q55
         utter_on_new_valid_slot: false
-    updatedAt: 1622396174747
+    updatedAt: 1622398465906
   career_set1_var2_form:
     collect_in_botfront: null
     description: null
@@ -2219,6 +2221,41 @@ forms:
         name: q26
         utter_on_new_valid_slot: false
     updatedAt: 1622155312187
+  whats_the_job_1_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q90
+          source: '1'
+          target: q90
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q90
+          position:
+            x: 120
+            'y': 350
+          slotName: q90
+          type: slot
+    groupName: Whats the Job
+    name: whats_the_job_1_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q90
+        utter_on_new_valid_slot: true
+        validation:
+          comparatum: 3
+          operator: longer
+    updatedAt: 1622398172126
 intents:
   - acrostic_carousel
   - acrostic_freewrite
@@ -2676,17 +2713,6 @@ responses:
           title: 'No'
           type: postback
       text: More questions?
-  utter_Dv3T-DmOJ:
-    - language: en
-      metadata: null
-      quick_replies:
-        - payload: /whats_the_job3
-          title: 'Yes'
-          type: postback
-        - payload: /whats_the_job_outro
-          title: 'No'
-          type: postback
-      text: More questions?
   utter_E9SKUypf4:
     - language: en
       text: >-
@@ -2729,6 +2755,16 @@ responses:
       text: >-
         Scroll through our chat. Copy and paste the parts you want to keep and
         add them to 'My Projects'.
+  utter_JI3EtfiDI:
+    - language: en
+      quick_replies:
+        - payload: /whats_the_job3
+          title: 'Yes'
+          type: postback
+        - payload: /whats_the_job_outro
+          title: 'No'
+          type: postback
+      text: More questions?
   utter_JVe2P0VEf:
     - language: en
       quick_replies:
@@ -3998,6 +4034,10 @@ responses:
   utter_ask_q9:
     - language: en
       text: randomized course question set 2
+  utter_ask_q90:
+    - language: en
+      metadata: null
+      text: 'Great, whats the job?'
   utter_ask_qq:
     - language: en
       quick_replies:
@@ -4226,6 +4266,10 @@ responses:
     - language: en
       metadata: null
       text: I was expecting a longer name
+  utter_invalid_q90:
+    - language: en
+      metadata: null
+      text: I was expecting a longer job name..
   utter_invalid_robanter_joke_out:
     - language: en
       metadata: null
@@ -4299,6 +4343,16 @@ responses:
           title: Let’s chat about a creative/artistic  course I’m part of
           type: postback
       text: ''
+  utter_m7wCQOVuS:
+    - language: en
+      quick_replies:
+        - payload: /whats_the_job2
+          title: 'Yes'
+          type: postback
+        - payload: /whats_the_job_outro
+          title: 'No'
+          type: postback
+      text: More questions?
   utter_mosVQ_zL0:
     - language: en
       quick_replies:
@@ -4998,17 +5052,10 @@ responses:
       text: >-
         I'm going to ask you some questions to help you think about your
         creative process
-  utter_vgh5u-Xkz:
+  utter_valid_q90:
     - language: en
       metadata: null
-      quick_replies:
-        - payload: /whats_the_job2
-          title: 'Yes'
-          type: postback
-        - payload: /whats_the_job_outro
-          title: 'No'
-          type: postback
-      text: More questions?
+      text: I'm going to ask you some questions to help you think about this role
   utter_w9UPm-V8j:
     - language: en
       quick_replies:
@@ -5244,6 +5291,8 @@ slots:
   q89:
     type: unfeaturized
   q9:
+    type: unfeaturized
+  q90:
     type: unfeaturized
   robanter_jokes_form_out:
     type: categorical

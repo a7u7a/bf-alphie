@@ -9,7 +9,6 @@ rules:
       - active_loop: whats_the_job_1_form
       - active_loop: null
       - action: action_random_career_question_set1
-      - action: utter_vgh5u-Xkz
     metadata:
       group: Whats the Job
   - rule: whats_the_job_outro
@@ -27,7 +26,6 @@ rules:
       - intent: whats_the_job2
         entities: []
       - action: action_random_career_question_set2
-      - action: utter_Dv3T-DmOJ
     metadata:
       group: Whats the Job
   - rule: whats_the_job3
