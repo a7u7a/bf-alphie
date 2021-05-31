@@ -15,6 +15,9 @@ actions:
   - action_random_career_question_set1
   - action_random_career_question_set2
   - action_random_career_question_set3
+  - action_random_course_question_set1
+  - action_random_course_question_set2
+  - action_random_course_question_set3
   - action_reset_acrostic_freewrite_slot
   - action_reset_art_created_slot
   - action_reset_art_exp_slot
@@ -34,7 +37,6 @@ actions:
   - utter_-STbfDzYV
   - utter_-V73H5tUU
   - utter_-v808s42U
-  - utter_0QzeOt7eW
   - utter_0vZ65O5fD
   - utter_1eAxjconw
   - utter_1n82s479p
@@ -59,7 +61,6 @@ actions:
   - utter_Bg9Zkn-0P
   - utter_BxIDOW3ie
   - utter_CJuOI_sNr
-  - utter_DXh2Dc8LQ
   - utter_E9SKUypf4
   - utter_FihUmZ3vV
   - utter_GlGkS_b0C
@@ -98,7 +99,25 @@ actions:
   - utter_ask_q0
   - utter_ask_q1
   - utter_ask_q10
+  - utter_ask_q100
+  - utter_ask_q101
+  - utter_ask_q102
+  - utter_ask_q103
+  - utter_ask_q104
+  - utter_ask_q105
+  - utter_ask_q106
+  - utter_ask_q107
+  - utter_ask_q108
+  - utter_ask_q109
   - utter_ask_q11
+  - utter_ask_q110
+  - utter_ask_q111
+  - utter_ask_q112
+  - utter_ask_q113
+  - utter_ask_q114
+  - utter_ask_q115
+  - utter_ask_q116
+  - utter_ask_q117
   - utter_ask_q12
   - utter_ask_q13
   - utter_ask_q14
@@ -137,7 +156,6 @@ actions:
   - utter_ask_q47
   - utter_ask_q48
   - utter_ask_q49
-  - utter_ask_q5
   - utter_ask_q50
   - utter_ask_q51
   - utter_ask_q52
@@ -148,7 +166,6 @@ actions:
   - utter_ask_q57
   - utter_ask_q58
   - utter_ask_q59
-  - utter_ask_q6
   - utter_ask_q60
   - utter_ask_q61
   - utter_ask_q62
@@ -159,7 +176,6 @@ actions:
   - utter_ask_q67
   - utter_ask_q68
   - utter_ask_q69
-  - utter_ask_q7
   - utter_ask_q70
   - utter_ask_q71
   - utter_ask_q72
@@ -182,6 +198,15 @@ actions:
   - utter_ask_q89
   - utter_ask_q9
   - utter_ask_q90
+  - utter_ask_q91
+  - utter_ask_q92
+  - utter_ask_q93
+  - utter_ask_q94
+  - utter_ask_q95
+  - utter_ask_q96
+  - utter_ask_q97
+  - utter_ask_q98
+  - utter_ask_q99
   - utter_ask_qq
   - utter_ask_robanter_joke_out
   - utter_ask_robanter_jokes_form_out
@@ -191,6 +216,7 @@ actions:
   - utter_ask_testslot3
   - utter_b4fSJnL45
   - utter_bX62HmJW2
+  - utter_bckLgyvsa
   - utter_cROIfymuP
   - utter_dzPmExVyl
   - utter_eFTSPObBn
@@ -236,6 +262,7 @@ actions:
   - utter_s2X6GgI78
   - utter_sj1sUi2yr
   - utter_tK2L8iwOp
+  - utter_tM8RSC4lq
   - utter_tMlRUaZnU
   - utter_tbPPQI-tj
   - utter_ttUBaNltRA
@@ -1614,6 +1641,600 @@ forms:
         name: q32
         utter_on_new_valid_slot: false
     updatedAt: 1622160168433
+  course_set1_var1_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q91
+          source: '1'
+          target: q91
+          type: condition
+        - condition: null
+          id: eq91-q92
+          source: q91
+          target: q92
+          type: condition
+        - condition: null
+          id: eq92-q93
+          source: q92
+          target: q93
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q91
+          position:
+            x: 120
+            'y': 360
+          slotName: q91
+          type: slot
+        - id: q92
+          position:
+            x: 120
+            'y': 500
+          slotName: q92
+          type: slot
+        - id: q93
+          position:
+            x: 120
+            'y': 650
+          slotName: q93
+          type: slot
+    groupName: Course questions set 1
+    name: course_set1_var1_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q91
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q92
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q93
+        utter_on_new_valid_slot: false
+    updatedAt: 1622422773820
+  course_set1_var2_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q94
+          source: '1'
+          target: q94
+          type: condition
+        - condition: null
+          id: eq94-q95
+          source: q94
+          target: q95
+          type: condition
+        - condition: null
+          id: eq95-q96
+          source: q95
+          target: q96
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q94
+          position:
+            x: 120
+            'y': 360
+          slotName: q94
+          type: slot
+        - id: q95
+          position:
+            x: 120
+            'y': 510
+          slotName: q95
+          type: slot
+        - id: q96
+          position:
+            x: 120
+            'y': 660
+          slotName: q96
+          type: slot
+    groupName: Course questions set 1
+    name: course_set1_var2_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q94
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q95
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q96
+        utter_on_new_valid_slot: false
+    updatedAt: 1622422790726
+  course_set1_var3_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q97
+          source: '1'
+          target: q97
+          type: condition
+        - condition: null
+          id: eq97-q98
+          source: q97
+          target: q98
+          type: condition
+        - condition: null
+          id: eq98-q99
+          source: q98
+          target: q99
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q97
+          position:
+            x: 120
+            'y': 350
+          slotName: q97
+          type: slot
+        - id: q98
+          position:
+            x: 120
+            'y': 500
+          slotName: q98
+          type: slot
+        - id: q99
+          position:
+            x: 120
+            'y': 650
+          slotName: q99
+          type: slot
+    groupName: Course questions set 1
+    name: course_set1_var3_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q97
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q98
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q99
+        utter_on_new_valid_slot: false
+    updatedAt: 1622422805179
+  course_set2_var1_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q100
+          source: '1'
+          target: q100
+          type: condition
+        - condition: null
+          id: eq100-q101
+          source: q100
+          target: q101
+          type: condition
+        - condition: null
+          id: eq101-q102
+          source: q101
+          target: q102
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q100
+          position:
+            x: 120
+            'y': 350
+          slotName: q100
+          type: slot
+        - id: q101
+          position:
+            x: 120
+            'y': 500
+          slotName: q101
+          type: slot
+        - id: q102
+          position:
+            x: 120
+            'y': 650
+          slotName: q102
+          type: slot
+    groupName: Course questions set 2
+    name: course_set2_var1_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q100
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q101
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q102
+        utter_on_new_valid_slot: false
+    updatedAt: 1622424253080
+  course_set2_var2_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q103
+          source: '1'
+          target: q103
+          type: condition
+        - condition: null
+          id: eq103-q104
+          source: q103
+          target: q104
+          type: condition
+        - condition: null
+          id: eq104-q105
+          source: q104
+          target: q105
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q103
+          position:
+            x: 120
+            'y': 350
+          slotName: q103
+          type: slot
+        - id: q104
+          position:
+            x: 120
+            'y': 500
+          slotName: q104
+          type: slot
+        - id: q105
+          position:
+            x: 120
+            'y': 660
+          slotName: q105
+          type: slot
+    groupName: Course questions set 2
+    name: course_set2_var2_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q103
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q104
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q105
+        utter_on_new_valid_slot: false
+    updatedAt: 1622424270956
+  course_set2_var3_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q106
+          source: '1'
+          target: q106
+          type: condition
+        - condition: null
+          id: eq106-q107
+          source: q106
+          target: q107
+          type: condition
+        - condition: null
+          id: eq107-q108
+          source: q107
+          target: q108
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q106
+          position:
+            x: 120
+            'y': 360
+          slotName: q106
+          type: slot
+        - id: q107
+          position:
+            x: 120
+            'y': 510
+          slotName: q107
+          type: slot
+        - id: q108
+          position:
+            x: 120
+            'y': 660
+          slotName: q108
+          type: slot
+    groupName: Course questions set 2
+    name: course_set2_var3_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q106
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q107
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q108
+        utter_on_new_valid_slot: false
+    updatedAt: 1622424288400
+  course_set3_var1_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q109
+          source: '1'
+          target: q109
+          type: condition
+        - condition: null
+          id: eq109-q110
+          source: q109
+          target: q110
+          type: condition
+        - condition: null
+          id: eq110-q111
+          source: q110
+          target: q111
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q109
+          position:
+            x: 120
+            'y': 360
+          slotName: q109
+          type: slot
+        - id: q110
+          position:
+            x: 120
+            'y': 520
+          slotName: q110
+          type: slot
+        - id: q111
+          position:
+            x: 120
+            'y': 670
+          slotName: q111
+          type: slot
+    groupName: Course questions set3
+    name: course_set3_var1_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q109
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q110
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q111
+        utter_on_new_valid_slot: false
+    updatedAt: 1622423045367
+  course_set3_var2_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q112
+          source: '1'
+          target: q112
+          type: condition
+        - condition: null
+          id: eq112-q113
+          source: q112
+          target: q113
+          type: condition
+        - condition: null
+          id: eq113-q114
+          source: q113
+          target: q114
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q112
+          position:
+            x: 120
+            'y': 350
+          slotName: q112
+          type: slot
+        - id: q113
+          position:
+            x: 120
+            'y': 500
+          slotName: q113
+          type: slot
+        - id: q114
+          position:
+            x: 120
+            'y': 650
+          slotName: q114
+          type: slot
+    groupName: Course questions set3
+    name: course_set3_var2_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q112
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q113
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q114
+        utter_on_new_valid_slot: false
+    updatedAt: 1622423066192
+  course_set3_var3_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q115
+          source: '1'
+          target: q115
+          type: condition
+        - condition: null
+          id: eq115-q116
+          source: q115
+          target: q116
+          type: condition
+        - condition: null
+          id: eq116-q117
+          source: q116
+          target: q117
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q115
+          position:
+            x: 120
+            'y': 360
+          slotName: q115
+          type: slot
+        - id: q116
+          position:
+            x: 120
+            'y': 520
+          slotName: q116
+          type: slot
+        - id: q117
+          position:
+            x: 120
+            'y': 670
+          slotName: q117
+          type: slot
+    groupName: Course questions set3
+    name: course_set3_var3_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q115
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q116
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q117
+        utter_on_new_valid_slot: false
+    updatedAt: 1622421707969
   creative_course_1_form:
     collect_in_botfront: null
     description: null
@@ -1623,21 +2244,6 @@ forms:
           id: e1-q4
           source: '1'
           target: q4
-          type: condition
-        - condition: null
-          id: eq4-q5
-          source: q4
-          target: q5
-          type: condition
-        - condition: null
-          id: eq5-q6
-          source: q5
-          target: q6
-          type: condition
-        - condition: null
-          id: eq6-q7
-          source: q6
-          target: q7
           type: condition
       nodes:
         - id: '1'
@@ -1651,24 +2257,6 @@ forms:
             'y': 340
           slotName: q4
           type: slot
-        - id: q5
-          position:
-            x: 120
-            'y': 490
-          slotName: q5
-          type: slot
-        - id: q6
-          position:
-            x: 120
-            'y': 640
-          slotName: q6
-          type: slot
-        - id: q7
-          position:
-            x: 120
-            'y': 800
-          slotName: q7
-          type: slot
     groupName: Creative Course
     name: creative_course_1_form
     slots:
@@ -1681,157 +2269,7 @@ forms:
         validation:
           comparatum: 3
           operator: longer
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q5
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q6
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q7
-        utter_on_new_valid_slot: false
-    updatedAt: 1622172826697
-  creative_course_2_form:
-    collect_in_botfront: null
-    description: null
-    graph_elements:
-      edges:
-        - condition: null
-          id: e1-q8
-          source: '1'
-          target: q8
-          type: condition
-        - condition: null
-          id: eq8-q9
-          source: q8
-          target: q9
-          type: condition
-        - condition: null
-          id: eq9-q10
-          source: q9
-          target: q10
-          type: condition
-      nodes:
-        - id: '1'
-          position:
-            x: 200
-            'y': 200
-          type: start
-        - id: q8
-          position:
-            x: 120
-            'y': 360
-          slotName: q8
-          type: slot
-        - id: q9
-          position:
-            x: 120
-            'y': 520
-          slotName: q9
-          type: slot
-        - id: q10
-          position:
-            x: 120
-            'y': 680
-          slotName: q10
-          type: slot
-    groupName: Creative Course
-    name: creative_course_2_form
-    slots:
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q8
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q9
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q10
-        utter_on_new_valid_slot: false
-    updatedAt: 1622172662189
-  creative_course_3_form:
-    collect_in_botfront: null
-    description: null
-    graph_elements:
-      edges:
-        - condition: null
-          id: e1-q11
-          source: '1'
-          target: q11
-          type: condition
-        - condition: null
-          id: eq11-q12
-          source: q11
-          target: q12
-          type: condition
-        - condition: null
-          id: eq12-q13
-          source: q12
-          target: q13
-          type: condition
-      nodes:
-        - id: '1'
-          position:
-            x: 200
-            'y': 200
-          type: start
-        - id: q11
-          position:
-            x: 120
-            'y': 360
-          slotName: q11
-          type: slot
-        - id: q12
-          position:
-            x: 120
-            'y': 520
-          slotName: q12
-          type: slot
-        - id: q13
-          position:
-            x: 120
-            'y': 660
-          slotName: q13
-          type: slot
-    groupName: Creative Course
-    name: creative_course_3_form
-    slots:
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q11
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q12
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q13
-        utter_on_new_valid_slot: false
-    updatedAt: 1622172695779
+    updatedAt: 1622423138154
   haiku_freewrite_form:
     collect_in_botfront: null
     description: null
@@ -2294,6 +2732,15 @@ intents:
   - concrete_solo
   - contact_tea
   - copy_paste_carousel
+  - course_set1_var1
+  - course_set1_var2
+  - course_set1_var3
+  - course_set2_var1
+  - course_set2_var2
+  - course_set2_var3
+  - course_set3_var1
+  - course_set3_var2
+  - course_set3_var3
   - create_character_carousel
   - creative_careers
   - creative_chat_menu
@@ -2398,16 +2845,6 @@ responses:
           title: No. Show me the creative starting points
           type: postback
       text: Would you like to complete  one of the suggested tasks?
-  utter_0QzeOt7eW:
-    - language: en
-      quick_replies:
-        - payload: /creative_course3
-          title: 'Yes'
-          type: postback
-        - payload: /creative_course_outro
-          title: 'No'
-          type: postback
-      text: More questions?
   utter_0vZ65O5fD:
     - language: en
       quick_replies:
@@ -2703,16 +3140,6 @@ responses:
           title: 'Alphie, for the love of Bot, be quiet!'
           type: postback
       text: So... what do you want to chat about?
-  utter_DXh2Dc8LQ:
-    - language: en
-      quick_replies:
-        - payload: /creative_course2
-          title: 'Yes'
-          type: postback
-        - payload: /creative_course_outro
-          title: 'No'
-          type: postback
-      text: More questions?
   utter_E9SKUypf4:
     - language: en
       text: >-
@@ -3090,9 +3517,85 @@ responses:
   utter_ask_q10:
     - language: en
       text: randomized course question set 2
+  utter_ask_q100:
+    - language: en
+      metadata: null
+      text: >-
+        Creativity is subjective. Do you care if other people think the same as
+        you?
+  utter_ask_q101:
+    - language: en
+      metadata: null
+      text: 'What did you feel, see and hear during this course? Give examples?'
+  utter_ask_q102:
+    - language: en
+      metadata: null
+      text: Are other people's experiences of the course the same as yours? Explain
+  utter_ask_q103:
+    - language: en
+      metadata: null
+      text: >-
+        What were your first impressions of the course? Did these thoughts
+        evolve?
+  utter_ask_q104:
+    - language: en
+      metadata: null
+      text: What were any expectations of the course based on?
+  utter_ask_q105:
+    - language: en
+      metadata: null
+      text: Can you list three things you've learnt?
+  utter_ask_q106:
+    - language: en
+      metadata: null
+      text: 'Can you describe the tone, language and content of the course?'
+  utter_ask_q107:
+    - language: en
+      metadata: null
+      text: Is this tone/language/content age appropriate?
+  utter_ask_q108:
+    - language: en
+      metadata: null
+      text: What would you change about the tone/language/content?
+  utter_ask_q109:
+    - language: en
+      metadata: null
+      text: Has the course met your needs (fun/learning/skill building etc.)?
   utter_ask_q11:
     - language: en
       text: randomized course question set 3
+  utter_ask_q110:
+    - language: en
+      metadata: null
+      text: Were the workshops well structured? Why do you think this?
+  utter_ask_q111:
+    - language: en
+      metadata: null
+      text: 'List up to three highlights of the course, why are they highlights?'
+  utter_ask_q112:
+    - language: en
+      metadata: null
+      text: Has the course inspired you to keep learning/creating? Why/how?
+  utter_ask_q113:
+    - language: en
+      metadata: null
+      text: Do you think courses and workshops should be inspiring? Why?
+  utter_ask_q114:
+    - language: en
+      metadata: null
+      text: Summarize the course in one sentence
+  utter_ask_q115:
+    - language: en
+      metadata: null
+      text: Is the course content specialist?
+  utter_ask_q116:
+    - language: en
+      metadata: null
+      text: Can anyone join is or do you need existing knowledge?
+  utter_ask_q117:
+    - language: en
+      metadata: null
+      text: Is it fair to need existing skills/knowledge before starting a course?
   utter_ask_q12:
     - language: en
       metadata: null
@@ -3767,6 +4270,7 @@ responses:
         SET 2
   utter_ask_q4:
     - language: en
+      metadata: null
       text: 'Great, what''s the course?'
   utter_ask_q40:
     - language: en
@@ -3828,9 +4332,6 @@ responses:
       text: |-
         RANDOMISER (CREATIVE PROCESS QUESTIONS)  
         SET 3
-  utter_ask_q5:
-    - language: en
-      text: randomized course question set 1
   utter_ask_q50:
     - language: en
       metadata: null
@@ -3885,9 +4386,6 @@ responses:
         Thinking about what you know right now about this role...  
           
         Do you think this role involves problem solving?
-  utter_ask_q6:
-    - language: en
-      text: randomized course question set 1
   utter_ask_q60:
     - language: en
       metadata: null
@@ -3938,9 +4436,6 @@ responses:
       text: >-
         What is this job's average pay - is this enough for the lifestyle you
         want?
-  utter_ask_q7:
-    - language: en
-      text: randomized course question set 1
   utter_ask_q70:
     - language: en
       metadata: null
@@ -4038,6 +4533,42 @@ responses:
     - language: en
       metadata: null
       text: 'Great, whats the job?'
+  utter_ask_q91:
+    - language: en
+      metadata: null
+      text: 'Before the course started, what were your expectations?'
+  utter_ask_q92:
+    - language: en
+      metadata: null
+      text: Have your expectations of the course been fulfilled?
+  utter_ask_q93:
+    - language: en
+      metadata: null
+      text: Summarize the course in one sentence
+  utter_ask_q94:
+    - language: en
+      metadata: null
+      text: How did you hear/find out about the course?
+  utter_ask_q95:
+    - language: en
+      metadata: null
+      text: Were you looking for something like this or find it by chance?
+  utter_ask_q96:
+    - language: en
+      metadata: null
+      text: Would you seek out a similar course in future? Why/why not?
+  utter_ask_q97:
+    - language: en
+      metadata: null
+      text: What originally made this course stand out/appealing?
+  utter_ask_q98:
+    - language: en
+      metadata: null
+      text: Is anything you're confused about from the course?
+  utter_ask_q99:
+    - language: en
+      metadata: null
+      text: List up to three things you think need improving... why? How?
   utter_ask_qq:
     - language: en
       quick_replies:
@@ -4124,6 +4655,17 @@ responses:
       text: >-
         Follow [this link](https://discovercreative.careers/#/) and Press 'Done'
         to continue the chat.
+  utter_bckLgyvsa:
+    - language: en
+      metadata: null
+      quick_replies:
+        - payload: /creative_course3
+          title: 'Yes'
+          type: postback
+        - payload: /creative_course_outro
+          title: 'No'
+          type: postback
+      text: More questions?
   utter_cROIfymuP:
     - language: en
       quick_replies:
@@ -4975,6 +5517,17 @@ responses:
       text: >-
         So you're thinking about working in the creative industries / the
         arts...
+  utter_tM8RSC4lq:
+    - language: en
+      metadata: null
+      quick_replies:
+        - payload: /creative_course2
+          title: 'Yes'
+          type: postback
+        - payload: /creative_course_outro
+          title: 'No'
+          type: postback
+      text: More questions?
   utter_tMlRUaZnU:
     - language: en
       quick_replies:
@@ -5126,7 +5679,43 @@ slots:
     type: unfeaturized
   q10:
     type: unfeaturized
+  q100:
+    type: unfeaturized
+  q101:
+    type: unfeaturized
+  q102:
+    type: unfeaturized
+  q103:
+    type: unfeaturized
+  q104:
+    type: unfeaturized
+  q105:
+    type: unfeaturized
+  q106:
+    type: unfeaturized
+  q107:
+    type: unfeaturized
+  q108:
+    type: unfeaturized
+  q109:
+    type: unfeaturized
   q11:
+    type: unfeaturized
+  q110:
+    type: unfeaturized
+  q111:
+    type: unfeaturized
+  q112:
+    type: unfeaturized
+  q113:
+    type: unfeaturized
+  q114:
+    type: unfeaturized
+  q115:
+    type: unfeaturized
+  q116:
+    type: unfeaturized
+  q117:
     type: unfeaturized
   q12:
     type: unfeaturized
@@ -5204,8 +5793,6 @@ slots:
     type: unfeaturized
   q49:
     type: unfeaturized
-  q5:
-    type: unfeaturized
   q50:
     type: unfeaturized
   q51:
@@ -5226,8 +5813,6 @@ slots:
     type: unfeaturized
   q59:
     type: unfeaturized
-  q6:
-    type: unfeaturized
   q60:
     type: unfeaturized
   q61:
@@ -5247,8 +5832,6 @@ slots:
   q68:
     type: unfeaturized
   q69:
-    type: unfeaturized
-  q7:
     type: unfeaturized
   q70:
     type: unfeaturized
@@ -5293,6 +5876,24 @@ slots:
   q9:
     type: unfeaturized
   q90:
+    type: unfeaturized
+  q91:
+    type: unfeaturized
+  q92:
+    type: unfeaturized
+  q93:
+    type: unfeaturized
+  q94:
+    type: unfeaturized
+  q95:
+    type: unfeaturized
+  q96:
+    type: unfeaturized
+  q97:
+    type: unfeaturized
+  q98:
+    type: unfeaturized
+  q99:
     type: unfeaturized
   robanter_jokes_form_out:
     type: categorical

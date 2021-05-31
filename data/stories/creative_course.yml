@@ -8,7 +8,7 @@ rules:
       - action: creative_course_1_form
       - active_loop: creative_course_1_form
       - active_loop: null
-      - action: utter_DXh2Dc8LQ
+      - action: action_random_course_question_set1
     metadata:
       group: Creative Course
   - rule: creative_course_outro
@@ -25,10 +25,7 @@ rules:
     steps:
       - intent: creative_course2
         entities: []
-      - action: creative_course_2_form
-      - active_loop: creative_course_2_form
-      - active_loop: null
-      - action: utter_0QzeOt7eW
+      - action: action_random_course_question_set2
     metadata:
       group: Creative Course
   - rule: creative_course3
@@ -36,9 +33,6 @@ rules:
     steps:
       - intent: creative_course3
         entities: []
-      - action: creative_course_3_form
-      - active_loop: creative_course_3_form
-      - active_loop: null
-      - action: action_goto_creative_course_outro
+      - action: action_random_course_question_set3
     metadata:
       group: Creative Course

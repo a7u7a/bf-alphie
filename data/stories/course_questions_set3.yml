@@ -1,0 +1,35 @@
+stories: []
+rules:
+  - rule: course_set3_var1
+    condition: []
+    steps:
+      - intent: course_set3_var1
+        entities: []
+      - action: course_set3_var1_form
+      - active_loop: course_set3_var1_form
+      - active_loop: null
+      - action: action_goto_creative_course_outro
+    metadata:
+      group: Course questions set3
+  - rule: course_set3_var2
+    condition: []
+    steps:
+      - intent: course_set3_var2
+        entities: []
+      - action: course_set3_var2_form
+      - active_loop: course_set3_var2_form
+      - active_loop: null
+      - action: action_goto_creative_course_outro
+    metadata:
+      group: Course questions set3
+  - rule: course_set3_var3
+    condition: []
+    steps:
+      - intent: course_set3_var3
+        entities: []
+      - action: course_set3_var3_form
+      - active_loop: course_set3_var3_form
+      - active_loop: null
+      - action: action_goto_creative_course_outro
+    metadata:
+      group: Course questions set3
