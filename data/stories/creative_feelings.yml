@@ -38,7 +38,7 @@ rules:
     steps:
       - intent: character_freewrite
         entities: []
-      - action: action_reset_character_freewrite_slot
+      - action: action_reset_all_slots
       - action: character_freewrite_form
       - active_loop: character_freewrite_form
       - active_loop: null
@@ -151,7 +151,7 @@ rules:
     steps:
       - intent: monologue_freewrite
         entities: []
-      - action: action_reset_monologue_slot
+      - action: action_reset_all_slots
       - action: monologue_freewrite_form
       - active_loop: monologue_freewrite_form
       - active_loop: null
@@ -171,7 +171,7 @@ rules:
     steps:
       - intent: review_freewrite
         entities: []
-      - action: action_reset_review_freewrite_slot
+      - action: action_reset_all_slots
       - action: review_freewrite_form
       - active_loop: review_freewrite_form
       - active_loop: null
@@ -255,7 +255,7 @@ rules:
     steps:
       - intent: story_freewrite
         entities: []
-      - action: action_reset_story_freewrite_slot
+      - action: action_reset_all_slots
       - action: story_freewrite_form
       - active_loop: story_freewrite_form
       - active_loop: null

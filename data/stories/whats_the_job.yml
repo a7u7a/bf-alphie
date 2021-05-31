@@ -16,7 +16,7 @@ rules:
     steps:
       - intent: whats_the_job_outro
         entities: []
-      - action: action_reset_whats_the_job_slot
+      - action: action_reset_all_slots
       - action: utter_JVe2P0VEf
     metadata:
       group: Whats the Job

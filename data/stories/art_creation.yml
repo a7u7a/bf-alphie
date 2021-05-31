@@ -8,6 +8,7 @@ rules:
       - action: art_created_form
       - active_loop: art_created_form
       - active_loop: null
+      - action: action_random_art_created_question_set1
     metadata:
       group: Art creation
   - rule: art_created_outro
@@ -15,7 +16,7 @@ rules:
     steps:
       - intent: art_created_outro
         entities: []
-      - action: action_reset_art_created_slot
+      - action: action_reset_all_slots
       - action: utter_kQRBxQVg5
     metadata:
       group: Art creation
@@ -24,6 +25,7 @@ rules:
     steps:
       - intent: art_created2
         entities: []
+      - action: action_random_art_created_question_set2
     metadata:
       group: Art creation
   - rule: art_created3
@@ -31,5 +33,6 @@ rules:
     steps:
       - intent: art_created3
         entities: []
+      - action: action_random_art_created_question_set3
     metadata:
       group: Art creation

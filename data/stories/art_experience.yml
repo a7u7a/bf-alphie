@@ -16,7 +16,7 @@ rules:
     steps:
       - intent: art_exp_outro
         entities: []
-      - action: action_reset_art_exp_slot
+      - action: action_reset_all_slots
       - action: utter_ev6_pR8-A
     metadata:
       group: Art experience

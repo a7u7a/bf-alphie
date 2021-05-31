@@ -16,7 +16,7 @@ rules:
     steps:
       - intent: creative_course_outro
         entities: []
-      - action: action_reset_creative_course_slot
+      - action: action_reset_all_slots
       - action: utter_sj1sUi2yr
     metadata:
       group: Creative Course

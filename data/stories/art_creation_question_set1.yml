@@ -1,0 +1,35 @@
+stories: []
+rules:
+  - rule: art_created_set1_var1
+    condition: []
+    steps:
+      - intent: art_created_set1_var1
+        entities: []
+      - action: art_created_set1_var1_form
+      - active_loop: art_created_set1_var1_form
+      - active_loop: null
+      - action: utter_WUM71I15G
+    metadata:
+      group: Art creation question set1
+  - rule: art_created_set1_var2
+    condition: []
+    steps:
+      - intent: art_created_set1_var2
+        entities: []
+      - action: art_created_set1_var2_form
+      - active_loop: art_created_set1_var2_form
+      - active_loop: null
+      - action: utter_WUM71I15G
+    metadata:
+      group: Art creation question set1
+  - rule: art_created_set1_var3
+    condition: []
+    steps:
+      - intent: art_created_set1_var3
+        entities: []
+      - action: art_created_set1_var3_form
+      - active_loop: art_created_set1_var3_form
+      - active_loop: null
+      - action: utter_WUM71I15G
+    metadata:
+      group: Art creation question set1

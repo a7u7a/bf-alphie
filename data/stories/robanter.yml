@@ -37,7 +37,7 @@ rules:
     steps:
       - intent: questions_loop
         entities: []
-      - action: action_reset_robanter_questions_slot
+      - action: action_reset_all_slots
       - action: robanter_questions_form
       - active_loop: robanter_questions_form
       - active_loop: null
@@ -58,7 +58,7 @@ rules:
     steps:
       - intent: quiz_loop
         entities: []
-      - action: action_reset_robanter_quiz_slot
+      - action: action_reset_all_slots
       - action: robanter_quiz_form
       - active_loop: robanter_quiz_form
       - active_loop: null
