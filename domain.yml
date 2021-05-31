@@ -4,7 +4,6 @@ actions:
   - action_botfront_fallback
   - action_botfront_mapping
   - action_form_follow_up_intent
-  - action_goto_art_created_outro
   - action_goto_art_creation_activities_menu
   - action_goto_art_exp_outro
   - action_goto_capabilities
@@ -12,6 +11,9 @@ actions:
   - action_goto_creative_feelings_intro_menu
   - action_goto_functional_outro
   - action_goto_whats_the_job_outro
+  - action_random_art_experience_question_set1
+  - action_random_art_experience_question_set2
+  - action_random_art_experience_question_set3
   - action_random_career_question_set1
   - action_random_career_question_set2
   - action_random_career_question_set3
@@ -43,7 +45,6 @@ actions:
   - utter_25-r16vip
   - utter_2lAgj3u6r-
   - utter_37WaJKBMm
-  - utter_3iOyuois9U
   - utter_3pZjNKs0k
   - utter_4iZUZASZF
   - utter_507WCJv19
@@ -57,7 +58,6 @@ actions:
   - utter_8sU4u0Pcj
   - utter_9-QUXOeoA
   - utter_9DCG3NDkj
-  - utter_ASYvn0pQe
   - utter_Bg9Zkn-0P
   - utter_BxIDOW3ie
   - utter_CJuOI_sNr
@@ -77,7 +77,6 @@ actions:
   - utter_Na4y3v3S4
   - utter_OfmASJTfW
   - utter_PcH87YG8Y
-  - utter_QP9T9TpyK
   - utter_RtzekwDy7
   - utter_SB2HYD-O2
   - utter_Sf7QHBJ5M
@@ -93,7 +92,6 @@ actions:
   - utter_ZnamHebGg
   - utter__3267nvay
   - utter__bzkbYaCY
-  - utter__zibsjKFS
   - utter_ask_hi
   - utter_ask_intro1
   - utter_ask_q0
@@ -118,9 +116,36 @@ actions:
   - utter_ask_q115
   - utter_ask_q116
   - utter_ask_q117
+  - utter_ask_q118
+  - utter_ask_q119
   - utter_ask_q12
+  - utter_ask_q120
+  - utter_ask_q121
+  - utter_ask_q122
+  - utter_ask_q123
   - utter_ask_q13
+  - utter_ask_q134
+  - utter_ask_q135
+  - utter_ask_q136
+  - utter_ask_q137
+  - utter_ask_q138
+  - utter_ask_q139
   - utter_ask_q14
+  - utter_ask_q140
+  - utter_ask_q141
+  - utter_ask_q142
+  - utter_ask_q143
+  - utter_ask_q144
+  - utter_ask_q145
+  - utter_ask_q146
+  - utter_ask_q147
+  - utter_ask_q148
+  - utter_ask_q149
+  - utter_ask_q150
+  - utter_ask_q151
+  - utter_ask_q152
+  - utter_ask_q153
+  - utter_ask_q154
   - utter_ask_q18
   - utter_ask_q19
   - utter_ask_q2
@@ -139,17 +164,11 @@ actions:
   - utter_ask_q31
   - utter_ask_q32
   - utter_ask_q33
-  - utter_ask_q34
-  - utter_ask_q35
-  - utter_ask_q36
   - utter_ask_q37
   - utter_ask_q38
   - utter_ask_q39
   - utter_ask_q4
   - utter_ask_q40
-  - utter_ask_q41
-  - utter_ask_q42
-  - utter_ask_q43
   - utter_ask_q44
   - utter_ask_q45
   - utter_ask_q46
@@ -238,6 +257,7 @@ actions:
   - utter_invalid_robanter_joke_out
   - utter_invalid_robanter_jokes_form_out
   - utter_jbqLXRnix
+  - utter_jr-iummJK
   - utter_kJ29mSbjI
   - utter_kPem4O6mP
   - utter_kQRBxQVg5
@@ -279,6 +299,7 @@ actions:
   - utter_w9UPm-V8j
   - utter_waV47guGR
   - utter_xZiLwuJNH
+  - utter_xjQdDfLmZ
   - utter_yvHcOSzHb
   - utter_zJZrVEmWz
   - utter_zMScFybRf
@@ -317,138 +338,6 @@ forms:
         name: q30
         utter_on_new_valid_slot: false
     updatedAt: 1622160112947
-  art_created2_form:
-    collect_in_botfront: null
-    description: null
-    graph_elements:
-      edges:
-        - condition: null
-          id: e1-q44
-          source: '1'
-          target: q44
-          type: condition
-        - condition: null
-          id: eq44-q45
-          source: q44
-          target: q45
-          type: condition
-        - condition: null
-          id: eq45-q46
-          source: q45
-          target: q46
-          type: condition
-      nodes:
-        - id: '1'
-          position:
-            x: 200
-            'y': 200
-          type: start
-        - id: q44
-          position:
-            x: 120
-            'y': 350
-          slotName: q44
-          type: slot
-        - id: q45
-          position:
-            x: 120
-            'y': 500
-          slotName: q45
-          type: slot
-        - id: q46
-          position:
-            x: 120
-            'y': 660
-          slotName: q46
-          type: slot
-    groupName: Art Experience Creation
-    name: art_created2_form
-    slots:
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q44
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q45
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q46
-        utter_on_new_valid_slot: false
-    updatedAt: 1622173024159
-  art_created3_form:
-    collect_in_botfront: null
-    description: null
-    graph_elements:
-      edges:
-        - condition: null
-          id: e1-q47
-          source: '1'
-          target: q47
-          type: condition
-        - condition: null
-          id: eq47-q48
-          source: q47
-          target: q48
-          type: condition
-        - condition: null
-          id: eq48-q49
-          source: q48
-          target: q49
-          type: condition
-      nodes:
-        - id: '1'
-          position:
-            x: 200
-            'y': 200
-          type: start
-        - id: q47
-          position:
-            x: 120
-            'y': 360
-          slotName: q47
-          type: slot
-        - id: q48
-          position:
-            x: 120
-            'y': 510
-          slotName: q48
-          type: slot
-        - id: q49
-          position:
-            x: 120
-            'y': 660
-          slotName: q49
-          type: slot
-    groupName: Art Experience Creation
-    name: art_created3_form
-    slots:
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q47
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q48
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q49
-        utter_on_new_valid_slot: false
-    updatedAt: 1622173035308
   art_created_form:
     collect_in_botfront: null
     description: null
@@ -458,21 +347,6 @@ forms:
           id: e1-q40
           source: '1'
           target: q40
-          type: condition
-        - condition: null
-          id: eq40-q41
-          source: q40
-          target: q41
-          type: condition
-        - condition: null
-          id: eq41-q42
-          source: q41
-          target: q42
-          type: condition
-        - condition: null
-          id: eq42-q43
-          source: q42
-          target: q43
           type: condition
       nodes:
         - id: '1'
@@ -486,25 +360,7 @@ forms:
             'y': 350
           slotName: q40
           type: slot
-        - id: q41
-          position:
-            x: 120
-            'y': 500
-          slotName: q41
-          type: slot
-        - id: q42
-          position:
-            x: 120
-            'y': 660
-          slotName: q42
-          type: slot
-        - id: q43
-          position:
-            x: 120
-            'y': 810
-          slotName: q43
-          type: slot
-    groupName: Art Experience Creation
+    groupName: Art creation
     name: art_created_form
     slots:
       - filling:
@@ -516,157 +372,7 @@ forms:
         validation:
           comparatum: 1
           operator: longer
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q41
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q42
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q43
-        utter_on_new_valid_slot: false
-    updatedAt: 1622172995892
-  art_exp2_form:
-    collect_in_botfront: null
-    description: null
-    graph_elements:
-      edges:
-        - condition: null
-          id: e1-q37
-          source: '1'
-          target: q37
-          type: condition
-        - condition: null
-          id: eq37-q38
-          source: q37
-          target: q38
-          type: condition
-        - condition: null
-          id: eq38-q39
-          source: q38
-          target: q39
-          type: condition
-      nodes:
-        - id: '1'
-          position:
-            x: 200
-            'y': 200
-          type: start
-        - id: q37
-          position:
-            x: 120
-            'y': 350
-          slotName: q37
-          type: slot
-        - id: q38
-          position:
-            x: 120
-            'y': 500
-          slotName: q38
-          type: slot
-        - id: q39
-          position:
-            x: 120
-            'y': 660
-          slotName: q39
-          type: slot
-    groupName: Art Experience Creation
-    name: art_exp2_form
-    slots:
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q37
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q38
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q39
-        utter_on_new_valid_slot: false
-    updatedAt: 1622172988228
-  art_exp3_form:
-    collect_in_botfront: null
-    description: null
-    graph_elements:
-      edges:
-        - condition: null
-          id: e1-q50
-          source: '1'
-          target: q50
-          type: condition
-        - condition: null
-          id: eq50-q51
-          source: q50
-          target: q51
-          type: condition
-        - condition: null
-          id: eq51-q52
-          source: q51
-          target: q52
-          type: condition
-      nodes:
-        - id: '1'
-          position:
-            x: 200
-            'y': 200
-          type: start
-        - id: q50
-          position:
-            x: 120
-            'y': 350
-          slotName: q50
-          type: slot
-        - id: q51
-          position:
-            x: 120
-            'y': 500
-          slotName: q51
-          type: slot
-        - id: q52
-          position:
-            x: 120
-            'y': 650
-          slotName: q52
-          type: slot
-    groupName: Art Experience Creation
-    name: art_exp3_form
-    slots:
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q50
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q51
-        utter_on_new_valid_slot: false
-      - filling:
-          - intent: []
-            not_intent: []
-            type: from_text
-        name: q52
-        utter_on_new_valid_slot: false
-    updatedAt: 1622172990277
+    updatedAt: 1622428623896
   art_exp_form:
     collect_in_botfront: null
     description: null
@@ -676,21 +382,6 @@ forms:
           id: e1-q33
           source: '1'
           target: q33
-          type: condition
-        - condition: null
-          id: eq33-q34
-          source: q33
-          target: q34
-          type: condition
-        - condition: null
-          id: eq34-q35
-          source: q34
-          target: q35
-          type: condition
-        - condition: null
-          id: eq35-q36
-          source: q35
-          target: q36
           type: condition
       nodes:
         - id: '1'
@@ -704,25 +395,7 @@ forms:
             'y': 340
           slotName: q33
           type: slot
-        - id: q34
-          position:
-            x: 120
-            'y': 500
-          slotName: q34
-          type: slot
-        - id: q35
-          position:
-            x: 120
-            'y': 660
-          slotName: q35
-          type: slot
-        - id: q36
-          position:
-            x: 120
-            'y': 810
-          slotName: q36
-          type: slot
-    groupName: Art Experience Creation
+    groupName: Art experience
     name: art_exp_form
     slots:
       - filling:
@@ -734,25 +407,601 @@ forms:
         validation:
           comparatum: 1
           operator: longer
+    updatedAt: 1622427198593
+  art_exp_set1_var1_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q118
+          source: '1'
+          target: q118
+          type: condition
+        - condition: null
+          id: eq118-q119
+          source: q118
+          target: q119
+          type: condition
+        - condition: null
+          id: eq119-q120
+          source: q119
+          target: q120
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q118
+          position:
+            x: 120
+            'y': 360
+          slotName: q118
+          type: slot
+        - id: q119
+          position:
+            x: 120
+            'y': 520
+          slotName: q119
+          type: slot
+        - id: q120
+          position:
+            x: 120
+            'y': 680
+          slotName: q120
+          type: slot
+    groupName: Art experience question set 1
+    name: art_exp_set1_var1_form
+    slots:
       - filling:
           - intent: []
             not_intent: []
             type: from_text
-        name: q34
+        name: q118
         utter_on_new_valid_slot: false
       - filling:
           - intent: []
             not_intent: []
             type: from_text
-        name: q35
+        name: q119
         utter_on_new_valid_slot: false
       - filling:
           - intent: []
             not_intent: []
             type: from_text
-        name: q36
+        name: q120
         utter_on_new_valid_slot: false
-    updatedAt: 1622172892785
+    updatedAt: 1622426638352
+  art_exp_set1_var2_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q121
+          source: '1'
+          target: q121
+          type: condition
+        - condition: null
+          id: eq121-q122
+          source: q121
+          target: q122
+          type: condition
+        - condition: null
+          id: eq122-q123
+          source: q122
+          target: q123
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q121
+          position:
+            x: 120
+            'y': 360
+          slotName: q121
+          type: slot
+        - id: q122
+          position:
+            x: 120
+            'y': 510
+          slotName: q122
+          type: slot
+        - id: q123
+          position:
+            x: 120
+            'y': 660
+          slotName: q123
+          type: slot
+    groupName: Art experience question set 1
+    name: art_exp_set1_var2_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q121
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q122
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q123
+        utter_on_new_valid_slot: false
+    updatedAt: 1622426700808
+  art_exp_set1_var3_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q134
+          source: '1'
+          target: q134
+          type: condition
+        - condition: null
+          id: eq134-q135
+          source: q134
+          target: q135
+          type: condition
+        - condition: null
+          id: eq135-q136
+          source: q135
+          target: q136
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q134
+          position:
+            x: 120
+            'y': 360
+          slotName: q134
+          type: slot
+        - id: q135
+          position:
+            x: 120
+            'y': 520
+          slotName: q135
+          type: slot
+        - id: q136
+          position:
+            x: 120
+            'y': 680
+          slotName: q136
+          type: slot
+    groupName: Art experience question set 1
+    name: art_exp_set1_var3_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q134
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q135
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q136
+        utter_on_new_valid_slot: false
+    updatedAt: 1622426735878
+  art_exp_set2_var1_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q137
+          source: '1'
+          target: q137
+          type: condition
+        - condition: null
+          id: eq137-q138
+          source: q137
+          target: q138
+          type: condition
+        - condition: null
+          id: eq138-q139
+          source: q138
+          target: q139
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q137
+          position:
+            x: 120
+            'y': 360
+          slotName: q137
+          type: slot
+        - id: q138
+          position:
+            x: 120
+            'y': 520
+          slotName: q138
+          type: slot
+        - id: q139
+          position:
+            x: 120
+            'y': 680
+          slotName: q139
+          type: slot
+    groupName: Art experience question set 2
+    name: art_exp_set2_var1_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q137
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q138
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q139
+        utter_on_new_valid_slot: false
+    updatedAt: 1622426791767
+  art_exp_set2_var2_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q140
+          source: '1'
+          target: q140
+          type: condition
+        - condition: null
+          id: eq140-q141
+          source: q140
+          target: q141
+          type: condition
+        - condition: null
+          id: eq141-q142
+          source: q141
+          target: q142
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q140
+          position:
+            x: 120
+            'y': 360
+          slotName: q140
+          type: slot
+        - id: q141
+          position:
+            x: 120
+            'y': 510
+          slotName: q141
+          type: slot
+        - id: q142
+          position:
+            x: 120
+            'y': 660
+          slotName: q142
+          type: slot
+    groupName: Art experience question set 2
+    name: art_exp_set2_var2_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q140
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q141
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q142
+        utter_on_new_valid_slot: false
+    updatedAt: 1622426841079
+  art_exp_set2_var3_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q143
+          source: '1'
+          target: q143
+          type: condition
+        - condition: null
+          id: eq143-q144
+          source: q143
+          target: q144
+          type: condition
+        - condition: null
+          id: eq144-q145
+          source: q144
+          target: q145
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q143
+          position:
+            x: 120
+            'y': 360
+          slotName: q143
+          type: slot
+        - id: q144
+          position:
+            x: 120
+            'y': 520
+          slotName: q144
+          type: slot
+        - id: q145
+          position:
+            x: 120
+            'y': 670
+          slotName: q145
+          type: slot
+    groupName: Art experience question set 2
+    name: art_exp_set2_var3_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q143
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q144
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q145
+        utter_on_new_valid_slot: false
+    updatedAt: 1622426923551
+  art_exp_set3_var1_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q146
+          source: '1'
+          target: q146
+          type: condition
+        - condition: null
+          id: eq146-q147
+          source: q146
+          target: q147
+          type: condition
+        - condition: null
+          id: eq147-q148
+          source: q147
+          target: q148
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q146
+          position:
+            x: 120
+            'y': 360
+          slotName: q146
+          type: slot
+        - id: q147
+          position:
+            x: 120
+            'y': 520
+          slotName: q147
+          type: slot
+        - id: q148
+          position:
+            x: 120
+            'y': 680
+          slotName: q148
+          type: slot
+    groupName: Art experience question set 3
+    name: art_exp_set3_var1_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q146
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q147
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q148
+        utter_on_new_valid_slot: false
+    updatedAt: 1622426974454
+  art_exp_set3_var2_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q149
+          source: '1'
+          target: q149
+          type: condition
+        - condition: null
+          id: eq149-q150
+          source: q149
+          target: q150
+          type: condition
+        - condition: null
+          id: eq150-q151
+          source: q150
+          target: q151
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q149
+          position:
+            x: 120
+            'y': 360
+          slotName: q149
+          type: slot
+        - id: q150
+          position:
+            x: 120
+            'y': 510
+          slotName: q150
+          type: slot
+        - id: q151
+          position:
+            x: 120
+            'y': 660
+          slotName: q151
+          type: slot
+    groupName: Art experience question set 3
+    name: art_exp_set3_var2_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q149
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q150
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q151
+        utter_on_new_valid_slot: false
+    updatedAt: 1622427017267
+  art_exp_set3_var3_form:
+    collect_in_botfront: null
+    description: null
+    graph_elements:
+      edges:
+        - condition: null
+          id: e1-q152
+          source: '1'
+          target: q152
+          type: condition
+        - condition: null
+          id: eq152-q153
+          source: q152
+          target: q153
+          type: condition
+        - condition: null
+          id: eq153-q154
+          source: q153
+          target: q154
+          type: condition
+      nodes:
+        - id: '1'
+          position:
+            x: 200
+            'y': 200
+          type: start
+        - id: q152
+          position:
+            x: 120
+            'y': 350
+          slotName: q152
+          type: slot
+        - id: q153
+          position:
+            x: 120
+            'y': 500
+          slotName: q153
+          type: slot
+        - id: q154
+          position:
+            x: 120
+            'y': 650
+          slotName: q154
+          type: slot
+    groupName: Art experience question set 3
+    name: art_exp_set3_var3_form
+    slots:
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q152
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q153
+        utter_on_new_valid_slot: false
+      - filling:
+          - intent: []
+            not_intent: []
+            type: from_text
+        name: q154
+        utter_on_new_valid_slot: false
+    updatedAt: 1622427047058
   bot_reference_form:
     collect_in_botfront: null
     description: null
@@ -1772,7 +2021,7 @@ forms:
             type: from_text
         name: q96
         utter_on_new_valid_slot: false
-    updatedAt: 1622422790726
+    updatedAt: 1622428184597
   course_set1_var3_form:
     collect_in_botfront: null
     description: null
@@ -2708,6 +2957,15 @@ intents:
   - art_exp2
   - art_exp3
   - art_exp_outro
+  - art_exp_set1_var1
+  - art_exp_set1_var2
+  - art_exp_set1_var3
+  - art_exp_set2_var1
+  - art_exp_set2_var2
+  - art_exp_set2_var3
+  - art_exp_set3_var1
+  - art_exp_set3_var2
+  - art_exp_set3_var3
   - arts_definition_carousel
   - bot_reference
   - capabilities
@@ -2916,16 +3174,6 @@ responses:
         Here's one I prepared earlier. It's both STUPID and SCARY...
 
         (goes to Ghost Story carousel)
-  utter_3iOyuois9U:
-    - language: en
-      quick_replies:
-        - payload: /art_exp3
-          title: 'Yes'
-          type: postback
-        - payload: /art_exp_outro
-          title: 'No'
-          type: postback
-      text: More questions?
   utter_3pZjNKs0k:
     - language: en
       text: A bot friend of mine runs a creative career website...
@@ -3090,16 +3338,6 @@ responses:
           title: 'Actually Alphie, define ‘creative industries’ & ‘the arts’?'
           type: postback
       text: Do you have a career in mind?
-  utter_ASYvn0pQe:
-    - language: en
-      quick_replies:
-        - payload: /art_exp2
-          title: 'Yes'
-          type: postback
-        - payload: /art_exp_outro
-          title: 'No'
-          type: postback
-      text: More questions?
   utter_Bg9Zkn-0P:
     - language: en
       text: INCORRECT
@@ -3297,16 +3535,6 @@ responses:
   utter_PcH87YG8Y:
     - language: en
       text: I'm only a bot but I am sorry you've been feeling overwhelmed...
-  utter_QP9T9TpyK:
-    - language: en
-      quick_replies:
-        - payload: /art_created3
-          title: 'Yes'
-          type: postback
-        - payload: /art_created_outro
-          title: 'No'
-          type: postback
-      text: More questions?
   utter_RtzekwDy7:
     - language: en
       quick_replies:
@@ -3459,16 +3687,6 @@ responses:
   utter__bzkbYaCY:
     - language: en
       text: (goes to capabilities)
-  utter__zibsjKFS:
-    - language: en
-      quick_replies:
-        - payload: /art_created2
-          title: 'Yes'
-          type: postback
-        - payload: /art_created_outro
-          title: 'No'
-          type: postback
-      text: More questions?
   utter_ask_hi:
     - language: en
       metadata:
@@ -3596,18 +3814,128 @@ responses:
     - language: en
       metadata: null
       text: Is it fair to need existing skills/knowledge before starting a course?
+  utter_ask_q118:
+    - language: en
+      metadata: null
+      text: Summarize the art and your experience of it in one sentence
+  utter_ask_q119:
+    - language: en
+      metadata: null
+      text: Has the art inspired you in anyway? How?
   utter_ask_q12:
     - language: en
       metadata: null
       text: randomized course question set 3
+  utter_ask_q120:
+    - language: en
+      metadata: null
+      text: Should the arts always inspire? Why do you think this?
+  utter_ask_q121:
+    - language: en
+      metadata: null
+      text: 'Why did you decide to engage with this art form and not something else? '
+  utter_ask_q122:
+    - language: en
+      metadata: null
+      text: Did you understand everything or was it confusing or ambiguous? Explain
+  utter_ask_q123:
+    - language: en
+      metadata: null
+      text: Did the work make you feel empowered in anyway?
   utter_ask_q13:
     - language: en
       metadata: null
       text: randomized course question set 3
+  utter_ask_q134:
+    - language: en
+      metadata: null
+      text: Was it accessible to any/all audience or was it targeted? Why/how?
+  utter_ask_q135:
+    - language: en
+      metadata: null
+      text: Is it fair to target work for specific audiences? Why/why not?
+  utter_ask_q136:
+    - language: en
+      metadata: null
+      text: Do you think 'the arts' and creativity are for everyone? Why/why not?
+  utter_ask_q137:
+    - language: en
+      metadata: null
+      text: 'Should creativity reflect reality or be an escape from it, or both? Why?'
+  utter_ask_q138:
+    - language: en
+      metadata: null
+      text: Did you see yourself reflected in the work? How/Why/Why not?
+  utter_ask_q139:
+    - language: en
+      metadata: null
+      text: Were other people's experience of the work the same as yours? Explain
   utter_ask_q14:
     - language: en
       metadata: null
       text: 'Great, what''s the job?'
+  utter_ask_q140:
+    - language: en
+      metadata: null
+      text: What do you know about the creator(s) of the work?
+  utter_ask_q141:
+    - language: en
+      metadata: null
+      text: 'Was the creator of this art making a point? If so, what?'
+  utter_ask_q142:
+    - language: en
+      metadata: null
+      text: Did the creator of the work pull it off successfully? Explain
+  utter_ask_q143:
+    - language: en
+      metadata: null
+      text: Highlight three strengths of the art ... why are they highlights?
+  utter_ask_q144:
+    - language: en
+      metadata: null
+      text: List up to three things you would improve... why? How?
+  utter_ask_q145:
+    - language: en
+      metadata: null
+      text: Was the tone/language/content age appropriate? Why?
+  utter_ask_q146:
+    - language: en
+      metadata: null
+      text: What message do you think the audience took away?
+  utter_ask_q147:
+    - language: en
+      metadata: null
+      text: Do you think creativity should always have a point or a message?
+  utter_ask_q148:
+    - language: en
+      metadata: null
+      text: >-
+        Creativity is subjective. Do you care if other people think the same as
+        you?
+  utter_ask_q149:
+    - language: en
+      metadata: null
+      text: How did your first impressions evolve as you experienced the work?
+  utter_ask_q150:
+    - language: en
+      metadata: null
+      text: Was the work ever predictable or was it surprising?
+  utter_ask_q151:
+    - language: en
+      metadata: null
+      text: Does this work have the potential to offend? How?
+  utter_ask_q152:
+    - language: en
+      metadata: null
+      text: Did you have any expectations of the art?
+  utter_ask_q153:
+    - language: en
+      metadata: null
+      text: What were your expectations of the art based on?
+  utter_ask_q154:
+    - language: en
+      metadata: null
+      text: Were your expectations of the art fulfilled?
   utter_ask_q18:
     - language: en
       metadata: null
@@ -4232,24 +4560,6 @@ responses:
       text: >-
         Write the flavour of art we're talking about (theatre / movie video game
         / poem etc.)
-  utter_ask_q34:
-    - language: en
-      metadata: null
-      text: |-
-        RANDOMISER (WORK I"VE EXPERIENCED QUESTIONS)  
-        SET 1
-  utter_ask_q35:
-    - language: en
-      metadata: null
-      text: |-
-        RANDOMISER (WORK I"VE EXPERIENCED QUESTIONS)  
-        SET 1
-  utter_ask_q36:
-    - language: en
-      metadata: null
-      text: |-
-        RANDOMISER (WORK I"VE EXPERIENCED QUESTIONS)  
-        SET 1
   utter_ask_q37:
     - language: en
       metadata: null
@@ -4278,24 +4588,6 @@ responses:
       text: >-
         Write the flavour of art we're talking about (theatre /  video game /
         poem etc.)
-  utter_ask_q41:
-    - language: en
-      metadata: null
-      text: |-
-        RANDOMISER (CREATIVE PROCESS QUESTIONS)  
-        SET 1
-  utter_ask_q42:
-    - language: en
-      metadata: null
-      text: |-
-        RANDOMISER (CREATIVE PROCESS QUESTIONS)  
-        SET 1
-  utter_ask_q43:
-    - language: en
-      metadata: null
-      text: |-
-        RANDOMISER (CREATIVE PROCESS QUESTIONS)  
-        SET 1
   utter_ask_q44:
     - language: en
       metadata: null
@@ -4827,6 +5119,16 @@ responses:
           title: I'm here when you're ready
           type: postback
       text: (Mental Health Urgent CAROUSEL)
+  utter_jr-iummJK:
+    - language: en
+      quick_replies:
+        - payload: /art_exp2
+          title: 'Yes'
+          type: postback
+        - payload: /art_exp_outro
+          title: 'No'
+          type: postback
+      text: More questions?
   utter_kJ29mSbjI:
     - language: en
       quick_replies:
@@ -5627,6 +5929,16 @@ responses:
       text: >-
         Follow [this link](https://www.theeggassembly.com/wp-admin/profile.php)
         for your profile
+  utter_xjQdDfLmZ:
+    - language: en
+      quick_replies:
+        - payload: /art_exp3
+          title: 'Yes'
+          type: postback
+        - payload: /art_exp_outro
+          title: 'No'
+          type: postback
+      text: More questions?
   utter_yvHcOSzHb:
     - language: en
       quick_replies:
@@ -5717,11 +6029,65 @@ slots:
     type: unfeaturized
   q117:
     type: unfeaturized
+  q118:
+    type: unfeaturized
+  q119:
+    type: unfeaturized
   q12:
+    type: unfeaturized
+  q120:
+    type: unfeaturized
+  q121:
+    type: unfeaturized
+  q122:
+    type: unfeaturized
+  q123:
     type: unfeaturized
   q13:
     type: unfeaturized
+  q134:
+    type: unfeaturized
+  q135:
+    type: unfeaturized
+  q136:
+    type: unfeaturized
+  q137:
+    type: unfeaturized
+  q138:
+    type: unfeaturized
+  q139:
+    type: unfeaturized
   q14:
+    type: unfeaturized
+  q140:
+    type: unfeaturized
+  q141:
+    type: unfeaturized
+  q142:
+    type: unfeaturized
+  q143:
+    type: unfeaturized
+  q144:
+    type: unfeaturized
+  q145:
+    type: unfeaturized
+  q146:
+    type: unfeaturized
+  q147:
+    type: unfeaturized
+  q148:
+    type: unfeaturized
+  q149:
+    type: unfeaturized
+  q150:
+    type: unfeaturized
+  q151:
+    type: unfeaturized
+  q152:
+    type: unfeaturized
+  q153:
+    type: unfeaturized
+  q154:
     type: unfeaturized
   q18:
     type: unfeaturized
@@ -5759,12 +6125,6 @@ slots:
     type: unfeaturized
   q33:
     type: unfeaturized
-  q34:
-    type: unfeaturized
-  q35:
-    type: unfeaturized
-  q36:
-    type: unfeaturized
   q37:
     type: unfeaturized
   q38:
@@ -5774,12 +6134,6 @@ slots:
   q4:
     type: unfeaturized
   q40:
-    type: unfeaturized
-  q41:
-    type: unfeaturized
-  q42:
-    type: unfeaturized
-  q43:
     type: unfeaturized
   q44:
     type: unfeaturized

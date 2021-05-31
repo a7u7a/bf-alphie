@@ -1,0 +1,38 @@
+stories: []
+rules:
+  - rule: art_exp
+    condition: []
+    steps:
+      - intent: art_exp
+        entities: []
+      - action: art_exp_form
+      - active_loop: art_exp_form
+      - active_loop: null
+      - action: action_random_art_experience_question_set1
+    metadata:
+      group: Art experience
+  - rule: art_exp_outro
+    condition: []
+    steps:
+      - intent: art_exp_outro
+        entities: []
+      - action: action_reset_art_exp_slot
+      - action: utter_ev6_pR8-A
+    metadata:
+      group: Art experience
+  - rule: art_exp2
+    condition: []
+    steps:
+      - intent: art_exp2
+        entities: []
+      - action: action_random_art_experience_question_set2
+    metadata:
+      group: Art experience
+  - rule: art_exp3
+    condition: []
+    steps:
+      - intent: art_exp3
+        entities: []
+      - action: action_random_art_experience_question_set3
+    metadata:
+      group: Art experience

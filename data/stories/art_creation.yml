@@ -1,0 +1,35 @@
+stories: []
+rules:
+  - rule: art_created
+    condition: []
+    steps:
+      - intent: art_created
+        entities: []
+      - action: art_created_form
+      - active_loop: art_created_form
+      - active_loop: null
+    metadata:
+      group: Art creation
+  - rule: art_created_outro
+    condition: []
+    steps:
+      - intent: art_created_outro
+        entities: []
+      - action: action_reset_art_created_slot
+      - action: utter_kQRBxQVg5
+    metadata:
+      group: Art creation
+  - rule: art_created2
+    condition: []
+    steps:
+      - intent: art_created2
+        entities: []
+    metadata:
+      group: Art creation
+  - rule: art_created3
+    condition: []
+    steps:
+      - intent: art_created3
+        entities: []
+    metadata:
+      group: Art creation
